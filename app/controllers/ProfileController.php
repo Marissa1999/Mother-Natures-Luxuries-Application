@@ -27,7 +27,7 @@ class ProfileController extends Controller
             $newProfile->user_type = $_POST['user_type'];
             $newProfile->user_id= $_SESSION['user_id'];
             $newProfile->create();
-            header('location:/profile/index');
+            header('location:/home/index');
         }
 
         else
@@ -40,48 +40,25 @@ class ProfileController extends Controller
      * @accessFilter:{itemOwner}
      */
 
-    public function detail($item_id)
+    public function detail($profile_id)
     {
-        $theItem = $this->model('Item')->find($item_id);
+        $theProfile = $this->model('Profile')->find($profile_id);
 
-        if($theItem->user_id != $_SESSION['user_id'])
+        if($theProfile->user_id != $_SESSION['user_id'])
         {
             header('location:/home/index');
             return;
         }
 
-        $this->view('home/detail', $theItem);
+        $this->view('profile/detail', $theProfile);
     }
 
-    public function edit($item_id)
+    public function edit()
     {
-        $theItem = $this->model('Item')->find($item_id);
+        $id = (string) $_SESSION['user_id'];
+        $theProfile = $this->model('Profile')->findProfile($id);
 
-        if($theItem->user_id != $_SESSION['user_id'])
-        {
-            header('location:/home/index');
-            return;
-        }
-
-        if(isset($_POST['action']))
-        {
-            $theItem->name = $_POST['name'];
-            $theItem->update();
-            header('location:/home/index');
-        }
-
-        else
-        {
-            $this->view('home/edit', $theItem);
-        }
-    }
-
-
-    public function delete($item_id)
-    {
-        $theItem = $this->model('Item')->find($item_id);
-
-        if($theItem->user_id != $_SESSION['user_id'])
+        if($theProfile->user_id != $_SESSION['user_id'])
         {
             header('location:/home/index');
             return;
@@ -89,15 +66,24 @@ class ProfileController extends Controller
 
         if(isset($_POST['action']))
         {
-            $theItem->delete();
+            $theProfile->first_name = $_POST['first_name'];
+            $theProfile->last_name = $_POST['last_name'];
+            $theProfile->email = $_POST['email'];
+            $theProfile->phone_number = $_POST['phone_number'];
+            $theProfile->theme_id = $_POST['theme_id'];
+            $theProfile->location = $_POST['location'];
+            $theProfile->gender = $_POST['gender'];
+            $theProfile->user_type = $_POST['user_type'];
+            $theProfile->update();
             header('location:/home/index');
         }
 
         else
         {
-            $this->view('home/delete', $theItem);
+            $this->view('profile/edit', $theProfile);
         }
     }
+
 }
 
 ?>

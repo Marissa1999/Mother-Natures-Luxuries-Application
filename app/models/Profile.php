@@ -31,9 +31,14 @@ class Profile extends Model
 
     public function create()
     {
-        $SQL = 'INSERT INTO Profile(user_id, theme_id, first_name, last_name, email, phone_number, location, gender, user_type) VALUES(:user_id, :theme_id, :first_name, :last_name, :email, :phone_number, :location, :gender, :user_type)';
+        $SQL = 'INSERT INTO Profile(user_id, theme_id, first_name, last_name, 
+                                    email, phone_number, location, gender, user_type) 
+                     VALUES(:user_id, :theme_id, :first_name, :last_name, :email, 
+                            :phone_number, :location, :gender, :user_type)';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['user_id'=>$this->user_id, 'theme_id'=>$this->theme_id, 'first_name'=>$this->first_name, 'last_name'=>$this->last_name, 'email'=>$this->email, 'phone_number'=>$this->phone_number, 'location'=>$this->location, 'gender'=>$this->gender, 'user_type'=>$this->user_type]);
+        $stmt->execute(['user_id'=>$this->user_id, 'theme_id'=>$this->theme_id, 'first_name'=>$this->first_name,
+                       'last_name'=>$this->last_name, 'email'=>$this->email, 'phone_number'=>$this->phone_number,
+                       'location'=>$this->location, 'gender'=>$this->gender, 'user_type'=>$this->user_type]);
         return $stmt->rowCount();
     }
 
@@ -55,25 +60,24 @@ class Profile extends Model
         return $stmt->fetch();
     }
 
-    /*
     public function update()
     {
-        $SQL = 'UPDATE Profile SET name = :name WHERE profile_id = :profile_id';
+        $SQL = 'UPDATE Profile 
+                    SET first_name = :first_name, 
+                       last_name = :last_name, 
+                       email = :email, 
+                       phone_number = :phone_number, 
+                       location = :location, 
+                       theme_id = :theme_id, 
+                       gender = :gender, 
+                       user_type = :user_type
+                 WHERE user_id = :user_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['name'=>$this->name, 'item_id'=>$this->item_id]);
+        $stmt->execute(['first_name'=>$this->first_name, 'last_name'=>$this->last_name, 'email'=>$this->email,
+                        'phone_number'=>$this->phone_number, 'location'=>$this->location, 'theme_id'=>$this->theme_id,
+                        'gender'=>$this->gender, 'user_type'=>$this->user_type, 'user_id'=>$this->user_id]);
         return $stmt->rowCount();
     }
-    */
-
-    /*
-    public function delete()
-    {
-        $SQL = 'DELETE FROM Profile WHERE profile_id = :profile_id';
-        $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['item_id'=>$this->item_id]);
-        return $stmt->rowCount();
-    }
-    */
 
 }
 
