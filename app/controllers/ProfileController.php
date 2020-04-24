@@ -40,16 +40,10 @@ class ProfileController extends Controller
      * @accessFilter:{itemOwner}
      */
 
-    public function detail($profile_id)
+    public function detail()
     {
-        $theProfile = $this->model('Profile')->find($profile_id);
-
-        if($theProfile->user_id != $_SESSION['user_id'])
-        {
-            header('location:/home/index');
-            return;
-        }
-
+        $id = (string) $_SESSION['user_id'];
+        $theProfile = $this->model('Profile')->findProfile($id);
         $this->view('profile/detail', $theProfile);
     }
 
@@ -57,12 +51,6 @@ class ProfileController extends Controller
     {
         $id = (string) $_SESSION['user_id'];
         $theProfile = $this->model('Profile')->findProfile($id);
-
-        if($theProfile->user_id != $_SESSION['user_id'])
-        {
-            header('location:/home/index');
-            return;
-        }
 
         if(isset($_POST['action']))
         {

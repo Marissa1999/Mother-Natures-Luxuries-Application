@@ -36,25 +36,12 @@ class HomeController extends Controller
 	public function detail($item_id)
 	{
 		$theItem = $this->model('Item')->find($item_id);
-
-		if($theItem->user_id != $_SESSION['user_id'])
-        {
-            header('location:/home/index');
-            return;
-        }
-
 		$this->view('home/detail', $theItem);
 	}
 
 	public function edit($item_id)
 	{
 		$theItem = $this->model('Item')->find($item_id);
-
-        if($theItem->user_id != $_SESSION['user_id'])
-        {
-            header('location:/home/index');
-            return;
-        }
 
 		if(isset($_POST['action']))
 		{
@@ -73,12 +60,6 @@ class HomeController extends Controller
 	public function delete($item_id)
 	{
 		$theItem = $this->model('Item')->find($item_id);
-
-        if($theItem->user_id != $_SESSION['user_id'])
-        {
-            header('location:/home/index');
-            return;
-        }
 
 		if(isset($_POST['action']))
 		{
