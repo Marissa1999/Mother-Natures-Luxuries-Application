@@ -8,16 +8,30 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Item Details</title>
+    <title>Profile Details</title>
   </head>
   <body>
      <div class='container'>
-       <h1>Item Details</h1>
+       <h1>Profile Details</h1>
         <dl>
-            <dt>Name</dt>
-            <dd><?=$data->name ?></dd>
+            <dt>First Name</dt>
+            <dd><?=$data->first_name ?></dd>
+            <dt>Last Name</dt>
+            <dd><?=$data->last_name ?></dd>
+            <dt>Email</dt>
+            <dd><?=$data->email ?></dd>
+            <dt>Phone Number</dt>
+            <dd><?=$data->phone_number ?></dd>
+            <dt>Theme ID</dt>
+            <dd><?=$data->theme_id ?></dd>
+            <dt>Gender</dt>
+            <dd><?=$data->gender ?></dd>
+            <dt>Location</dt>
+            <dd><?=$data->location ?></dd>
+            <dt>User Type</dt>
+            <dd><?=$data->user_type ?></dd>
         </dl>
-        <a href='/home/index' class='btn btn-secondary'>Back to List</a> 
+        <a href='/home/index' class='btn btn-secondary'>Back to List</a>
      </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

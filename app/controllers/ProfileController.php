@@ -36,16 +36,16 @@ class ProfileController extends Controller
         }
     }
 
-    /**
-     * @accessFilter:{itemOwner}
-     */
-
     public function detail()
     {
         $id = (string) $_SESSION['user_id'];
         $theProfile = $this->model('Profile')->findProfile($id);
         $this->view('profile/detail', $theProfile);
     }
+
+    /**
+     * @accessFilter:{itemOwner}
+     */
 
     public function edit()
     {
