@@ -19,11 +19,15 @@
          <a href='/profile/detail' class='btn btn-success'>View Profile Information</a>
          <a href='/home/create' class='btn btn-success'>Add a Product</a>
         <table class='table table-striped'>
-          <tr><td>Name</td><td>Actions</td></tr>
+          <br>
+          <h2>My Products</h2>
+          <tr><td>Product</td><td>Picture</td><td>Details</td><td>Price</td><td>Quantity</td><td>Category</td></tr>
            <?php
                foreach($data['products'] as $product)
                {
-                 echo "<tr><td>$product->product_name</td><td>
+                 echo "<tr><td>$product->product_name</td><td>$product->product_picture</td>
+                 <td>$product->product_details</td><td>$product->product_price</td>
+                 <td>$product->product_quantity</td><td>$product->product_category</td><td>
                  <a href='/home/edit/$product->product_id' class='btn btn-success'>Edit</a> 
                  <a href='/home/delete/$product->product_id' class='btn btn-danger'>Delete</a>
                  </td></tr>";

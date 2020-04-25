@@ -3,9 +3,6 @@
 class LoginController extends Controller
 {
 
-	/*
-	  Display the login form and process user input.
-	*/
 	public function index()
 	{
 		if(isset($_POST['action']))
@@ -42,9 +39,6 @@ class LoginController extends Controller
 		}
 	}
 
-    /*
-      Display the register form and process new registration.
-    */
 	public function register()
 	{
 		if(isset($_POST['action']))
@@ -70,10 +64,6 @@ class LoginController extends Controller
 
 	}
 
-
-	/*
-	  Process logout requests.
-	*/
 	 public function logout()
 	 {
 	 	session_destroy();

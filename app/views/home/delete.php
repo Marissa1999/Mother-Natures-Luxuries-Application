@@ -20,7 +20,7 @@
               <label>Product Details: <input type='text' name='product_details' value='<?=$data->product_details ?>' disabled class='form-control' /></label>
               <label>Product Price: <input type='text' name='product_price' value='<?=$data->product_price ?>' disabled class='form-control' /></label>
               <label>Product Quantity: <input type='text' name='product_quantity' value='<?=$data->product_quantity ?>' disabled class='form-control' /></label>
-              <label>Category ID: <input type='text' name='category_id' value='<?=$data->category_id ?>' disabled class='form-control' /></label>
+              <label>Product Category: <input type='text' name='product_category' value='<?=$data->product_category ?>' disabled class='form-control' /></label>
            </div>
              <input type='submit' name='action' value='Delete' class='btn btn-danger' />
         <a href='/home/index' class='btn btn-secondary'>Cancel</a> 

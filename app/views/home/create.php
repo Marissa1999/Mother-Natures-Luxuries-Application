@@ -20,7 +20,7 @@
               <label>Product Details: <input type='text' name='product_details' class='form-control' /></label>
               <label>Product Price: <input type='text' name='product_price' class='form-control' /></label>
               <label>Product Quantity: <input type='text' name='product_quantity' class='form-control' /></label>
-              <label>Category ID: <input type='text' name='category_id' class='form-control' /></label>
+              <label>Product Category: <input type='text' name='product_category' class='form-control' /></label>
            </div>
              <input type='submit' name='action' value='Create' class='btn btn-primary' />
              <a href='/home/index' class='btn btn-secondary'>Cancel</a>

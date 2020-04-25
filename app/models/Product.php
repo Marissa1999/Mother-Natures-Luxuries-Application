@@ -7,7 +7,7 @@ class Product extends Model
     var $product_details;
     var $product_price;
     var $product_quantity;
-    var $category_id;
+    var $product_category;
 
     public function get()
     {
@@ -29,12 +29,12 @@ class Product extends Model
 
     public function create()
     {
-        $SQL = 'INSERT INTO Product(seller_id, category_id, product_name, product_picture, 
+        $SQL = 'INSERT INTO Product(seller_id, product_category, product_name, product_picture, 
                                     product_details, product_price, product_quantity) 
-                    VALUES(:seller_id, :category_id, :product_name, :product_picture, 
+                    VALUES(:seller_id, :product_category, :product_name, :product_picture, 
                                     :product_details, :product_price, :product_quantity)';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['seller_id'=>$this->seller_id, 'category_id'=>$this->category_id, 'product_name'=>$this->product_name,
+        $stmt->execute(['seller_id'=>$this->seller_id, 'product_category'=>$this->product_category, 'product_name'=>$this->product_name,
                         'product_picture'=>$this->product_picture, 'product_details'=>$this->product_details,
                         'product_price'=>$this->product_price, 'product_quantity'=>$this->product_quantity]);
         return $stmt->rowCount();
@@ -52,12 +52,12 @@ class Product extends Model
     public function update()
     {
         $SQL = 'UPDATE Product 
-                   SET category_id = :category_id, product_name = :product_name, product_picture = :product_picture,
+                   SET product_category = :product_category, product_name = :product_name, product_picture = :product_picture,
                        product_details = :product_details, product_price = :product_price, product_quantity = :product_quantity
                  WHERE product_id = :product_id AND seller_id = :seller_id';
         $stmt = self::$_connection->prepare($SQL);
         $stmt->execute(['product_id'=>$this->product_id, 'seller_id'=>$this->seller_id,
-                        'category_id'=>$this->category_id, 'product_name'=>$this->product_name,
+                        'product_category'=>$this->product_category, 'product_name'=>$this->product_name,
                         'product_picture'=>$this->product_picture, 'product_details'=>$this->product_details,
                         'product_price'=>$this->product_price, 'product_quantity'=>$this->product_quantity]);
         return $stmt->rowCount();
@@ -70,8 +70,6 @@ class Product extends Model
         $stmt->execute(['product_id'=>$this->product_id, 'seller_id'=>$this->seller_id ]);
         return $stmt->rowCount();
     }
-
-
 }
 
 ?>

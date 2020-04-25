@@ -8,7 +8,10 @@ class HomeController extends Controller
 {
     public function index()
 	{
-		$products = $this->model('Product')->getForSeller($_SESSION['user_id']);
+        $user_id = (string) $_SESSION['user_id'];
+        $theProfile = $this->model('Profile')->findProfile($user_id);
+        $_SESSION['profile_id'] = $theProfile->profile_id;
+		$products = $this->model('Product')->getForSeller($_SESSION['profile_id']);
 		$this->view('home/index', ['products'=>$products]);
 	}
 
@@ -22,8 +25,8 @@ class HomeController extends Controller
            $newProduct->product_details = $_POST['product_details'];
            $newProduct->product_price = $_POST['product_price'];
            $newProduct->product_quantity = $_POST['product_quantity'];
-           $newProduct->category_id= $_POST['category_id'];
-           $newProduct->seller_id= $_SESSION['user_id'];
+           $newProduct->product_category= $_POST['product_category'];
+           $newProduct->seller_id= $_SESSION['profile_id'];
            $newProduct->create();
            header('location:/home/index');
 		}
@@ -80,7 +83,7 @@ class HomeController extends Controller
            $theProduct->product_details = $_POST['product_details'];
            $theProduct->product_price = $_POST['product_price'];
            $theProduct->product_quantity = $_POST['product_quantity'];
-           $theProduct->category_id= $_POST['category_id'];
+           $theProduct->product_category= $_POST['product_category'];
            $theProduct->update();
            header('location:/home/index');
 		}
