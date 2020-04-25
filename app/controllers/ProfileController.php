@@ -38,15 +38,15 @@ class ProfileController extends Controller
 
     public function detail()
     {
-        $id = (string) $_SESSION['user_id'];
-        $theProfile = $this->model('Profile')->findProfile($id);
+        $user_id = (string) $_SESSION['user_id'];
+        $theProfile = $this->model('Profile')->findProfile($user_id);
         $this->view('profile/detail', $theProfile);
     }
 
     public function edit()
     {
-        $id = (string) $_SESSION['user_id'];
-        $theProfile = $this->model('Profile')->findProfile($id);
+        $user_id = (string) $_SESSION['user_id'];
+        $theProfile = $this->model('Profile')->findProfile($user_id);
 
         if(isset($_POST['action']))
         {

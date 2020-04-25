@@ -39,8 +39,8 @@ class HomeController extends Controller
 
 	public function modifyPassword()
     {
-        $id = (string) $_SESSION['user_id'];
-        $theUser = $this->model('User')->find($id);
+        $user_id = (string) $_SESSION['user_id'];
+        $theUser = $this->model('User')->find($user_id);
 
         if(isset($_POST['action']))
         {
