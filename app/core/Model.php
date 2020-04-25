@@ -10,8 +10,8 @@ class Model
 		{
 			$host = 'localhost';
             $dbname = 'nature_luxuries_database';
-            $user = 'root';
-            $password = '';
+            $user = 'luxuries_user';
+            $password = 'qeezpN5v0jJH1jNG';
 
 			self::$_connection = new PDO("mysql:host=$host;dbname=$dbname",$user,$password);
 		}
