@@ -8,18 +8,25 @@ class HomeController extends Controller
 {
     public function index()
 	{
-		$items = $this->model('Item')->getForUser($_SESSION['user_id']);
-		$this->view('home/index', ['items'=>$items]);
+        $id = (string) $_SESSION['user_id'];
+        $theProfile = $this->model('Profile')->findProfile($id);
+		$products = $this->model('Product')->getForSeller($theProfile);
+		$this->view('home/index', ['products'=>$products]);
 	}
 
 	public function create()
 	{
 		if(isset($_POST['action']))
 		{
-           $newItem = $this->model('Item');
-           $newItem->name = $_POST['name'];
-           $newItem->user_id= $_SESSION['user_id'];
-           $newItem->create();
+           $newProduct = $this->model('Product');
+           $newProduct->product_name = $_POST['product_name'];
+           $newProduct->product_picture = $_POST['product_picture'];
+           $newProduct->product_details = $_POST['product_details'];
+           $newProduct->product_price = $_POST['product_price'];
+           $newProduct->product_quantity = $_POST['product_quantity'];
+           $newProduct->category_id= $_POST['category_id'];
+           $newProduct->seller_id= $_POST['seller_id'];
+           $newProduct->create();
            header('location:/home/index');
 		}
 
@@ -53,46 +60,52 @@ class HomeController extends Controller
     }
 
     /**
-     * @accessFilter:{itemOwner}
+     * @accessFilter:{ProductOwner}
      */
 
-	public function detail($item_id)
+/*
+	public function detail($product_id)
 	{
-		$theItem = $this->model('Item')->find($item_id);
-		$this->view('home/detail', $theItem);
+		$theProduct = $this->model('Product')->find($product_id);
+		$this->view('home/detail', $theProduct);
 	}
+*/
 
-	public function edit($item_id)
+	public function edit($product_id)
 	{
-		$theItem = $this->model('Item')->find($item_id);
+		$theProduct = $this->model('Product')->find($product_id);
 
 		if(isset($_POST['action']))
 		{
-           $theItem->name = $_POST['name'];
-           $theItem->update();
+           $theProduct->product_name = $_POST['product_name'];
+           $theProduct->product_picture = $_POST['product_picture'];
+           $theProduct->product_details = $_POST['product_details'];
+           $theProduct->product_price = $_POST['product_price'];
+           $theProduct->product_quantity = $_POST['product_quantity'];
+           $theProduct->category_id= $_POST['category_id'];
+           $theProduct->update();
            header('location:/home/index');
 		}
 
 		else
 		{
-			$this->view('home/edit', $theItem);
+			$this->view('home/edit', $theProduct);
 		}
 	}
 
-
-	public function delete($item_id)
+	public function delete($product_id)
 	{
-		$theItem = $this->model('Item')->find($item_id);
+		$theProduct = $this->model('Product')->find($product_id);
 
 		if(isset($_POST['action']))
 		{
-           $theItem->delete();
+           $theProduct->delete();
            header('location:/home/index');
 		}
 
 		else
 		{
-			$this->view('home/delete', $theItem);
+			$this->view('home/delete', $theProduct);
 		}
 	}
 }

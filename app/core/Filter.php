@@ -3,11 +3,11 @@
 class Filter extends Controller
 {
 
-    public static function itemOwner($params)
+    public static function ProductOwner($params)
     {
-        $theItem = self::model('Item')->find($params[0]);
+        $theProduct = self::model('Product')->find($params[0]);
 
-        if($theItem->user_id != $_SESSION['user_id'])
+        if($theProduct->user_id != $_SESSION['user_id'])
         {
             return '/home/index';
         }
@@ -17,7 +17,6 @@ class Filter extends Controller
             return false;
         }
     }
-
 
     public static function LoginFilter($params)
     {

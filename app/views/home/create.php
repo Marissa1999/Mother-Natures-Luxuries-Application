@@ -8,14 +8,19 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Create an Item</title>
+    <title>Add a Product</title>
   </head>
   <body>
      <div class='container'>
-      <h1>Create an Item</h1>
+      <h1>Add a Product</h1>
         <form action='' method='post'>
           <div class='form-group'>
-             <label>Name: <input type='text' name='name' class='form-control' /></label>
+              <label>Product Name: <input type='text' name='product_name' class='form-control' /></label>
+              <label>Product Picture: <input type='text' name='product_picture' class='form-control' /></label>
+              <label>Product Details: <input type='text' name='product_details' class='form-control' /></label>
+              <label>Product Price: <input type='text' name='product_price' class='form-control' /></label>
+              <label>Product Quantity: <input type='text' name='product_quantity' class='form-control' /></label>
+              <label>Category ID: <input type='text' name='category_id' class='form-control' /></label>
            </div>
              <input type='submit' name='action' value='Create' class='btn btn-primary' />
              <a href='/home/index' class='btn btn-secondary'>Cancel</a>

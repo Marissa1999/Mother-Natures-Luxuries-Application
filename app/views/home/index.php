@@ -8,24 +8,24 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>List of Items</title>
+    <title>Home Page</title>
   </head>
   <body>
      <div class='container'>
-       <h1>List of Items</h1>
+       <h1>Welcome to Mother Nature's Luxuries</h1>
         <a href='/login/logout'>Logout</a><br />
          <a href='/home/modifyPassword' class='btn btn-success'>Modify Password</a>
          <a href='/profile/edit' class='btn btn-success'>Modify Profile</a>
          <a href='/profile/detail' class='btn btn-success'>View Profile Information</a>
+         <a href='/home/create' class='btn btn-success'>Add a Product</a>
         <table class='table table-striped'>
           <tr><td>Name</td><td>Actions</td></tr>
            <?php
-               foreach($data['items'] as $item)
+               foreach($data['products'] as $product)
                {
-                 echo "<tr><td>$item->name</td><td>
-                 <a href='/home/detail/$item->item_id' class='btn btn-primary'>Details</a> 
-                 <a href='/home/edit/$item->item_id' class='btn btn-success'>Edit</a> 
-                 <a href='/home/delete/$item->item_id' class='btn btn-danger'>Delete</a>
+                 echo "<tr><td>$product->product_name</td><td>
+                 <a href='/home/edit/$product->product_id' class='btn btn-success'>Edit</a> 
+                 <a href='/home/delete/$product->product_id' class='btn btn-danger'>Delete</a>
                  </td></tr>";
                }
            ?>

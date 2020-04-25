@@ -2,82 +2,64 @@
 
 class Product extends Model
 {
-    var $first_name;
-    var $last_name;
-    var $email;
-    var $phone_number;
-    var $location;
-    var $theme_id;
-    var $gender;
-    var $user_type;
+    var $product_name;
+    var $product_picture;
+    var $product_details;
+    var $product_price;
+    var $product_quantity;
+    var $category_id;
 
-    public function getFromSeller($user_type)
+    public function get()
     {
-        $SQL = 'SELECT * FROM Profile WHERE user_type LIKE "Seller"';
+        $SQL = 'SELECT * FROM Product';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['user_type'=>$user_type]);
-        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Profile');
+        $stmt->execute();
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Product');
         return $stmt->fetchAll();
     }
 
-    public function getForUser($user_id)
+    public function getForSeller($seller_id)
     {
-        $SQL = 'SELECT * FROM Profile WHERE user_id = :user_id';
+        $SQL = 'SELECT * FROM Product WHERE seller_id = :seller_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['user_id'=>$user_id]);
-        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Profile');
+        $stmt->execute(['seller_id'=>$seller_id]);
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Product');
         return $stmt->fetchAll();
     }
 
     public function create()
     {
-        $SQL = 'INSERT INTO Profile(user_id, theme_id, first_name, last_name, 
-                                    email, phone_number, location, gender, user_type) 
-                     VALUES(:user_id, :theme_id, :first_name, :last_name, :email, 
-                            :phone_number, :location, :gender, :user_type)';
+        $SQL = 'INSERT INTO Item(name, user_id) VALUES(:name, :user_id)';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['user_id'=>$this->user_id, 'theme_id'=>$this->theme_id, 'first_name'=>$this->first_name,
-            'last_name'=>$this->last_name, 'email'=>$this->email, 'phone_number'=>$this->phone_number,
-            'location'=>$this->location, 'gender'=>$this->gender, 'user_type'=>$this->user_type]);
+        $stmt->execute(['name'=>$this->name, 'user_id'=>$this->user_id]);
         return $stmt->rowCount();
     }
 
-    public function find($profile_id)
+    public function find($product_id)
     {
-        $SQL = 'SELECT * FROM Profile WHERE profile_id = :profile_id';
+        $SQL = 'SELECT * FROM Product WHERE product_id = :product_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['profile_id'=>$profile_id]);
-        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Profile');
-        return $stmt->fetch();
-    }
-
-    public function findProfile($user_id)
-    {
-        $SQL = 'SELECT * FROM Profile WHERE user_id = :user_id';
-        $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['user_id'=>$user_id]);
-        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Profile');
+        $stmt->execute(['product_id'=>$product_id]);
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Product');
         return $stmt->fetch();
     }
 
     public function update()
     {
-        $SQL = 'UPDATE Profile 
-                    SET first_name = :first_name, 
-                       last_name = :last_name, 
-                       email = :email, 
-                       phone_number = :phone_number, 
-                       location = :location, 
-                       theme_id = :theme_id, 
-                       gender = :gender, 
-                       user_type = :user_type
-                 WHERE user_id = :user_id';
+        $SQL = 'UPDATE Item SET name = :name WHERE item_id = :item_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['first_name'=>$this->first_name, 'last_name'=>$this->last_name, 'email'=>$this->email,
-            'phone_number'=>$this->phone_number, 'location'=>$this->location, 'theme_id'=>$this->theme_id,
-            'gender'=>$this->gender, 'user_type'=>$this->user_type, 'user_id'=>$this->user_id]);
+        $stmt->execute(['name'=>$this->name, 'item_id'=>$this->item_id]);
         return $stmt->rowCount();
     }
+
+    public function delete()
+    {
+        $SQL = 'DELETE FROM Product WHERE product_id = :product_id';
+        $stmt = self::$_connection->prepare($SQL);
+        $stmt->execute(['product_id'=>$this->product_id]);
+        return $stmt->rowCount();
+    }
+
 
 }
 

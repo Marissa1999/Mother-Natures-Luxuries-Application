@@ -43,10 +43,6 @@ class ProfileController extends Controller
         $this->view('profile/detail', $theProfile);
     }
 
-    /**
-     * @accessFilter:{itemOwner}
-     */
-
     public function edit()
     {
         $id = (string) $_SESSION['user_id'];
