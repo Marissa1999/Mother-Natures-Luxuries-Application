@@ -43,7 +43,7 @@ class HomeController extends Controller
                 header('location:/home/index');
             }
 
-            $this->view('home/modifyPassword', 'Password Already in Use or Both New Passwords Did Not Match!');
+            $this->view('home/modifyPassword', 'Both New Passwords Did Not Match!');
         }
 
         else
