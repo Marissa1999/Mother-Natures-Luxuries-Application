@@ -8,9 +8,7 @@ class HomeController extends Controller
 {
     public function index()
 	{
-        $id = (string) $_SESSION['user_id'];
-        $theProfile = $this->model('Profile')->findProfile($id);
-		$products = $this->model('Product')->getForSeller($theProfile->profile_id);
+		$products = $this->model('Product')->getForSeller($_SESSION['user_id']);
 		$this->view('home/index', ['products'=>$products]);
 	}
 
@@ -25,7 +23,7 @@ class HomeController extends Controller
            $newProduct->product_price = $_POST['product_price'];
            $newProduct->product_quantity = $_POST['product_quantity'];
            $newProduct->category_id= $_POST['category_id'];
-           $newProduct->seller_id= $_POST['seller_id'];
+           $newProduct->seller_id= $_SESSION['user_id'];
            $newProduct->create();
            header('location:/home/index');
 		}
@@ -59,10 +57,6 @@ class HomeController extends Controller
         }
     }
 
-    /**
-     * @accessFilter:{ProductOwner}
-     */
-
 /*
 	public function detail($product_id)
 	{
@@ -70,6 +64,10 @@ class HomeController extends Controller
 		$this->view('home/detail', $theProduct);
 	}
 */
+
+    /**
+     * @accessFilter:{ProductOwner}
+     */
 
 	public function edit($product_id)
 	{

@@ -63,14 +63,9 @@ class Profile extends Model
     public function update()
     {
         $SQL = 'UPDATE Profile 
-                    SET first_name = :first_name, 
-                       last_name = :last_name, 
-                       email = :email, 
-                       phone_number = :phone_number, 
-                       location = :location, 
-                       theme_id = :theme_id, 
-                       gender = :gender, 
-                       user_type = :user_type
+                    SET first_name = :first_name, last_name = :last_name, email = :email, 
+                       phone_number = :phone_number, location = :location, theme_id = :theme_id, 
+                       gender = :gender, user_type = :user_type
                  WHERE user_id = :user_id';
         $stmt = self::$_connection->prepare($SQL);
         $stmt->execute(['first_name'=>$this->first_name, 'last_name'=>$this->last_name, 'email'=>$this->email,

@@ -7,7 +7,7 @@ class Filter extends Controller
     {
         $theProduct = self::model('Product')->find($params[0]);
 
-        if($theProduct->user_id != $_SESSION['user_id'])
+        if($theProduct->seller_id != $_SESSION['user_id'])
         {
             return '/home/index';
         }

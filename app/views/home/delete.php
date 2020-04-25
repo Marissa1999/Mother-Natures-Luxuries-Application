@@ -8,14 +8,19 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Delete Item</title>
+    <title>Delete Product</title>
   </head>
   <body>
      <div class='container'>
-       <h1>Delete this Item</h1>
+       <h1>Delete this Product</h1>
         <form action='' method='post'>
           <div class='form-group'>
-             <label>Name: <input type='text' name='name' value='<?=$data->name ?>' disabled class='form-control' /></label>
+              <label>Product Name: <input type='text' name='product_name' value='<?=$data->product_name ?>' disabled class='form-control' /></label>
+              <label>Product Picture: <input type='text' name='product_picture' value='<?=$data->product_picture ?>' disabled class='form-control' /></label>
+              <label>Product Details: <input type='text' name='product_details' value='<?=$data->product_details ?>' disabled class='form-control' /></label>
+              <label>Product Price: <input type='text' name='product_price' value='<?=$data->product_price ?>' disabled class='form-control' /></label>
+              <label>Product Quantity: <input type='text' name='product_quantity' value='<?=$data->product_quantity ?>' disabled class='form-control' /></label>
+              <label>Category ID: <input type='text' name='category_id' value='<?=$data->category_id ?>' disabled class='form-control' /></label>
            </div>
              <input type='submit' name='action' value='Delete' class='btn btn-danger' />
         <a href='/home/index' class='btn btn-secondary'>Cancel</a> 
