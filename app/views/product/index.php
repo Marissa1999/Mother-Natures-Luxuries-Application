@@ -14,7 +14,6 @@
      <div class='container'>
        <h1>List of Items</h1>
         <a href='/login/logout'>Logout</a><br />
-         <a href='/home/modifyPassword' class='btn btn-success'>Modify Password</a>
          <a href='/profile/edit' class='btn btn-success'>Modify Profile</a>
          <a href='/profile/detail' class='btn btn-success'>View Profile Information</a>
         <table class='table table-striped'>

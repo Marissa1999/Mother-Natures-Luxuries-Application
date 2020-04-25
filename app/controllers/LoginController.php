@@ -54,7 +54,7 @@ class LoginController extends Controller
 
 			if($theUser == null && $_POST['password'] == $_POST['password_confirm'])
 			{	    
-				$newUser->username = $_POST['username'];	
+				$newUser->username = $_POST['username'];
 				$newUser->password_hash = password_hash($_POST['password'], PASSWORD_DEFAULT);
 			    $newUser->create();
 			    header('location:/login/index');

@@ -31,6 +31,14 @@ class User extends Model
         return $stmt->rowCount();
 	}
 
+    public function updatePassword()
+    {
+        $SQL = 'UPDATE User SET password_hash = :password_hash WHERE user_id = :user_id';
+        $stmt = self::$_connection->prepare($SQL);
+        $stmt->execute(['password_hash'=>$this->password_hash, 'user_id'=>$this->user_id]);
+        return $stmt->rowCount();
+    }
+
 
 
 }

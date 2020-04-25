@@ -29,6 +29,29 @@ class HomeController extends Controller
 		}
 	}
 
+	public function modifyPassword()
+    {
+        $id = (string) $_SESSION['user_id'];
+        $theUser = $this->model('User')->find($id);
+
+        if(isset($_POST['action']))
+        {
+            if($_POST['new_password'] == $_POST['password_confirmation'])
+            {
+                $theUser->password_hash = password_hash($_POST['new_password'], PASSWORD_DEFAULT);
+                $theUser->updatePassword();
+                header('location:/home/index');
+            }
+
+            $this->view('home/modifyPassword', 'Password Already in Use or Both New Passwords Did Not Match!');
+        }
+
+        else
+        {
+            $this->view('home/modifyPassword');
+        }
+    }
+
     /**
      * @accessFilter:{itemOwner}
      */
