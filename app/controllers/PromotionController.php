@@ -6,14 +6,14 @@
 
 class PromotionController extends Controller
 {
-    public function index()
+    public function index($product_id)
     {
         $user_id = (string) $_SESSION['user_id'];
         $theProfile = $this->model('Profile')->findProfile($user_id);
         $_SESSION['profile_id'] = $theProfile->profile_id;
-        $theProduct = $this->model('Product')->getProductForSeller($_SESSION['profile_id']);
-        $_SESSION['product_id'] = $theProduct->product_id;
-        $promotions = $this->model('Promotion')->getPromotionForSeller($_SESSION['product_id'], $_SESSION['profile_id']);
+        //$theProduct = $this->model('Product')->getProductForSeller($_SESSION['profile_id']);
+        //$_SESSION['product_id'] = $theProduct->product_id;
+        $promotions = $this->model('Promotion')->getPromotionForSeller($product_id, $_SESSION['profile_id']);
         $this->view('promotion/index', ['promotions'=>$promotions]);
     }
 
