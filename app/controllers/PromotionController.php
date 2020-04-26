@@ -35,10 +35,6 @@ class PromotionController extends Controller
         }
     }
 
-    /**
-     * @accessFilter:{ProductOwner}
-     */
-
     public function delete($promotion_id)
     {
         $thePromotion = $this->model('Promotion')->find($promotion_id);

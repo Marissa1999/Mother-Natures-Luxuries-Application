@@ -18,7 +18,7 @@ class Product extends Model
         return $stmt->fetchAll();
     }
 
-    public function getProductForSeller($seller_id)
+    public function getProductsForSeller($seller_id)
     {
         $SQL = 'SELECT * FROM Product WHERE seller_id = :seller_id';
         $stmt = self::$_connection->prepare($SQL);
