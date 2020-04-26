@@ -22,7 +22,9 @@ class Profile extends Model
 
     public function getAllSellers()
     {
-        $SQL = 'SELECT * FROM Profile profile INNER JOIN Product product ON profile.profile_id = product.seller_id';
+        $SQL = 'SELECT * FROM Profile profile 
+                   INNER JOIN Product product 
+                           ON profile.profile_id = product.seller_id';
         $stmt = self::$_connection->prepare($SQL);
         $stmt->execute();
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'Profile');

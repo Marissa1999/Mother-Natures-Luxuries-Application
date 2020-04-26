@@ -39,6 +39,7 @@
                     echo "<td>$product->product_name</td><td>$product->product_picture</td><td>$product->product_details</td>
                     <td>$product->product_category</td><td>$product->product_price</td><td>$product->product_quantity</td>          
                    </td></tr>";
+                    break;
                 }
             }
         }

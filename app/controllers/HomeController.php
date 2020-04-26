@@ -111,7 +111,7 @@ class HomeController extends Controller
 
         else
         {
-            $products = $this->model('Product')->getProductsForSeller($_SESSION['profile_id']);
+            $products = $this->model('Product')->get();
             $this->view('home/search', ['products'=>$products, 'profiles'=>$profiles]);
         }
     }
