@@ -26,8 +26,6 @@
                foreach($data['products'] as $product)
                {
                  $total = $product->product_price * $product->product_quantity;
-                 $profit_total = $this->model('Product')->getProfit($product->product_id, $product->seller_id);
-
                  echo "<tr><td>$product->product_name</td><td>$product->product_picture</td>
                  <td>$product->product_details</td><td>$product->product_price</td>
                  <td>$product->product_quantity</td><td>$product->product_category</td>

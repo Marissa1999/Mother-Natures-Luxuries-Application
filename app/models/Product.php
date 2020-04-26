@@ -27,16 +27,6 @@ class Product extends Model
         return $stmt->fetchAll();
     }
 
-    public function getProfit($product_id, $seller_id)
-    {
-        $SQL = 'SELECT product_profit * product_quantity AS total_profit FROM Product 
-                 WHERE product_id = :product_id AND seller_id = :seller_id';
-        $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['seller_id'=>$seller_id, 'product_id'=>$product_id]);
-        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Product');
-        return $stmt->fetch();
-    }
-
     public function create()
     {
         $SQL = 'INSERT INTO Product(seller_id, product_category, product_name, product_picture, 
