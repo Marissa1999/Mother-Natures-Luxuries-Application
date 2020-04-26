@@ -27,6 +27,16 @@ class Product extends Model
         return $stmt->fetchAll();
     }
 
+    public function searchProducts($search_input, $product_name, $product_details)
+    {
+        $SQL = 'SELECT * FROM Product WHERE product_name LIKE "%. $search_input .%"
+                AND product_details LIKE "%. $search_input .%"';
+        $stmt = self::$_connection->prepare($SQL);
+        $stmt->execute(['product_name'=>$product_name, 'product_details'=>$product_details, 'search_input'=>$search_input]);
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Product');
+        return $stmt->fetchAll();
+    }
+
     public function create()
     {
         $SQL = 'INSERT INTO Product(seller_id, product_category, product_name, product_picture, 
