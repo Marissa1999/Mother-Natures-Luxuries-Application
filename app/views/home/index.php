@@ -14,15 +14,14 @@
      <div class='container'>
        <h1>Welcome to Mother Nature's Luxuries</h1>
         <a href='/login/logout'>Logout</a><br />
+         <a href='/home/create' class='btn btn-success'>Add a Product</a>
          <a href='/home/modifyPassword' class='btn btn-success'>Modify Password</a>
          <a href='/profile/edit' class='btn btn-success'>Modify Profile</a>
          <a href='/profile/detail' class='btn btn-success'>View Profile Information</a>
-         <a href='/home/create' class='btn btn-success'>Add a Product</a>
-         <a href='/profile/index' class='btn btn-success'>View Seller Contacts</a><br />
-         <form method='post' action=''>
-             <br /><label>Search: </label> <input type="search" name="search_input" /> <input type="submit" name="search" value="Search" class='btn btn-success' />
-         </form>
-          <br />
+         <a href='/profile/index' class='btn btn-success'>View Seller Contacts</a>
+         <a href='/profile/index' class='btn btn-success'>View News Postings</a><br /><br />
+         <a href='/home/search' class='btn btn-success'>Search All Products</a><br />
+         <br />
           <h2>My Products</h2>
           <table class='table table-striped'>
           <tr><td>Name</td><td>Picture</td><td>Details</td><td>Price</td><td>Quantity</td><td>Category</td><td>Profit</td></tr>

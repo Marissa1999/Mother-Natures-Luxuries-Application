@@ -18,7 +18,9 @@
               <label>Promotion Price: <input type='text' name='promotion_price' class='form-control' /></label>
            </div>
              <input type='submit' name='action' value='Create' class='btn btn-primary' />
-            <a href='/promotion/index' class='btn btn-secondary'>Cancel</a>
+            <?php
+              echo "<a href='/promotion/index' class='btn btn-secondary'>Cancel</a>";
+            ?>
         </form>
       </div>
 

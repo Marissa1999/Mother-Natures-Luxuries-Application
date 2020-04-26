@@ -9,8 +9,8 @@ class ProfileController extends Controller
     public function index()
     {
         $theProfile = $this->model('Profile');
-        $_GET['user_type'] = $theProfile->user_type;
-        $profiles = $this->model('Profile')->getSellers($_GET['user_type']);
+        $_SESSION['user_type'] = $theProfile->user_type;
+        $profiles = $this->model('Profile')->getSellers($_SESSION['user_type']);
         $this->view('profile/index', ['profiles'=>$profiles]);
     }
 

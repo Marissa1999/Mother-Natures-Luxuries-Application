@@ -19,8 +19,10 @@
               <label>Promotion Timestamp: <input type='text' name='promotion_timestamp' value='<?=$data->promotion_timestamp ?>' disabled class='form-control' /></label>
            </div>
              <input type='submit' name='action' value='Delete' class='btn btn-danger' />
-           <a href='/promotion/index' class='btn btn-secondary'>Cancel</a>
-        </form>    
+            <?php
+               echo "<a href='/promotion/index/.$data->product_id' class='btn btn-secondary'>Cancel</a>";
+            ?>
+        </form>
      </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

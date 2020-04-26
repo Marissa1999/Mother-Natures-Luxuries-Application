@@ -10,8 +10,8 @@ class HomeController extends Controller
 	{
         $user_id = (string) $_SESSION['user_id'];
         $theProfile = $this->model('Profile')->findProfile($user_id);
-        $_GET['profile_id'] = $theProfile->profile_id;
-		$products = $this->model('Product')->getProductForSeller($_GET['profile_id']);
+        $_SESSION['profile_id'] = $theProfile->profile_id;
+		$products = $this->model('Product')->getProductForSeller($_SESSION['profile_id']);
 		$this->view('home/index', ['products'=>$products]);
 	}
 
@@ -62,18 +62,20 @@ class HomeController extends Controller
 
     public function search()
     {
-        $searchProduct = $this->model('Product');
+        $user_id = (string) $_SESSION['user_id'];
+        $theProfile = $this->model('Profile')->findProfile($user_id);
+        $_SESSION['profile_id'] = $theProfile->profile_id;
 
-        if(isset($_POST['action']))
+        if(isset($_POST['search']))
         {
-            $searchResult = $this->model('Product')->searchProducts($searchProduct->product_name, $searchProduct->product_details);
-            $this->view('home/index', ['searchResult' => $searchResult]);
+            $products = $this->model('Product')->searchProducts($_POST['search_input']);
+            $this->view('home/search', ['products'=>$products]);
         }
 
         else
         {
-            $products = $this->model('Product')->getProductForSeller($_SESSION['profile_id']);
-            $this->view('home/index', ['products'=>$products]);
+            $products = $this->model('Product')->get();
+            $this->view('home/search', ['products'=>$products]);
         }
     }
 
