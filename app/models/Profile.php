@@ -20,9 +20,9 @@ class Profile extends Model
         return $stmt->fetchAll();
     }
 
-    public function getAllSellers()
+    public function getSellersAndProducts()
     {
-        $SQL = 'SELECT * FROM Profile profile 
+        $SQL = 'SELECT * FROM Profile profile
                    INNER JOIN Product product 
                            ON profile.profile_id = product.seller_id';
         $stmt = self::$_connection->prepare($SQL);

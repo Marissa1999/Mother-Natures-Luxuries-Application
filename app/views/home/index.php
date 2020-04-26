@@ -19,7 +19,7 @@
          <a href='/profile/edit' class='btn btn-success'>Modify Profile</a>
          <a href='/profile/detail' class='btn btn-success'>View Profile Information</a>
          <a href='/profile/index' class='btn btn-success'>View Seller Contacts</a>
-         <a href='/profile/index' class='btn btn-success'>View News Postings</a><br /><br />
+         <a href='/news/index' class='btn btn-success'>View Company News Postings</a><br /><br />
          <a href='/home/search' class='btn btn-success'>Browse All Products</a><br />
          <br />
           <h2>My Products</h2>
