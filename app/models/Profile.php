@@ -11,7 +11,7 @@ class Profile extends Model
     var $gender;
     var $user_type;
 
-    public function getFromSeller($user_type)
+    public function getSellers($user_type)
     {
         $SQL = 'SELECT * FROM Profile WHERE user_type LIKE "Seller"';
         $stmt = self::$_connection->prepare($SQL);

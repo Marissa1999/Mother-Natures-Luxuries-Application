@@ -21,7 +21,7 @@
            foreach($data['promotions'] as $promotion)
                {
                  echo "<tr><td>$promotion->promotion_price</td><td>$promotion->promotion_timestamp</td><td>
-                 <a href='/home/delete/$promotion->promotion_id' class='btn btn-danger'>Delete</a> 
+                 <a href='/promotion/delete/$promotion->product_id/$promotion->promotion_id' class='btn btn-danger'>Delete</a> 
                  </td></tr>";
                }
            ?>

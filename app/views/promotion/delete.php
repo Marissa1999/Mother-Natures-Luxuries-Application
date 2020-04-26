@@ -16,10 +16,10 @@
         <form action='' method='post'>
           <div class='form-group'>
               <label>Promotion Price: <input type='text' name='promotion_price' value='<?=$data->promotion_price ?>' disabled class='form-control' /></label>
-              <label>Promotion Timestamp: <input type='text' name='promotion_timestmap' value='<?=$data->promotion_timestamp ?>' disabled class='form-control' /></label>
+              <label>Promotion Timestamp: <input type='text' name='promotion_timestamp' value='<?=$data->promotion_timestamp ?>' disabled class='form-control' /></label>
            </div>
              <input type='submit' name='action' value='Delete' class='btn btn-danger' />
-        <a href='/promotion/index' class='btn btn-secondary'>Cancel</a>
+           <a href='/promotion/index' class='btn btn-secondary'>Cancel</a>
         </form>    
      </div>
     <!-- Optional JavaScript -->

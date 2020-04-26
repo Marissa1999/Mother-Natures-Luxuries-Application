@@ -10,8 +10,8 @@ class HomeController extends Controller
 	{
         $user_id = (string) $_SESSION['user_id'];
         $theProfile = $this->model('Profile')->findProfile($user_id);
-        $_SESSION['profile_id'] = $theProfile->profile_id;
-		$products = $this->model('Product')->getProductForSeller($_SESSION['profile_id']);
+        $_GET['profile_id'] = $theProfile->profile_id;
+		$products = $this->model('Product')->getProductForSeller($_GET['profile_id']);
 		$this->view('home/index', ['products'=>$products]);
 	}
 
