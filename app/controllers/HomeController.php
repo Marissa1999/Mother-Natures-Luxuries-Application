@@ -72,6 +72,42 @@ class HomeController extends Controller
             $this->view('home/search', ['products'=>$products]);
         }
 
+        else if(isset($_POST['nameSortAsc']))
+        {
+            $products = $this->model('Product')->sortNameAscending();
+            $this->view('home/search', ['products'=>$products]);
+        }
+
+        else if(isset($_POST['nameSortDesc']))
+        {
+            $products = $this->model('Product')->sortNameDescending();
+            $this->view('home/search', ['products'=>$products]);
+        }
+
+        else if(isset($_POST['priceSortAsc']))
+        {
+            $products = $this->model('Product')->sortPriceAscending();
+            $this->view('home/search', ['products'=>$products]);
+        }
+
+        else if(isset($_POST['priceSortDesc']))
+        {
+            $products = $this->model('Product')->sortPriceDescending();
+            $this->view('home/search', ['products'=>$products]);
+        }
+
+        else if(isset($_POST['categorySortAsc']))
+        {
+            $products = $this->model('Product')->sortCategoryAscending();
+            $this->view('home/search', ['products'=>$products]);
+        }
+
+        else if(isset($_POST['categorySortDesc']))
+        {
+            $products = $this->model('Product')->sortCategoryDescending();
+            $this->view('home/search', ['products'=>$products]);
+        }
+
         else
         {
             $products = $this->model('Product')->get();

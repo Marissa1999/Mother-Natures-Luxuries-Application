@@ -32,7 +32,61 @@ class Product extends Model
         $SQL = "SELECT * FROM Product WHERE product_name LIKE '%$search_input%'
                 OR product_details LIKE '%$search_input%'";
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['product_name'=>$search_input, 'product_details'=>$search_input]);
+        $stmt->execute(['product_name' => $search_input, 'product_details' => $search_input]);
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Product');
+        return $stmt->fetchAll();
+    }
+
+    public function sortNameAscending()
+    {
+        $SQL = 'SELECT * FROM Product ORDER BY product_name';
+        $stmt = self::$_connection->prepare($SQL);
+        $stmt->execute();
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Product');
+        return $stmt->fetchAll();
+    }
+
+    public function sortNameDescending()
+    {
+        $SQL = 'SELECT * FROM Product ORDER BY product_name DESC';
+        $stmt = self::$_connection->prepare($SQL);
+        $stmt->execute();
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Product');
+        return $stmt->fetchAll();
+    }
+
+    public function sortPriceAscending()
+    {
+        $SQL = 'SELECT * FROM Product ORDER BY product_price';
+        $stmt = self::$_connection->prepare($SQL);
+        $stmt->execute();
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Product');
+        return $stmt->fetchAll();
+    }
+
+    public function sortPriceDescending()
+    {
+        $SQL = 'SELECT * FROM Product ORDER BY product_price DESC';
+        $stmt = self::$_connection->prepare($SQL);
+        $stmt->execute();
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Product');
+        return $stmt->fetchAll();
+    }
+
+    public function sortCategoryAscending()
+    {
+        $SQL = 'SELECT * FROM Product ORDER BY product_category';
+        $stmt = self::$_connection->prepare($SQL);
+        $stmt->execute();
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Product');
+        return $stmt->fetchAll();
+    }
+
+    public function sortCategoryDescending()
+    {
+        $SQL = 'SELECT * FROM Product ORDER BY product_category DESC';
+        $stmt = self::$_connection->prepare($SQL);
+        $stmt->execute();
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'Product');
         return $stmt->fetchAll();
     }

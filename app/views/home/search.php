@@ -17,6 +17,14 @@
     <form method='post' action=''>
         <br /><label>Search: </label> <input type="search" name="search_input" /> <input type="submit" name="search" value="Search" class='btn btn-info' />
         <a href='/home/search' class='btn btn-primary'>Refresh Product List</a><br />
+        <br />
+        <h6>Order By: </h6>
+        <input type="submit" name="nameSortAsc" value="Name (Ascending)" class='btn btn-warning' />
+        <input type="submit" name="nameSortDesc" value="Name (Descending)" class='btn btn-warning' />
+        <input type="submit" name="priceSortAsc" value="Price (Ascending)" class='btn btn-success' />
+        <input type="submit" name="priceSortDesc" value="Price (Descending)" class='btn btn-success' />
+        <input type="submit" name="categorySortAsc" value="Category (Ascending)" class='btn btn-dark' />
+        <input type="submit" name="categorySortDesc" value="Category (Descending)" class='btn btn-dark' /><br />
     </form>
     <table class='table table-striped'>
         <tr><td>Name</td><td>Picture</td><td>Details</td><td>Category</td><td>Price</td><td>Quantity</td></tr><br />
