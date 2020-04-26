@@ -18,7 +18,7 @@ class Product extends Model
         return $stmt->fetchAll();
     }
 
-    public function getForSeller($seller_id)
+    public function getProductForSeller($seller_id)
     {
         $SQL = 'SELECT * FROM Product WHERE seller_id = :seller_id';
         $stmt = self::$_connection->prepare($SQL);
@@ -27,12 +27,12 @@ class Product extends Model
         return $stmt->fetchAll();
     }
 
-    public function searchProducts($search_input, $product_name, $product_details)
+    public function searchProducts($product_name, $product_details)
     {
-        $SQL = 'SELECT * FROM Product WHERE product_name LIKE "%. $search_input .%"
-                AND product_details LIKE "%. $search_input .%"';
+        $SQL = 'SELECT * FROM Product WHERE product_name LIKE "%". $product_name ."%"
+                OR product_details LIKE "%". $product_details ."%"';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['product_name'=>$product_name, 'product_details'=>$product_details, 'search_input'=>$search_input]);
+        $stmt->execute(['product_name'=>$product_name, 'product_details'=>$product_details]);
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'Product');
         return $stmt->fetchAll();
     }

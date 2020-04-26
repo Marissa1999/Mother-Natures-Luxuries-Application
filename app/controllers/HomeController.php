@@ -11,7 +11,7 @@ class HomeController extends Controller
         $user_id = (string) $_SESSION['user_id'];
         $theProfile = $this->model('Profile')->findProfile($user_id);
         $_SESSION['profile_id'] = $theProfile->profile_id;
-		$products = $this->model('Product')->getForSeller($_SESSION['profile_id']);
+		$products = $this->model('Product')->getProductForSeller($_SESSION['profile_id']);
 		$this->view('home/index', ['products'=>$products]);
 	}
 
@@ -60,19 +60,19 @@ class HomeController extends Controller
         }
     }
 
-    public function search($search_input)
+    public function search()
     {
         $searchProduct = $this->model('Product');
 
         if(isset($_POST['action']))
         {
-            $searchResult = $this->model('Product')->searchProducts($search_input, $searchProduct->product_name, $searchProduct->product_details);
+            $searchResult = $this->model('Product')->searchProducts($searchProduct->product_name, $searchProduct->product_details);
             $this->view('home/index', ['searchResult' => $searchResult]);
         }
 
         else
         {
-            $products = $this->model('Product')->getForSeller($_SESSION['profile_id']);
+            $products = $this->model('Product')->getProductForSeller($_SESSION['profile_id']);
             $this->view('home/index', ['products'=>$products]);
         }
     }

@@ -17,7 +17,6 @@
          <a href='/home/modifyPassword' class='btn btn-success'>Modify Password</a>
          <a href='/profile/edit' class='btn btn-success'>Modify Profile</a>
          <a href='/profile/detail' class='btn btn-success'>View Profile Information</a>
-         <a href='/promotion/index' class='btn btn-success'>View Promotions</a>
          <a href='/home/create' class='btn btn-success'>Add a Product</a><br />
          <form method='post' action=''>
              <br /><label>Search: </label> <input type="search" name="search_input" /> <input type="submit" name="search" value="Search" class='btn btn-success' />
@@ -34,6 +33,7 @@
                  <td>$product->product_details</td><td>$product->product_price</td>
                  <td>$product->product_quantity</td><td>$product->product_category</td>
                  <td>$total</td><td>
+                 <a href='/promotion/index/$product->product_id' class='btn btn-info'>Promotions</a> 
                  <a href='/home/edit/$product->product_id' class='btn btn-success'>Edit</a> 
                  <a href='/home/delete/$product->product_id' class='btn btn-danger'>Delete</a>
                  </td></tr>";
