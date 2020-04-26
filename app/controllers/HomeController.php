@@ -61,21 +61,21 @@ class HomeController extends Controller
     }
 
     public function search($search_input)
+    {
+        $searchProduct = $this->model('Product');
+
+        if(isset($_POST['action']))
         {
-            $searchProduct = $this->model('Product');
-
-            if(isset($_POST['action']))
-            {
-                $searchResult = $this->model('Product')->searchProducts($search_input, $searchProduct->product_name, $searchProduct->product_details);
-                $this->view('home/index', ['searchResult' => $searchResult]);
-            }
-
-            else
-            {
-                $products = $this->model('Product')->getForSeller($_SESSION['profile_id']);
-                $this->view('home/index', ['products'=>$products]);
-            }
+            $searchResult = $this->model('Product')->searchProducts($search_input, $searchProduct->product_name, $searchProduct->product_details);
+            $this->view('home/index', ['searchResult' => $searchResult]);
         }
+
+        else
+        {
+            $products = $this->model('Product')->getForSeller($_SESSION['profile_id']);
+            $this->view('home/index', ['products'=>$products]);
+        }
+    }
 
 /*
 	public function detail($product_id)
