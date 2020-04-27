@@ -8,12 +8,22 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Book List</title>
+    <title>Search Products</title>
 </head>
 <body>
 <div class='container'>
-    <h1>Book List</h1>
+    <h1>Search All Books</h1>
     <a href='/login/logout'>Logout</a><br />
+    <form method='post' action=''>
+        <br /><label>Search: </label> <input type="search" name="search_input" /> <input type="submit" name="search" value="Search" class='btn btn-info' />
+        <a href='/book/search' class='btn btn-primary'>Refresh Book List</a><br />
+        <br />
+        <h6>Order By: </h6>
+        <input type="submit" name="nameSortAsc" value="Name (Ascending)" class='btn btn-warning' />
+        <input type="submit" name="nameSortDesc" value="Name (Descending)" class='btn btn-warning' />
+        <input type="submit" name="priceSortAsc" value="Price (Ascending)" class='btn btn-success' />
+        <input type="submit" name="priceSortDesc" value="Price (Descending)" class='btn btn-success' /><br /><br />
+    </form>
     <table class='table table-striped'>
         <tr><td>First Name</td><td>Last Name</td><td>Book Name</td><td>Description</td><td>Picture</td><td>Price</td><td>Quantity</td></tr>
         <?php

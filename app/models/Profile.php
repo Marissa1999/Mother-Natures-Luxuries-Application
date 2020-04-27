@@ -30,7 +30,7 @@ class Profile extends Model
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'Profile');
         return $stmt->fetchAll();
     }
-
+    
     public function getForUser($user_id)
     {
         $SQL = 'SELECT * FROM Profile WHERE user_id = :user_id';

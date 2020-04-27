@@ -37,6 +37,52 @@ class Book extends Model
         return $stmt->fetchAll();
     }
 
+    public function searchBooks($search_input)
+    {
+        $SQL = "SELECT * FROM Book WHERE book_name LIKE '%$search_input%'
+                OR book_description LIKE '%$search_input%'";
+        $stmt = self::$_connection->prepare($SQL);
+        $stmt->execute(['book_name' => $search_input, 'book_description' => $search_input]);
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Book');
+        return $stmt->fetchAll();
+    }
+
+    public function sortNameAscending()
+    {
+        $SQL = 'SELECT * FROM Book ORDER BY book_name';
+        $stmt = self::$_connection->prepare($SQL);
+        $stmt->execute();
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Book');
+        return $stmt->fetchAll();
+    }
+
+    public function sortNameDescending()
+    {
+        $SQL = 'SELECT * FROM Book ORDER BY book_name DESC';
+        $stmt = self::$_connection->prepare($SQL);
+        $stmt->execute();
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Book');
+        return $stmt->fetchAll();
+    }
+
+    public function sortPriceAscending()
+    {
+        $SQL = 'SELECT * FROM Book ORDER BY book_price';
+        $stmt = self::$_connection->prepare($SQL);
+        $stmt->execute();
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Book');
+        return $stmt->fetchAll();
+    }
+
+    public function sortPriceDescending()
+    {
+        $SQL = 'SELECT * FROM Book ORDER BY book_price DESC';
+        $stmt = self::$_connection->prepare($SQL);
+        $stmt->execute();
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Book');
+        return $stmt->fetchAll();
+    }
+
     public function create()
     {
         $SQL = 'INSERT INTO Book(teacher_id, book_name, book_description, book_picture, book_price, book_quantity) 

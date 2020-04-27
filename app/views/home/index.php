@@ -20,7 +20,7 @@
          <a href='/profile/index' class='btn btn-success'>View Seller Contacts</a>
          <a href='/news/index' class='btn btn-success'>View Company News Postings</a>
          <a href='/home/search' class='btn btn-success'>Browse All Products</a><br /><br />
-         <a href='/book/index' class='btn btn-success'>Browse All Books</a><br />
+         <a href='/book/search' class='btn btn-success'>Browse All Books</a><br />
          <br />
           <h2>My Products</h2>
           <a href='/home/create' class='btn btn-success'>Add a Product</a>
