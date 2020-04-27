@@ -117,14 +117,6 @@ class HomeController extends Controller
         }
     }
 
-/*
-	public function detail($product_id)
-	{
-		$theProduct = $this->model('Product')->find($product_id);
-		$this->view('home/detail', $theProduct);
-	}
-*/
-
     /**
      * @accessFilter:{ProductOwner}
      */

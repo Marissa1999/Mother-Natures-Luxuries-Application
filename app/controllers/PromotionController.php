@@ -18,6 +18,8 @@ class PromotionController extends Controller
 
     public function create()
     {
+        $theProduct = $this->model('Product')->find($_SESSION['product_id']);
+
         if(isset($_POST['action']))
         {
             $newPromotion = $this->model('Promotion');
@@ -31,7 +33,7 @@ class PromotionController extends Controller
 
         else
         {
-            $this->view('promotion/create');
+            $this->view('promotion/create', $theProduct);
         }
     }
 

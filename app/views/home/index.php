@@ -52,6 +52,7 @@
                  echo "<tr><td>$book->book_name</td><td>$book->book_picture</td>
                  <td>$book->book_description</td><td>$book->book_price</td>
                  <td>$book->book_quantity</td><td>
+                 <a href='/book/detail/$book->book_id' class='btn btn-primary'>Book Details</a>
                  <a href='/book/edit/$book->book_id' class='btn btn-success'>Edit Book</a> 
                  <a href='/book/delete/$book->book_id' class='btn btn-danger'>Delete Book</a>
                  </td></tr>";
