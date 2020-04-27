@@ -8,17 +8,24 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Item Details</title>
+    <title>Add a Book</title>
   </head>
   <body>
      <div class='container'>
-       <h1>Item Details</h1>
-        <dl>
-            <dt>Name</dt>
-            <dd><?=$data->name ?></dd>
-        </dl>
-        <a href='/home/index' class='btn btn-secondary'>Back to List</a> 
-     </div>
+      <h1>Add a Book</h1>
+        <form action='' method='post'>
+          <div class='form-group'>
+              <label>Book Name: <input type='text' name='book_name' class='form-control' /></label>
+              <label>Book Picture: <input type='text' name='book_picture' class='form-control' /></label>
+              <label>Book Description: <input type='text' name='book_description' class='form-control' /></label>
+              <label>Book Price: <input type='text' name='book_price' class='form-control' /></label>
+              <label>Book Quantity: <input type='text' name='book_quantity' class='form-control' /></label>
+           </div>
+             <input type='submit' name='action' value='Create' class='btn btn-primary' />
+             <a href='/home/index' class='btn btn-secondary'>Cancel</a>
+        </form>
+      </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

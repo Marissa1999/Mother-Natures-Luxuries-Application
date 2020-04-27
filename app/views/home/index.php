@@ -14,15 +14,16 @@
      <div class='container'>
        <h1>Welcome to Mother Nature's Luxuries</h1>
         <a href='/login/logout'>Logout</a><br />
-         <a href='/home/create' class='btn btn-success'>Add a Product</a>
          <a href='/home/modifyPassword' class='btn btn-success'>Modify Password</a>
          <a href='/profile/edit' class='btn btn-success'>Modify Profile</a>
          <a href='/profile/detail' class='btn btn-success'>View Profile Information</a>
          <a href='/profile/index' class='btn btn-success'>View Seller Contacts</a>
-         <a href='/news/index' class='btn btn-success'>View Company News Postings</a><br /><br />
-         <a href='/home/search' class='btn btn-success'>Browse All Products</a><br />
+         <a href='/news/index' class='btn btn-success'>View Company News Postings</a>
+         <a href='/home/search' class='btn btn-success'>Browse All Products</a><br /><br />
+         <a href='/book/index' class='btn btn-success'>Browse All Books</a><br />
          <br />
           <h2>My Products</h2>
+          <a href='/home/create' class='btn btn-success'>Add a Product</a>
           <table class='table table-striped'>
           <tr><td>Name</td><td>Picture</td><td>Details</td><td>Price</td><td>Quantity</td><td>Category</td><td>Profit</td></tr>
            <?php
@@ -40,6 +41,23 @@
                }
            ?>
         </table>
+         <br />
+         <h2>My Books</h2>
+         <a href='/book/create' class='btn btn-success'>Add a Book</a>
+         <table class='table table-striped'>
+             <tr><td>Name</td><td>Picture</td><td>Description</td><td>Price</td><td>Quantity</td></tr>
+             <?php
+             foreach($data['products'] as $product)
+             {
+                 echo "<tr><td>$product->product_name</td><td>$product->product_picture</td>
+                 <td>$product->product_details</td><td>$product->product_price</td>
+                 <td>$product->product_quantity</td><td>$product->product_category</td><td>
+                 <a href='/home/edit/$product->product_id' class='btn btn-success'>Edit</a> 
+                 <a href='/home/delete/$product->product_id' class='btn btn-danger'>Delete</a>
+                 </td></tr>";
+             }
+             ?>
+         </table>
      </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

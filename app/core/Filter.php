@@ -18,6 +18,21 @@ class Filter extends Controller
         }
     }
 
+    public static function BookOwner($params)
+    {
+        $theBook = self::model('Book')->find($params[0]);
+
+        if($theBook->teacher_id != $_SESSION['profile_id'])
+        {
+            return '/book/index';
+        }
+
+        else
+        {
+            return false;
+        }
+    }
+
     public static function LoginFilter($params)
     {
         if($_SESSION['user_id'] == null)

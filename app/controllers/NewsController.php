@@ -20,13 +20,13 @@ class NewsController extends Controller
     {
         if(isset($_POST['action']))
         {
-            $newProduct = $this->model('News');
-            $newProduct->news_topic = $_POST['news_topic'];
-            $newProduct->news_article = $_POST['news_article'];
-            $newProduct->news_picture = $_POST['news_picture'];
-            $newProduct->news_timestamp = $_POST['news_timestamp'];
-            $newProduct->seller_id= $_SESSION['profile_id'];
-            $newProduct->create();
+            $newNews = $this->model('News');
+            $newNews->news_topic = $_POST['news_topic'];
+            $newNews->news_article = $_POST['news_article'];
+            $newNews->news_picture = $_POST['news_picture'];
+            $newNews->news_timestamp = $_POST['news_timestamp'];
+            $newNews->seller_id= $_SESSION['profile_id'];
+            $newNews->create();
             header('location:/news/index');
         }
 

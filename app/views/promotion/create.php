@@ -19,7 +19,7 @@
            </div>
              <input type='submit' name='action' value='Create' class='btn btn-primary' />
             <?php
-              echo "<a href='/promotion/index' class='btn btn-secondary'>Cancel</a>";
+              echo "<a href='/promotion/index/$data->product_id' class='btn btn-secondary'>Cancel</a>";
             ?>
         </form>
       </div>

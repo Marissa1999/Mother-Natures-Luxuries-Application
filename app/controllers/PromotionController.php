@@ -26,7 +26,7 @@ class PromotionController extends Controller
             $newPromotion->seller_id= $_SESSION['profile_id'];
             $newPromotion->product_id= $_SESSION['product_id'];
             $newPromotion->create();
-            header('location:/promotion/index');
+            header('location:/promotion/index/'.$_SESSION['product_id']);
         }
 
         else
@@ -42,7 +42,7 @@ class PromotionController extends Controller
         if(isset($_POST['action']))
         {
             $thePromotion->delete();
-            header('location:/promotion/index');
+            header('location:/promotion/index/'.$_SESSION['product_id']);
         }
 
         else
