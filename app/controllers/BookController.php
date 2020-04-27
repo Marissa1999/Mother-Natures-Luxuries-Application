@@ -55,20 +55,18 @@ class BookController extends Controller
 
         if(isset($_POST['action']))
         {
-            $theBook = $this->model('Product');
             $theBook->book_name = $_POST['book_name'];
             $theBook->book_picture = $_POST['book_picture'];
             $theBook->book_description = $_POST['book_description'];
             $theBook->book_price = $_POST['book_price'];
             $theBook->book_quantity = $_POST['book_quantity'];
-            $theBook->teacher_id= $_SESSION['profile_id'];
             $theBook->update();
             header('location:/home/index');
         }
 
         else
         {
-            $this->view('book/edit');
+            $this->view('book/edit', $theBook);
         }
     }
 

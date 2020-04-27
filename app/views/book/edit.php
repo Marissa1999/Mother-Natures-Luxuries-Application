@@ -8,18 +8,18 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Edit the Product</title>
+    <title>Edit the Book</title>
   </head>
   <body>
      <div class='container'>
-       <h1>Edit the Product</h1>
+       <h1>Edit the Book</h1>
        <form action='' method='post'>
         <div class='form-group'>
-            <label>Book Name: <input type='text' name='product_name' value='<?=$data->book_name ?>' class='form-control' /></label>
-            <label>Book Picture: <input type='text' name='product_picture' value='<?=$data->book_picture ?>' class='form-control' /></label>
-            <label>Book Description: <input type='text' name='product_details' value='<?=$data->book_description ?>' class='form-control' /></label>
-            <label>Book Price: <input type='text' name='product_price' value='<?=$data->book_price ?>' class='form-control' /></label>
-            <label>Book Quantity: <input type='text' name='product_quantity' value='<?=$data->book_quantity ?>' class='form-control' /></label>
+            <label>Book Name: <input type='text' name='book_name' value='<?=$data->book_name ?>' class='form-control' /></label>
+            <label>Book Picture: <input type='text' name='book_picture' value='<?=$data->book_picture ?>' class='form-control' /></label>
+            <label>Book Description: <input type='text' name='book_description' value='<?=$data->book_description ?>' class='form-control' /></label>
+            <label>Book Price: <input type='text' name='book_price' value='<?=$data->book_price ?>' class='form-control' /></label>
+            <label>Book Quantity: <input type='text' name='book_quantity' value='<?=$data->book_quantity ?>' class='form-control' /></label>
            </div>
              <input type='submit' name='action' value='Save Changes' class='btn btn-success' />
              <a href='/home/index' class='btn btn-secondary'>Cancel</a>
