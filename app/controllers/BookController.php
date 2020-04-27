@@ -28,7 +28,7 @@ class BookController extends Controller
             $newBook->book_quantity = $_POST['book_quantity'];
             $newBook->teacher_id= $_SESSION['profile_id'];
             $newBook->create();
-            header('location:/book/index');
+            header('location:/home/index');
         }
 
         else
@@ -55,7 +55,7 @@ class BookController extends Controller
             $theBook->book_quantity = $_POST['book_quantity'];
             $theBook->teacher_id= $_SESSION['profile_id'];
             $theBook->update();
-            header('location:/book/index');
+            header('location:/home/index');
         }
 
         else
@@ -71,7 +71,7 @@ class BookController extends Controller
         if(isset($_POST['action']))
         {
             $theBook->delete();
-            header('location:/book/index');
+            header('location:/home/index');
         }
 
         else

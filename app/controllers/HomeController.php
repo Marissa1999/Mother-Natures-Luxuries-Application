@@ -12,7 +12,8 @@ class HomeController extends Controller
         $theProfile = $this->model('Profile')->findProfile($user_id);
         $_SESSION['profile_id'] = $theProfile->profile_id;
 		$products = $this->model('Product')->getProductsForSeller($_SESSION['profile_id']);
-		$this->view('home/index', ['products'=>$products]);
+        $books = $this->model('Book')->getBooksForTeacher($_SESSION['profile_id']);
+		$this->view('home/index', ['products'=>$products, 'books'=>$books]);
 	}
 
 	public function create()

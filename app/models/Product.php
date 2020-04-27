@@ -131,7 +131,7 @@ class Product extends Model
     {
         $SQL = 'DELETE FROM Product WHERE product_id = :product_id AND seller_id = :seller_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['product_id'=>$this->product_id, 'seller_id'=>$this->seller_id ]);
+        $stmt->execute(['product_id'=>$this->product_id, 'seller_id'=>$this->seller_id]);
         return $stmt->rowCount();
     }
 }

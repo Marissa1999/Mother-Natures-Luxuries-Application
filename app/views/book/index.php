@@ -14,7 +14,6 @@
 <div class='container'>
     <h1>Book List</h1>
     <a href='/login/logout'>Logout</a><br />
-    <a href='/book/create' class='btn btn-success'>Add a Book</a>
     <table class='table table-striped'>
         <tr><td>First Name</td><td>Last Name</td><td>Book Name</td><td>Description</td><td>Picture</td><td>Price</td><td>Quantity</td></tr>
         <?php
@@ -26,9 +25,7 @@
                 {
                     echo "<tr><td>$profile->first_name</td><td>$profile->last_name</td></td>";
                     echo "<td>$book->book_name</td><td>$book->book_description</td><td>$book->book_picture</td>
-                    <td>$book->book_price</td><td>$book->book_quantity</td><td>  
-                    <a href='/book/edit/$book->book_id' class='btn btn-success'>Edit</a> 
-                    <a href='/book/delete/$book->book_id' class='btn btn-danger'>Delete</a>   
+                    <td>$book->book_price</td><td>$book->book_quantity</td><td>
                     </td></tr>";
                     break;
                 }

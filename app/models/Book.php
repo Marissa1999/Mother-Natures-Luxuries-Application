@@ -17,6 +17,15 @@ class Book extends Model
         return $stmt->fetchAll();
     }
 
+    public function getBooksForTeacher($teacher_id)
+    {
+        $SQL = 'SELECT * FROM Book WHERE teacher_id = :teacher_id';
+        $stmt = self::$_connection->prepare($SQL);
+        $stmt->execute(['teacher_id'=>$teacher_id]);
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Book');
+        return $stmt->fetchAll();
+    }
+
     public function getTeachersAndBooks()
     {
         $SQL = 'SELECT * FROM Book book

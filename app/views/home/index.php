@@ -35,8 +35,8 @@
                  <td>$product->product_quantity</td><td>$product->product_category</td>
                  <td>$total</td><td>
                  <a href='/promotion/index/$product->product_id' class='btn btn-info'>Promotions</a> 
-                 <a href='/home/edit/$product->product_id' class='btn btn-success'>Edit</a> 
-                 <a href='/home/delete/$product->product_id' class='btn btn-danger'>Delete</a>
+                 <a href='/home/edit/$product->product_id' class='btn btn-success'>Edit Product</a> 
+                 <a href='/home/delete/$product->product_id' class='btn btn-danger'>Delete Product</a>
                  </td></tr>";
                }
            ?>
@@ -47,13 +47,13 @@
          <table class='table table-striped'>
              <tr><td>Name</td><td>Picture</td><td>Description</td><td>Price</td><td>Quantity</td></tr>
              <?php
-             foreach($data['products'] as $product)
+             foreach($data['books'] as $book)
              {
-                 echo "<tr><td>$product->product_name</td><td>$product->product_picture</td>
-                 <td>$product->product_details</td><td>$product->product_price</td>
-                 <td>$product->product_quantity</td><td>$product->product_category</td><td>
-                 <a href='/home/edit/$product->product_id' class='btn btn-success'>Edit</a> 
-                 <a href='/home/delete/$product->product_id' class='btn btn-danger'>Delete</a>
+                 echo "<tr><td>$book->book_name</td><td>$book->book_picture</td>
+                 <td>$book->book_description</td><td>$book->book_price</td>
+                 <td>$book->book_quantity</td><td>
+                 <a href='/book/edit/$book->book_id' class='btn btn-success'>Edit Book</a> 
+                 <a href='/book/delete/$book->book_id' class='btn btn-danger'>Delete Book</a>
                  </td></tr>";
              }
              ?>
