@@ -51,11 +51,28 @@ class Message extends Model
                        message_receiver = :message_receiver,
                        message_text = :message_text, 
                        message_timestamp = :message_timestamp,
+                       message_read = 0
+                 WHERE message_id = :message_id AND message_receiver = :message_receiver';
+        $stmt = self::$_connection->prepare($SQL);
+        $stmt->execute(['message_id'=>$this->message_id, 'message_sender'=>$this->message_sender,
+                        'message_receiver'=>$this->message_receiver, 'message_text'=>$this->message_text,
+                        'message_timestamp'=>$this->message_timestamp, 'message_read'=>$this->message_read]);
+        return $stmt->rowCount();
+    }
+
+    public function updateRead()
+    {
+        $SQL = 'UPDATE Message
+                   SET message_sender = :message_sender,
+                       message_receiver = :message_receiver,
+                       message_text = :message_text, 
+                       message_timestamp = :message_timestamp,
                        message_read = 1
                  WHERE message_id = :message_id AND message_receiver = :message_receiver';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['message_id'=>$this->message_id, 'message_receiver'=>$this->message_receiver,
-                        'message_read'=>$this->message_read]);
+        $stmt->execute(['message_id'=>$this->message_id, 'message_sender'=>$this->message_sender,
+                        'message_receiver'=>$this->message_receiver, 'message_text'=>$this->message_text,
+                        'message_timestamp'=>$this->message_timestamp, 'message_read'=>$this->message_read]);
         return $stmt->rowCount();
     }
 

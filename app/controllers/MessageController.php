@@ -46,6 +46,15 @@ class MessageController extends Controller
         }
     }
 
+    public function detail($message_id)
+    {
+        $theMessage = $this->model('Message')->find($message_id);
+        $theMessage->message_read = $_POST['message_read'];
+        $theMessage->updateRead();
+        header('location:/message/viewMessages/'.$_SESSION['message_receiver']);
+        $this->view('message/detail', $theMessage);
+    }
+
     public function edit($message_id)
     {
         $theMessage = $this->model('Message')->find($message_id);

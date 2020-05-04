@@ -16,14 +16,15 @@
     <a href='/login/logout'>Logout</a><br />
     <a href='/message/create' class='btn btn-success'>Send a Message to User</a>
     <table class='table table-striped'>
-        <tr><td>Message Text</td><td>Message Timestamp</td><td>Read Messages</td></tr>
+        <tr><td>Message Text</td><td>Message Timestamp</td><td>Read Messages</td><td>Actions</td></tr>
         <?php
         foreach($data['messages'] as $message)
         {
             echo "<tr><td>$message->message_text</td><td>$message->message_timestamp</td>
                         <td>$message->message_read</td>
-                        <td><a href='/message/edit/$message->message_id' class='btn btn-success'>Mark as Read</a> 
-                        <td><a href='/message/delete/$message->message_id' class='btn btn-danger'>Send Message</a> 
+                        <td><a href='/message/edit/$message->message_id' class='btn btn-success'>Edit Message</a>
+                        <a href='/message/detail/$message->message_id' class='btn btn-primary'>Mark as Read</a>
+                        <a href='/message/delete/$message->message_id' class='btn btn-danger'>Delete Message</a> 
                  </td></tr>";
         }
         ?>

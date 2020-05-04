@@ -19,7 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="More commits." />
+    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="More commits.">
+      <change afterPath="$PROJECT_DIR$/app/views/message/detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/MessageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/MessageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Message.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/message/viewMessages.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/message/viewMessages.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588602971973</updated>
-      <workItem from="1588602976752" duration="12671000" />
+      <workItem from="1588602976752" duration="15388000" />
     </task>
     <task id="LOCAL-00001" summary="More commits.">
       <created>1588609526338</created>
@@ -80,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588616537067</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="More commits.">
+      <created>1588616800601</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588616800601</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,9 +119,9 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="483" y="270" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.920@0.0.1440.920" timestamp="1588603625472" />
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1588616549557">
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1588616807688">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1588616549557" />
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1588616807688" />
   </component>
 </project>
