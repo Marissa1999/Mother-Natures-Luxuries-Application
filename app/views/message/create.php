@@ -8,21 +8,19 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Add a Book</title>
+    <title>Send a Message</title>
   </head>
   <body>
      <div class='container'>
-      <h1>Add a Book</h1>
+      <h1>Send a Message</h1>
         <form action='' method='post'>
           <div class='form-group'>
-              <label>Book Name: <input type='text' name='book_name' class='form-control' /></label>
-              <label>Book Picture: <input type='text' name='book_picture' class='form-control' /></label>
-              <label>Book Description: <input type='text' name='book_description' class='form-control' /></label>
-              <label>Book Price: <input type='text' name='book_price' class='form-control' /></label>
-              <label>Book Quantity: <input type='text' name='book_quantity' class='form-control' /></label>
+              <label>Message Text: <input type='text' name='message_text' class='form-control' /></label>
            </div>
              <input type='submit' name='action' value='Create' class='btn btn-primary' />
-             <a href='/home/index' class='btn btn-secondary'>Cancel</a>
+             <?php
+                echo "<a href='/message/viewMessages/$data->message_receiver' class='btn btn-secondary'>Cancel</a>";
+             ?>
         </form>
       </div>
 

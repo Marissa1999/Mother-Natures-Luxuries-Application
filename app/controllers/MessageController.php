@@ -22,7 +22,7 @@ class MessageController extends Controller
         $theProfile = $this->model('Profile')->findProfile($user_id);
         $_SESSION['message_sender'] = $theProfile->profile_id;
         $_SESSION['message_receiver'] = $profile_id;
-        $messages = $this->model('Message')->getMessageReceiver($_SESSION['message_receiver']);
+        $messages = $this->model('Message')->getMessages($_SESSION['message_sender'], $_SESSION['message_receiver']);
         $this->view('message/viewMessages', ['messages'=>$messages]);
     }
 
@@ -30,57 +30,54 @@ class MessageController extends Controller
     {
         if(isset($_POST['action']))
         {
-            $newBook = $this->model('Book');
-            $newBook->book_name = $_POST['book_name'];
-            $newBook->book_picture = $_POST['book_picture'];
-            $newBook->book_description = $_POST['book_description'];
-            $newBook->book_price = $_POST['book_price'];
-            $newBook->book_quantity = $_POST['book_quantity'];
-            $newBook->teacher_id= $_SESSION['profile_id'];
-            $newBook->create();
-            header('location:/home/index');
+            $newMessage = $this->model('Message');
+            $newMessage->message_sender = $_SESSION['message_sender'];
+            $newMessage->message_receiver = $_SESSION['message_receiver'];
+            $newMessage->message_text = $_POST['message_text'];
+            $newMessage->message_timestamp = $_POST['message_timestamp'];
+            $newMessage->message_read = $_POST['message_read'];
+            $newMessage->create();
+            header('location:/message/viewMessages/'.$_SESSION['message_receiver']);
         }
 
         else
         {
-            $this->view('book/create');
+            $this->view('message/create');
         }
     }
 
-    public function edit($book_id)
+    public function edit($message_id)
     {
-        $theBook = $this->model('Book')->find($book_id);
+        $theMessage = $this->model('Message')->find($message_id);
 
         if(isset($_POST['action']))
         {
-            $theBook->book_name = $_POST['book_name'];
-            $theBook->book_picture = $_POST['book_picture'];
-            $theBook->book_description = $_POST['book_description'];
-            $theBook->book_price = $_POST['book_price'];
-            $theBook->book_quantity = $_POST['book_quantity'];
-            $theBook->update();
-            header('location:/home/index');
+            $theMessage->message_text = $_POST['message_text'];
+            $theMessage->message_timestamp = $_POST['message_timestamp'];
+            $theMessage->message_read = $_POST['message_read'];
+            $theMessage->update();
+            header('location:/message/viewMessages/'.$_SESSION['message_receiver']);
         }
 
         else
         {
-            $this->view('book/edit', $theBook);
+            $this->view('message/edit', $theMessage);
         }
     }
 
-    public function delete($book_id)
+    public function delete($message_id)
     {
-        $theBook = $this->model('Book')->find($book_id);
+        $theMessage = $this->model('Message')->find($message_id);
 
         if(isset($_POST['action']))
         {
-            $theBook->delete();
-            header('location:/home/index');
+            $theMessage->delete();
+            header('location:/message/viewMessages/'.$_SESSION['message_receiver']);
         }
 
         else
         {
-            $this->view('book/delete', $theBook);
+            $this->view('message/delete', $theMessage);
         }
     }
 }
