@@ -22,8 +22,9 @@ class MessageController extends Controller
         $theProfile = $this->model('Profile')->findProfile($user_id);
         $_SESSION['message_sender'] = $theProfile->profile_id;
         $_SESSION['message_receiver'] = $profile_id;
-        $messages = $this->model('Message')->getMessages($_SESSION['message_sender'], $_SESSION['message_receiver']);
-        $this->view('message/viewMessages', ['messages'=>$messages]);
+        $profiles = $this->model('Message')->getSendersAndMessages();
+        $messages = $this->model('Message')->getMessages($_SESSION['message_receiver']);
+        $this->view('message/viewMessages', ['messages'=>$messages, 'profiles'=>$profiles]);
     }
 
     public function create()
@@ -35,23 +36,23 @@ class MessageController extends Controller
             $newMessage->message_receiver = $_SESSION['message_receiver'];
             $newMessage->message_text = $_POST['message_text'];
             $newMessage->message_timestamp = $_POST['message_timestamp'];
-            $newMessage->message_read = $_POST['message_read'];
+            $newMessage->message_read = false;
             $newMessage->create();
             header('location:/message/viewMessages/'.$_SESSION['message_receiver']);
         }
 
         else
         {
-            $this->view('message/create');
+            $this->view('message/create', $_SESSION['message_receiver']);
         }
     }
 
     public function detail($message_id)
     {
         $theMessage = $this->model('Message')->find($message_id);
-        $theMessage->message_read = $_POST['message_read'];
+        $theMessage->message_read = true;
         $theMessage->updateRead();
-        header('location:/message/viewMessages/' . $_SESSION['message_receiver']);
+        header('location:/message/viewMessages/'. $_SESSION['message_receiver']);
         $this->view('message/detail', $theMessage);
     }
 
@@ -63,7 +64,7 @@ class MessageController extends Controller
         {
             $theMessage->message_text = $_POST['message_text'];
             $theMessage->message_timestamp = $_POST['message_timestamp'];
-            $theMessage->message_read = $_POST['message_read'];
+            $theMessage->message_read = false;
             $theMessage->update();
             header('location:/message/viewMessages/'.$_SESSION['message_receiver']);
         }

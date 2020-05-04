@@ -11,15 +11,15 @@ class WishListController extends Controller
         $user_id = (string) $_SESSION['user_id'];
         $theProfile = $this->model('Profile')->findProfile($user_id);
         $_SESSION['profile_id'] = $theProfile->profile_id;
-        $payments = $this->model('Payment')->getPaymentForCustomer($_SESSION['profile_id']);
-        $this->view('payment/index', ['payments'=>$payments]);
+        $wishes = $this->model('WishList')->getPaymentForCustomer($_SESSION['profile_id']);
+        $this->view('wishlist/index', ['wishes'=>$wishes]);
     }
 
     public function create($product_id)
     {
         if(isset($_POST['action']))
         {
-            $newBook = $this->model('Book');
+            $newBook = $this->model('WishList');
             $newBook->book_name = $_POST['book_name'];
             $newBook->book_picture = $_POST['book_picture'];
             $newBook->book_description = $_POST['book_description'];

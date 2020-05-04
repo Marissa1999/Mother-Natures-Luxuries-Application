@@ -19,7 +19,7 @@
            </div>
              <input type='submit' name='action' value='Create' class='btn btn-primary' />
              <?php
-                echo "<a href='/message/viewMessages/$data->message_receiver' class='btn btn-secondary'>Cancel</a>";
+                echo "<a href='/message/viewMessages/$data' class='btn btn-secondary'>Cancel</a>";
              ?>
         </form>
       </div>

@@ -15,11 +15,22 @@ class Message extends Model
         return $stmt->fetchAll();
     }
 
-    public function getMessages($message_sender, $message_receiver)
+    public function getMessages($message_receiver)
     {
-        $SQL = 'SELECT * FROM Message WHERE message_sender = :message_sender AND message_receiver = :message_receiver';
+        $SQL = 'SELECT * FROM Message WHERE message_receiver = :message_receiver';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['message_sender'=>$message_sender, 'message_receiver'=>$message_receiver]);
+        $stmt->execute(['message_receiver'=>$message_receiver]);
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Message');
+        return $stmt->fetchAll();
+    }
+
+    public function getSendersAndMessages()
+    {
+        $SQL = 'SELECT * FROM Message message
+                   INNER JOIN Profile profile
+                           ON profile.profile_id = message.message_sender';
+        $stmt = self::$_connection->prepare($SQL);
+        $stmt->execute();
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'Message');
         return $stmt->fetchAll();
     }
@@ -27,11 +38,11 @@ class Message extends Model
     public function create()
     {
         $SQL = 'INSERT INTO Message(message_sender, message_receiver, message_text, message_timestamp, message_read) 
-                     VALUES(:message_sender, :message_receiver, :message_text, :message_timestamp, 0) ';
+                     VALUES(:message_sender, :message_receiver, :message_text, :message_timestamp, :message_read)';
         $stmt = self::$_connection->prepare($SQL);
         $stmt->execute(['message_sender'=>$this->message_sender, 'message_receiver'=>$this->message_receiver,
-            'message_text'=>$this->message_text, 'message_timestamp'=>$this->message_timestamp,
-            'message_read'=>$this->message_read]);
+                        'message_text'=>$this->message_text, 'message_timestamp'=>$this->message_timestamp,
+                        'message_read'=>$this->message_read]);
         return $stmt->rowCount();
     }
 
@@ -51,7 +62,7 @@ class Message extends Model
                        message_receiver = :message_receiver,
                        message_text = :message_text, 
                        message_timestamp = :message_timestamp,
-                       message_read = 0
+                       message_read = :message_read
                  WHERE message_id = :message_id AND message_receiver = :message_receiver';
         $stmt = self::$_connection->prepare($SQL);
         $stmt->execute(['message_id'=>$this->message_id, 'message_sender'=>$this->message_sender,
@@ -67,7 +78,7 @@ class Message extends Model
                        message_receiver = :message_receiver,
                        message_text = :message_text, 
                        message_timestamp = :message_timestamp,
-                       message_read = 1
+                       message_read = :message_read
                  WHERE message_id = :message_id AND message_receiver = :message_receiver';
         $stmt = self::$_connection->prepare($SQL);
         $stmt->execute(['message_id'=>$this->message_id, 'message_sender'=>$this->message_sender,
