@@ -11,6 +11,15 @@ class Profile extends Model
     var $gender;
     var $user_type;
 
+    public function get()
+    {
+        $SQL = 'SELECT * FROM Profile';
+        $stmt = self::$_connection->prepare($SQL);
+        $stmt->execute();
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Profile');
+        return $stmt->fetchAll();
+    }
+
     public function getSellers($user_type)
     {
         $SQL = 'SELECT * FROM Profile WHERE user_type LIKE "Seller"';

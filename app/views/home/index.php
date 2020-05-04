@@ -21,7 +21,8 @@
          <a href='/news/index' class='btn btn-success'>View Company News Postings</a>
          <a href='/payment/index' class='btn btn-success'>View Payment Information</a><br /><br />
          <a href='/home/search' class='btn btn-success'>Browse All Products</a>
-         <a href='/book/search' class='btn btn-success'>Browse All Books</a><br />
+         <a href='/book/search' class='btn btn-success'>Browse All Books</a>
+         <a href='/message/index' class='btn btn-success'>Message Users</a><br />
          <br />
           <h2>My Products</h2>
           <a href='/home/create' class='btn btn-success'>Add a Product</a>
