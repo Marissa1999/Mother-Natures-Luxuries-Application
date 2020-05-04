@@ -11,28 +11,28 @@ class WishListController extends Controller
         $user_id = (string) $_SESSION['user_id'];
         $theProfile = $this->model('Profile')->findProfile($user_id);
         $_SESSION['profile_id'] = $theProfile->profile_id;
-        $wishes = $this->model('WishList')->getPaymentForCustomer($_SESSION['profile_id']);
+        $wishes = $this->model('WishList')->getWishesForCustomer($_SESSION['profile_id']);
         $this->view('wishlist/index', ['wishes'=>$wishes]);
     }
 
-    public function create($product_id)
+    public function create()
     {
         if(isset($_POST['action']))
         {
-            $newBook = $this->model('WishList');
-            $newBook->book_name = $_POST['book_name'];
-            $newBook->book_picture = $_POST['book_picture'];
-            $newBook->book_description = $_POST['book_description'];
-            $newBook->book_price = $_POST['book_price'];
-            $newBook->book_quantity = $_POST['book_quantity'];
-            $newBook->teacher_id= $_SESSION['profile_id'];
-            $newBook->create();
-            header('location:/home/index');
+            $newWish = $this->model('WishList');
+            $product_id = (string) $_SESSION['product_id'];
+            $theProduct = $this->model('Product')->find($product_id);
+            $_SESSION['product_id'] = $theProduct->product_id;
+
+            $newWish->customer_id= $_SESSION['profile_id'];
+            $newWish->product_id= $_SESSION['product_id'];
+            $newWish->create();
+            header('location:/wishlist/index');
         }
 
         else
         {
-            $this->view('book/create');
+            $this->view('wishlist/create');
         }
     }
 

@@ -8,19 +8,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Add a Payment Card</title>
+    <title>Add Product to Wish List?</title>
   </head>
   <body>
      <div class='container'>
-      <h1>Add a Payment Card</h1>
+      <h1>Add Product to Wish List?</h1>
         <form action='' method='post'>
           <div class='form-group'>
-              <label>Card Number: <input type='text' name='card_number' class='form-control' /></label>
-              <label>Card Company: <input type='text' name='card_company' class='form-control' /></label>
-              <label>Expiration Date: <input type='text' name='expiration_date' class='form-control' /></label>
-              <label>Card CVC: <input type='text' name='card_cvc' class='form-control' /></label>
            </div>
              <input type='submit' name='action' value='Create' class='btn btn-primary' />
+            <a href='/home/search' class='btn btn-secondary'>Cancel</a>
         </form>
       </div>
 

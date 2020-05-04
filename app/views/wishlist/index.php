@@ -8,13 +8,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>List of Payment Cards</title>
+    <title>List of Wishes</title>
   </head>
   <body>
      <div class='container'>
-       <h1>List of Payment Cards</h1>
+       <h1>List of Wishes</h1>
         <a href='/login/logout'>Logout</a><br />
-         <a href='/payment/create' class='btn btn-success'>Add a Payment Card</a>
         <table class='table table-striped'>
           <tr><td>Card Number</td><td>Card Company</td><td>Expiration Date</td><td>Card CVC</td></tr>
            <?php

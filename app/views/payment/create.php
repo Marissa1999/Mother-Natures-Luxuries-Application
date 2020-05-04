@@ -21,6 +21,7 @@
               <label>Card CVC: <input type='text' name='card_cvc' class='form-control' /></label>
            </div>
              <input type='submit' name='action' value='Create' class='btn btn-primary' />
+            <a href='/payment/index' class='btn btn-secondary'>Cancel</a>
         </form>
       </div>
 
