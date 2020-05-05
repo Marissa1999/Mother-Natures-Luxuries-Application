@@ -16,25 +16,16 @@
         <form action='' method='post'>
           <div class='form_group'>
               <?php
-                       if($data->seller_id == $data->profile_id)
-                       {
-                          echo " <dl>
-                                    <dt>First Name</dt>
-                                    <dd><?=$data->first_name ?></dd>
-                                    <dt>Last Name</dt>
-                                    <dd><?=$data->last_name ?></dd>
-                                    <dt>Product Name</dt>
-                                    <dd><?=$data->product_name ?></dd>
-                                    <dt>Product Picture</dt>
-                                    <dd><?=$data->product_picture ?></dd>
-                                    <dt>Product Details</dt>
-                                    <dd><?=$data->product_details ?></dd>
-                                    <dt>Product Category</dt>
-                                    <dd><?=$data->product_category ?></dd>
-                                    <dt>Product Price</dt>
-                                    <dd><?=$data->product_price ?></dd>
-                               </dl>";
-                      }
+                  $product = $this->model('Product')->find($_SESSION['product_id']);
+                  $profile = $this->model('Profile')->find($product->seller_id);
+
+                  echo "<label>First Name: <input type='text' name='first_name' value='$profile->first_name' disabled class='form-control' /></label>
+                        <label>Last Name: <input type='text' name='last_name' value='$profile->last_name' disabled class='form-control' /></label>
+                        <label>Product Name: <input type='text' name='product_name' value='$product->product_name' disabled class='form-control' /></label>
+                        <label>Product Picture: <input type='text' name='product_picture' value='$product->product_picture' disabled class='form-control' /></label>
+                        <label>Product Details: <input type='text' name='product_details' value='$product->product_details' disabled class='form-control' /></label>
+                        <label>Product Category: <input type='text' name='product_category' value='$product->product_category' disabled class='form-control' /></label>
+                        <label>Product Price: <input type='text' name='product_price' value='$product->product_price' disabled class='form-control' /></label>";
               ?>
            </div>
              <input type='submit' name='action' value='Create' class='btn btn-primary' />
