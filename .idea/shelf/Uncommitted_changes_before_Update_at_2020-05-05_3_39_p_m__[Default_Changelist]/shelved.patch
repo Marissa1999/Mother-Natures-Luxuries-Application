@@ -1,0 +1,79 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"BranchesTreeState\">\r\n    <expand>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n    </expand>\r\n    <select />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"50c03b57-d653-4eb6-91ed-3d548728ee6c\" name=\"Default Changelist\" comment=\"More Review commits.\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/app/controllers/WishListController.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/controllers/WishListController.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/app/views/home/search.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/views/home/search.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/app/views/wishlist/create.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/views/wishlist/create.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/app/views/wishlist/delete.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/views/wishlist/delete.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/app/views/wishlist/index.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/views/wishlist/index.php\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1bRlpmu7M5SoQN0lQ2BFGUAOepO\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/app/views/review\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\xampp\\htdocs\\app\\views\\review\" />\r\n      <recent name=\"C:\\xampp\\htdocs\\app\\views\\wishlist\" />\r\n      <recent name=\"C:\\xampp\\htdocs\\app\\views\\message\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SvnConfiguration\">\r\n    <configuration />\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"50c03b57-d653-4eb6-91ed-3d548728ee6c\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1588602971973</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1588602971973</updated>\r\n      <workItem from=\"1588602976752\" duration=\"42274000\" />\r\n      <workItem from=\"1588687971141\" duration=\"7497000\" />\r\n      <workItem from=\"1588697642551\" duration=\"8550000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"More commits.\">\r\n      <created>1588609526338</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1588609526339</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"More commits.\">\r\n      <created>1588615018020</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1588615018020</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"More commits.\">\r\n      <created>1588616537067</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1588616537067</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"More commits.\">\r\n      <created>1588616800601</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1588616800601</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Fixed reading messages.\">\r\n      <created>1588619618434</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1588619618434</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Added WishList files.\">\r\n      <created>1588626368220</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1588626368220</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"More commits.\">\r\n      <created>1588632780425</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1588632780425</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"More WishList commits.\">\r\n      <created>1588635993969</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1588635993969</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"More WishList commits.\">\r\n      <created>1588640870617</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1588640870617</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"More WishList commits.\">\r\n      <created>1588650089352</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1588650089352</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"More Review commits.\">\r\n      <created>1588694498510</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1588694498510</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"More Review commits.\">\r\n      <created>1588703632781</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1588703632781</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"13\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"2\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Fixed reading messages.\" />\r\n    <MESSAGE value=\"Added WishList files.\" />\r\n    <MESSAGE value=\"More commits.\" />\r\n    <MESSAGE value=\"More WishList commits.\" />\r\n    <MESSAGE value=\"More Review commits.\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"More Review commits.\" />\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"483\" y=\"270\" key=\"#com.intellij.fileTypes.FileTypeChooser\" timestamp=\"1588689083677\">\r\n      <screen x=\"0\" y=\"0\" width=\"1440\" height=\"920\" />\r\n    </state>\r\n    <state x=\"483\" y=\"270\" key=\"#com.intellij.fileTypes.FileTypeChooser/0.0.1440.920@0.0.1440.920\" timestamp=\"1588689083677\" />\r\n    <state x=\"313\" y=\"196\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1588704081949\">\r\n      <screen x=\"0\" y=\"0\" width=\"1440\" height=\"920\" />\r\n    </state>\r\n    <state x=\"313\" y=\"196\" key=\"Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920\" timestamp=\"1588704081949\" />\r\n    <state x=\"532\" y=\"377\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2\" timestamp=\"1588705505976\">\r\n      <screen x=\"0\" y=\"0\" width=\"1440\" height=\"920\" />\r\n    </state>\r\n    <state x=\"532\" y=\"377\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920\" timestamp=\"1588705505976\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 3b78375f4a225087cc09ee8e2d800639f53c52cc)
++++ .idea/workspace.xml	(date 1588707470642)
+@@ -19,13 +19,8 @@
+     <select />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="More Review commits.">
++    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="More WishList commits.">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app/controllers/WishListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/WishListController.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app/views/home/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/search.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app/views/wishlist/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlist/create.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app/views/wishlist/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlist/delete.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app/views/wishlist/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlist/index.php" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -68,7 +63,7 @@
+       <updated>1588602971973</updated>
+       <workItem from="1588602976752" duration="42274000" />
+       <workItem from="1588687971141" duration="7497000" />
+-      <workItem from="1588697642551" duration="8550000" />
++      <workItem from="1588697642551" duration="8720000" />
+     </task>
+     <task id="LOCAL-00001" summary="More commits.">
+       <created>1588609526338</created>
+@@ -154,7 +149,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1588703632781</updated>
+     </task>
+-    <option name="localTasksCounter" value="13" />
++    <task id="LOCAL-00013" summary="More WishList commits.">
++      <created>1588707333202</created>
++      <option name="number" value="00013" />
++      <option name="presentableId" value="LOCAL-00013" />
++      <option name="project" value="LOCAL" />
++      <updated>1588707333202</updated>
++    </task>
++    <option name="localTasksCounter" value="14" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -176,22 +178,22 @@
+     <MESSAGE value="Fixed reading messages." />
+     <MESSAGE value="Added WishList files." />
+     <MESSAGE value="More commits." />
+-    <MESSAGE value="More WishList commits." />
+     <MESSAGE value="More Review commits." />
+-    <option name="LAST_COMMIT_MESSAGE" value="More Review commits." />
++    <MESSAGE value="More WishList commits." />
++    <option name="LAST_COMMIT_MESSAGE" value="More WishList commits." />
+   </component>
+   <component name="WindowStateProjectService">
+     <state x="483" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588689083677">
+       <screen x="0" y="0" width="1440" height="920" />
+     </state>
+     <state x="483" y="270" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.920@0.0.1440.920" timestamp="1588689083677" />
+-    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1588704081949">
++    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1588707366212">
+       <screen x="0" y="0" width="1440" height="920" />
+     </state>
+-    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1588704081949" />
+-    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588705505976">
++    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1588707366212" />
++    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588707320139">
+       <screen x="0" y="0" width="1440" height="920" />
+     </state>
+-    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920" timestamp="1588705505976" />
++    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920" timestamp="1588707320139" />
+   </component>
+ </project>
+\ No newline at end of file

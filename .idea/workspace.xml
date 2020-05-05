@@ -19,13 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="More Review commits.">
+    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="More WishList commits.">
+      <change afterPath="$PROJECT_DIR$/app/controllers/OrderController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/Order.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/WishListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/WishListController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/wishlist/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlist/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/wishlist/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlist/delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/wishlist/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlist/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +65,7 @@
       <updated>1588602971973</updated>
       <workItem from="1588602976752" duration="42274000" />
       <workItem from="1588687971141" duration="7497000" />
-      <workItem from="1588697642551" duration="8550000" />
+      <workItem from="1588697642551" duration="10477000" />
     </task>
     <task id="LOCAL-00001" summary="More commits.">
       <created>1588609526338</created>
@@ -154,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588703632781</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="More WishList commits.">
+      <created>1588707333202</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1588707333202</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,22 +180,30 @@
     <MESSAGE value="Fixed reading messages." />
     <MESSAGE value="Added WishList files." />
     <MESSAGE value="More commits." />
-    <MESSAGE value="More WishList commits." />
     <MESSAGE value="More Review commits." />
-    <option name="LAST_COMMIT_MESSAGE" value="More Review commits." />
+    <MESSAGE value="More WishList commits." />
+    <option name="LAST_COMMIT_MESSAGE" value="More WishList commits." />
   </component>
   <component name="WindowStateProjectService">
     <state x="483" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588689083677">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="483" y="270" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.920@0.0.1440.920" timestamp="1588689083677" />
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1588704081949">
+    <state x="610" y="334" width="386" height="252" key="MultipleFileMergeDialog" timestamp="1588707596757">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1588704081949" />
-    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588705505976">
+    <state x="610" y="334" width="386" height="252" key="MultipleFileMergeDialog/0.0.1440.920@0.0.1440.920" timestamp="1588707596757" />
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1588707627755">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920" timestamp="1588705505976" />
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1588707627755" />
+    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588707586978">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920" timestamp="1588707586978" />
+    <state x="425" y="264" key="git4idea.merge.GitPullDialog" timestamp="1588707576995">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="425" y="264" key="git4idea.merge.GitPullDialog/0.0.1440.920@0.0.1440.920" timestamp="1588707576995" />
   </component>
 </project>
