@@ -19,15 +19,17 @@ class WishListController extends Controller
     {
         if(isset($_POST['action']))
         {
-            $newWish = $this->model('WishList');
-            $product_id = (string) $_SESSION['product_id'];
-            $theProduct = $this->model('Product')->find($product_id);
+            $products = $this->model('Product')->getProductsForSeller($_SESSION['profile_id']);
+            $profiles = $this->model('Profile')->getSellersAndProducts();
+
+            $theProduct = $this->model('WishList')->getProductWishes();
             $_SESSION['product_id'] = $theProduct->product_id;
 
+            $newWish = $this->model('WishList');
             $newWish->customer_id= $_SESSION['profile_id'];
             $newWish->product_id= $_SESSION['product_id'];
             $newWish->create();
-            header('location:/wishlist/index');
+            header('location:/wishlist/index', ['products'=>$products, 'profiles'=>$profiles]);
         }
 
         else
@@ -36,19 +38,19 @@ class WishListController extends Controller
         }
     }
 
-    public function delete($book_id)
+    public function delete($wish_id)
     {
-        $theBook = $this->model('Book')->find($book_id);
+        $theWish = $this->model('Wish')->find($wish_id);
 
         if(isset($_POST['action']))
         {
-            $theBook->delete();
-            header('location:/home/index');
+            $theWish->delete();
+            header('location:/wishlist/index');
         }
 
         else
         {
-            $this->view('book/delete', $theBook);
+            $this->view('wishlist/delete', $theWish);
         }
     }
 }

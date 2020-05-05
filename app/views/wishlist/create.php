@@ -15,6 +15,33 @@
       <h1>Add Product to Wish List?</h1>
         <form action='' method='post'>
           <div class='form-group'>
+              <?php
+              foreach($data['products'] as $product)
+              {
+                  foreach($data['profiles'] as $profile)
+                  {
+                      //if($product->seller_id == $profile->profile_id)
+                      //{
+                          echo " <dl>
+                                       <dt>First Name</dt>
+                                       <dd><?=$profile->first_name ?></dd>
+                                       <dt>Last Name</dt>
+                                       <dd><?=$profile->last_name ?></dd>
+                                       <dt>Product Name</dt>
+                                       <dd><?=$product->product_name ?></dd>
+                                       <dt>Product Picture</dt>
+                                       <dd><?=$product->product_picture ?></dd>
+                                       <dt>Product Details</dt>
+                                       <dd><?=$product->product_details ?></dd>
+                                       <dt>Product Category</dt>
+                                       <dd><?=$product->product_category ?></dd>
+                                       <dt>Product Price</dt>
+                                       <dd><?=$product->product_price ?></dd>
+                              </dl>";
+                      //}
+                  }
+              }
+              ?>
            </div>
              <input type='submit' name='action' value='Create' class='btn btn-primary' />
             <a href='/home/search' class='btn btn-secondary'>Cancel</a>

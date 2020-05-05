@@ -35,18 +35,18 @@ class WishList extends Model
 
     public function find($wish_id)
     {
-        $SQL = 'SELECT * FROM Book WHERE book_id = :book_id';
+        $SQL = 'SELECT * FROM WishList WHERE wish_id = :wish_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['book_id'=>$book_id]);
-        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Book');
+        $stmt->execute(['wish_id'=>$wish_id]);
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Wish');
         return $stmt->fetch();
     }
 
     public function delete()
     {
-        $SQL = 'DELETE FROM Book WHERE book_id = :book_id AND teacher_id = :teacher_id';
+        $SQL = 'DELETE FROM WishList WHERE wish_id = :wish_id AND product_id = :product_id AND customer_id = :customer_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['book_id'=>$this->book_id, 'teacher_id'=>$this->teacher_id ]);
+        $stmt->execute(['wish_id'=>$this->wish_id, 'product_id'=>$this->product_id, 'customer_id'=>$this->customer_id]);
         return $stmt->rowCount();
     }
 }
