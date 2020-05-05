@@ -20,13 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="More WishList commits.">
+      <change afterPath="$PROJECT_DIR$/app/controllers/ReviewController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/Review.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/review/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/review/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/review/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/review/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/WishListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/WishListController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/WishList.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/WishList.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/wishlist/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlist/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/wishlist/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlist/delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/wishlist/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlist/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/promotion/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/promotion/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,10 +49,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/wishlist" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/review" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\app\views\review" />
       <recent name="C:\xampp\htdocs\app\views\wishlist" />
       <recent name="C:\xampp\htdocs\app\views\message" />
     </key>
@@ -66,7 +68,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588602971973</updated>
-      <workItem from="1588602976752" duration="42003000" />
+      <workItem from="1588602976752" duration="42274000" />
+      <workItem from="1588687971141" duration="6098000" />
     </task>
     <task id="LOCAL-00001" summary="More commits.">
       <created>1588609526338</created>
@@ -131,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588640870617</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="More WishList commits.">
+      <created>1588650089352</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1588650089352</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +157,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed reading messages." />
@@ -156,13 +167,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="More WishList commits." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="483" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588603625472">
+    <state x="483" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588689083677">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="483" y="270" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.920@0.0.1440.920" timestamp="1588603625472" />
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1588640883648">
+    <state x="483" y="270" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.920@0.0.1440.920" timestamp="1588689083677" />
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1588650096012">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1588640883648" />
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1588650096012" />
   </component>
 </project>

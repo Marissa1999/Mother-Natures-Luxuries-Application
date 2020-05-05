@@ -8,25 +8,21 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>List of Promotions</title>
+    <title>Edit this Review</title>
   </head>
   <body>
      <div class='container'>
-       <h1>List of Promotions</h1>
-        <a href='/login/logout'>Logout</a><br />
-        <a href='/promotion/create' class='btn btn-success'>Create Promotion</a>
-        <table class='table table-striped'>
-          <tr><td>Promoted Price</td><td>Promotion Timestamp</td></tr>
+       <h1>Edit the Review</h1>
+       <form action='' method='post'>
+        <div class='form-group'>
+             <label>Product Rating: <input type='text' name='product_rating' value='<?=$data->product_rating ?>' class='form-control' /></label>
+             <label>Review Comment: <input type='text' name='review_comment' value='<?=$data->review_comment ?>' class='form-control' /></label>
+           </div>
+             <input type='submit' name='action' value='Save Changes' class='btn btn-success' />
            <?php
-           foreach($data['promotions'] as $promotion)
-               {
-                 echo "<tr><td>$promotion->promotion_price</td><td>$promotion->promotion_timestamp</td><td>
-                 <a href='/promotion/delete/$promotion->promotion_id' class='btn btn-danger'>Delete</a> 
-                 </td></tr>";
-               }
-           ?>
-        </table>
-         <a href='/home/index' class='btn btn-secondary'>Back to Home Page</a>
+              echo "<a href='/review/index/$data->product_id' class='btn btn-secondary'>Cancel</a>";
+             ?>
+        </form>
      </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
