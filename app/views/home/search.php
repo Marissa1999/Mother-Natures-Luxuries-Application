@@ -38,7 +38,8 @@
                     echo "<tr><td>$profile->first_name</td><td>$profile->last_name</td></td>";
                     echo "<td>$product->product_name</td><td>$product->product_picture</td><td>$product->product_details</td>
                     <td>$product->product_category</td><td>$product->product_price</td><td>$product->product_quantity</td>
-                    <td><a href='/wishlist/create' class='btn btn-primary'>Add to Wish List</a> 
+                    <td><a href='/wishlist/create' class='btn btn-primary'>Add to Wish List</a>
+                        <a href='/review/index' class='btn btn-info'>View Reviews</a>
                     </td></tr>";
                     break;
                 }

@@ -8,20 +8,25 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Delete Payment Card</title>
+    <title>Delete this Wish List Item</title>
   </head>
   <body>
      <div class='container'>
-       <h1>Delete this Payment Card</h1>
+       <h1>Delete this Wish List Item</h1>
         <form action='' method='post'>
-          <div class='form-group'>
-              <label>Card Number: <input type='text' name='card_number' value='<?=$data->card_number ?>' disabled class='form-control' /></label>
-              <label>Card Company: <input type='text' name='card_company' value='<?=$data->card_company ?>' disabled class='form-control' /></label>
-              <label>Expiration Date: <input type='text' name='expiration_date' value='<?=$data->expiration_date ?>' disabled class='form-control' /></label>
-              <label>Card CVC: <input type='text' name='card_cvc' value='<?=$data->card_cvc ?>' disabled class='form-control' /></label>
-           </div>
+            <div class='form-group'>
+                <?php
+                echo "<label>First Name: <input type='text' name='first_name' value='<?=$data->first_name ?>' disabled class='form-control' /></label>
+                      <label>Last Name: <input type='text' name='last_name' value='<?=$data->last_name ?>' disabled class='form-control' /></label>
+                      <label>Product Name: <input type='text' name='product_name' value='<?=$data->product_name ?>' disabled class='form-control' /></label>
+                      <label>Product Picture: <input type='text' name='product_picture' value='<?=$data->product_picture ?>' disabled class='form-control' /></label>
+                      <label>Product Details: <input type='text' name='product_details' value='<?=$data->product_details ?>' disabled class='form-control' /></label>
+                      <label>Product Price: <input type='text' name='product_price' value='<?=$data->product_price ?>' disabled class='form-control' /></label>
+                      <label>Product Category: <input type='text' name='product_category' value='<?=$data->product_category ?>' disabled class='form-control' /></label>";
+                ?>
+            </div>
              <input type='submit' name='action' value='Delete' class='btn btn-danger' />
-        <a href='/home/index' class='btn btn-secondary'>Cancel</a> 
+        <a href='/wishlist/index' class='btn btn-secondary'>Cancel</a>
         </form>    
      </div>
     <!-- Optional JavaScript -->

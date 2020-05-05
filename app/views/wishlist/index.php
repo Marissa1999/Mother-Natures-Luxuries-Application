@@ -15,7 +15,7 @@
        <h1>List of Wishes</h1>
         <a href='/login/logout'>Logout</a><br />
         <table class='table table-striped'>
-            <tr><td>First Name</td><td>Last Name</td><td>Product Name</td><td>Picture</td><td>Details</td><td>Category</td><td>Price</td><td>Quantity</td><td>Actions</td></tr><br />
+            <tr><td>First Name</td><td>Last Name</td><td>Product Name</td><td>Picture</td><td>Details</td><td>Category</td><td>Price</td><td>Actions</td></tr><br />
             <?php
             foreach($data['wishes'] as $wish)
             {
@@ -27,12 +27,13 @@
                         {
                             echo "<tr><td>$profile->first_name</td><td>$profile->last_name</td></td>";
                             echo "<td>$product->product_name</td><td>$product->product_picture</td><td>$product->product_details</td>
-                                 <td>$product->product_category</td><td>$product->product_price</td><td>$product->product_quantity</td>
-                                 <td><a href='/wishlist/delete/'$wish->wish_id class='btn btn-danger'>Delete Wish List Item</a> 
+                                 <td>$product->product_category</td><td>$product->product_price</td>
+                                 <td><a href='/wishlist/delete/$wish->wish_id' class='btn btn-danger'>Delete Wish List Item</a> 
                                  </td></tr>";
                             break;
                         }
                     }
+
                 }
             }
             ?>

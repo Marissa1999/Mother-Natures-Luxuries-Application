@@ -12,14 +12,16 @@ class WishListController extends Controller
         $theProfile = $this->model('Profile')->findProfile($user_id);
         $_SESSION['profile_id'] = $theProfile->profile_id;
         $wishes = $this->model('WishList')->getWishesForCustomer($_SESSION['profile_id']);
-        $this->view('wishlist/index', ['wishes'=>$wishes]);
+        $products = $this->model('WishList')->getProductWishes();
+        $profiles = $this->model('Profile')->getSellersAndProducts();
+        $this->view('wishlist/index', ['wishes'=>$wishes, 'profiles'=>$profiles, 'products'=>$products]);
     }
 
     public function create()
     {
         if(isset($_POST['action']))
         {
-            $products = $this->model('Product')->getProductsForSeller($_SESSION['profile_id']);
+            $products = $this->model('WishList')->getProductWishes();
             $profiles = $this->model('Profile')->getSellersAndProducts();
 
             $theProduct = $this->model('WishList')->getProductWishes();
@@ -40,7 +42,10 @@ class WishListController extends Controller
 
     public function delete($wish_id)
     {
-        $theWish = $this->model('Wish')->find($wish_id);
+        $theWish = $this->model('WishList')->find($wish_id);
+
+        $products = $this->model('WishList')->getProductWishes();
+        $profiles = $this->model('Profile')->getSellersAndProducts();
 
         if(isset($_POST['action']))
         {
@@ -50,7 +55,7 @@ class WishListController extends Controller
 
         else
         {
-            $this->view('wishlist/delete', $theWish);
+            $this->view('wishlist/delete', ['products'=>$products, 'profiles'=>$profiles, $theWish]);
         }
     }
 }

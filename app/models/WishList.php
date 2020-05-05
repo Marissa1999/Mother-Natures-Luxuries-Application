@@ -38,7 +38,7 @@ class WishList extends Model
         $SQL = 'SELECT * FROM WishList WHERE wish_id = :wish_id';
         $stmt = self::$_connection->prepare($SQL);
         $stmt->execute(['wish_id'=>$wish_id]);
-        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Wish');
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'WishList');
         return $stmt->fetch();
     }
 

@@ -23,7 +23,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/WishListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/WishListController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/WishList.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/WishList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/search.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/wishlist/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlist/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/wishlist/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlist/delete.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/wishlist/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlist/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588602971973</updated>
-      <workItem from="1588602976752" duration="33971000" />
+      <workItem from="1588602976752" duration="42003000" />
     </task>
     <task id="LOCAL-00001" summary="More commits.">
       <created>1588609526338</created>
@@ -122,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588635993969</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="More WishList commits.">
+      <created>1588640870617</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1588640870617</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,9 +160,9 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="483" y="270" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.920@0.0.1440.920" timestamp="1588603625472" />
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1588636002170">
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1588640883648">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1588636002170" />
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1588640883648" />
   </component>
 </project>
