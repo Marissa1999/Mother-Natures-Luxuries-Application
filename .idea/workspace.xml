@@ -19,15 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="More WishList commits.">
-      <change afterPath="$PROJECT_DIR$/app/controllers/ReviewController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/Review.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/review/create.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/review/delete.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/review/edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/review/index.php" afterDir="false" />
+    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="More Review commits.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/promotion/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/promotion/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/WishListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/WishListController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Review.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Review.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/wishlist/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlist/create.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +66,8 @@
       <option name="presentableId" value="Default" />
       <updated>1588602971973</updated>
       <workItem from="1588602976752" duration="42274000" />
-      <workItem from="1588687971141" duration="6098000" />
+      <workItem from="1588687971141" duration="7497000" />
+      <workItem from="1588697642551" duration="4879000" />
     </task>
     <task id="LOCAL-00001" summary="More commits.">
       <created>1588609526338</created>
@@ -141,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588650089352</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="More Review commits.">
+      <created>1588694498510</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1588694498510</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,16 +169,17 @@
     <MESSAGE value="Added WishList files." />
     <MESSAGE value="More commits." />
     <MESSAGE value="More WishList commits." />
-    <option name="LAST_COMMIT_MESSAGE" value="More WishList commits." />
+    <MESSAGE value="More Review commits." />
+    <option name="LAST_COMMIT_MESSAGE" value="More Review commits." />
   </component>
   <component name="WindowStateProjectService">
     <state x="483" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588689083677">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="483" y="270" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.920@0.0.1440.920" timestamp="1588689083677" />
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1588650096012">
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1588694508524">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1588650096012" />
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1588694508524" />
   </component>
 </project>

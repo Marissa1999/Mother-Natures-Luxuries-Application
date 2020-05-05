@@ -19,6 +19,8 @@ class WishListController extends Controller
 
     public function create()
     {
+        $_SESSION['product_id'] = $_GET[''];
+
         if(isset($_POST['action']))
         {
             $products = $this->model('WishList')->getProductWishes();

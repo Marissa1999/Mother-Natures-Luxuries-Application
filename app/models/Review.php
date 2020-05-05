@@ -53,7 +53,7 @@ class Review extends Model
     {
         $SQL = 'DELETE FROM Review WHERE review_id = :review_id AND customer_id = :customer_id AND product_id = :product_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['review_id'=>$this->card_id, 'customer_id'=>$this->customer_id, 'product_id'=>$this->product_id]);
+        $stmt->execute(['review_id'=>$this->review_id, 'customer_id'=>$this->customer_id, 'product_id'=>$this->product_id]);
         return $stmt->rowCount();
     }
 }

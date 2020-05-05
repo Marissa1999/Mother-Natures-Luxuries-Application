@@ -16,8 +16,8 @@
         <form action='' method='post'>
           <div class='form_group'>
               <?php
-                      if($data->seller_id == $data->profile_id)
-                      {
+                       if($data->seller_id == $data->profile_id)
+                       {
                           echo " <dl>
                                     <dt>First Name</dt>
                                     <dd><?=$data->first_name ?></dd>
