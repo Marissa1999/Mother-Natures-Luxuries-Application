@@ -22,7 +22,7 @@
                   echo "<label>First Name: <input type='text' name='first_name' value='$profile->first_name' disabled class='form-control' /></label>
                         <label>Last Name: <input type='text' name='last_name' value='$profile->last_name' disabled class='form-control' /></label>
                         <label>Product Name: <input type='text' name='product_name' value='$product->product_name' disabled class='form-control' /></label>
-                        <label>Product Picture: <input type='text' name='product_picture' value='$product->product_picture' disabled class='form-control' /></label>
+                        <label>Product Picture: <img src='/product_images/$product->product_picture' style='max-width:100px;' /></label>
                         <label>Product Details: <input type='text' name='product_details' value='$product->product_details' disabled class='form-control' /></label>
                         <label>Product Category: <input type='text' name='product_category' value='$product->product_category' disabled class='form-control' /></label>
                         <label>Product Price: <input type='text' name='product_price' value='$product->product_price' disabled class='form-control' /></label>";

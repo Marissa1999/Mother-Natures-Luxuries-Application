@@ -28,8 +28,8 @@
                      {
                          $seller = $this->model('Profile')->find($product->seller_id);
                          echo "<tr><td>$seller->first_name</td><td>$seller->last_name</td></td>";
-                         echo "<td>$product->product_name</td><td>$product->product_picture</td><td>$product->product_details</td>
-                               <td>$product->product_category</td><td>$product->product_price</td>
+                         echo "<td>$product->product_name</td><td><img src='/product_images/$product->product_picture' style='max-width:100px;' />
+                               </td><td>$product->product_details</td><td>$product->product_category</td><td>$product->product_price</td>
                                <td><a href='/wishlist/delete/$wish->wish_id' class='btn btn-danger'>Delete Wish List Item</a> 
                                </td></tr>";
                          break;
