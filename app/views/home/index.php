@@ -33,7 +33,7 @@
                foreach($data['products'] as $product)
                {
                  $total = $product->product_price * $product->product_quantity;
-                 echo "<tr><td>$product->product_name</td><td>$product->product_picture</td>
+                 echo "<tr><td>$product->product_name</td><td><img src='/product_images/$product->product_picture' style='max-width:100px;' /></td>
                  <td>$product->product_details</td><td>$product->product_price</td>
                  <td>$product->product_quantity</td><td>$product->product_category</td>
                  <td>$total</td><td>
@@ -52,7 +52,7 @@
              <?php
              foreach($data['books'] as $book)
              {
-                 echo "<tr><td>$book->book_name</td><td><img src='/images/$book->book_picture' style='max-width:100px;' /></td>
+                 echo "<tr><td>$book->book_name</td><td><img src='/book_images/$book->book_picture' style='max-width:100px;' /></td>
                  <td>$book->book_description</td><td>$book->book_price</td>
                  <td>$book->book_quantity</td><td>
                  <a href='/book/detail/$book->book_id' class='btn btn-primary'>Book Details</a>

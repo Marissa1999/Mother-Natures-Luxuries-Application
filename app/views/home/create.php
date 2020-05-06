@@ -13,10 +13,10 @@
   <body>
      <div class='container'>
       <h1>Add a Product</h1>
-        <form action='' method='post'>
+        <form action='' method='post' enctype='multipart/form-data'>
           <div class='form-group'>
               <label>Product Name: <input type='text' name='product_name' class='form-control' /></label>
-              <label>Product Picture: <input type='text' name='product_picture' class='form-control' /></label>
+              <label>Product Picture: <input type='file' name='product_picture' /></label>
               <label>Product Details: <input type='text' name='product_details' class='form-control' /></label>
               <label>Product Price: <input type='text' name='product_price' class='form-control' /></label>
               <label>Product Quantity: <input type='text' name='product_quantity' class='form-control' /></label>

@@ -13,11 +13,21 @@
   <body>
      <div class='container'>
       <h1>Create a News Posting</h1>
-        <form action='' method='post'>
+         <?php
+         if(isset($data['error']))
+         {
+             ?>
+             <div class="alert alert-danger" role="alert">
+                 <?= $data['error'] ?>
+             </div>
+             <?php
+         }
+         ?>
+        <form action='' method='post' enctype='multipart/form-data'>
           <div class='form-group'>
-              <label>Topic: <input type='text' name='news_topic' class='form-control' /></label>
-              <label>Article: <input type='text' name='news_article' class='form-control' /></label>
-              <label>Picture: <input type='text' name='news_picture' class='form-control' /></label>
+              <label>News Topic: <input type='text' name='news_topic' class='form-control' /></label>
+              <label>News Article: <input type='text' name='news_article' class='form-control' /></label>
+              <label>News Picture: <input type='file' name='news_picture' /></label>
            </div>
              <input type='submit' name='action' value='Create' class='btn btn-primary' />
         </form>

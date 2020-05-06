@@ -25,7 +25,8 @@
                    if($news->seller_id == $profile->profile_id)
                    {
                        echo "<tr><td>$profile->first_name</td><td>$profile->last_name</td></td>";
-                       echo "<td>$news->news_topic</td><td>$news->news_article</td><td>$news->news_picture</td>
+                       echo "<td>$news->news_topic</td><td>$news->news_article</td>
+                             <td><img src='/news_images/$news->news_picture' style='max-width:100px;' /></td>
                              <td>$news->news_timestamp</td>      
                              </td></tr>";
                        break;

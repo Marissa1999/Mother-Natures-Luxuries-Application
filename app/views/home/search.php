@@ -36,8 +36,9 @@
                 if($product->seller_id == $profile->profile_id)
                 {
                     echo "<tr><td>$profile->first_name</td><td>$profile->last_name</td></td>";
-                    echo "<td>$product->product_name</td><td>$product->product_picture</td><td>$product->product_details</td>
-                    <td>$product->product_category</td><td>$product->product_price</td><td>$product->product_quantity</td>
+                    echo "<td>$product->product_name</td><td><img src='/product_images/$product->product_picture' style='max-width:100px;' /></td>
+                          <td>$product->product_details</td><td>$product->product_category</td><td>$product->product_price</td>
+                          <td>$product->product_quantity</td>
                     <td><a href='/wishlist/create?product_id=$product->product_id' class='btn btn-primary'>Add to Wish List</a>
                         <a href='/review/index/$product->product_id' class='btn btn-info'>View Reviews</a>
                     </td></tr>";

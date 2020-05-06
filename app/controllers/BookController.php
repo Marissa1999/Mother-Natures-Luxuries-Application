@@ -23,7 +23,7 @@ class BookController extends Controller
             }
             else
             {
-                $path = getcwd().DIRECTORY_SEPARATOR.'images'.DIRECTORY_SEPARATOR;
+                $path = getcwd().DIRECTORY_SEPARATOR.'book_images'.DIRECTORY_SEPARATOR;
                 $filename = uniqid().$allowedTypes[$info[2]];
                 move_uploaded_file($_FILES['book_picture']['tmp_name'], $path.$filename);
 
@@ -119,8 +119,8 @@ class BookController extends Controller
             }
             else
             {
-                unlink(getcwd().DIRECTORY_SEPARATOR.'images'.DIRECTORY_SEPARATOR.$theBook->book_picture);
-                $path = getcwd().DIRECTORY_SEPARATOR.'images'.DIRECTORY_SEPARATOR;
+                unlink(getcwd().DIRECTORY_SEPARATOR.'book_images'.DIRECTORY_SEPARATOR.$theBook->book_picture);
+                $path = getcwd().DIRECTORY_SEPARATOR.'book_images'.DIRECTORY_SEPARATOR;
                 $filename = uniqid().$allowedTypes[$info[2]];
                 move_uploaded_file($_FILES['book_picture']['tmp_name'], $path.$filename);
 
@@ -145,7 +145,7 @@ class BookController extends Controller
 
         if(isset($_POST['action']))
         {
-            unlink(getcwd().DIRECTORY_SEPARATOR.'images'.DIRECTORY_SEPARATOR.$theBook->book_picture);
+            unlink(getcwd().DIRECTORY_SEPARATOR.'book_images'.DIRECTORY_SEPARATOR.$theBook->book_picture);
             $theBook->delete();
             header('location:/home/index');
         }

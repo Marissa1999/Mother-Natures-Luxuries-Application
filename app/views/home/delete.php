@@ -16,7 +16,7 @@
         <form action='' method='post'>
           <div class='form-group'>
               <label>Product Name: <input type='text' name='product_name' value='<?=$data->product_name ?>' disabled class='form-control' /></label>
-              <label>Product Picture: <input type='text' name='product_picture' value='<?=$data->product_picture ?>' disabled class='form-control' /></label>
+              <label>Product Picture: <img src='/product_images/<?=$data->product_picture?>' style='max-width:100px;'/></label>
               <label>Product Details: <input type='text' name='product_details' value='<?=$data->product_details ?>' disabled class='form-control' /></label>
               <label>Product Price: <input type='text' name='product_price' value='<?=$data->product_price ?>' disabled class='form-control' /></label>
               <label>Product Quantity: <input type='text' name='product_quantity' value='<?=$data->product_quantity ?>' disabled class='form-control' /></label>
