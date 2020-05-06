@@ -34,7 +34,8 @@
                 if($book->teacher_id == $profile->profile_id)
                 {
                     echo "<tr><td>$profile->first_name</td><td>$profile->last_name</td></td>";
-                    echo "<td>$book->book_name</td><td>$book->book_description</td><td>$book->book_picture</td>
+                    echo "<td>$book->book_name</td><td>$book->book_description</td>
+                    <td><img src='/images/$book->book_picture' style='max-width:100px;' /></td>
                     <td>$book->book_price</td><td>$book->book_quantity</td><td>
                     </td></tr>";
                     break;

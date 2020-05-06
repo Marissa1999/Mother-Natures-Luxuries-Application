@@ -19,10 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="More WishList commits.">
-      <change afterPath="$PROJECT_DIR$/app/controllers/OrderController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/Order.php" afterDir="false" />
+    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="More commits regarding the creation of Order and Theme related files.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/BookController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/book/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/book/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/book/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/book/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/book/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +70,8 @@
       <updated>1588602971973</updated>
       <workItem from="1588602976752" duration="42274000" />
       <workItem from="1588687971141" duration="7497000" />
-      <workItem from="1588697642551" duration="10477000" />
+      <workItem from="1588697642551" duration="13846000" />
+      <workItem from="1588724255736" duration="6015000" />
     </task>
     <task id="LOCAL-00001" summary="More commits.">
       <created>1588609526338</created>
@@ -158,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588707333202</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="More commits regarding the creation of Order and Theme related files.">
+      <created>1588709981490</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1588709981490</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +195,8 @@
     <MESSAGE value="More commits." />
     <MESSAGE value="More Review commits." />
     <MESSAGE value="More WishList commits." />
-    <option name="LAST_COMMIT_MESSAGE" value="More WishList commits." />
+    <MESSAGE value="More commits regarding the creation of Order and Theme related files." />
+    <option name="LAST_COMMIT_MESSAGE" value="More commits regarding the creation of Order and Theme related files." />
   </component>
   <component name="WindowStateProjectService">
     <state x="483" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588689083677">
@@ -193,17 +207,17 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="610" y="334" width="386" height="252" key="MultipleFileMergeDialog/0.0.1440.920@0.0.1440.920" timestamp="1588707596757" />
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1588707627755">
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1588711151462">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1588707627755" />
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1588711151462" />
     <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588707586978">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920" timestamp="1588707586978" />
-    <state x="425" y="264" key="git4idea.merge.GitPullDialog" timestamp="1588707576995">
+    <state x="425" y="264" key="git4idea.merge.GitPullDialog" timestamp="1588709992398">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="425" y="264" key="git4idea.merge.GitPullDialog/0.0.1440.920@0.0.1440.920" timestamp="1588707576995" />
+    <state x="425" y="264" key="git4idea.merge.GitPullDialog/0.0.1440.920@0.0.1440.920" timestamp="1588709992398" />
   </component>
 </project>

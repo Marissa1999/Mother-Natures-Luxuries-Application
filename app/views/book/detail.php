@@ -17,7 +17,7 @@
             <dt>Book Name</dt>
             <dd><?=$data->book_name ?></dd>
             <dt>Book Picture</dt>
-            <dd><?=$data->book_picture ?></dd>
+            <dd><img src='/images/<?=$data->book_picture?>' style='max-width:100px;'/></dd>
             <dt>Book Description</dt>
             <dd><?=$data->book_description ?></dd>
             <dt>Book Price</dt>

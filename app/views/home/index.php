@@ -52,7 +52,7 @@
              <?php
              foreach($data['books'] as $book)
              {
-                 echo "<tr><td>$book->book_name</td><td>$book->book_picture</td>
+                 echo "<tr><td>$book->book_name</td><td><img src='/images/$book->book_picture' style='max-width:100px;' /></td>
                  <td>$book->book_description</td><td>$book->book_price</td>
                  <td>$book->book_quantity</td><td>
                  <a href='/book/detail/$book->book_id' class='btn btn-primary'>Book Details</a>

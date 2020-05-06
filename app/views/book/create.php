@@ -13,10 +13,20 @@
   <body>
      <div class='container'>
       <h1>Add a Book</h1>
-        <form action='' method='post'>
+         <?php
+         if(isset($data['error']))
+         {
+             ?>
+             <div class="alert alert-danger" role="alert">
+                 <?= $data['error'] ?>
+             </div>
+             <?php
+         }
+         ?>
+        <form action='' method='post' enctype='multipart/form-data'>
           <div class='form-group'>
               <label>Book Name: <input type='text' name='book_name' class='form-control' /></label>
-              <label>Book Picture: <input type='text' name='book_picture' class='form-control' /></label>
+              <label>Book Picture: <input type='file' name='book_picture' /></label>
               <label>Book Description: <input type='text' name='book_description' class='form-control' /></label>
               <label>Book Price: <input type='text' name='book_price' class='form-control' /></label>
               <label>Book Quantity: <input type='text' name='book_quantity' class='form-control' /></label>
