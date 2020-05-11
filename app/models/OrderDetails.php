@@ -21,6 +21,19 @@ class OrderDetails extends Model
         return $stmt->fetchAll();
     }
 
+    public function getTotalForUser($customer_id)
+    {
+        $SQL = 'SELECT SUM(orderdetails.order_price * orderdetails.order_quantity)
+                 FROM OrderDetails orderdetails 
+                 INNER JOIN `Order` `order`
+                 ON orderdetails.order_id = `order`.order_id
+                 WHERE customer_id = :customer_id';
+        $stmt = self::$_connection->prepare($SQL);
+        $stmt->execute(['customer_id'=>$customer_id]);
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'OrderDetails');
+        return $stmt->fetchColumn();
+    }
+
     public function create()
     {
         $SQL = 'INSERT INTO OrderDetails(product_id, order_id, order_price, order_quantity) 

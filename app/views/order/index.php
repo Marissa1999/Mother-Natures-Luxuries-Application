@@ -14,6 +14,14 @@
 <div class='container'>
     <h1>Shopping Cart</h1>
     <a href='/login/logout'>Logout</a><br />
+    <?php
+       $subtotal = $this->model('OrderDetails')->getTotalForUser($_SESSION['profile_id']);
+       $taxes = (int) $subtotal * 0.15;
+       $total = (int) $subtotal + $taxes;
+       echo "<h3>Subtotal: $$subtotal</h3>";
+       echo "<h3>Taxes: $$taxes</h3>";
+       echo "<h3>Total: $$total</h3>";
+    ?>
     <table class='table table-striped'>
         <tr><td>Product Name</td><td>Picture</td><td>Details</td><td>Category</td><td>Price</td><td>Quantity</td><td>Actions</td></tr><br />
         <?php

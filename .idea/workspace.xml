@@ -19,16 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="Adjusted more pictures.">
-      <change afterPath="$PROJECT_DIR$/app/models/OrderDetails.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/order/editQuantity.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/order/index.php" afterDir="false" />
+    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="Completed three ShoppingCart user stories.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/BookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/OrderDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/OrderDetails.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/order/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/order/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +72,7 @@
       <workItem from="1588737692627" duration="16000" />
       <workItem from="1588783350517" duration="2693000" />
       <workItem from="1589136132115" duration="15183000" />
-      <workItem from="1589158977431" duration="8724000" />
+      <workItem from="1589158977431" duration="12646000" />
     </task>
     <task id="LOCAL-00001" summary="More commits.">
       <created>1588609526338</created>
@@ -213,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588737647474</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Completed three ShoppingCart user stories.">
+      <created>1589167766028</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1589167766028</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +241,8 @@
     <MESSAGE value="More commits regarding the creation of Order and Theme related files." />
     <MESSAGE value="Adjusted the pictures for Books." />
     <MESSAGE value="Adjusted more pictures." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adjusted more pictures." />
+    <MESSAGE value="Completed three ShoppingCart user stories." />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed three ShoppingCart user stories." />
   </component>
   <component name="WindowStateProjectService">
     <state x="483" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588689083677">
@@ -259,10 +261,10 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="224" y="107" key="SettingsEditor/0.0.1440.920@0.0.1440.920" timestamp="1589163181969" />
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1588737657203">
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589167774798">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1588737657203" />
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589167774798" />
     <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588707586978">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
