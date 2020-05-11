@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="Completed three ShoppingCart user stories.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/OrderDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/OrderDetails.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/order/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/order/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +72,8 @@
       <workItem from="1588783350517" duration="2693000" />
       <workItem from="1589136132115" duration="15183000" />
       <workItem from="1589158977431" duration="12845000" />
-      <workItem from="1589216173562" duration="7026000" />
+      <workItem from="1589216173562" duration="7086000" />
+      <workItem from="1589239711441" duration="221000" />
     </task>
     <task id="LOCAL-00001" summary="More commits.">
       <created>1588609526338</created>
@@ -222,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589171682585</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Completed three ShoppingCart user stories.">
+      <created>1589234341882</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1589234341882</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,10 +276,10 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="224" y="107" key="SettingsEditor/0.0.1440.920@0.0.1440.920" timestamp="1589163181969" />
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589171689905">
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589234351755">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589171689905" />
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589234351755" />
     <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588707586978">
       <screen x="0" y="0" width="1440" height="920" />
     </state>

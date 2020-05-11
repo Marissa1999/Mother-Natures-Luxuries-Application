@@ -27,7 +27,7 @@
     ?>
 
     <table class='table table-striped'>
-        <tr><td>Product Name</td><td>Picture</td><td>Details</td><td>Category</td><td>Total Price</td><td>Quantity</td><td>Date</td><td>Actions</td></tr><br />
+        <tr><td>Product Name</td><td>Picture</td><td>Details</td><td>Category</td><td>Unit Price</td><td>Quantity</td><td>Date</td><td>Actions</td></tr><br />
         <?php
         foreach($data['products'] as $product)
         {
@@ -36,7 +36,7 @@
                 if($product->product_id == $order->product_id)
                 {
                     echo "<tr><td>$product->product_name</td><td><img src='/product_images/$product->product_picture' style='max-width:100px;' /></td>
-                          <td>$product->product_details</td><td>$product->product_category</td><td>$order->order_price</td>
+                          <td>$product->product_details</td><td>$product->product_category</td><td>$product->product_price</td>
                           <td>$order->order_quantity</td> <td>$order->order_date</td>
                           <td><a href='/order/removeFromCart/$order->order_item_id' class='btn btn-danger'>Delete Item</a>
                           <a href='/order/editQuantity/$order->order_item_id' class='btn btn-info'>Edit Quantity</a>
