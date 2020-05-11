@@ -41,6 +41,7 @@
                           <td>$product->product_quantity</td>
                     <td><a href='/wishlist/create?product_id=$product->product_id' class='btn btn-primary'>Add to Wish List</a>
                         <a href='/review/index/$product->product_id' class='btn btn-info'>View Reviews</a>
+                        <a href='/order/AddToCart/$product->product_id' class='btn btn-success'>Add to Cart</a>
                     </td></tr>";
                     break;
                 }

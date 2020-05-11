@@ -99,7 +99,6 @@ class BookController extends Controller
 		$this->view('book/detail', $theBook);
 	}
 
-
     public function edit($book_id)
     {
         $theBook = $this->model('Book')->find($book_id);
