@@ -15,15 +15,19 @@
     <h1>Shopping Cart</h1>
     <a href='/login/logout'>Logout</a><br />
     <?php
+
+       $order = $data['orders'];
        $subtotal = $this->model('OrderDetails')->getTotalForUser($_SESSION['profile_id']);
        $taxes = (int) $subtotal * 0.15;
        $total = (int) $subtotal + $taxes;
        echo "<h3>Subtotal: $$subtotal</h3>";
        echo "<h3>Taxes: $$taxes</h3>";
        echo "<h3>Total: $$total</h3>";
+       echo "<a href='/order/editQuantity' class='btn btn-info'>Head to Checkout</a>";
     ?>
+
     <table class='table table-striped'>
-        <tr><td>Product Name</td><td>Picture</td><td>Details</td><td>Category</td><td>Price</td><td>Quantity</td><td>Actions</td></tr><br />
+        <tr><td>Product Name</td><td>Picture</td><td>Details</td><td>Category</td><td>Total Price</td><td>Quantity</td><td>Date</td><td>Actions</td></tr><br />
         <?php
         foreach($data['products'] as $product)
         {
@@ -33,7 +37,7 @@
                 {
                     echo "<tr><td>$product->product_name</td><td><img src='/product_images/$product->product_picture' style='max-width:100px;' /></td>
                           <td>$product->product_details</td><td>$product->product_category</td><td>$order->order_price</td>
-                          <td>$order->order_quantity</td>
+                          <td>$order->order_quantity</td> <td>$order->order_date</td>
                           <td><a href='/order/removeFromCart/$order->order_item_id' class='btn btn-danger'>Delete Item</a>
                           <a href='/order/editQuantity/$order->order_item_id' class='btn btn-info'>Edit Quantity</a>
                           </td></tr>";

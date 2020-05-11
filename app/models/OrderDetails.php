@@ -23,8 +23,10 @@ class OrderDetails extends Model
 
     public function getTotalForUser($customer_id)
     {
-        $SQL = 'SELECT SUM(orderdetails.order_price * orderdetails.order_quantity)
+        $SQL = 'SELECT SUM(product.product_price * orderdetails.order_quantity)
                  FROM OrderDetails orderdetails 
+                 INNER JOIN Product product
+                 ON orderdetails.product_id = product.product_id
                  INNER JOIN `Order` `order`
                  ON orderdetails.order_id = `order`.order_id
                  WHERE customer_id = :customer_id';
@@ -58,7 +60,7 @@ class OrderDetails extends Model
     {
         $SQL = 'UPDATE OrderDetails 
                    SET order_quantity = :order_quantity,
-                       order_price = :order_price * :order_quantity
+                       order_price = :order_price * order_quantity
                  WHERE order_item_id = :order_item_id AND product_id = :product_id AND order_id = :order_id';
         $stmt = self::$_connection->prepare($SQL);
         $stmt->execute(['order_quantity'=>$this->order_quantity, 'order_item_id'=>$this->order_item_id,
