@@ -27,17 +27,6 @@ class Order extends Model
         return $stmt->fetch();
     }
 
-    public function findProfileHistory($customer_id)
-    {
-        $SQL = 'SELECT * FROM `Order` 
-                 WHERE customer_id = :customer_id 
-                   AND order_status = :order_status';
-        $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['customer_id'=>$customer_id, 'order_status'=>'Paid']);
-        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Order');
-        return $stmt->fetch();
-    }
-
     public function find($order_id)
     {
         $SQL = 'SELECT * FROM `Order` WHERE order_id = :order_id';

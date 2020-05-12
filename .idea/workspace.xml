@@ -21,7 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="More changes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/OrderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/OrderDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/OrderDetails.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589317064976</updated>
-      <workItem from="1589317070658" duration="1121000" />
+      <workItem from="1589317070658" duration="2758000" />
     </task>
     <task id="LOCAL-00001" summary="More changes.">
       <created>1589317184327</created>
@@ -84,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589317983159</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="More changes.">
+      <created>1589318200557</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589318200557</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,10 +119,10 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="610" y="334" width="614" height="252" key="MultipleFileMergeDialog/0.0.1440.920@0.0.1440.920" timestamp="1589317740261" />
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589317989811">
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589318210362">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589317989811" />
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589318210362" />
     <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589317660376">
       <screen x="0" y="0" width="1440" height="920" />
     </state>

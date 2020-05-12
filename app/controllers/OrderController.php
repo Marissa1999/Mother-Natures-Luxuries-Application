@@ -89,15 +89,7 @@ class OrderController extends Controller
         $user_id = (string) $_SESSION['user_id'];
         $theProfile = $this->model('Profile')->findProfile($user_id);
         $_SESSION['profile_id'] = $theProfile->profile_id;
-
-        $history = $this->model('Order')->findProfileHistory($_SESSION['profile_id']);
-
-        if($history == null)
-        {
-            $history = $this->setHistory();
-        }
-
-        $orders = $this->model('OrderDetails')->getOrderForUser($history->customer_id);
+        $orders = $this->model('OrderDetails')->getHistoryForUser($_SESSION['profile_id']);
         $products = $this->model('Product')->get();
         $this->view('order/history', ['products'=>$products, 'orders'=>$orders]);
     }
