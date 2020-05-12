@@ -75,15 +75,6 @@ class OrderController extends Controller
         return $cart;
     }
 
-    public function setHistory()
-    {
-        $history = $this->model('Order');
-        $history->customer_id = $_SESSION['profile_id'];
-        $history->order_status = 'Paid';
-        $history->order_date = $_POST['order_date'];
-        return $history;
-    }
-
     public function history()
     {
         $user_id = (string) $_SESSION['user_id'];
@@ -97,7 +88,6 @@ class OrderController extends Controller
     public function checkout()
     {
         $cart = $this->model('Order')->findProfileCart($_SESSION['profile_id']);
-        $cart->order_date = $_POST['order_date'];
         $cart->order_status = 'Paid';
         $cart->update();
         header('location:/order/index');
