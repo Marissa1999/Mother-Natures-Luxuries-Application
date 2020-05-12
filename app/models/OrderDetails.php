@@ -14,7 +14,7 @@ class OrderDetails extends Model
                    ON orderdetails.product_id = product.product_id
                    INNER JOIN `Order` `order`
                    ON orderdetails.order_id = `order`.order_id
-                   WHERE customer_id = :customer_id AND order_id = :order_id';
+                   WHERE customer_id = :customer_id';
         $stmt = self::$_connection->prepare($SQL);
         $stmt->execute(['customer_id'=>$customer_id]);
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'OrderDetails');

@@ -19,13 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="Continuing ShoppingCart.">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/order/checkout.php" afterDir="false" />
+    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="Finishing ShoppingCart.">
+      <change afterPath="$PROJECT_DIR$/app/views/order/history.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/OrderController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Order.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/OrderDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/OrderDetails.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/order/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/order/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +80,7 @@
       <workItem from="1589158977431" duration="12845000" />
       <workItem from="1589216173562" duration="7086000" />
       <workItem from="1589239711441" duration="585000" />
-      <workItem from="1589302374196" duration="6557000" />
+      <workItem from="1589302374196" duration="9580000" />
     </task>
     <task id="LOCAL-00001" summary="More commits.">
       <created>1588609526338</created>
@@ -257,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589305143879</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Finishing ShoppingCart.">
+      <created>1589309377484</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1589309377484</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,7 +293,8 @@
     <MESSAGE value="Adjusted more pictures." />
     <MESSAGE value="Completed three ShoppingCart user stories." />
     <MESSAGE value="Continuing ShoppingCart." />
-    <option name="LAST_COMMIT_MESSAGE" value="Continuing ShoppingCart." />
+    <MESSAGE value="Finishing ShoppingCart." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finishing ShoppingCart." />
   </component>
   <component name="WindowStateProjectService">
     <state x="483" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588689083677">
@@ -309,10 +317,10 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="224" y="107" key="SettingsEditor/0.0.1440.920@0.0.1440.920" timestamp="1589163181969" />
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589305156838">
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589309386289">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589305156838" />
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589309386289" />
     <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589304978119">
       <screen x="0" y="0" width="1440" height="920" />
     </state>

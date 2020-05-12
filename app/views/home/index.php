@@ -24,7 +24,8 @@
          <a href='/book/search' class='btn btn-success'>Browse All Books</a>
          <a href='/message/index' class='btn btn-success'>Message Users</a>
          <a href='/wishlist/index' class='btn btn-success'>View Wish List</a>
-         <a href='/order/index' class='btn btn-success'>View Shopping Cart</a><br />
+         <a href='/order/index' class='btn btn-success'>View Shopping Cart</a>
+         <a href='/order/history' class='btn btn-success'>View Shopping History</a><br />
          <br />
           <h2>My Products</h2>
           <a href='/home/create' class='btn btn-success'>Add a Product</a>

@@ -19,7 +19,7 @@ class OrderController extends Controller
             $cart = $this->makeCart();
         }
 
-        $orders = $this->model('OrderDetails')->getOrdersForUser($_SESSION['profile_id']);
+        $orders = $this->model('OrderDetails')->getOrderForUser($_SESSION['profile_id']);
         $products = $this->model('Product')->get();
         $this->view('order/index', ['products'=>$products, 'orders'=>$orders]);
     }
@@ -66,7 +66,7 @@ class OrderController extends Controller
         }
     }
 
-    private function makeCart()
+    public function makeCart()
     {
         $cart = $this->model('Order');
         $cart->customer_id = $_SESSION['profile_id'];
@@ -74,6 +74,33 @@ class OrderController extends Controller
         $cart->order_date = $_POST['order_date'];
         $cart->order_id = $cart->create();
         return $cart;
+    }
+
+    public function setHistory()
+    {
+        $history = $this->model('Order');
+        $history->customer_id = $_SESSION['profile_id'];
+        $history->order_status = 'Paid';
+        $history->order_date = $_POST['order_date'];
+        $history->order_id = $history->create();
+        return $history;
+    }
+
+    public function history()
+    {
+        $user_id = (string) $_SESSION['user_id'];
+        $theProfile = $this->model('Profile')->findProfile($user_id);
+        $_SESSION['profile_id'] = $theProfile->profile_id;
+        $history = $this->model('Order')->findProfileHistory($_SESSION['profile_id']);
+
+        if($history == null)
+        {
+            $history = $this->setHistory();
+        }
+
+        $orders = $this->model('OrderDetails')->getOrderForUser($_SESSION['profile_id']);
+        $products = $this->model('Product')->get();
+        $this->view('order/history', ['products'=>$products, 'orders'=>$orders]);
     }
 
     public function checkout()
