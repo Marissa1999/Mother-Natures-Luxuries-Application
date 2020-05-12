@@ -89,6 +89,7 @@
         <li><a href='/message/index'>Message Users</a></li>
         <li><a href='/wishlist/index'>View Wish List</a></li>
         <li><a href='/order/index'>View Shopping Cart</a></li>
+        <li><a href='/order/history'>View Shopping History</a></li>
     </ul>
 
     <br />
