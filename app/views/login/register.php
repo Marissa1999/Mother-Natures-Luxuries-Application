@@ -12,14 +12,7 @@
           h1 {
               color: darkslateblue;
               margin-top: 200px;
-              margin-bottom:50px;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              position: relative;
-          }
-          h4 {
-              margin-bottom:50px;
+              margin-bottom:40px;
               display: flex;
               align-items: center;
               justify-content: center;
@@ -32,7 +25,7 @@
               justify-content: center;
           }
           .register-button {
-              margin-bottom: 50px;
+              margin-bottom: 60px;
               height: 100%;
               display: flex;
               align-items: center;
@@ -59,7 +52,7 @@
   </head>
   <body>
      <div class='container'>
-      <h1>Create an Account</h1>
+      <h1>Create an Account to Mother Nature's Luxuries</h1>
       <?php
          if(!is_array($data))
          {

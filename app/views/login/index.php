@@ -34,7 +34,7 @@
               justify-content: center;
           }
           .login-button {
-              margin-bottom: 50px;
+              margin-bottom: 60px;
               height: 100%;
               display: flex;
               align-items: center;
