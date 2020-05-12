@@ -11,6 +11,14 @@ class OrderController extends Controller
         $user_id = (string) $_SESSION['user_id'];
         $theProfile = $this->model('Profile')->findProfile($user_id);
         $_SESSION['profile_id'] = $theProfile->profile_id;
+
+        $cart = $this->model('Order')->findProfileCart($_SESSION['profile_id']);
+
+        if($cart == null)
+        {
+            $cart = $this->makeCart();
+        }
+
         $orders = $this->model('OrderDetails')->getOrdersForUser($_SESSION['profile_id']);
         $products = $this->model('Product')->get();
         $this->view('order/index', ['products'=>$products, 'orders'=>$orders]);
@@ -22,11 +30,7 @@ class OrderController extends Controller
 
         if($cart == null)
         {
-            $cart = $this->model('Order');
-            $cart->customer_id = $_SESSION['profile_id'];
-            $cart->order_status = 'Cart';
-            $cart->order_date = $_POST['order_date'];
-            $cart->order_id = $cart->create();
+            $cart = $this->makeCart();
         }
 
         $newItem = $this->model('OrderDetails');
@@ -60,6 +64,24 @@ class OrderController extends Controller
         {
             $this->view('order/editQuantity', $theItem);
         }
+    }
+
+    private function makeCart()
+    {
+        $cart = $this->model('Order');
+        $cart->customer_id = $_SESSION['profile_id'];
+        $cart->order_status = 'Cart';
+        $cart->order_date = $_POST['order_date'];
+        $cart->order_id = $cart->create();
+        return $cart;
+    }
+
+    public function checkout()
+    {
+        $cart = $this->model('Order')->findProfileCart($_SESSION['profile_id']);
+        $cart->order_status = 'Paid';
+        $cart->update();
+        header('location:/order/index');
     }
 
 }

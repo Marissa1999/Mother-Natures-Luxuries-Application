@@ -7,17 +7,16 @@ class OrderDetails extends Model
     var $order_price;
     var $order_quantity;
 
-    public function getOrdersForUser($customer_id)
+    public function getOrderForUser($customer_id)
     {
         $SQL = 'SELECT * FROM OrderDetails orderdetails
                    INNER JOIN Product product
                    ON orderdetails.product_id = product.product_id
                    INNER JOIN `Order` `order`
                    ON orderdetails.order_id = `order`.order_id
-                   WHERE customer_id = :customer_id
-                   AND order_status = :order_status';
+                   WHERE customer_id = :customer_id AND order_id = :order_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['customer_id'=>$customer_id,'order_status'=>'Cart']);
+        $stmt->execute(['customer_id'=>$customer_id]);
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'OrderDetails');
         return $stmt->fetchAll();
     }

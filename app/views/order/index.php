@@ -14,20 +14,6 @@
 <div class='container'>
     <h1>Shopping Cart</h1>
     <a href='/login/logout'>Logout</a><br />
-    <?php
-    /*
-       $order = $data['orders'];
-       $product = $data['products'];
-       $subtotal += $order->order_price * $order->order_quantity;
-       $subtotal = $this->model('OrderDetails')->getTotalForUser($_SESSION['profile_id']);
-       $taxes = (int) $subtotal * 0.15;
-       $total = (int) $subtotal + $taxes;
-       echo "<h3>Subtotal: $$subtotal</h3>";
-       echo "<h3>Taxes: $$taxes</h3>";
-       echo "<h3>Total: $$total</h3>";
-       echo "<a href='/order/editQuantity' class='btn btn-info'>Head to Checkout</a>";*/
-    ?>
-
     <table class='table table-striped'>
         <tr><td>Product Name</td><td>Picture</td><td>Details</td><td>Category</td><td>Unit Price</td><td>Order Price</td><td>Quantity</td><td>Date</td><td>Actions</td></tr><br />
         <?php
@@ -51,10 +37,10 @@
         $subtotal = $this->model('OrderDetails')->getTotalForUser($_SESSION['profile_id']);
         $taxes = (int) $subtotal * 0.15;
         $total = (int) $subtotal + $taxes;
-        echo "<h3>Subtotal: $$subtotal</h3>";
-        echo "<h3>Taxes: $$taxes</h3>";
-        echo "<h3>Total: $$total</h3>";
-        echo "<a href='/order/editQuantity' class='btn btn-info'>Head to Checkout</a>";
+        echo "<tr><th colspan='4'>Subtotal: </th><th>$$subtotal</th></tr>";
+        echo "<tr><th colspan='4'>Taxes: </th><th>$$taxes</th></tr>";
+        echo "<tr><th colspan='4'>Total: </th><th>$$total</th></tr>";
+        echo "<a href='/order/checkout' class='btn btn-info'>Head to Checkout</a>";
         ?>
     </table>
     <a href='/home/index' class='btn btn-secondary'>Back to Home Page</a><br />

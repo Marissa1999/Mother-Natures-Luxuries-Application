@@ -47,14 +47,6 @@ class Order extends Model
                         'order_id'=>$this->order_id, 'customer_id'=>$this->customer_id]);
         return $stmt->rowCount();
     }
-
-    public function delete()
-    {
-        $SQL = 'DELETE FROM `Order` WHERE order_id = :order_id AND customer_id = :customer_id';
-        $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['order_id'=>$this->order_id, 'customer_id'=>$this->customer_id]);
-        return $stmt->rowCount();
-    }
 }
 
 ?>
