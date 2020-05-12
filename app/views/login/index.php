@@ -61,7 +61,7 @@
   <body>
      <div class='container'>
       <h1>Login to Mother Nature's Luxuries</h1>
-         <h4>Come shop to your heart's desires!</h4>
+         <h4>Come Shop to your Heart's Desires!</h4>
        <?php
          if(!is_array($data))
          {

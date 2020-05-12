@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Fixed the Shopping History.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/OrderDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/OrderDetails.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/login/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/login/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589317064976</updated>
-      <workItem from="1589317070658" duration="4743000" />
+      <workItem from="1589317070658" duration="5063000" />
     </task>
     <task id="LOCAL-00001" summary="More changes.">
       <created>1589317184327</created>
@@ -99,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589321483870</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fixed the Shopping History.">
+      <created>1589323397398</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1589323397398</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,10 +131,10 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="610" y="334" width="614" height="252" key="MultipleFileMergeDialog/0.0.1440.920@0.0.1440.920" timestamp="1589317740261" />
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589321493153">
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589323409935">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589321493153" />
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589323409935" />
     <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589321551149">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
