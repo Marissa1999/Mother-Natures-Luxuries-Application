@@ -5,14 +5,63 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+      <title>Login</title>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Login</title>
+      <style>
+          h1 {
+              color: darkslateblue;
+              margin-top: 200px;
+              margin-bottom:15px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+          }
+          h4 {
+              margin-bottom:50px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+          }
+          .form-group {
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          .login-button {
+              margin-bottom: 50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          p {
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          body {
+              background-color: lavender;
+              font-family: Helvetica, sans-serif;
+          }
+          label,
+          input {
+              height: 100%;
+              display: block;
+              text-align: center;
+          }
+      </style>
   </head>
   <body>
      <div class='container'>
-      <h1>Login</h1>
+      <h1>Login to Mother Nature's Luxuries</h1>
+         <h4>Come shop to your heart's desires!</h4>
        <?php
          if(!is_array($data))
          {
@@ -21,14 +70,18 @@
         ?>
         <form action='' method='post'>
           <div class='form-group'>
-             <label>Username: <input type='text' name='username' class='form-control' /></label>
+             <label>Username <input type='text' name='username' class='form-control' /></label>
            </div>
            <div class='form-group'>
-             <label>Password: <input type='password' name='password' class='form-control' /></label>
+             <label>Password <input type='password' name='password' class='form-control' /></label>
            </div>
-             <input type='submit' name='action' value='Login' class=' btn btn-primary' />          
+            <div class='login-button'>
+                <input type='submit' name='action' value='Log In' class=' btn btn-primary' />
+            </div>
         </form>
-         No account? <a href='/login/register' class='btn btn-secondary'>Register</a>
+         <p>
+             Don't have an account? &nbsp;&nbsp; <a href='/login/register' class='btn btn-secondary'>Create an Account</a>
+         </p>
       </div>
 
     <!-- Optional JavaScript -->

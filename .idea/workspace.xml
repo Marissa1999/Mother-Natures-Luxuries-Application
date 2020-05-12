@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="Completed three ShoppingCart user stories.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/order/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/order/index.php" afterDir="false" />
+    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="Adjusted more pictures.">
+      <change beforePath="$PROJECT_DIR$/news_images/5eb22c82a165e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/news_images/5eb22d9c5c714.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +45,6 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/review" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -67,13 +66,7 @@
       <workItem from="1588602976752" duration="42274000" />
       <workItem from="1588687971141" duration="7497000" />
       <workItem from="1588697642551" duration="13846000" />
-      <workItem from="1588724255736" duration="12125000" />
-      <workItem from="1588737692627" duration="16000" />
-      <workItem from="1588783350517" duration="2693000" />
-      <workItem from="1589136132115" duration="15183000" />
-      <workItem from="1589158977431" duration="12845000" />
-      <workItem from="1589216173562" duration="7086000" />
-      <workItem from="1589239711441" duration="221000" />
+      <workItem from="1588724255736" duration="12071000" />
     </task>
     <task id="LOCAL-00001" summary="More commits.">
       <created>1588609526338</created>
@@ -201,35 +194,7 @@
       <option name="project" value="LOCAL" />
       <updated>1588737565848</updated>
     </task>
-    <task id="LOCAL-00019" summary="Adjusted more pictures.">
-      <created>1588737647474</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1588737647474</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Completed three ShoppingCart user stories.">
-      <created>1589167766028</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1589167766028</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Completed three ShoppingCart user stories.">
-      <created>1589171682585</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1589171682585</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Completed three ShoppingCart user stories.">
-      <created>1589234341882</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1589234341882</updated>
-    </task>
-    <option name="localTasksCounter" value="23" />
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,8 +221,7 @@
     <MESSAGE value="More commits regarding the creation of Order and Theme related files." />
     <MESSAGE value="Adjusted the pictures for Books." />
     <MESSAGE value="Adjusted more pictures." />
-    <MESSAGE value="Completed three ShoppingCart user stories." />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed three ShoppingCart user stories." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusted more pictures." />
   </component>
   <component name="WindowStateProjectService">
     <state x="483" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588689083677">
@@ -268,18 +232,10 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="610" y="334" width="386" height="252" key="MultipleFileMergeDialog/0.0.1440.920@0.0.1440.920" timestamp="1588707596757" />
-    <state x="557" y="392" key="NewPhpFileDialog" timestamp="1589142240931">
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1588731845700">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="557" y="392" key="NewPhpFileDialog/0.0.1440.920@0.0.1440.920" timestamp="1589142240931" />
-    <state x="224" y="107" key="SettingsEditor" timestamp="1589163181969">
-      <screen x="0" y="0" width="1440" height="920" />
-    </state>
-    <state x="224" y="107" key="SettingsEditor/0.0.1440.920@0.0.1440.920" timestamp="1589163181969" />
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589234351755">
-      <screen x="0" y="0" width="1440" height="920" />
-    </state>
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589234351755" />
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1588731845700" />
     <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588707586978">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
