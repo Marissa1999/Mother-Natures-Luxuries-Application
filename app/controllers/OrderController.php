@@ -71,7 +71,6 @@ class OrderController extends Controller
         $cart = $this->model('Order');
         $cart->customer_id = $_SESSION['profile_id'];
         $cart->order_status = 'Cart';
-        $cart->order_date = $_POST['order_date'];
         $cart->order_id = $cart->create();
         return $cart;
     }
