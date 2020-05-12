@@ -8,11 +8,58 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Register an Account</title>
+      <style>
+          h1 {
+              color: darkslateblue;
+              margin-top: 200px;
+              margin-bottom:50px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+          }
+          h4 {
+              margin-bottom:50px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+          }
+          .form-group {
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          .register-button {
+              margin-bottom: 50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          p {
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          body {
+              background-color: lavender;
+              font-family: Helvetica, sans-serif;
+          }
+          label,
+          input {
+              height: 100%;
+              display: block;
+              text-align: center;
+          }
+      </style>
+    <title>Create an Account</title>
   </head>
   <body>
      <div class='container'>
-      <h1>Register an Account</h1>
+      <h1>Create an Account</h1>
       <?php
          if(!is_array($data))
          {
@@ -21,17 +68,21 @@
       ?>
         <form action='' method='post'>
           <div class='form-group'>
-             <label>Username: <input type='text' name='username' class='form-control' /></label>
+             <label>Username <input type='text' name='username' class='form-control' /></label>
            </div>
            <div class='form-group'>
-             <label>Password: <input type='password' name='password' class='form-control' /></label>
+             <label>Password <input type='password' name='password' class='form-control' /></label>
            </div>
            <div class='form-group'>
-             <label>Password Confirmation: <input type='password' name='password_confirm' class='form-control' /></label>
+             <label>Password Confirmation <input type='password' name='password_confirm' class='form-control' /></label>
            </div>
-             <input type='submit' name='action' value='Register' class=' btn btn-primary' />          
+            <div class='register-button'>
+             <input type='submit' name='action' value='Sign Up' class=' btn btn-primary' />
+            </div>
         </form>
-         Already Have an Account? <a href='/login/index' class='btn btn-secondary'>Login</a>
+         <p>
+             Already have an account? &nbsp;&nbsp; <a href='/login/index' class='btn btn-secondary'>Log In</a>
+         </p>
       </div>
 
     <!-- Optional JavaScript -->
