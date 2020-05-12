@@ -91,6 +91,7 @@ class OrderController extends Controller
         $user_id = (string) $_SESSION['user_id'];
         $theProfile = $this->model('Profile')->findProfile($user_id);
         $_SESSION['profile_id'] = $theProfile->profile_id;
+
         $history = $this->model('Order')->findProfileHistory($_SESSION['profile_id']);
 
         if($history == null)
@@ -98,7 +99,7 @@ class OrderController extends Controller
             $history = $this->setHistory();
         }
 
-        $orders = $this->model('OrderDetails')->getOrderForUser($_SESSION['profile_id']);
+        $orders = $this->model('OrderDetails')->getOrderForUser($history->customer_id);
         $products = $this->model('Product')->get();
         $this->view('order/history', ['products'=>$products, 'orders'=>$orders]);
     }
@@ -106,6 +107,7 @@ class OrderController extends Controller
     public function checkout()
     {
         $cart = $this->model('Order')->findProfileCart($_SESSION['profile_id']);
+        $cart->order_date = $_POST['order_date'];
         $cart->order_status = 'Paid';
         $cart->update();
         header('location:/order/index');
