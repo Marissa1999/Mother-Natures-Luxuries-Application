@@ -81,7 +81,6 @@ class OrderController extends Controller
         $history->customer_id = $_SESSION['profile_id'];
         $history->order_status = 'Paid';
         $history->order_date = $_POST['order_date'];
-        $history->order_id = $history->create();
         return $history;
     }
 
