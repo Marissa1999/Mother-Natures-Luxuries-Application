@@ -76,7 +76,7 @@
              <label>Password <input type='password' name='password' class='form-control' /></label>
            </div>
             <div class='login-button'>
-                <input type='submit' name='action' value='Log In' class=' btn btn-primary' />
+                <input type='submit' name='action' value='&nbsp;&nbsp;Log In&nbsp;&nbsp;' class=' btn btn-primary' />
             </div>
         </form>
          <p>

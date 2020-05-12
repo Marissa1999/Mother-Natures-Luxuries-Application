@@ -77,11 +77,11 @@
              <label>Password Confirmation <input type='password' name='password_confirm' class='form-control' /></label>
            </div>
             <div class='register-button'>
-             <input type='submit' name='action' value='Sign Up' class=' btn btn-primary' />
+             <input type='submit' name='action' value='&nbsp;&nbsp;Sign Up&nbsp;&nbsp;' class=' btn btn-primary' />
             </div>
         </form>
          <p>
-             Already have an account? &nbsp;&nbsp; <a href='/login/index' class='btn btn-secondary'>Log In</a>
+             Already have an account? &nbsp;&nbsp; <a href='/login/index' class='btn btn-secondary'>&nbsp;Log In&nbsp;</a>
          </p>
       </div>
 

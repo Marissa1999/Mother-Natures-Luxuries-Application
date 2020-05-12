@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="Adjusted more pictures.">
-      <change beforePath="$PROJECT_DIR$/news_images/5eb22c82a165e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/news_images/5eb22d9c5c714.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/login/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/login/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/login/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/login/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +33,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="design-login" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1bRlpmu7M5SoQN0lQ2BFGUAOepO" />
@@ -45,6 +51,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/review" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -232,17 +240,19 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="610" y="334" width="386" height="252" key="MultipleFileMergeDialog/0.0.1440.920@0.0.1440.920" timestamp="1588707596757" />
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1588731845700">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state x="445" y="239" key="Vcs.Push.Dialog.v2" timestamp="1589303653002">
+      <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1588731845700" />
+    <state x="445" y="239" key="Vcs.Push.Dialog.v2/0.0.2048.1122@0.0.2048.1122" timestamp="1589303653002" />
     <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588707586978">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920" timestamp="1588707586978" />
-    <state x="425" y="264" key="git4idea.merge.GitPullDialog" timestamp="1588709992398">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state x="604" y="322" key="git4idea.merge.GitPullDialog" timestamp="1589303702556">
+      <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="425" y="264" key="git4idea.merge.GitPullDialog/0.0.1440.920@0.0.1440.920" timestamp="1588709992398" />
+    <state x="604" y="322" key="git4idea.merge.GitPullDialog/0.0.2048.1122@0.0.2048.1122" timestamp="1589303702556" />
   </component>
 </project>
