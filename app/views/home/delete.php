@@ -8,6 +8,33 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+      <style>
+          h1 {
+              color: darkslateblue;
+              margin-top: 100px;
+              margin-bottom:40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+          }
+          .form-group {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          label,
+          input {
+              height: 100%;
+              text-align: center;
+          }
+          body {
+              background-color: lavender;
+              font-family: Helvetica, sans-serif;
+          }
+      </style>
     <title>Delete Product</title>
   </head>
   <body>
@@ -15,12 +42,19 @@
        <h1>Delete this Product</h1>
         <form action='' method='post'>
           <div class='form-group'>
-              <label>Product Name: <input type='text' name='product_name' value='<?=$data->product_name ?>' disabled class='form-control' /></label>
-              <label>Product Picture: <img src='/product_images/<?=$data->product_picture?>' style='max-width:100px;'/></label>
-              <label>Product Details: <input type='text' name='product_details' value='<?=$data->product_details ?>' disabled class='form-control' /></label>
-              <label>Product Price: <input type='text' name='product_price' value='<?=$data->product_price ?>' disabled class='form-control' /></label>
-              <label>Product Quantity: <input type='text' name='product_quantity' value='<?=$data->product_quantity ?>' disabled class='form-control' /></label>
-              <label>Product Category: <input type='text' name='product_category' value='<?=$data->product_category ?>' disabled class='form-control' /></label>
+              <label>Product Name <input type='text' name='product_name' value='<?=$data->product_name ?>' disabled class='form-control' /></label>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label style="width:208px">Product Picture <br/><img src='/product_images/<?=$data->product_picture?>' style='max-width:100px;'/></label
+          </div>
+          <div class='form-group'>
+              <label>Product Details <input type='text' name='product_details' value='<?=$data->product_details ?>' disabled class='form-control' /></label>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label>Product Price <input type='text' name='product_price' value='<?=$data->product_price ?>' disabled class='form-control' /></label>
+          </div>
+          <div class='form-group'>
+              <label>Product Quantity <input type='text' name='product_quantity' value='<?=$data->product_quantity ?>' disabled class='form-control' /></label>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label>Product Category <input type='text' name='product_category' value='<?=$data->product_category ?>' disabled class='form-control' /></label>
            </div>
              <input type='submit' name='action' value='Delete' class='btn btn-danger' />
         <a href='/home/index' class='btn btn-secondary'>Cancel</a> 
