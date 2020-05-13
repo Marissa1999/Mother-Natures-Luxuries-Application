@@ -19,9 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Adjust the Workspace file.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/book/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/search.php" afterDir="false" />
+=======
+    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="adjusted the layout of views/wishlist/delete">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/wishlist/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlist/index.php" afterDir="false" />
+>>>>>>> design-wishlist
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +40,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectId" id="1bp7DklP4Fs7W8TANGtQOijHvFm" />
+=======
+  <component name="ProjectId" id="1bRlpmu7M5SoQN0lQ2BFGUAOepO" />
+>>>>>>> design-wishlist
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -59,6 +69,7 @@
       <updated>1589317064976</updated>
       <workItem from="1589317070658" duration="6063000" />
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00001" summary="More changes.">
       <created>1589317184327</created>
       <option name="number" value="00001" />
@@ -68,6 +79,10 @@
     </task>
     <task id="LOCAL-00002" summary="More changes.">
       <created>1589317396542</created>
+=======
+    <task id="LOCAL-00002" summary="More commits.">
+      <created>1588615018020</created>
+>>>>>>> design-wishlist
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
@@ -136,7 +151,158 @@
       <option name="project" value="LOCAL" />
       <updated>1589394652669</updated>
     </task>
+<<<<<<< HEAD
     <option name="localTasksCounter" value="12" />
+=======
+    <task id="LOCAL-00030" summary="adjusted the layout of views/message/index">
+      <created>1589384656175</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1589384656175</updated>
+    </task>
+    <task id="LOCAL-00031" summary="adjusted the layout of views/message/viewMessages">
+      <created>1589387414364</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1589387414364</updated>
+    </task>
+    <task id="LOCAL-00032" summary="adjusted the layout of views/news/create">
+      <created>1589387846375</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1589387846375</updated>
+    </task>
+    <task id="LOCAL-00033" summary="adjusted the layout of views/news/index">
+      <created>1589388024460</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1589388024460</updated>
+    </task>
+    <task id="LOCAL-00034" summary="adjusted the layout of views/payment/create">
+      <created>1589388379777</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1589388379777</updated>
+    </task>
+    <task id="LOCAL-00035" summary="adjusted the layout of views/payment/delete">
+      <created>1589388497575</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1589388497575</updated>
+    </task>
+    <task id="LOCAL-00036" summary="adjusted the layout of views/payment/edit">
+      <created>1589388693566</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1589388693566</updated>
+    </task>
+    <task id="LOCAL-00037" summary="adjusted the layout of views/payment/index">
+      <created>1589389075256</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1589389075256</updated>
+    </task>
+    <task id="LOCAL-00038" summary="adjusted the layout of views/profile/create">
+      <created>1589389242361</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1589389242361</updated>
+    </task>
+    <task id="LOCAL-00039" summary="adjusted the layout of views/profile/details">
+      <created>1589392112062</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1589392112062</updated>
+    </task>
+    <task id="LOCAL-00040" summary="adjusted the layout of views/profile/edit">
+      <created>1589392468284</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1589392468284</updated>
+    </task>
+    <task id="LOCAL-00041" summary="cleaned up some unnecessary css">
+      <created>1589392655914</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1589392655914</updated>
+    </task>
+    <task id="LOCAL-00042" summary="adjusted the layout of views/profile/index">
+      <created>1589392748143</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1589392748143</updated>
+    </task>
+    <task id="LOCAL-00043" summary="adjusted the layout of views/promotion/create">
+      <created>1589393063106</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1589393063106</updated>
+    </task>
+    <task id="LOCAL-00044" summary="adjusted the layout of views/promotion/delete">
+      <created>1589393451213</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1589393451213</updated>
+    </task>
+    <task id="LOCAL-00045" summary="adjusted the layout of views/promotion/index">
+      <created>1589393632139</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1589393632139</updated>
+    </task>
+    <task id="LOCAL-00046" summary="adjusted the layout of views/review/create">
+      <created>1589393845371</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1589393845371</updated>
+    </task>
+    <task id="LOCAL-00047" summary="adjusted the layout of views/review/delete">
+      <created>1589394002324</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1589394002324</updated>
+    </task>
+    <task id="LOCAL-00048" summary="adjusted the layout of views/review/edit">
+      <created>1589394120274</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1589394120274</updated>
+    </task>
+    <task id="LOCAL-00049" summary="adjusted the layout of views/review/index">
+      <created>1589394371814</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1589394371814</updated>
+    </task>
+    <task id="LOCAL-00050" summary="adjusted the layout of views/wishlist/delete">
+      <created>1589405820887</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1589405820887</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
+>>>>>>> design-wishlist
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,11 +321,40 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+<<<<<<< HEAD
     <MESSAGE value="More changes." />
     <MESSAGE value="Fixed the Shopping History." />
     <MESSAGE value="Added more images." />
     <MESSAGE value="Adjust the Workspace file." />
     <option name="LAST_COMMIT_MESSAGE" value="Adjust the Workspace file." />
+=======
+    <MESSAGE value="adjusted the layout of views/book/details" />
+    <MESSAGE value="adjusted the layout of views/message/create" />
+    <MESSAGE value="adjusted the layout of views/message/delete" />
+    <MESSAGE value="adjusted the layout of views/message/edit" />
+    <MESSAGE value="adjusted the layout of views/message/index" />
+    <MESSAGE value="adjusted the layout of views/message/viewMessages" />
+    <MESSAGE value="adjusted the layout of views/news/create" />
+    <MESSAGE value="adjusted the layout of views/news/index" />
+    <MESSAGE value="adjusted the layout of views/payment/create" />
+    <MESSAGE value="adjusted the layout of views/payment/delete" />
+    <MESSAGE value="adjusted the layout of views/payment/edit" />
+    <MESSAGE value="adjusted the layout of views/payment/index" />
+    <MESSAGE value="adjusted the layout of views/profile/create" />
+    <MESSAGE value="adjusted the layout of views/profile/details" />
+    <MESSAGE value="adjusted the layout of views/profile/edit" />
+    <MESSAGE value="cleaned up some unnecessary css" />
+    <MESSAGE value="adjusted the layout of views/profile/index" />
+    <MESSAGE value="adjusted the layout of views/promotion/create" />
+    <MESSAGE value="adjusted the layout of views/promotion/delete" />
+    <MESSAGE value="adjusted the layout of views/promotion/index" />
+    <MESSAGE value="adjusted the layout of views/review/create" />
+    <MESSAGE value="adjusted the layout of views/review/delete" />
+    <MESSAGE value="adjusted the layout of views/review/edit" />
+    <MESSAGE value="adjusted the layout of views/review/index" />
+    <MESSAGE value="adjusted the layout of views/wishlist/delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjusted the layout of views/wishlist/delete" />
+>>>>>>> design-wishlist
   </component>
   <component name="WindowStateProjectService">
     <state x="610" y="334" width="614" height="252" key="MultipleFileMergeDialog" timestamp="1589394674974">
@@ -169,9 +364,20 @@
     <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589394660164">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
+<<<<<<< HEAD
     <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589394660164" />
     <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589389645816">
       <screen x="0" y="0" width="1440" height="920" />
+=======
+    <state x="610" y="334" width="386" height="252" key="MultipleFileMergeDialog/0.0.1440.920@0.0.1440.920" timestamp="1588707596757" />
+    <state x="445" y="239" key="Vcs.Push.Dialog.v2" timestamp="1589394381324">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1588731845700" />
+    <state x="445" y="239" key="Vcs.Push.Dialog.v2/0.0.2048.1122@0.0.2048.1122" timestamp="1589394381324" />
+    <state x="757" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589313704185">
+      <screen x="0" y="0" width="2048" height="1122" />
+>>>>>>> design-wishlist
     </state>
     <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920" timestamp="1589389645816" />
     <state x="425" y="264" key="git4idea.merge.GitPullDialog" timestamp="1589394670097">

@@ -7,7 +7,47 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+      <style>
+          h1 {
+              color: darkslateblue;
+              margin-top: 50px;
+              margin-bottom:40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+          }
+          .form-group {
+              margin-bottom:50px;
+              text-align: center;
+              height: 100%;
+              align-items: center;
+              justify-content: center;
+          }
+          .delete-button {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          p {
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          label,
+          input {
+              height: 100%;
+              display: inline-block;
+              text-align: center;
+          }
+          body {
+              background-color: lavender;
+              font-family: Helvetica, sans-serif;
+          }
+      </style>
     <title>Delete this Wish List Item</title>
   </head>
   <body>
@@ -19,18 +59,28 @@
                 $product = $this->model('Product')->find($data->product_id);
                 $profile = $this->model('Profile')->find($product->seller_id);
 
-                echo "<label>First Name: <input type='text' name='first_name' value='$profile->first_name' disabled class='form-control' /></label>
-                      <label>Last Name: <input type='text' name='last_name' value='$profile->last_name' disabled class='form-control' /></label>
-                      <label>Product Name: <input type='text' name='product_name' value='$product->product_name' disabled class='form-control' /></label>
-                      <label>Product Picture: <img src='/product_images/$product->product_picture' style='max-width:100px;' /></label>
-                      <label>Product Details: <input type='text' name='product_details' value='$product->product_details' disabled class='form-control' /></label>
-                      <label>Product Category: <input type='text' name='product_category' value='$product->product_category' disabled class='form-control' /></label>
-                      <label>Product Price: <input type='text' name='product_price' value='$product->product_price' disabled class='form-control' /></label>";
+                echo "<label>First Name <input type='text' name='first_name' value='$profile->first_name' disabled class='form-control' /></label>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <label>Last Name <input type='text' name='last_name' value='$profile->last_name' disabled class='form-control' /></label>
+                      <br/>
+                      <label>Product Name <input type='text' name='product_name' value='$product->product_name' disabled class='form-control' /></label>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <label style=\"width:208px\">Product Picture <br/><img src='/product_images/$product->product_picture' style='max-width:100px;' /></label>
+                      <br/>
+                      <label>Product Details <input type='text' name='product_details' value='$product->product_details' disabled class='form-control' /></label>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <label>Product Category <input type='text' name='product_category' value='$product->product_category' disabled class='form-control' /></label>
+                      <br/>
+                      <label>Product Price <input type='text' name='product_price' value='$product->product_price' disabled class='form-control' /></label>";
                 ?>
             </div>
-             <input type='submit' name='action' value='Delete' class='btn btn-danger' />
-        <a href='/wishlist/index' class='btn btn-secondary'>Cancel</a>
-        </form>    
+            <div class="delete-button">
+                <input type='submit' name='action' value='&nbsp;&nbsp;Remove Item from Wishlist&nbsp;&nbsp;' class='btn btn-danger' />
+            </div>
+            <p>
+                <a href='/wishlist/index' class='btn btn-secondary'>Cancel</a>
+            </p>
+        </form>
      </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
