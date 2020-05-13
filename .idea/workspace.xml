@@ -21,8 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="adjusted the size of login/signup buttons">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/login/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/login/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/create.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/login/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/login/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

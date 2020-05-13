@@ -62,7 +62,7 @@
         <form action='' method='post'>
           <div class='form-group'>
              <label>Username <input type='text' name='username' class='form-control' /></label>
-           </div>
+          </div>
            <div class='form-group'>
              <label>Password <input type='password' name='password' class='form-control' /></label>
            </div>

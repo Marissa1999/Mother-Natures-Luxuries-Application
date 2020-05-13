@@ -8,6 +8,54 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+      <style>
+          h1 {
+              color: darkslateblue;
+              margin-top: 100px;
+              margin-bottom:40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+          }
+          .form-group {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          .create-button {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          .form-group-pic {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          p {
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          label,
+          input {
+              height: 100%;
+              display: block;
+              text-align: center;
+          }
+          body {
+              background-color: lavender;
+              font-family: Helvetica, sans-serif;
+          }
+      </style>
     <title>Add a Product</title>
   </head>
   <body>
@@ -15,15 +63,26 @@
       <h1>Add a Product</h1>
         <form action='' method='post' enctype='multipart/form-data'>
           <div class='form-group'>
-              <label>Product Name: <input type='text' name='product_name' class='form-control' /></label>
-              <label>Product Picture: <input type='file' name='product_picture' /></label>
-              <label>Product Details: <input type='text' name='product_details' class='form-control' /></label>
-              <label>Product Price: <input type='text' name='product_price' class='form-control' /></label>
-              <label>Product Quantity: <input type='text' name='product_quantity' class='form-control' /></label>
-              <label>Product Category: <input type='text' name='product_category' class='form-control' /></label>
-           </div>
-             <input type='submit' name='action' value='Create' class='btn btn-primary' />
-             <a href='/home/index' class='btn btn-secondary'>Cancel</a>
+              <label>Product Name <input type='text' name='product_name' class='form-control' /></label>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label>Product Picture <input type='file' style="width:208px" name='product_picture'/></label>
+          </div>
+            <div class='form-group'>
+                <label>Product Price <input type='text' name='product_price' class='form-control' /></label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label>Product Quantity <input type='text' name='product_quantity' class='form-control' /></label>
+            </div>
+              <div class='form-group'>
+                  <label>Product Details <input type='text' name='product_details' class='form-control' /></label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <label>Product Category <input type='text' name='product_category' class='form-control' /></label>
+              </div>
+            <div class='create-button'>
+                <input type='submit' name='action' value='Create New Product' class='btn btn-primary' />
+            </div>
+            <p>
+                <a href='/home/index' class='btn btn-secondary'>Cancel</a>
+            </p>
         </form>
       </div>
 
