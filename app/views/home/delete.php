@@ -25,9 +25,23 @@
               align-items: center;
               justify-content: center;
           }
+          .delete-button {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          p {
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
           label,
           input {
               height: 100%;
+              display: block;
               text-align: center;
           }
           body {
@@ -35,6 +49,7 @@
               font-family: Helvetica, sans-serif;
           }
       </style>
+
     <title>Delete Product</title>
   </head>
   <body>
@@ -44,20 +59,25 @@
           <div class='form-group'>
               <label>Product Name <input type='text' name='product_name' value='<?=$data->product_name ?>' disabled class='form-control' /></label>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <label style="width:208px">Product Picture <br/><img src='/product_images/<?=$data->product_picture?>' style='max-width:100px;'/></label
+              <label style="width:208px">Product Picture <br/><img src='/product_images/<?=$data->product_picture?>' style='max-width:100px;'/></label>
           </div>
-          <div class='form-group'>
+              <div class='form-group'>
               <label>Product Details <input type='text' name='product_details' value='<?=$data->product_details ?>' disabled class='form-control' /></label>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <label>Product Price <input type='text' name='product_price' value='<?=$data->product_price ?>' disabled class='form-control' /></label>
-          </div>
-          <div class='form-group'>
+              </div>
+                  <div class='form-group'>
               <label>Product Quantity <input type='text' name='product_quantity' value='<?=$data->product_quantity ?>' disabled class='form-control' /></label>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <label>Product Category <input type='text' name='product_category' value='<?=$data->product_category ?>' disabled class='form-control' /></label>
-           </div>
-             <input type='submit' name='action' value='Delete' class='btn btn-danger' />
-        <a href='/home/index' class='btn btn-secondary'>Cancel</a> 
+                  </div>
+                  </div>
+     <div class='delete-button'>
+         <input type='submit' name='action' value='&nbsp;&nbsp;Delete Product&nbsp;&nbsp;' class='btn btn-danger' />
+     </div>
+         <p>
+             <a href='/home/index' class='btn btn-secondary'>Cancel</a>
+         </p>
         </form>    
      </div>
     <!-- Optional JavaScript -->

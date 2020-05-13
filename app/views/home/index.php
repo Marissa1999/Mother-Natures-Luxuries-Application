@@ -56,7 +56,7 @@
             text-decoration: none;
         }
         li a:hover {
-            background-color: #a6a6ed;
+            background-color: #d1d1f6;
         }
         a:link {
             text-decoration: none;
