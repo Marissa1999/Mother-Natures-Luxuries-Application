@@ -11,7 +11,7 @@
           h1 {
               color: darkslateblue;
               margin-top: 50px;
-              margin-bottom:50px;
+              margin-bottom:30px;
               display: flex;
               align-items: center;
               justify-content: center;
@@ -22,12 +22,12 @@
           }
           dt{
               font-size: 20px;
-              margin-top: 20px;
+              margin-top: 10px;
               margin-bottom: 20px;
           }
           dd{
               font-size: 15px;
-              margin-top: 10px;
+              margin-top: 5px;
               margin-bottom: 10px;
           }
           p {
