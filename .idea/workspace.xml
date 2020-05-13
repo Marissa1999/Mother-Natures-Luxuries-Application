@@ -6,17 +6,23 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-    </expand>
-    <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-    </select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Authentication and change view of Theme" />
+    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Added more images.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebb2f0a08fa9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/product_images/5ebb68455d925.jpg" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,14 +34,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="hiddenUrls">
-      <set>
-        <option value="https://github.com/Marissa1999/Mother_Nature_Luxuries_PHP_Application.git" />
-      </set>
-    </option>
-  </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7" />
   <component name="ProjectId" id="1bp7DklP4Fs7W8TANGtQOijHvFm" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -45,11 +43,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -61,13 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589317064976</updated>
-      <workItem from="1589317070658" duration="5063000" />
-      <workItem from="1589329057594" duration="35000" />
-      <workItem from="1589329139444" duration="3706000" />
-      <workItem from="1589339723453" duration="4841000" />
-      <workItem from="1589348005217" duration="4199000" />
-      <workItem from="1589352311419" duration="299000" />
-      <workItem from="1589352633948" duration="345000" />
+      <workItem from="1589317070658" duration="6063000" />
     </task>
     <task id="LOCAL-00001" summary="More changes.">
       <created>1589317184327</created>
@@ -119,34 +109,13 @@
       <updated>1589323397398</updated>
     </task>
     <task id="LOCAL-00008" summary="Fixed the Shopping History.">
-      <created>1589329506096</created>
+      <created>1589323731085</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1589329506096</updated>
+      <updated>1589323731085</updated>
     </task>
-    <task id="LOCAL-00009" summary="Authentication and change view of Theme">
-      <created>1589352380470</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1589352380470</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Authentication and change view of Theme">
-      <created>1589352651050</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1589352651050</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Authentication and change view of Theme">
-      <created>1589352736787</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1589352736787</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,19 +126,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -177,41 +134,26 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="More changes." />
     <MESSAGE value="Fixed the Shopping History." />
-    <MESSAGE value="Authentication and change view of Theme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Authentication and change view of Theme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the Shopping History." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="680" y="148" key="#PHP" timestamp="1589329156578">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state x="680" y="148" key="#PHP/0.0.1680.1010@0.0.1680.1010" timestamp="1589329156578" />
-    <state x="752" y="263" key="FileChooserDialogImpl" timestamp="1589329426498">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state x="752" y="263" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1589329426498" />
     <state x="610" y="334" width="614" height="252" key="MultipleFileMergeDialog" timestamp="1589317740261">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="610" y="334" width="614" height="252" key="MultipleFileMergeDialog/0.0.1440.920@0.0.1440.920" timestamp="1589317740261" />
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589323409935">
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589323737340">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589323409935" />
-    <state x="621" y="414" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589352493885">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589323737340" />
+    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589321551149">
+      <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920" timestamp="1589321551149" />
-    <state x="621" y="414" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1010@0.0.1680.1010" timestamp="1589352493885" />
-    <state x="425" y="264" key="git4idea.merge.GitPullDialog" timestamp="1589317767376">
+    <state x="425" y="264" key="git4idea.merge.GitPullDialog" timestamp="1589389522179">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="425" y="264" key="git4idea.merge.GitPullDialog/0.0.1440.920@0.0.1440.920" timestamp="1589317767376" />
-    <state x="833" y="223" width="672" height="678" key="search.everywhere.popup" timestamp="1589334501338">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state x="833" y="223" width="672" height="678" key="search.everywhere.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1589334501338" />
+    <state x="425" y="264" key="git4idea.merge.GitPullDialog/0.0.1440.920@0.0.1440.920" timestamp="1589389522179" />
   </component>
 </project>
