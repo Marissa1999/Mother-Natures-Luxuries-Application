@@ -7,13 +7,28 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <style>
+        h1 {
+            color: darkslateblue;
+            margin-top: 30px;
+            margin-bottom:40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        body {
+            background-color: lavender;
+            font-family: Helvetica, sans-serif;
+        }
+    </style>
     <title>Search Products</title>
 </head>
 <body>
 <div class='container'>
     <h1>Search All Products</h1>
-    <a href='/login/logout'>Logout</a><br />
+    <a href='/home/index' class='btn btn-secondary' style="float: left;">Back to Home Page</a><br />
+    <a href='/login/logout' class="btn btn-danger" style="float: right;">Logout</a><br />
     <form method='post' action=''>
         <br /><label>Search: </label> <input type="search" name="search_input" /> <input type="submit" name="search" value="Search" class='btn btn-info' />
         <a href='/home/search' class='btn btn-primary'>Refresh Product List</a><br />
@@ -39,9 +54,9 @@
                     echo "<td>$product->product_name</td><td><img src='/product_images/$product->product_picture' style='max-width:100px;' /></td>
                           <td>$product->product_details</td><td>$product->product_category</td><td>$product->product_price</td>
                           <td>$product->product_quantity</td>
-                    <td><a href='/wishlist/create?product_id=$product->product_id' class='btn btn-primary'>Add to Wish List</a>
-                        <a href='/review/index/$product->product_id' class='btn btn-info'>View Reviews</a>
-                        <a href='/order/AddToCart/$product->product_id' class='btn btn-success'>Add to Cart</a>
+                    <td><a href='/wishlist/create?product_id=$product->product_id' class='btn btn-outline-primary btn-sm'>Add to Wish List</a>
+                        <a href='/review/index/$product->product_id' class='btn btn-outline-info btn-sm'>View Reviews</a>
+                        <a href='/order/AddToCart/$product->product_id' class='btn btn-outline-success btn-sm'>Add to Cart</a>
                     </td></tr>";
                     break;
                 }
@@ -49,7 +64,6 @@
         }
         ?>
     </table>
-    <a href='/home/index' class='btn btn-secondary'>Back to Home Page</a><br />
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

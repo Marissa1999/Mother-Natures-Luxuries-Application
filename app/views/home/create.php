@@ -71,7 +71,7 @@
               <label>Product Category <input type='text' name='product_category' class='form-control' /></label>
           </div>
           <div class='create-button'>
-              <input type='submit' name='action' value='Create New Product' class='btn btn-primary' />
+              <input type='submit' name='action' value='&nbsp;&nbsp;Create New Product&nbsp;&nbsp;' class='btn btn-primary' />
           </div>
           <p>
               <a href='/home/index' class='btn btn-secondary'>Cancel</a>

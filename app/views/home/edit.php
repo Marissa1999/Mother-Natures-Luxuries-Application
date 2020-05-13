@@ -70,7 +70,7 @@
                 <label>Product Category <input type='text' name='product_category' value='<?=$data->product_category ?>' class='form-control' /></label>
             </div>
             <div class='save-button'>
-                <input type='submit' name='action' value='Save Changes' class='btn btn-success' />
+                <input type='submit' name='action' value='&nbsp;&nbsp;Save Changes&nbsp;&nbsp;' class='btn btn-success' />
             </div>
             <p>
                 <a href='/home/index' class='btn btn-secondary'>Cancel</a>

@@ -67,7 +67,7 @@
             <label>New Password Confirmation <input type='password' name='password_confirmation' class='form-control' /></label>
         </div>
         <div class='save-button'>
-            <input type='submit' name='action' value='Save Password' class='btn btn-success' />
+            <input type='submit' name='action' value='&nbsp;&nbsp;Save Password&nbsp;&nbsp;' class='btn btn-success' />
         </div>
         <p>
             <a href='/home/index' class='btn btn-secondary'>Cancel</a>
