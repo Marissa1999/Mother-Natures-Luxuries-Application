@@ -48,11 +48,11 @@
               font-family: Helvetica, sans-serif;
           }
       </style>
-    <title>Create a Profile</title>
+    <title>Create My Profile</title>
   </head>
   <body>
      <div class='container'>
-      <h1>Create a Profile</h1>
+      <h1>Create My Profile</h1>
         <form action='' method='post'>
           <div class='form-group'>
               <label>First Name <input type='text' name='first_name' class='form-control' /></label>
