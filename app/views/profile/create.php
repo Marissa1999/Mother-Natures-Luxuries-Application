@@ -4,9 +4,50 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+      <style>
+          h1 {
+              color: darkslateblue;
+              margin-top: 50px;
+              margin-bottom:40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+          }
+          .form-group {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          .create-button {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          p {
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          label,
+          input {
+              height: 100%;
+              display: block;
+              text-align: center;
+          }
+          body {
+              background-color: lavender;
+              font-family: Helvetica, sans-serif;
+          }
+      </style>
     <title>Create a Profile</title>
   </head>
   <body>
@@ -14,23 +55,28 @@
       <h1>Create a Profile</h1>
         <form action='' method='post'>
           <div class='form-group'>
-              <label>First Name: <input type='text' name='first_name' class='form-control' minlength="2" required /></label>
-              <label>Last Name: <input type='text' name='last_name' class='form-control' minlength="2" required/></label>
-              <label>Email: <input type='text' name='email' class='form-control' placeholder="example@gmail.com"  required /></label>
-              <label>Phone Number: <input type='text' name='phone_number' class='form-control' placeholder="111 111 1111"/></label>
-             User Type:
-                  <p><input type='radio' name='user_type' class='form-control' value="Seller" />Seller</p>
-                  <p><input type='radio' name='user_type' class='form-control' value="Buyer" />Buyer</p>
-              Theme ID:
-              <p><input type='radio' name='theme' class='form-control' value="1" />Beauty</p>
-              <p><input type='radio' name='theme' class='form-control' value="2" />Medical</p>
-              <p><input type='radio' name='theme' class='form-control' value="3" />Tea</p>
-              Gender:
-                  <p><input type='radio' name='gender' class='form-control' value="M" />Male</p>
-                  <p><input type='radio' name='gender' class='form-control' value="F" />Female</p></label>
-              <label>Location: <input type='text'  size="50" name='location' class='form-control' /></label>
+              <label>First Name <input type='text' name='first_name' class='form-control' /></label>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label>Last Name <input type='text' name='last_name' class='form-control' /></label>
+          </div>
+          <div class='form-group'>
+              <label>Email <input type='text' name='email' class='form-control' /></label>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label>Phone Number <input type='text' name='phone_number' class='form-control' /></label>
+          </div>
+          <div class='form-group'>
+              <label>Theme ID <input type='text' name='theme_id' class='form-control' /></label>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label>Gender <input type='text' name='gender' class='form-control' /></label>
+          </div>
+          <div class='form-group'>
+              <label>Location <input type='text' name='location' class='form-control' /></label>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label>User Type <input type='text' name='user_type' class='form-control' /></label>
            </div>
-             <input type='submit' name='action' value='Create' class='btn btn-primary' />
+            <div class='create-button'>
+                <input type='submit' name='action' value='&nbsp;&nbsp;Create My Profile&nbsp;&nbsp;' class='btn btn-primary' />
+            </div>
         </form>
       </div>
 

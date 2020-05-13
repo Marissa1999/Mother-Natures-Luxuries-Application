@@ -12,7 +12,7 @@
         h1 {
             color: darkslateblue;
             margin-top: 50px;
-            margin-bottom:30px;
+            margin-bottom:50px;
             height: 100%;
             display: flex;
             align-items: center;
@@ -56,7 +56,7 @@
             text-decoration: none;
         }
         li a:hover {
-            background-color: #a6a6ed;
+            background-color: #d1d1f6;
         }
         a:link {
             text-decoration: none;

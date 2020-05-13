@@ -7,7 +7,47 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <style>
+        h1 {
+            color: darkslateblue;
+            margin-top: 50px;
+            margin-bottom:40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .form-group {
+            margin-bottom:50px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .save-button {
+            margin-bottom:50px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        p {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        label,
+        input {
+            height: 100%;
+            display: block;
+            text-align: center;
+        }
+        body {
+            background-color: lavender;
+            font-family: Helvetica, sans-serif;
+        }
+    </style>
     <title>Modify Password</title>
 </head>
 <body>
@@ -21,11 +61,17 @@
     ?>
     <form action='' method='post'>
         <div class='form-group'>
-            <label>New Password: <input type='password' name='new_password' class='form-control' /></label>
-            <label>New Password Confirmation: <input type='password' name='password_confirmation' class='form-control' /></label>
+            <label>New Password <input type='password' name='new_password' class='form-control' /></label>
         </div>
-        <input type='submit' name='action' value='Save Password' class='btn btn-success' />
-        <a href='/home/index' class='btn btn-secondary'>Cancel</a>
+        <div class='form-group'>
+            <label>New Password Confirmation <input type='password' name='password_confirmation' class='form-control' /></label>
+        </div>
+        <div class='save-button'>
+            <input type='submit' name='action' value='&nbsp;&nbsp;Save Password&nbsp;&nbsp;' class='btn btn-success' />
+        </div>
+        <p>
+            <a href='/home/index' class='btn btn-secondary'>Cancel</a>
+        </p>
     </form>
 </div>
 <!-- Optional JavaScript -->

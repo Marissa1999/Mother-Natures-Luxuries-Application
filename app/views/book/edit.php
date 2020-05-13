@@ -7,7 +7,47 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+      <style>
+          h1 {
+              color: darkslateblue;
+              margin-top: 50px;
+              margin-bottom:40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+          }
+          .form-group {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          .save-button {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          p {
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          label,
+          input {
+              height: 100%;
+              display: block;
+              text-align: center;
+          }
+          body {
+              background-color: lavender;
+              font-family: Helvetica, sans-serif;
+          }
+      </style>
     <title>Edit the Book</title>
   </head>
   <body>
@@ -15,14 +55,24 @@
        <h1>Edit the Book</h1>
        <form action='' method='post' enctype='multipart/form-data'>
         <div class='form-group'>
-            <label>Book Name: <input type='text' name='book_name' value='<?=$data->book_name ?>' class='form-control' /></label>
-            <label>Book Picture: <input type='file' name='book_picture' /></label>
-            <label>Book Description: <input type='text' name='book_description' value='<?=$data->book_description ?>' class='form-control' /></label>
-            <label>Book Price: <input type='text' name='book_price' value='<?=$data->book_price ?>' class='form-control' /></label>
-            <label>Book Quantity: <input type='text' name='book_quantity' value='<?=$data->book_quantity ?>' class='form-control' /></label>
+            <label>Book Name <input type='text' name='book_name' value='<?=$data->book_name ?>' class='form-control' /></label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label>Book Picture <input type='file' name='book_picture' style="width:208px"/></label>
+        </div>
+            <div class='form-group'>
+                <label>Book Quantity <input type='text' name='book_quantity' value='<?=$data->book_quantity ?>' class='form-control' /></label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label>Book Price <input type='text' name='book_price' value='<?=$data->book_price ?>' class='form-control' /></label>
+            </div>
+            <div class='form-group'>
+                <label>Book Description <input type='text' name='book_description' value='<?=$data->book_description ?>' class='form-control' /></label>
+            </div>
+           <div class="save-button">
+               <input type='submit' name='action' value='&nbsp;&nbsp;Save Changes&nbsp;&nbsp;' class='btn btn-success' />
            </div>
-             <input type='submit' name='action' value='Save Changes' class='btn btn-success' />
-             <a href='/home/index' class='btn btn-secondary'>Cancel</a>
+           <p>
+               <a href='/home/index' class='btn btn-secondary'>Cancel</a>
+           </p>
         </form>
      </div>
     <!-- Optional JavaScript -->

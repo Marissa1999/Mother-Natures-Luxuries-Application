@@ -7,13 +7,53 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+      <style>
+          h1 {
+              color: darkslateblue;
+              margin-top: 50px;
+              margin-bottom:50px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+          }
+          dl {
+              text-align: center;
+          }
+          dt{
+              font-size: 20px;
+              margin-top: 20px;
+              margin-bottom: 20px;
+          }
+          dd{
+              font-size: 15px;
+              margin-top: 10px;
+              margin-bottom: 10px;
+          }
+          p {
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          label,
+          input {
+              height: 100%;
+              display: block;
+              text-align: center;
+          }
+          body {
+              background-color: lavender;
+              font-family: Helvetica, sans-serif;
+          }
+      </style>
     <title>Book Details</title>
   </head>
   <body>
      <div class='container'>
        <h1>Book Details</h1>
-        <dl>
+         <a href='/home/index' class='btn btn-secondary'>Back to List</a>
+         <dl width=100%>
             <dt>Book Name</dt>
             <dd><?=$data->book_name ?></dd>
             <dt>Book Picture</dt>
@@ -25,7 +65,6 @@
             <dt>Book Quantity</dt>
             <dd><?=$data->book_quantity ?></dd>
         </dl>
-        <a href='/home/index' class='btn btn-secondary'>Back to List</a>
      </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

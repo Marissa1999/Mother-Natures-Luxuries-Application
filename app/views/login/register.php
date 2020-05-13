@@ -61,13 +61,13 @@
       ?>
         <form action='' method='post'>
           <div class='form-group'>
-             <label>Username <input type='text' name='username' class='form-control' minlength="2" required/></label>
+             <label>Username <input type='text' name='username' class='form-control' /></label>
+          </div>
+           <div class='form-group'>
+             <label>Password <input type='password' name='password' class='form-control' /></label>
            </div>
            <div class='form-group'>
-             <label>Password <input type='password' name='password' class='form-control' minlength="8" required/></label>
-           </div>
-           <div class='form-group'>
-             <label>Password Confirmation <input type='password' name='password_confirm' class='form-control' minlength="8" required/></label>
+             <label>Password Confirmation <input type='password' name='password_confirm' class='form-control' /></label>
            </div>
             <div class='register-button'>
              <input type='submit' name='action' value='&nbsp;&nbsp;Sign Up&nbsp;&nbsp;' class=' btn btn-primary' />
