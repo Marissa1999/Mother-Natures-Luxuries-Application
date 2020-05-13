@@ -52,7 +52,7 @@
   <body>
      <div class='container'>
        <h1>Book Details</h1>
-         <a href='/home/index' class='btn btn-secondary'>Back to List</a>
+         <a href='/home/index' class='btn btn-secondary'>&nbsp;&nbsp;Back to List&nbsp;&nbsp;</a>
          <dl width=100%>
             <dt>Book Name</dt>
             <dd><?=$data->book_name ?></dd>
