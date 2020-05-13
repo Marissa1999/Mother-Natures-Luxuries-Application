@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="adjusted the layout of views/payment/delete">
+    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="adjusted the layout of views/payment/edit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/payment/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/payment/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/payment/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/payment/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -325,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589388497575</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="adjusted the layout of views/payment/edit">
+      <created>1589388693566</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1589388693566</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,7 +351,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed reading messages." />
     <MESSAGE value="Added WishList files." />
     <MESSAGE value="More commits." />
     <MESSAGE value="More Review commits." />
@@ -369,7 +375,8 @@
     <MESSAGE value="adjusted the layout of views/news/index" />
     <MESSAGE value="adjusted the layout of views/payment/create" />
     <MESSAGE value="adjusted the layout of views/payment/delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjusted the layout of views/payment/delete" />
+    <MESSAGE value="adjusted the layout of views/payment/edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjusted the layout of views/payment/edit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="483" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588689083677">
