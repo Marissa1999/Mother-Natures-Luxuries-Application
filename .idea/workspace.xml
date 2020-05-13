@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="adjusted the layout of views/review/index">
+    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="adjusted the layout of views/wishlist/delete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/wishlist/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlist/delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/wishlist/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlist/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,13 +82,6 @@
       <workItem from="1588724255736" duration="12071000" />
       <workItem from="1589343006323" duration="2729000" />
       <workItem from="1589381338508" duration="317000" />
-    </task>
-    <task id="LOCAL-00001" summary="More commits.">
-      <created>1588609526338</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1588609526339</updated>
     </task>
     <task id="LOCAL-00002" summary="More commits.">
       <created>1588615018020</created>
@@ -426,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589394371814</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="adjusted the layout of views/wishlist/delete">
+      <created>1589405820887</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1589405820887</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,7 +445,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="adjusted the layout of the views/book page" />
     <MESSAGE value="adjusted the layout of views/book/details" />
     <MESSAGE value="adjusted the layout of views/message/create" />
     <MESSAGE value="adjusted the layout of views/message/delete" />
@@ -470,7 +469,8 @@
     <MESSAGE value="adjusted the layout of views/review/delete" />
     <MESSAGE value="adjusted the layout of views/review/edit" />
     <MESSAGE value="adjusted the layout of views/review/index" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjusted the layout of views/review/index" />
+    <MESSAGE value="adjusted the layout of views/wishlist/delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjusted the layout of views/wishlist/delete" />
   </component>
   <component name="WindowStateProjectService">
     <state x="483" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588689083677">
