@@ -10,7 +10,7 @@
     <style>
         h1 {
             color: darkslateblue;
-            margin-top: 30px;
+            margin-top: 50px;
             margin-bottom:40px;
             display: flex;
             align-items: center;
@@ -30,7 +30,7 @@
     <a href='/home/index' class='btn btn-secondary' style="float: left;">Back to Home Page</a><br />
     <a href='/login/logout' class="btn btn-danger" style="float: right;">Logout</a><br />
     <form method='post' action=''>
-        <br /><label>Search: </label> <input type="search" name="search_input" /> <input type="submit" name="search" value="Search" class='btn btn-info' />
+        <br /><label>Search Product Name or Description: </label> <input type="search" name="search_input" /> <input type="submit" name="search" value="Search" class='btn btn-info' />
         <a href='/home/search' class='btn btn-primary'>Refresh Product List</a><br />
         <br />
         <h6>Order By: </h6>

@@ -19,9 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="adjusted the layout of the views/home/modifyPassword page">
+    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="adjusted the layout of the views/home/search page">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020-05-05_3_39_p_m__[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020-05-05_3_39_p_m___Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/book/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/book/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/book/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/book/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/book/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/search.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/home/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/delete.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/home/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/home/modifyPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/modifyPassword.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/home/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/search.php" afterDir="false" />
@@ -53,7 +61,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/review" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
@@ -77,6 +88,7 @@
       <workItem from="1588687971141" duration="7497000" />
       <workItem from="1588697642551" duration="13846000" />
       <workItem from="1588724255736" duration="12071000" />
+      <workItem from="1589343006323" duration="2729000" />
     </task>
     <task id="LOCAL-00001" summary="More commits.">
       <created>1588609526338</created>
@@ -290,11 +302,11 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="610" y="334" width="386" height="252" key="MultipleFileMergeDialog/0.0.1440.920@0.0.1440.920" timestamp="1588707596757" />
-    <state x="445" y="239" key="Vcs.Push.Dialog.v2" timestamp="1589303653002">
+    <state x="445" y="239" key="Vcs.Push.Dialog.v2" timestamp="1589342421118">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1588731845700" />
-    <state x="445" y="239" key="Vcs.Push.Dialog.v2/0.0.2048.1122@0.0.2048.1122" timestamp="1589303653002" />
+    <state x="445" y="239" key="Vcs.Push.Dialog.v2/0.0.2048.1122@0.0.2048.1122" timestamp="1589342421118" />
     <state x="757" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589313704185">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
