@@ -10,14 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Fixed the Shopping History.">
-      <change afterPath="$PROJECT_DIR$/book_images/5ebb4d4892f48.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/ProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/login/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/login/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/login/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/login/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/profile/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/profile/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/detail.php" afterDir="false" />
-    </list>
+    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Authentication and change view of Theme" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/PhpstormProjects" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -60,6 +53,7 @@
       <workItem from="1589329139444" duration="3706000" />
       <workItem from="1589339723453" duration="4841000" />
       <workItem from="1589348005217" duration="4199000" />
+      <workItem from="1589352311419" duration="299000" />
     </task>
     <task id="LOCAL-00001" summary="More changes.">
       <created>1589317184327</created>
@@ -117,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589329506096</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Authentication and change view of Theme">
+      <created>1589352380470</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1589352380470</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +140,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="More changes." />
     <MESSAGE value="Fixed the Shopping History." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed the Shopping History." />
+    <MESSAGE value="Authentication and change view of Theme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Authentication and change view of Theme" />
   </component>
   <component name="WindowStateProjectService">
     <state x="680" y="148" key="#PHP" timestamp="1589329156578">
@@ -158,11 +160,11 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589323409935" />
-    <state x="621" y="414" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589329363259">
+    <state x="621" y="414" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589352493885">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920" timestamp="1589321551149" />
-    <state x="621" y="414" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1010@0.0.1680.1010" timestamp="1589329363259" />
+    <state x="621" y="414" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1010@0.0.1680.1010" timestamp="1589352493885" />
     <state x="425" y="264" key="git4idea.merge.GitPullDialog" timestamp="1589317767376">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
