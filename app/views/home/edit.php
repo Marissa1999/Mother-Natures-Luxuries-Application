@@ -7,23 +7,74 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+      <style>
+          h1 {
+              color: darkslateblue;
+              margin-top: 100px;
+              margin-bottom:40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+          }
+          .form-group {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          .save-button {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          p {
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          label,
+          input {
+              height: 100%;
+              display: block;
+              text-align: center;
+          }
+          body {
+              background-color: lavender;
+              font-family: Helvetica, sans-serif;
+          }
+      </style>
     <title>Edit the Product</title>
   </head>
   <body>
      <div class='container'>
        <h1>Edit the Product</h1>
        <form action='' method='post' enctype='multipart/form-data'>
-        <div class='form-group'>
-            <label>Product Name: <input type='text' name='product_name' value='<?=$data->product_name ?>' class='form-control' /></label>
-            <label>Product Picture: <input type='file' name='product_picture' /></label>
-            <label>Product Details: <input type='text' name='product_details' value='<?=$data->product_details ?>' class='form-control' /></label>
-            <label>Product Price: <input type='text' name='product_price' value='<?=$data->product_price ?>' class='form-control' /></label>
-            <label>Product Quantity: <input type='text' name='product_quantity' value='<?=$data->product_quantity ?>' class='form-control' /></label>
-            <label>Product Category: <input type='text' name='product_category' value='<?=$data->product_category ?>' class='form-control' /></label>
-           </div>
-             <input type='submit' name='action' value='Save Changes' class='btn btn-success' />
-             <a href='/home/index' class='btn btn-secondary'>Cancel</a>
+            <div class='form-group'>
+                <label>Product Name <input type='text' name='product_name' value='<?=$data->product_name ?>' class='form-control' /></label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label>Product Picture <input type='file' name='product_picture' style="width:208px"/></label>
+            </div>
+            <div class='form-group'>
+                <label>Product Price <input type='text' name='product_price' value='<?=$data->product_price ?>' class='form-control' /></label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label>Product Quantity <input type='text' name='product_quantity' value='<?=$data->product_quantity ?>' class='form-control' /></label>
+            </div>
+            <div class='form-group'>
+                <label>Product Details <input type='text' name='product_details' value='<?=$data->product_details ?>' class='form-control' /></label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label>Product Category <input type='text' name='product_category' value='<?=$data->product_category ?>' class='form-control' /></label>
+            </div>
+            <div class='save-button'>
+                <input type='submit' name='action' value='Save Changes' class='btn btn-success' />
+            </div>
+            <p>
+                <a href='/home/index' class='btn btn-secondary'>Cancel</a>
+            </p>
         </form>
      </div>
     <!-- Optional JavaScript -->

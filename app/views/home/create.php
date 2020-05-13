@@ -58,24 +58,24 @@
           <div class='form-group'>
               <label>Product Name <input type='text' name='product_name' class='form-control' /></label>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <label>Product Picture <input type='file' style="width:208px" name='product_picture'/></label>
+              <label>Product Picture <input type='file' name='product_picture' style="width:208px"/></label>
           </div>
-            <div class='form-group'>
-                <label>Product Price <input type='text' name='product_price' class='form-control' /></label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <label>Product Quantity <input type='text' name='product_quantity' class='form-control' /></label>
-            </div>
-              <div class='form-group'>
-                  <label>Product Details <input type='text' name='product_details' class='form-control' /></label>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <label>Product Category <input type='text' name='product_category' class='form-control' /></label>
-              </div>
-            <div class='create-button'>
-                <input type='submit' name='action' value='Create New Product' class='btn btn-primary' />
-            </div>
-            <p>
-                <a href='/home/index' class='btn btn-secondary'>Cancel</a>
-            </p>
+          <div class='form-group'>
+              <label>Product Price <input type='text' name='product_price' class='form-control' /></label>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label>Product Quantity <input type='text' name='product_quantity' class='form-control' /></label>
+          </div>
+          <div class='form-group'>
+              <label>Product Details <input type='text' name='product_details' class='form-control' /></label>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label>Product Category <input type='text' name='product_category' class='form-control' /></label>
+          </div>
+          <div class='create-button'>
+              <input type='submit' name='action' value='Create New Product' class='btn btn-primary' />
+          </div>
+          <p>
+              <a href='/home/index' class='btn btn-secondary'>Cancel</a>
+          </p>
         </form>
       </div>
 
