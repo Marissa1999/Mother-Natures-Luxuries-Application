@@ -7,14 +7,72 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <title>List of Messages</title>
+    <style>
+        h1 {
+            color: darkslateblue;
+            margin-top: 50px;
+            margin-bottom:30px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h2 {
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        h3 {
+            margin-top: 25px;
+            display: flex;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            background-color: lavenderblush;
+        }
+        li{
+            display: inline-block;
+        }
+        li {
+            border-right: 1.5px solid #a6a6ed;
+        }
+        li:last-child {
+            border-right: none;
+        }
+        li a {
+            font-size: 15px;
+            display: block;
+            color: darkslateblue;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #d1d1f6;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        body {
+            background-color: lavender;
+            font-family: Helvetica, sans-serif;
+        }
+    </style>
+    <title>Messages Records</title>
 </head>
 <body>
 <div class='container'>
-    <h1>List of Messages</h1>
-    <a href='/login/logout'>Logout</a><br />
-    <a href='/message/create' class='btn btn-success'>Send a Message to User</a>
+    <h1>Messages Records</h1>
+    <a href='/login/logout' class="btn btn-danger" style="float: right;">Logout</a><br />
+    <a href='/message/index' class='btn btn-secondary'>Back to Profiles Page</a><br /><br/>
+    <a style="margin: 0px;" href='/message/create' class="btn btn-primary" >Send a Message</a>
     <table class='table table-striped'>
         <tr><td>Message Sender</td><td>Message Text</td><td>Message Timestamp</td><td>Read Messages</td><td>Actions</td></tr>
         <?php
@@ -25,9 +83,9 @@
                 if ($message->message_sender == $profile->profile_id)
                 {
                     echo "<td>$profile->first_name</td><td>$message->message_text</td><td>$message->message_timestamp</td><td>$message->message_read</td>
-                        <td><a href='/message/edit/$message->message_id' class='btn btn-success'>Edit Message</a>
-                        <a href='/message/detail/$message->message_id' class='btn btn-primary'>Mark as Read</a>
-                        <a href='/message/delete/$message->message_id' class='btn btn-danger'>Delete Message</a> 
+                        <td><a href='/message/edit/$message->message_id' class='btn btn-outline-success btn-sm'>Edit Message</a>
+                        <a href='/message/detail/$message->message_id' class='btn btn-outline-primary btn-sm'>Mark as Read</a>
+                        <a href='/message/delete/$message->message_id' class='btn btn-outline-danger btn-sm'>Delete Message</a> 
                         </td></tr>";
                         break;
                 }
@@ -35,7 +93,7 @@
         }
         ?>
     </table>
-    <a href='/message/index' class='btn btn-secondary'>Back to Profiles Page</a><br />
+
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

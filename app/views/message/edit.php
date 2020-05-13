@@ -55,7 +55,7 @@
        <h1>Edit this Message</h1>
        <form action='' method='post'>
         <div class='form-group'>
-            <label>Message Text <input type='text' name='message_text' value='<?=$data->message_text ?>' class='form-control' /></label>
+            <label>Edit your Message <input type='text' name='message_text' value='<?=$data->message_text ?>' class='form-control' style="width:800px" /></label>
            </div>
            <div class="save-button">
                <input type='submit' name='action' value='&nbsp;&nbsp;Save Changes&nbsp;&nbsp;' class='btn btn-success' />

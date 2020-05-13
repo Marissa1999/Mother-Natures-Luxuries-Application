@@ -65,11 +65,11 @@
             font-family: Helvetica, sans-serif;
         }
     </style>
-    <title>List of Profiles</title>
+    <title>List of Contacts</title>
 </head>
 <body>
 <div class='container'>
-    <h1>List of Profiles</h1>
+    <h1>List of Contacts</h1>
     <a href='/login/logout' class="btn btn-danger" style="float: right;">Logout</a><br />
     <a href='/home/index' class='btn btn-secondary' style="float: left;">Back to Home Page</a><br /><br />
     <table class='table table-striped'>
@@ -79,7 +79,7 @@
         {
             echo "<tr><td>$profile->first_name</td><td>$profile->last_name</td>
                         <td>$profile->location</td><td>$profile->gender</td>
-                        <td><a href='/message/viewMessages/$profile->profile_id' class='btn btn-success'>Send Message</a> 
+                        <td><a href='/message/viewMessages/$profile->profile_id' class='btn btn-success btn-sm'>Send Message</a> 
                  </td></tr>";
         }
         ?>
