@@ -19,9 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="adjusted the layout of views/profile/details">
+    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="adjusted the layout of views/profile/edit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/profile/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/message/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/message/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/news/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/news/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/payment/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/payment/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/profile/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -353,7 +356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589392112062</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="adjusted the layout of views/profile/edit">
+      <created>1589392468284</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1589392468284</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,7 +382,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="More WishList commits." />
     <MESSAGE value="More commits regarding the creation of Order and Theme related files." />
     <MESSAGE value="Adjusted the pictures for Books." />
     <MESSAGE value="Adjusted more pictures." />
@@ -397,7 +406,8 @@
     <MESSAGE value="adjusted the layout of views/payment/index" />
     <MESSAGE value="adjusted the layout of views/profile/create" />
     <MESSAGE value="adjusted the layout of views/profile/details" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjusted the layout of views/profile/details" />
+    <MESSAGE value="adjusted the layout of views/profile/edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjusted the layout of views/profile/edit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="483" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588689083677">
