@@ -17,49 +17,6 @@
             align-items: center;
             justify-content: center;
         }
-        h2 {
-            margin-top: 25px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-        h3 {
-            margin-top: 25px;
-            display: flex;
-        }
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            background-color: lavenderblush;
-        }
-        li{
-            display: inline-block;
-        }
-        li {
-            border-right: 1.5px solid #a6a6ed;
-        }
-        li:last-child {
-            border-right: none;
-        }
-        li a {
-            font-size: 15px;
-            display: block;
-            color: darkslateblue;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        li a:hover {
-            background-color: #d1d1f6;
-        }
-        a:link {
-            text-decoration: none;
-        }
         body {
             background-color: lavender;
             font-family: Helvetica, sans-serif;

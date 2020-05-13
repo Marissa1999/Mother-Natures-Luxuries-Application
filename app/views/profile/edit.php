@@ -7,7 +7,47 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+      <style>
+          h1 {
+              color: darkslateblue;
+              margin-top: 50px;
+              margin-bottom:40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+          }
+          .form-group {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          .save-button {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          p {
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          label,
+          input {
+              height: 100%;
+              display: block;
+              text-align: center;
+          }
+          body {
+              background-color: lavender;
+              font-family: Helvetica, sans-serif;
+          }
+      </style>
     <title>Edit the Profile</title>
   </head>
   <body>
@@ -16,17 +56,31 @@
        <form action='' method='post'>
         <div class='form-group'>
              <label>First Name: <input type='text' name='first_name' value='<?=$data->first_name ?>' class='form-control' /></label>
-             <label>Last Name: <input type='text' name='last_name' value='<?=$data->last_name ?>' class='form-control' /></label>
-             <label>Email: <input type='text' name='email' value='<?=$data->email ?>' class='form-control' /></label>
-             <label>Phone Number: <input type='text' name='phone_number' value='<?=$data->phone_number ?>' class='form-control' /></label>
-             <label>Theme ID: <input type='text' name='theme_id' value='<?=$data->theme_id ?>' class='form-control' /></label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label>Last Name: <input type='text' name='last_name' value='<?=$data->last_name ?>' class='form-control' /></label>
+        </div>
+        <div class='form-group'>
+            <label>Email: <input type='text' name='email' value='<?=$data->email ?>' class='form-control' /></label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label>Phone Number: <input type='text' name='phone_number' value='<?=$data->phone_number ?>' class='form-control' /></label>
+        </div>
+         <div class='form-group'>
+            <label>Theme ID: <input type='text' name='theme_id' value='<?=$data->theme_id ?>' class='form-control' /></label>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
              <label>Gender: <input type='text' name='gender' value='<?=$data->gender ?>' class='form-control' /></label>
+         </div>
+         <div class='form-group'>
              <label>Location: <input type='text' name='location' value='<?=$data->location ?>' class='form-control' /></label>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
              <label>User Type: <input type='text' name='user_type' value='<?=$data->user_type ?>' class='form-control' /></label>
+         </div>
+           <div class="save-button">
+               <input type='submit' name='action' value='&nbsp;&nbsp;Save Changes&nbsp;&nbsp;' class='btn btn-success' />
            </div>
-             <input type='submit' name='action' value='Save Changes' class='btn btn-success' />
-             <a href='/home/index' class='btn btn-secondary'>Cancel</a>
-        </form>
+           <p>
+               <a href='/home/index' class='btn btn-secondary'>Cancel</a>
+           </p>
+       </form>
      </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

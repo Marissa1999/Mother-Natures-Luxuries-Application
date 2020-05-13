@@ -7,14 +7,29 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+      <style>
+          h1 {
+              color: darkslateblue;
+              margin-top: 50px;
+              margin-bottom:30px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          body {
+              background-color: lavender;
+              font-family: Helvetica, sans-serif;
+          }
+      </style>
     <title>List of Seller Contacts</title>
   </head>
   <body>
      <div class='container'>
        <h1>List of Seller Contacts</h1>
-        <a href='/login/logout'>Logout</a><br />
-        <table class='table table-striped'>
+         <a href='/login/logout' class="btn btn-danger" style="float: right;">Logout</a><br /><br />
+         <a href='/home/index' class='btn btn-secondary'>Back to Home Page</a><br /><br />
+         <table class='table table-striped'>
           <tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Phone Number</td><td>Location</td><td>Gender</td></tr>
            <?php
            foreach($data['profiles'] as $profile)
@@ -26,7 +41,7 @@
                }
            ?>
         </table>
-         <a href='/home/index' class='btn btn-secondary'>Back to Home Page</a><br />
+
      </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
