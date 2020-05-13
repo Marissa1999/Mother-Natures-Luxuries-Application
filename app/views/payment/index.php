@@ -37,8 +37,8 @@
                {
                  echo "<tr><td>$payment->card_number</td><td>$payment->card_company</td>
                        <td>$payment->expiration_date</td><td>$payment->card_cvc</td><td>
-                       <a href='/payment/edit/$payment->card_id' class='btn btn-success'>Edit</a> 
-                       <a href='/payment/delete/$payment->card_id' class='btn btn-danger'>Delete</a>
+                       <a href='/payment/edit/$payment->card_id' class='btn btn-outline-success btn-sm'>Edit</a> 
+                       <a href='/payment/delete/$payment->card_id' class='btn btn-outline-danger btn-sm'>Delete</a>
                  </td></tr>";
                }
            ?>

@@ -7,13 +7,28 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+      <style>
+          h1 {
+              color: darkslateblue;
+              margin-top: 50px;
+              margin-bottom:30px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          body {
+              background-color: lavender;
+              font-family: Helvetica, sans-serif;
+          }
+      </style>
     <title>List of Promotions</title>
   </head>
   <body>
      <div class='container'>
        <h1>List of Promotions</h1>
-        <a href='/login/logout'>Logout</a><br />
+         <a href='/login/logout' class="btn btn-danger" style="float: right;">Logout</a><br />
+         <a href='/home/index' class='btn btn-secondary' style="float: left;">Back to Home Page</a><br /><br />
         <a href='/promotion/create' class='btn btn-success'>Create Promotion</a>
         <table class='table table-striped'>
           <tr><td>Promoted Price</td><td>Promotion Timestamp</td></tr>
@@ -21,12 +36,11 @@
            foreach($data['promotions'] as $promotion)
                {
                  echo "<tr><td>$promotion->promotion_price</td><td>$promotion->promotion_timestamp</td><td>
-                 <a href='/promotion/delete/$promotion->promotion_id' class='btn btn-danger'>Delete</a> 
+                 <a href='/promotion/delete/$promotion->promotion_id' class='btn btn-outline-danger btn-sm'>Delete</a> 
                  </td></tr>";
                }
            ?>
         </table>
-         <a href='/home/index' class='btn btn-secondary'>Back to Home Page</a>
      </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

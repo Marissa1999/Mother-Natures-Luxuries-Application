@@ -7,7 +7,47 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+      <style>
+          h1 {
+              color: darkslateblue;
+              margin-top: 50px;
+              margin-bottom:40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+          }
+          .form-group {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          .save-button {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          p {
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          label,
+          input {
+              height: 100%;
+              display: block;
+              text-align: center;
+          }
+          body {
+              background-color: lavender;
+              font-family: Helvetica, sans-serif;
+          }
+      </style>
     <title>Edit this Review</title>
   </head>
   <body>
@@ -15,13 +55,20 @@
        <h1>Edit the Review</h1>
        <form action='' method='post'>
         <div class='form-group'>
-             <label>Product Rating: <input type='text' name='product_rating' value='<?=$data->product_rating ?>' class='form-control' /></label>
-             <label>Review Comment: <input type='text' name='review_comment' value='<?=$data->review_comment ?>' class='form-control' /></label>
+             <label>Product Rating <input type='text' name='product_rating' value='<?=$data->product_rating ?>' class='form-control' /></label>
+        </div>
+           <div class='form-group'>
+            <label>Review Comment <input type='text' name='review_comment' value='<?=$data->review_comment ?>' class='form-control' style="width: 800px"/></label>
            </div>
-             <input type='submit' name='action' value='Save Changes' class='btn btn-success' />
-           <?php
-              echo "<a href='/review/index/$data->product_id' class='btn btn-secondary'>Cancel</a>";
-             ?>
+
+           <div class="save-button">
+               <input type='submit' name='action' value='&nbsp;&nbsp;Save Changes&nbsp;&nbsp;' class='btn btn-success' />
+           </div>
+           <p>
+               <?php
+               echo "<a href='/review/index/$data->product_id' class='btn btn-secondary'>Cancel</a>";
+               ?>
+           </p>
         </form>
      </div>
     <!-- Optional JavaScript -->
