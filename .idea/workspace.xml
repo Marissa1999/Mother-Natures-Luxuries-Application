@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="adjusted the layout of views/review/delete">
+    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="adjusted the layout of views/review/edit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/review/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/review/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/review/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/review/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -409,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589394002324</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="adjusted the layout of views/review/edit">
+      <created>1589394120274</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1589394120274</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,7 +435,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="adjusted the layout of the views/home/edit page" />
     <MESSAGE value="adjusted the layout of the views/home/modifyPassword page" />
     <MESSAGE value="adjusted the layout of the views/book page" />
     <MESSAGE value="adjusted the layout of views/book/details" />
@@ -453,7 +459,8 @@
     <MESSAGE value="adjusted the layout of views/promotion/index" />
     <MESSAGE value="adjusted the layout of views/review/create" />
     <MESSAGE value="adjusted the layout of views/review/delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjusted the layout of views/review/delete" />
+    <MESSAGE value="adjusted the layout of views/review/edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjusted the layout of views/review/edit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="483" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588689083677">

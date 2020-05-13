@@ -7,14 +7,29 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+      <style>
+          h1 {
+              color: darkslateblue;
+              margin-top: 50px;
+              margin-bottom:30px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          body {
+              background-color: lavender;
+              font-family: Helvetica, sans-serif;
+          }
+      </style>
     <title>List of Product Reviews</title>
   </head>
   <body>
      <div class='container'>
        <h1>List of Product Reviews</h1>
-        <a href='/login/logout'>Logout</a><br />
-        <a href='/review/create' class='btn btn-success'>Add a Review</a>
+         <a href='/login/logout' class="btn btn-danger" style="float: right;">Logout</a><br /><br />
+         <a href='/home/search' class='btn btn-secondary'>Back to Product Search Page</a><br /><br />
+        <a href='/review/create' class='btn btn-success'>Add a Review</a><br /><br />
         <table class='table table-striped'>
           <tr><td>First Name</td><td>Last Name</td><td>Product Rating</td><td>Review Comment</td><td>Review Timestamp</td></tr>
             <?php
@@ -24,15 +39,15 @@
                 {
                         echo "<tr><td>$profile->first_name</td><td>$profile->last_name</td></td>";
                         echo "<td>$review->product_rating</td><td>$review->review_comment</td><td>$review->review_timestamp</td>
-                             <td><a href='/review/edit/$review->review_id' class='btn btn-primary'>Edit</a>
-                             <a href='/review/delete/$review->review_id' class='btn btn-danger'>Delete</a>
+                             <td><a href='/review/edit/$review->review_id' class='btn btn-outline-primary btn-sm'>Edit</a>
+                             <a href='/review/delete/$review->review_id' class='btn btn-outline-danger btn-sm'>Delete</a>
                              </td></tr>";
                              break;
                 }
             }
             ?>
         </table>
-         <a href='/home/search' class='btn btn-secondary'>Back to Product Search Page</a><br />
+
      </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
