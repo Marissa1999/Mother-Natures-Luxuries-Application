@@ -75,7 +75,7 @@
                 <input type='submit' name='action' value='&nbsp;&nbsp;Create News&nbsp;&nbsp;' class='btn btn-primary' />
             </div>
             <p>
-                <a href='/home/index' class='btn btn-secondary'>Cancel</a>
+                <a href='/news/index' class='btn btn-secondary'>Cancel</a>
             </p>
         </form>
       </div>

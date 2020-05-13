@@ -19,9 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="adjusted the layout of views/message/viewMessages">
+    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="adjusted the layout of views/news/create">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/news/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/news/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/news/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/news/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589387414364</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="adjusted the layout of views/news/create">
+      <created>1589387846375</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1589387846375</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +345,8 @@
     <MESSAGE value="adjusted the layout of views/message/edit" />
     <MESSAGE value="adjusted the layout of views/message/index" />
     <MESSAGE value="adjusted the layout of views/message/viewMessages" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjusted the layout of views/message/viewMessages" />
+    <MESSAGE value="adjusted the layout of views/news/create" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjusted the layout of views/news/create" />
   </component>
   <component name="WindowStateProjectService">
     <state x="483" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588689083677">
