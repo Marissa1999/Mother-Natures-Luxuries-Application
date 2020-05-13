@@ -7,7 +7,47 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+      <style>
+          h1 {
+              color: darkslateblue;
+              margin-top: 50px;
+              margin-bottom:40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+          }
+          .form-group {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          .delete-button {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          p {
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          label,
+          input {
+              height: 100%;
+              display: block;
+              text-align: center;
+          }
+          body {
+              background-color: lavender;
+              font-family: Helvetica, sans-serif;
+          }
+      </style>
     <title>Delete Payment Card</title>
   </head>
   <body>
@@ -16,13 +56,22 @@
         <form action='' method='post'>
           <div class='form-group'>
               <label>Card Number: <input type='text' name='card_number' value='<?=$data->card_number ?>' disabled class='form-control' /></label>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <label>Card Company: <input type='text' name='card_company' value='<?=$data->card_company ?>' disabled class='form-control' /></label>
+          </div>
+          <div class='form-group'>
               <label>Expiration Date: <input type='text' name='expiration_date' value='<?=$data->expiration_date ?>' disabled class='form-control' /></label>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <label>Card CVC: <input type='text' name='card_cvc' value='<?=$data->card_cvc ?>' disabled class='form-control' /></label>
            </div>
-             <input type='submit' name='action' value='Delete' class='btn btn-danger' />
-        <a href='/home/index' class='btn btn-secondary'>Cancel</a> 
-        </form>    
+
+            <div class='delete-button'>
+                <input type='submit' name='action' value='&nbsp;&nbsp;Delete Payment Method&nbsp;&nbsp;' class='btn btn-danger' />
+            </div>
+            <p>
+                <a href='/home/index' class='btn btn-secondary'>Cancel</a>
+            </p>
+        </form>
      </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

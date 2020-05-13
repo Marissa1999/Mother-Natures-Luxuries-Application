@@ -7,7 +7,46 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+      <style>
+          h1 {
+              color: darkslateblue;
+              margin-top: 50px;
+              margin-bottom:40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+          }
+          .form-group {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          .create-button {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          p {
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          label {
+              height: 100%;
+              display: block;
+              text-align: center;
+          }
+          body {
+              background-color: lavender;
+              font-family: Helvetica, sans-serif;
+          }
+      </style>
     <title>Add a Payment Card</title>
   </head>
   <body>
@@ -16,12 +55,20 @@
         <form action='' method='post'>
           <div class='form-group'>
               <label>Card Number: <input type='text' name='card_number' class='form-control' /></label>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <label>Card Company: <input type='text' name='card_company' class='form-control' /></label>
+          </div>
+          <div class='form-group'>
               <label>Expiration Date: <input type='text' name='expiration_date' class='form-control' /></label>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <label>Card CVC: <input type='text' name='card_cvc' class='form-control' /></label>
            </div>
-             <input type='submit' name='action' value='Create' class='btn btn-primary' />
-            <a href='/payment/index' class='btn btn-secondary'>Cancel</a>
+            <div class='create-button'>
+                <input type='submit' name='action' value='&nbsp;&nbsp;Add New Payment Method&nbsp;&nbsp;' class='btn btn-primary' />
+            </div>
+            <p>
+                <a href='/payment/index' class='btn btn-secondary'>Cancel</a>
+            </p>
         </form>
       </div>
 

@@ -7,7 +7,46 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+      <style>
+          h1 {
+              color: darkslateblue;
+              margin-top: 50px;
+              margin-bottom:40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+          }
+          .form-group {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          .create-button {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          p {
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          label {
+              height: 100%;
+              display: block;
+              text-align: center;
+          }
+          body {
+              background-color: lavender;
+              font-family: Helvetica, sans-serif;
+          }
+      </style>
     <title>Create a News Posting</title>
   </head>
   <body>
@@ -25,11 +64,19 @@
          ?>
         <form action='' method='post' enctype='multipart/form-data'>
           <div class='form-group'>
-              <label>News Topic: <input type='text' name='news_topic' class='form-control' /></label>
-              <label>News Article: <input type='text' name='news_article' class='form-control' /></label>
-              <label>News Picture: <input type='file' name='news_picture' /></label>
-           </div>
-             <input type='submit' name='action' value='Create' class='btn btn-primary' />
+              <label>News Topic <input type='text' name='news_topic' class='form-control' /></label>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label>News Article <input type='text' name='news_article' class='form-control' /></label>
+          </div>
+          <div class="form-group">
+              <label>News Picture <br/><input type='file' name='news_picture' style="width:208px"/></label>
+          </div>
+            <div class='create-button'>
+                <input type='submit' name='action' value='&nbsp;&nbsp;Create News&nbsp;&nbsp;' class='btn btn-primary' />
+            </div>
+            <p>
+                <a href='/news/index' class='btn btn-secondary'>Cancel</a>
+            </p>
         </form>
       </div>
 

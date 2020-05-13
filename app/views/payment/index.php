@@ -7,13 +7,71 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+      <style>
+          h1 {
+              color: darkslateblue;
+              margin-top: 50px;
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          h2 {
+              margin-top: 25px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+          }
+          h3 {
+              margin-top: 25px;
+              display: flex;
+          }
+          ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              display: flex;
+              justify-content: center;
+              background-color: lavenderblush;
+          }
+          li{
+              display: inline-block;
+          }
+          li {
+              border-right: 1.5px solid #a6a6ed;
+          }
+          li:last-child {
+              border-right: none;
+          }
+          li a {
+              font-size: 15px;
+              display: block;
+              color: darkslateblue;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+          }
+          li a:hover {
+              background-color: #d1d1f6;
+          }
+          a:link {
+              text-decoration: none;
+          }
+          body {
+              background-color: lavender;
+              font-family: Helvetica, sans-serif;
+          }
+      </style>
     <title>List of Payment Cards</title>
   </head>
   <body>
      <div class='container'>
        <h1>List of Payment Cards</h1>
-        <a href='/login/logout'>Logout</a><br />
+         <a href='/login/logout' class="btn btn-danger" style="float: right;">Logout</a><br />
+         <a href='/home/index' class='btn btn-secondary'>Back to Home Page</a><br /><br/>
          <a href='/payment/create' class='btn btn-success'>Add a Payment Card</a>
         <table class='table table-striped'>
           <tr><td>Card Number</td><td>Card Company</td><td>Expiration Date</td><td>Card CVC</td></tr>
@@ -28,7 +86,7 @@
                }
            ?>
         </table>
-         <a href='/home/index' class='btn btn-secondary'>Back to Home Page</a><br />
+
      </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
