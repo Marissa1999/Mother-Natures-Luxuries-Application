@@ -27,8 +27,8 @@
 <body>
 <div class='container'>
     <h1>Search All Books</h1>
-    <a href='/home/index' class='btn btn-secondary'>Back to Home Page</a><br />
     <a href='/login/logout' class="btn btn-danger" style="float: right;">Logout</a><br />
+    <a href='/home/index' class='btn btn-secondary'>Back to Home Page</a><br />
     <form method='post' action=''>
         <br /><label>Search Book Name or Description: </label> <input type="search" name="search_input" /> <input type="submit" name="search" value="Search" class='btn btn-info' />
         <a href='/book/search' class='btn btn-primary'>Refresh Book List</a><br />

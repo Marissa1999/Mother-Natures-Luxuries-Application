@@ -21,7 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="adjusted the layout of the views/book page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/profile/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/book/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/book/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/search.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
