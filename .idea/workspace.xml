@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Added more images.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_images/5ebb2f0a08fa9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/product_images/5ebb68455d925.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589323731085</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added more images.">
+      <created>1589389564501</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1589389564502</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,24 +142,25 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="More changes." />
     <MESSAGE value="Fixed the Shopping History." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed the Shopping History." />
+    <MESSAGE value="Added more images." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more images." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="610" y="334" width="614" height="252" key="MultipleFileMergeDialog" timestamp="1589317740261">
+    <state x="610" y="334" width="614" height="252" key="MultipleFileMergeDialog" timestamp="1589389666941">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="610" y="334" width="614" height="252" key="MultipleFileMergeDialog/0.0.1440.920@0.0.1440.920" timestamp="1589317740261" />
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589323737340">
+    <state x="610" y="334" width="614" height="252" key="MultipleFileMergeDialog/0.0.1440.920@0.0.1440.920" timestamp="1589389666941" />
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589389813715">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589323737340" />
-    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589321551149">
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589389813715" />
+    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589389645816">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920" timestamp="1589321551149" />
-    <state x="425" y="264" key="git4idea.merge.GitPullDialog" timestamp="1589389522179">
+    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920" timestamp="1589389645816" />
+    <state x="425" y="264" key="git4idea.merge.GitPullDialog" timestamp="1589393398793">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="425" y="264" key="git4idea.merge.GitPullDialog/0.0.1440.920@0.0.1440.920" timestamp="1589389522179" />
+    <state x="425" y="264" key="git4idea.merge.GitPullDialog/0.0.1440.920@0.0.1440.920" timestamp="1589393398793" />
   </component>
 </project>
