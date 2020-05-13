@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="adjusted the layout of views/news/create">
+    <list default="true" id="50c03b57-d653-4eb6-91ed-3d548728ee6c" name="Default Changelist" comment="adjusted the layout of views/news/index">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/news/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/news/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/news/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/news/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/payment/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/payment/create.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -305,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589387846375</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="adjusted the layout of views/news/index">
+      <created>1589388024460</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1589388024460</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,7 +352,8 @@
     <MESSAGE value="adjusted the layout of views/message/index" />
     <MESSAGE value="adjusted the layout of views/message/viewMessages" />
     <MESSAGE value="adjusted the layout of views/news/create" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjusted the layout of views/news/create" />
+    <MESSAGE value="adjusted the layout of views/news/index" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjusted the layout of views/news/index" />
   </component>
   <component name="WindowStateProjectService">
     <state x="483" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588689083677">
@@ -357,11 +364,11 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="610" y="334" width="386" height="252" key="MultipleFileMergeDialog/0.0.1440.920@0.0.1440.920" timestamp="1588707596757" />
-    <state x="445" y="239" key="Vcs.Push.Dialog.v2" timestamp="1589387419641">
+    <state x="445" y="239" key="Vcs.Push.Dialog.v2" timestamp="1589388029015">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1588731845700" />
-    <state x="445" y="239" key="Vcs.Push.Dialog.v2/0.0.2048.1122@0.0.2048.1122" timestamp="1589387419641" />
+    <state x="445" y="239" key="Vcs.Push.Dialog.v2/0.0.2048.1122@0.0.2048.1122" timestamp="1589388029015" />
     <state x="757" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589313704185">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
