@@ -7,7 +7,47 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+      <style>
+          h1 {
+              color: darkslateblue;
+              margin-top: 50px;
+              margin-bottom:40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+          }
+          .form-group {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          .create-button {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          p {
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          label,
+          input {
+              height: 100%;
+              display: block;
+              text-align: center;
+          }
+          body {
+              background-color: lavender;
+              font-family: Helvetica, sans-serif;
+          }
+      </style>
     <title>Create a Profile</title>
   </head>
   <body>
@@ -15,16 +55,28 @@
       <h1>Create a Profile</h1>
         <form action='' method='post'>
           <div class='form-group'>
-              <label>First Name: <input type='text' name='first_name' class='form-control' /></label>
-              <label>Last Name: <input type='text' name='last_name' class='form-control' /></label>
-              <label>Email: <input type='text' name='email' class='form-control' /></label>
-              <label>Phone Number: <input type='text' name='phone_number' class='form-control' /></label>
-              <label>Theme ID: <input type='text' name='theme_id' class='form-control' /></label>
-              <label>Gender: <input type='text' name='gender' class='form-control' /></label>
-              <label>Location: <input type='text' name='location' class='form-control' /></label>
-              <label>User Type: <input type='text' name='user_type' class='form-control' /></label>
+              <label>First Name <input type='text' name='first_name' class='form-control' /></label>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label>Last Name <input type='text' name='last_name' class='form-control' /></label>
+          </div>
+          <div class='form-group'>
+              <label>Email <input type='text' name='email' class='form-control' /></label>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label>Phone Number <input type='text' name='phone_number' class='form-control' /></label>
+          </div>
+          <div class='form-group'>
+              <label>Theme ID <input type='text' name='theme_id' class='form-control' /></label>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label>Gender <input type='text' name='gender' class='form-control' /></label>
+          </div>
+          <div class='form-group'>
+              <label>Location <input type='text' name='location' class='form-control' /></label>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label>User Type <input type='text' name='user_type' class='form-control' /></label>
            </div>
-             <input type='submit' name='action' value='Create' class='btn btn-primary' />
+            <div class='create-button'>
+                <input type='submit' name='action' value='&nbsp;&nbsp;Create My Profile&nbsp;&nbsp;' class='btn btn-primary' />
+            </div>
         </form>
       </div>
 
