@@ -7,7 +7,47 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+      <style>
+          h1 {
+              color: darkslateblue;
+              margin-top: 50px;
+              margin-bottom:40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+          }
+          .form-group {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          .delete-button {
+              margin-bottom:50px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          p {
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          label,
+          input {
+              height: 100%;
+              display: block;
+              text-align: center;
+          }
+          body {
+              background-color: lavender;
+              font-family: Helvetica, sans-serif;
+          }
+      </style>
     <title>Delete Promotion</title>
   </head>
   <body>
@@ -15,13 +55,18 @@
        <h1>Delete this Promotion</h1>
         <form action='' method='post'>
           <div class='form-group'>
-              <label>Promotion Price: <input type='text' name='promotion_price' value='<?=$data->promotion_price ?>' disabled class='form-control' /></label>
-              <label>Promotion Timestamp: <input type='text' name='promotion_timestamp' value='<?=$data->promotion_timestamp ?>' disabled class='form-control' /></label>
+              <label>Promotion Price <input type='text' name='promotion_price' value='<?=$data->promotion_price ?>' disabled class='form-control' /></label>
+              <label>Promotion Timestamp <input type='text' name='promotion_timestamp' value='<?=$data->promotion_timestamp ?>' disabled class='form-control' /></label>
            </div>
-             <input type='submit' name='action' value='Delete' class='btn btn-danger' />
-            <?php
-               echo "<a href='/promotion/index/$data->product_id' class='btn btn-secondary'>Cancel</a>";
-            ?>
+            <div class='delete-button'>
+                <input type='submit' name='action' value='&nbsp;&nbsp;Delete Promotion&nbsp;&nbsp;' class='btn btn-danger' />
+            </div>
+            <p>
+                <?php
+                echo "<a href='/promotion/index/$data->product_id' class='btn btn-secondary'>Cancel</a>";
+                ?>
+            </p>
+
         </form>
      </div>
     <!-- Optional JavaScript -->
