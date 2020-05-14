@@ -21,6 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Adjust the Workspace file.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/profile/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/profile/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/edit.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,10 +232,11 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="610" y="334" width="614" height="252" key="MultipleFileMergeDialog/0.0.1440.920@0.0.1440.920" timestamp="1589394674974" />
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589489736047">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state x="432" y="245" key="Vcs.Push.Dialog.v2" timestamp="1589497364334">
+      <screen x="0" y="0" width="1986" height="1152" />
     </state>
     <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589489736047" />
+    <state x="432" y="245" key="Vcs.Push.Dialog.v2/0.0.1986.1152@0.0.1986.1152" timestamp="1589497364334" />
     <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589389645816">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
@@ -242,10 +245,10 @@
       <screen x="0" y="0" width="1986" height="1152" />
     </state>
     <state x="1124" y="292" key="git4idea.branch.GitSmartOperationDialog/0.0.1986.1152@0.0.1986.1152" timestamp="1589481935988" />
-    <state x="586" y="331" key="git4idea.merge.GitPullDialog" timestamp="1589481960860">
+    <state x="586" y="331" key="git4idea.merge.GitPullDialog" timestamp="1589497311312">
       <screen x="0" y="0" width="1986" height="1152" />
     </state>
     <state x="425" y="264" key="git4idea.merge.GitPullDialog/0.0.1440.920@0.0.1440.920" timestamp="1589394670097" />
-    <state x="586" y="331" key="git4idea.merge.GitPullDialog/0.0.1986.1152@0.0.1986.1152" timestamp="1589481960860" />
+    <state x="586" y="331" key="git4idea.merge.GitPullDialog/0.0.1986.1152@0.0.1986.1152" timestamp="1589497311312" />
   </component>
 </project>

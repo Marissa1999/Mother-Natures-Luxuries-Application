@@ -24,6 +24,13 @@
               align-items: center;
               justify-content: center;
           }
+          .radio-group{
+              margin-bottom:40px;
+              height: 100%;
+              text-align: center;
+              align-items: center;
+              justify-content: center;
+          }
           .create-button {
               margin-bottom:50px;
               height: 100%;
@@ -37,9 +44,9 @@
               align-items: center;
               justify-content: center;
           }
-          label{
+          label {
               height: 100%;
-              display: block;
+              display: inline;
               text-align: center;
           }
           body {
@@ -84,39 +91,38 @@
       <h1>Create My Profile</h1>
         <form action='' method='post'>
           <div class='form-group'>
-              <label>First Name <input type='text' name='first_name' class='form-control' minlength="2" required/></label>
+              <label style="font-weight: bold">First Name <input type='text' name='first_name' class='form-control' minlength="2" required/></label>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <label>Last Name <input type='text' name='last_name' class='form-control' minlength="2" required/></label>
+              <label style="font-weight: bold">Last Name <input type='text' name='last_name' class='form-control' minlength="2" required/></label>
+          </div>
+          <div class='form-group'>
+              <label style="font-weight: bold">Email <input type='text' name='email' class='form-control' placeholder="example@gmail.com" required/></label>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label style="font-weight: bold">Phone Number <input type='text' name='phone_number' class='form-control' placeholder="ex:999-999-9999" required/></label>
           </div>
 
-          <div class='form-group'>
-              <label>Email <input type='text' name='email' class='form-control' placeholder="example@gmail.com" required/></label>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <label>Phone Number <input type='text' name='phone_number' class='form-control' placeholder="ex :999-999-9999" required/></label>
-          </div>
-          <div class='form-group'>
-              Theme:
-              <input type="radio" name='theme_id' value="1"><label>Beauty</label><br>
-              <input type="radio" name='theme_id' value="2"><label>Medical</label><br>
-              <input type="radio" name='theme_id' value="3"><label>Tea</label><br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              Gender:
-              <input type="radio" name='gender' value="Male"><label>Male</label><br>
-              <input type="radio" name='gender' value="Female"><label>Female</label><br>
-          </div>
-            <div class='form-group'>
-                User Type:
-                <input type="radio" name='user_type' value="1"><label>Buyer</label><br>
-                <input type="radio" name='user_type' value="2"><label>Seller</label><br>
+            <div class='radio-group'>
+                <label style="font-weight: bold">Theme<br/></label>&nbsp;&nbsp;
+                <input type="radio" name='theme_id' value="1"><label>&nbsp;Beauty</label>
+                <input type="radio" name='theme_id' value="2"><label>&nbsp;Medical</label>
+                <input type="radio" name='theme_id' value="3"><label>&nbsp;Tea</label>
+            </div>
+            <div class='radio-group'>
+                <label style="font-weight: bold">Gender<br/></label>
+                <input type="radio" name='gender' value="Male"><label>&nbsp;Male</label>
+                <input type="radio" name='gender' value="Female"><label>&nbsp;Female</label>
+            </div>
+
+            <div class='radio-group'>
+                <label style="font-weight: bold">User Type<br/></label>
+                <input type="radio" name='user_type' value="Buyer"><label>&nbsp;Buyer</label>
+                <input type="radio" name='user_type' value="Seller"><label>&nbsp;Seller</label>
             </div>
           <div class='form-group'>
               <label>Location <input type='text' id="search_input" name='location' class='form-control' size="50" required/></label>
                               <input type="hidden" id="latitude_input"/>
                               <input type="hidden" id="longitude_input"/>
           </div>
-
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
             <div class='create-button'>
                 <input type='submit' name='action' value='&nbsp;&nbsp;Create My Profile&nbsp;&nbsp;' class='btn btn-primary' />
             </div>

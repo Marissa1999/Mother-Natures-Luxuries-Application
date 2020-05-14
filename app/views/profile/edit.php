@@ -43,6 +43,9 @@
               display: inline;
               text-align: center;
           }
+          input[type=text] {
+              text-align: center;
+          }
           p {
               height: 100%;
               display: flex;
@@ -51,7 +54,6 @@
           }
           body {
               background-color: lavender;
-              display: ;
               font-family: Helvetica, sans-serif;
           }
           input[type="radio"] + label {
@@ -78,11 +80,11 @@
         </div>
         <div class="radio-group">
             <label style="font-weight: bold">Theme</label><br/>
-            <input type="radio" name="theme_id"  value="1" <?php echo $data->theme_id == '1' ? 'checked' : ''?>><label>&nbsp;Beauty</label>
+            <input type="radio" name="theme_id"  value="1" <?php echo $data->theme_id == '1' ? 'checked' : ''?>>&nbsp;Beauty
             <input type="radio" name="theme_id"  value="2"
-                <?php echo $data->theme_id == '2' ? 'checked' : ''?>><label>&nbsp;Medical</label>
+                <?php echo $data->theme_id == '2' ? 'checked' : ''?>>&nbsp;Medical
             <input type="radio" name="theme_id"  value="3"
-                <?php echo $data->theme_id == '3' ? 'checked' : ''?>><label>&nbsp;Tea</label>
+                <?php echo $data->theme_id == '3' ? 'checked' : ''?>>&nbsp;Tea
         </div>
         <div class="radio-group">
             <label style="font-weight: bold">Gender</label><br/>
