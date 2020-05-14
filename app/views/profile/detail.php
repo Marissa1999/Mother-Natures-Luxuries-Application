@@ -80,7 +80,6 @@
             <dt>User Type</dt>
             <dd><?=$data->user_type ?></dd>
         </dl>
-
      </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -20,12 +20,11 @@ class ProfileController extends Controller
         if(isset($_POST['action']))
         {
             $newProfile = $this->model('Profile');
-            if(!empty($_POST['theme'])) {
-                $newProfile->theme_id = $_POST['theme'];
+            if(!empty($_POST['theme_id'])) {
+                $newProfile->theme_id = $_POST['theme_id'];
             }else{
                 $newProfile->theme_id = 0;
             }
-
             $newProfile->first_name = $_POST['first_name'];
             $newProfile->last_name = $_POST['last_name'];
             $newProfile->email = $_POST['email'];

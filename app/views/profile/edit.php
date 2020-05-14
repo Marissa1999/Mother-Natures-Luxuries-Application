@@ -62,8 +62,10 @@
         <div class='form-group'>
             <label>Email: <input type='text' name='email' value='<?=$data->email ?>' class='form-control' /></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
             <label>Phone Number: <input type='text' name='phone_number' value='<?=$data->phone_number ?>' class='form-control' /></label>
         </div>
+
          <div class='form-group'>
             <label>Theme ID: <input type='text' name='theme_id' value='<?=$data->theme_id ?>' class='form-control' /></label>
              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
