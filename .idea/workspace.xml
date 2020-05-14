@@ -32,6 +32,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="design-profile" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7" />
@@ -48,6 +53,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -220,9 +231,14 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920" timestamp="1589389645816" />
-    <state x="425" y="264" key="git4idea.merge.GitPullDialog" timestamp="1589394670097">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state x="1124" y="292" key="git4idea.branch.GitSmartOperationDialog" timestamp="1589481935988">
+      <screen x="0" y="0" width="1986" height="1152" />
+    </state>
+    <state x="1124" y="292" key="git4idea.branch.GitSmartOperationDialog/0.0.1986.1152@0.0.1986.1152" timestamp="1589481935988" />
+    <state x="586" y="331" key="git4idea.merge.GitPullDialog" timestamp="1589481960860">
+      <screen x="0" y="0" width="1986" height="1152" />
     </state>
     <state x="425" y="264" key="git4idea.merge.GitPullDialog/0.0.1440.920@0.0.1440.920" timestamp="1589394670097" />
+    <state x="586" y="331" key="git4idea.merge.GitPullDialog/0.0.1986.1152@0.0.1986.1152" timestamp="1589481960860" />
   </component>
 </project>
