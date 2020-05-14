@@ -11,7 +11,7 @@
         h1 {
             color: darkslateblue;
             margin-top: 50px;
-            margin-bottom:50px;
+            margin-bottom:30px;
             height: 100%;
             display: flex;
             align-items: center;

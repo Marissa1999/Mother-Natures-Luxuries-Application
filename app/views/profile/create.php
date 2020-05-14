@@ -37,8 +37,7 @@
               align-items: center;
               justify-content: center;
           }
-          label,
-          input {
+          label{
               height: 100%;
               display: block;
               text-align: center;
