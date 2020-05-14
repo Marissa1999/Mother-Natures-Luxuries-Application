@@ -33,8 +33,13 @@ class ProfileController extends Controller
             $newProfile->gender = $_POST['gender'];
             $newProfile->user_type = $_POST['user_type'];
             $newProfile->user_id= $_SESSION['user_id'];
+            if(($_POST['user_type']) == '1') {
+                header('location:/buyer/index');
+
+            }else{
+                header('location:/home/index');
+            }
             $newProfile->create();
-            header('location:/home/index');
         }
 
         else

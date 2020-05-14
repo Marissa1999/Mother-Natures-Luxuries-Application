@@ -105,8 +105,8 @@
           </div>
             <div class='form-group'>
                 User Type:
-                <input type="radio" name='user_type' value="Buyer"><label>Buyer</label><br>
-                <input type="radio" name='user_type' value="Seller"><label>Seller</label><br>
+                <input type="radio" name='user_type' value="1"><label>Buyer</label><br>
+                <input type="radio" name='user_type' value="2"><label>Seller</label><br>
             </div>
           <div class='form-group'>
               <label>Location <input type='text' id="search_input" name='location' class='form-control' size="50" required/></label>
