@@ -88,6 +88,7 @@
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <label>Last Name <input type='text' name='last_name' class='form-control' minlength="2" required/></label>
           </div>
+
           <div class='form-group'>
               <label>Email <input type='text' name='email' class='form-control' placeholder="example@gmail.com" required/></label>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
