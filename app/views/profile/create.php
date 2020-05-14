@@ -94,19 +94,19 @@
               <label>Phone Number <input type='text' name='phone_number' class='form-control' placeholder="ex :999-999-9999" required/></label>
           </div>
           <div class='form-group'>
-              Theme ID:
-              <input type="radio" name='theme_id'  value="1"><label>Beauty</label><br>
-              <input type="radio" name='theme_id'  value="2"><label>Medical</label><br>
-              <input type="radio" name='theme_id'  value="3"><label>Tea</label><br>
+              Theme:
+              <input type="radio" name='theme_id' value="1"><label>Beauty</label><br>
+              <input type="radio" name='theme_id' value="2"><label>Medical</label><br>
+              <input type="radio" name='theme_id' value="3"><label>Tea</label><br>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               Gender:
-              <input type="radio" name='gender'  value="M"><label>Male</label><br>
-              <input type="radio" name='gender'  value="F"><label>Female</label><br>
+              <input type="radio" name='gender' value="Male"><label>Male</label><br>
+              <input type="radio" name='gender' value="Female"><label>Female</label><br>
           </div>
             <div class='form-group'>
                 User Type:
-                <input type="radio" name='user_type'  value="Buyer"><label>Buyer</label><br>
-                <input type="radio" name='user_type'  value="Seller"><label>Seller</label><br>
+                <input type="radio" name='user_type' value="Buyer"><label>Buyer</label><br>
+                <input type="radio" name='user_type' value="Seller"><label>Seller</label><br>
             </div>
           <div class='form-group'>
               <label>Location <input type='text' id="search_input" name='location' class='form-control' size="50" required/></label>
