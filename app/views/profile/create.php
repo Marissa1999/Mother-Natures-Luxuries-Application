@@ -44,6 +44,9 @@
               align-items: center;
               justify-content: center;
           }
+          input[type=text] {
+              text-align: center;
+          }
           label {
               height: 100%;
               display: inline;
