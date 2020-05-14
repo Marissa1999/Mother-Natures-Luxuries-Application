@@ -13,6 +13,7 @@ class BookController extends Controller
             $info = getimagesize($_FILES['book_picture']['tmp_name']);
             $allowedTypes = [IMAGETYPE_JPEG=>'.jpg', IMAGETYPE_PNG=>'.png', IMAGETYPE_GIF=>'.gif'];
 
+
             if($info === false)
             {
                 $this->view('book/create', ['error' => 'Bad File Format']);
