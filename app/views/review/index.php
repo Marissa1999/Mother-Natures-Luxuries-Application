@@ -31,7 +31,11 @@
     <h1>List of Product Reviews</h1>
     <a href='/login/logout' class="btn btn-danger" style="float: right;">Logout</a><br/><br/>
     <a href='/home/search' class='btn btn-secondary'>Back to Product Search Page</a><br/><br/>
-    <a href='/review/create' class='btn btn-success'>Add a Review</a><br/><br/>
+    <?php
+    if ($data['theProfile']->user_type == "Buyer") {
+        echo "<a href='/review/create' class='btn btn-success'>Add a Review</a><br/><br/>";
+    }
+    ?>
     <table class='table table-striped'>
         <tr>
             <td>First Name</td>

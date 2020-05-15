@@ -14,7 +14,8 @@ class ReviewController extends Controller
         $_SESSION['product_id'] = $product_id;
         $reviews = $this->model('Review')->getReviewsForProduct($_SESSION['product_id']);
         $profiles = $this->model('Profile')->getSellersAndProducts();
-        $this->view('review/index', ['reviews' => $reviews, 'profiles' => $profiles]);
+        $theProfile = $this->model('Profile')->findProfile($user_id);
+        $this->view('review/index', ['reviews' => $reviews, 'profiles' => $profiles, 'theProfile' => $theProfile]);
     }
 
     public function create()

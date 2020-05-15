@@ -101,7 +101,11 @@
         <li><a href='/home/search'>Browse All Products</a></li>
         <li><a href='/book/search'>Browse All Books</a></li>
         <li><a href='/message/index'>Message Users</a></li>
-        <li><a href='/wishlist/index'>View Wish List</a></li>
+        <?php
+        if ($data['profile']->user_type == "Buyer") {
+            echo "<li><a href='/wishlist/index'>View Wish List</a></li>";
+        }
+        ?>
         <li><a href='/order/index'>View Shopping Cart</a></li>
         <li><a href='/order/history'>View Shopping History</a></li>
     </ul>
