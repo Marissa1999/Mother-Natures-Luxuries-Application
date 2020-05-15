@@ -20,9 +20,13 @@ class ProfileController extends Controller
         if(isset($_POST['action']))
         {
             $newProfile = $this->model('Profile');
-            if(!empty($_POST['theme_id'])) {
+
+            if(!empty($_POST['theme_id']))
+            {
                 $newProfile->theme_id = $_POST['theme_id'];
-            }else{
+            }
+            else
+            {
                 $newProfile->theme_id = 0;
             }
             $newProfile->first_name = $_POST['first_name'];
@@ -30,23 +34,28 @@ class ProfileController extends Controller
             $newProfile->email = $_POST['email'];
             $newProfile->phone_number = $_POST['phone_number'];
             $newProfile->location = $_POST['location'];
-            if(!empty($_POST['gender'])) {
+
+            if(!empty($_POST['gender']))
+            {
                 $newProfile->gender = $_POST['gender'];
-            }else{
+            }
+            else
+            {
                 $newProfile->gender = "Other";
             }
-            if(!empty($_POST['gender'])) {
-                $newProfile->gender = $_POST['gender'];
-            }else{
-                $newProfile->gender = "Other";
+
+            if(!empty($_POST['user_type']))
+            {
+                $newProfile->user_type = $_POST['user_type'];
             }
-            if(!empty($_POST['user_type'])) {
-                $newProfile->gender = $_POST['user_type'];
-            }else{
-                $newProfile->gender = "Buyer";
+            else
+            {
+                $newProfile->user_type = "Buyer";
             }
+
             $newProfile->user_id= $_SESSION['user_id'];
             $newProfile->create();
+            header('location:/home/index');
         }
         else
         {

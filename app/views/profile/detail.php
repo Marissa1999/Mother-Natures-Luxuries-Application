@@ -62,15 +62,18 @@
             <dd><?=$data->email ?></dd>
             <dt>Phone Number</dt>
             <dd><?=$data->phone_number ?></dd>
-            <dt>Theme ID</dt>
+            <dt>Theme</dt>
             <dd><?php
                     $theme = $data->theme_id;
                     if($theme == 1)
                     {
                         echo 'Beauty';
-                    }elseif  ($theme == 2)  {
+                    }elseif  ($theme == 2)
+                    {
                         echo 'Medical';
-                    }  else{
+                    }
+                    else
+                    {
                         echo 'Tea';
                     }    ?></dd>
             <dt>Gender</dt>

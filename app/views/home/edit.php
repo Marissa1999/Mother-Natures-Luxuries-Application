@@ -55,19 +55,19 @@
        <h1>Edit the Product</h1>
        <form action='' method='post' enctype='multipart/form-data'>
             <div class='form-group'>
-                <label>Product Name <input type='text' name='product_name' value='<?=$data->product_name ?>' class='form-control' /></label>
+                <label>Product Name <input type='text' name='product_name' value='<?=$data->product_name ?>' class='form-control' required /></label>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <label>Product Picture <input type='file' name='product_picture' style="width:208px"/></label>
+                <label>Product Picture <input type='file' name='product_picture' style="width:208px" /></label>
             </div>
             <div class='form-group'>
-                <label>Product Price <input type='text' name='product_price' value='<?=$data->product_price ?>' class='form-control' /></label>
+                <label>Product Price <input type='text' name='product_price' value='<?=$data->product_price ?>' class='form-control' required/></label>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <label>Product Quantity <input type='text' name='product_quantity' value='<?=$data->product_quantity ?>' class='form-control' /></label>
+                <label>Product Quantity <input type='number' min="0" name='product_quantity' value='<?=$data->product_quantity ?>' class='form-control' required /></label>
             </div>
             <div class='form-group'>
-                <label>Product Details <input type='text' name='product_details' value='<?=$data->product_details ?>' class='form-control' /></label>
+                <label>Product Details <input type='text' name='product_details' value='<?=$data->product_details ?>' class='form-control' required /></label>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <label>Product Category <input type='text' name='product_category' value='<?=$data->product_category ?>' class='form-control' /></label>
+                <label>Product Category <input type='text' name='product_category' value='<?=$data->product_category ?>' class='form-control' required/></label>
             </div>
             <div class='save-button'>
                 <input type='submit' name='action' value='&nbsp;&nbsp;Save Changes&nbsp;&nbsp;' class='btn btn-success' />

@@ -93,15 +93,15 @@
 
     <br />
 
-    <h2>My Products</h2>
-    <a href='/home/create' class='btn btn-success' style="float: right;">Add a Product</a>
-
     <table class='table table-striped' style="width:100%">
-        <tr><td>Name</td><td>Picture</td><td>Details</td><td>Price</td><td>Quantity</td><td>Category</td><td>Profit</td></tr>
         <?php
         foreach($data['products'] as $product)
         {
-            if( $data['profile']->user_type == 'Seller') {
+            if( $data['profile']->user_type == "Seller")
+            {
+                echo " <h2>My Products</h2>
+                       <a href='/home/create' class='btn btn-success' style=\"float: right;\">Add a Product</a>";
+                echo "<tr><td>Name</td><td>Picture</td><td>Details</td><td>Price</td><td>Quantity</td><td>Category</td><td>Profit</td></tr>";
                 $total = $product->product_price * $product->product_quantity;
                 echo "<tr><td>$product->product_name</td><td><img src='/product_images/$product->product_picture' style='max-width:100px;' /></td>
                  <td>$product->product_details</td><td>$product->product_price</td>
@@ -111,35 +111,25 @@
                  <a href='/home/edit/$product->product_id' class='btn btn-outline-success btn-sm''>Edit Product</a> 
                  <a href='/home/delete/$product->product_id' class='btn btn-outline-danger btn-sm'>Delete Product</a>
                  </td></tr>";
-            }else{
-                $total = $product->product_price * $product->product_quantity;
-                echo "<tr><td>$product->product_name</td><td><img src='/product_images/$product->product_picture' style='max-width:100px;' /></td>
-                 <td>$product->product_details</td><td>$product->product_price</td>
-                 <td>$product->product_quantity</td><td>$product->product_category</td>
-                 <td>$total</td><td style=\"text-align:right\">
-                 </td></tr>";
+            }
+            else
+            {
+               echo "";
             }
         }
         ?>
     </table>
     <br />
 
-    <h2>My Books</h2>
-    <a href='/book/create' class='btn btn-success' style="float: right;">Add a Book</a>
-    <!--
-    <table style="width:100%" >
-        <tr>
-            <td><h2>My Books</h2></td>
-            <td style="text-align:right"><a href='/book/create' class='btn btn-success'>Add a Book</a></td>
-        </tr>
-    </table>
-    -->
     <table class='table table-striped' style="width:100%">
-        <tr><td>Name</td><td>Picture</td><td>Description</td><td>Price</td><td>Quantity</td></tr>
         <?php
         foreach($data['books'] as $book)
         {
-        if($data['profile']->user_type =='Seller') {
+        if($data['profile']->user_type =="Seller")
+        {
+            echo " <h2>My Books</h2>
+                   <a href='/book/create' class='btn btn-success' style=\"float: right;\">Add a Book</a>";
+            echo "<tr><td>Name</td><td>Picture</td><td>Description</td><td>Price</td><td>Quantity</td></tr>";
             echo "<tr><td>$book->book_name</td><td><img src='/book_images/$book->book_picture' style='max-width:100px;' /></td>
                  <td>$book->book_description</td><td>$book->book_price</td>
                  <td>$book->book_quantity</td><td style=\"text-align:right\">
@@ -147,11 +137,10 @@
                  <a href='/book/edit/$book->book_id' class='btn btn-outline-success btn-sm'>Edit Book</a> 
                  <a href='/book/delete/$book->book_id' class='btn btn-outline-danger btn-sm'>Delete Book</a>
                  </td></tr>";
-        }else{
-            echo "<tr><td>$book->book_name</td><td><img src='/book_images/$book->book_picture' style='max-width:100px;' /></td>
-                 <td>$book->book_description</td><td>$book->book_price</td>
-                 <td>$book->book_quantity</td><td style=\"text-align:right\">
-                 </td></tr>";
+        }
+        else
+        {
+            echo "";
         }
         }
         ?>
