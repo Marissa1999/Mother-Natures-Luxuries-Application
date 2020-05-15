@@ -24,7 +24,7 @@ class Profile extends Model
     {
         $SQL = 'SELECT * FROM Profile WHERE user_type LIKE "Seller"';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['user_type'=>$user_type]);
+        $stmt->execute(['user_type' => $user_type]);
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'Profile');
         return $stmt->fetchAll();
     }
@@ -39,12 +39,12 @@ class Profile extends Model
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'Profile');
         return $stmt->fetchAll();
     }
-    
+
     public function getForUser($user_id)
     {
         $SQL = 'SELECT * FROM Profile WHERE user_id = :user_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['user_id'=>$user_id]);
+        $stmt->execute(['user_id' => $user_id]);
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'Profile');
         return $stmt->fetchAll();
     }
@@ -56,9 +56,9 @@ class Profile extends Model
                      VALUES(:user_id, :theme_id, :first_name, :last_name, :email, 
                             :phone_number, :location, :gender, :user_type)';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['user_id'=>$this->user_id, 'theme_id'=>$this->theme_id, 'first_name'=>$this->first_name,
-                       'last_name'=>$this->last_name, 'email'=>$this->email, 'phone_number'=>$this->phone_number,
-                       'location'=>$this->location, 'gender'=>$this->gender, 'user_type'=>$this->user_type]);
+        $stmt->execute(['user_id' => $this->user_id, 'theme_id' => $this->theme_id, 'first_name' => $this->first_name,
+            'last_name' => $this->last_name, 'email' => $this->email, 'phone_number' => $this->phone_number,
+            'location' => $this->location, 'gender' => $this->gender, 'user_type' => $this->user_type]);
         return $stmt->rowCount();
     }
 
@@ -66,7 +66,7 @@ class Profile extends Model
     {
         $SQL = 'SELECT * FROM Profile WHERE profile_id = :profile_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['profile_id'=>$profile_id]);
+        $stmt->execute(['profile_id' => $profile_id]);
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'Profile');
         return $stmt->fetch();
     }
@@ -75,7 +75,7 @@ class Profile extends Model
     {
         $SQL = 'SELECT * FROM Profile WHERE user_id = :user_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['user_id'=>$user_id]);
+        $stmt->execute(['user_id' => $user_id]);
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'Profile');
         return $stmt->fetch();
     }
@@ -88,9 +88,9 @@ class Profile extends Model
                        gender = :gender, user_type = :user_type
                  WHERE user_id = :user_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['first_name'=>$this->first_name, 'last_name'=>$this->last_name, 'email'=>$this->email,
-                        'phone_number'=>$this->phone_number, 'location'=>$this->location, 'theme_id'=>$this->theme_id,
-                        'gender'=>$this->gender, 'user_type'=>$this->user_type, 'user_id'=>$this->user_id]);
+        $stmt->execute(['first_name' => $this->first_name, 'last_name' => $this->last_name, 'email' => $this->email,
+            'phone_number' => $this->phone_number, 'location' => $this->location, 'theme_id' => $this->theme_id,
+            'gender' => $this->gender, 'user_type' => $this->user_type, 'user_id' => $this->user_id]);
         return $stmt->rowCount();
     }
 

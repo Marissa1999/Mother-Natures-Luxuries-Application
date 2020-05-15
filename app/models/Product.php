@@ -22,7 +22,7 @@ class Product extends Model
     {
         $SQL = 'SELECT * FROM Product WHERE seller_id = :seller_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['seller_id'=>$seller_id]);
+        $stmt->execute(['seller_id' => $seller_id]);
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'Product');
         return $stmt->fetchAll();
     }
@@ -98,9 +98,9 @@ class Product extends Model
                     VALUES(:seller_id, :product_category, :product_name, :product_picture, 
                                     :product_details, :product_price, :product_quantity)';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['seller_id'=>$this->seller_id, 'product_category'=>$this->product_category, 'product_name'=>$this->product_name,
-                        'product_picture'=>$this->product_picture, 'product_details'=>$this->product_details,
-                        'product_price'=>$this->product_price, 'product_quantity'=>$this->product_quantity]);
+        $stmt->execute(['seller_id' => $this->seller_id, 'product_category' => $this->product_category, 'product_name' => $this->product_name,
+            'product_picture' => $this->product_picture, 'product_details' => $this->product_details,
+            'product_price' => $this->product_price, 'product_quantity' => $this->product_quantity]);
         return $stmt->rowCount();
     }
 
@@ -108,7 +108,7 @@ class Product extends Model
     {
         $SQL = 'SELECT * FROM Product WHERE product_id = :product_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['product_id'=>$product_id]);
+        $stmt->execute(['product_id' => $product_id]);
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'Product');
         return $stmt->fetch();
     }
@@ -120,10 +120,10 @@ class Product extends Model
                        product_details = :product_details, product_price = :product_price, product_quantity = :product_quantity
                  WHERE product_id = :product_id AND seller_id = :seller_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['product_id'=>$this->product_id, 'seller_id'=>$this->seller_id,
-                        'product_category'=>$this->product_category, 'product_name'=>$this->product_name,
-                        'product_picture'=>$this->product_picture, 'product_details'=>$this->product_details,
-                        'product_price'=>$this->product_price, 'product_quantity'=>$this->product_quantity]);
+        $stmt->execute(['product_id' => $this->product_id, 'seller_id' => $this->seller_id,
+            'product_category' => $this->product_category, 'product_name' => $this->product_name,
+            'product_picture' => $this->product_picture, 'product_details' => $this->product_details,
+            'product_price' => $this->product_price, 'product_quantity' => $this->product_quantity]);
         return $stmt->rowCount();
     }
 
@@ -131,7 +131,7 @@ class Product extends Model
     {
         $SQL = 'DELETE FROM Product WHERE product_id = :product_id AND seller_id = :seller_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['product_id'=>$this->product_id, 'seller_id'=>$this->seller_id]);
+        $stmt->execute(['product_id' => $this->product_id, 'seller_id' => $this->seller_id]);
         return $stmt->rowCount();
     }
 }

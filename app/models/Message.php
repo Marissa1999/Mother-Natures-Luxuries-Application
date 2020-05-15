@@ -19,7 +19,7 @@ class Message extends Model
     {
         $SQL = 'SELECT * FROM Message WHERE message_receiver = :message_receiver';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['message_receiver'=>$message_receiver]);
+        $stmt->execute(['message_receiver' => $message_receiver]);
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'Message');
         return $stmt->fetchAll();
     }
@@ -40,9 +40,9 @@ class Message extends Model
         $SQL = 'INSERT INTO Message(message_sender, message_receiver, message_text, message_timestamp, message_read) 
                      VALUES(:message_sender, :message_receiver, :message_text, :message_timestamp, :message_read)';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['message_sender'=>$this->message_sender, 'message_receiver'=>$this->message_receiver,
-                        'message_text'=>$this->message_text, 'message_timestamp'=>$this->message_timestamp,
-                        'message_read'=>$this->message_read]);
+        $stmt->execute(['message_sender' => $this->message_sender, 'message_receiver' => $this->message_receiver,
+            'message_text' => $this->message_text, 'message_timestamp' => $this->message_timestamp,
+            'message_read' => $this->message_read]);
         return $stmt->rowCount();
     }
 
@@ -50,7 +50,7 @@ class Message extends Model
     {
         $SQL = 'SELECT * FROM Message WHERE message_id = :message_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['message_id'=>$message_id]);
+        $stmt->execute(['message_id' => $message_id]);
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'Message');
         return $stmt->fetch();
     }
@@ -65,9 +65,9 @@ class Message extends Model
                        message_read = :message_read
                  WHERE message_id = :message_id AND message_receiver = :message_receiver';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['message_id'=>$this->message_id, 'message_sender'=>$this->message_sender,
-                        'message_receiver'=>$this->message_receiver, 'message_text'=>$this->message_text,
-                        'message_timestamp'=>$this->message_timestamp, 'message_read'=>$this->message_read]);
+        $stmt->execute(['message_id' => $this->message_id, 'message_sender' => $this->message_sender,
+            'message_receiver' => $this->message_receiver, 'message_text' => $this->message_text,
+            'message_timestamp' => $this->message_timestamp, 'message_read' => $this->message_read]);
         return $stmt->rowCount();
     }
 
@@ -81,9 +81,9 @@ class Message extends Model
                        message_read = :message_read
                  WHERE message_id = :message_id AND message_receiver = :message_receiver';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['message_id'=>$this->message_id, 'message_sender'=>$this->message_sender,
-                        'message_receiver'=>$this->message_receiver, 'message_text'=>$this->message_text,
-                        'message_timestamp'=>$this->message_timestamp, 'message_read'=>$this->message_read]);
+        $stmt->execute(['message_id' => $this->message_id, 'message_sender' => $this->message_sender,
+            'message_receiver' => $this->message_receiver, 'message_text' => $this->message_text,
+            'message_timestamp' => $this->message_timestamp, 'message_read' => $this->message_read]);
         return $stmt->rowCount();
     }
 
@@ -91,7 +91,7 @@ class Message extends Model
     {
         $SQL = 'DELETE FROM Message WHERE message_id = :message_id AND message_receiver = :message_receiver';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['message_id'=>$this->message_id, 'message_receiver'=>$this->message_receiver]);
+        $stmt->execute(['message_id' => $this->message_id, 'message_receiver' => $this->message_receiver]);
         return $stmt->rowCount();
     }
 }

@@ -8,7 +8,7 @@ class WishList extends Model
     {
         $SQL = 'SELECT * FROM WishList WHERE customer_id = :customer_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['customer_id'=>$customer_id]);
+        $stmt->execute(['customer_id' => $customer_id]);
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'WishList');
         return $stmt->fetchAll();
     }
@@ -29,7 +29,7 @@ class WishList extends Model
         $SQL = 'INSERT INTO WishList(customer_id, product_id) 
                      VALUES(:customer_id, :product_id)';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['customer_id'=>$this->customer_id, 'product_id'=>$this->product_id]);
+        $stmt->execute(['customer_id' => $this->customer_id, 'product_id' => $this->product_id]);
         return $stmt->rowCount();
     }
 
@@ -37,7 +37,7 @@ class WishList extends Model
     {
         $SQL = 'SELECT * FROM WishList WHERE wish_id = :wish_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['wish_id'=>$wish_id]);
+        $stmt->execute(['wish_id' => $wish_id]);
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'WishList');
         return $stmt->fetch();
     }
@@ -46,7 +46,7 @@ class WishList extends Model
     {
         $SQL = 'DELETE FROM WishList WHERE wish_id = :wish_id AND product_id = :product_id AND customer_id = :customer_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['wish_id'=>$this->wish_id, 'product_id'=>$this->product_id, 'customer_id'=>$this->customer_id]);
+        $stmt->execute(['wish_id' => $this->wish_id, 'product_id' => $this->product_id, 'customer_id' => $this->customer_id]);
         return $stmt->rowCount();
     }
 }
