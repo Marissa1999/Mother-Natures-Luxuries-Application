@@ -46,7 +46,9 @@ class HomeController extends Controller
                 $newProduct->product_category= $_POST['product_category'];
                 $newProduct->seller_id= $_SESSION['profile_id'];
                 $newProduct->create();
-                header('location:/home/index');
+
+                $profile = $this->model('Profile')->find($_SESSION['profile_id']);
+                $this->view('home/index', ['profile' => $profile]);
             }
         }
         else

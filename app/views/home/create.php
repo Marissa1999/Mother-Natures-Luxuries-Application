@@ -56,19 +56,22 @@
       <h1>Add a Product</h1>
         <form action='' method='post' enctype='multipart/form-data'>
           <div class='form-group'>
-              <label>Product Name <input type='text' name='product_name' class='form-control' /></label>
+              <label>Product Name <input type='text' name='product_name' class='form-control' required/></label>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <label>Product Picture <input type='file' name='product_picture' style="width:208px"/></label>
           </div>
           <div class='form-group'>
-              <label>Product Price <input type='text' name='product_price' class='form-control' /></label>
+              <label>Product Price <input type='text' name='product_price' class='form-control' required/></label>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <label>Product Quantity <input type='text' name='product_quantity' class='form-control' /></label>
+              <label>Product Quantity <input type='number' name='product_quantity' min="0"  class='form-control' required/></label>
           </div>
           <div class='form-group'>
               <label>Product Details <input type='text' name='product_details' class='form-control' /></label>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <label>Product Category <input type='text' name='product_category' class='form-control' /></label>
+              <label>Theme:
+                  <input type="radio" name='theme_id' value="1"><label>Beauty</label><br>
+                  <input type="radio" name='theme_id' value="2"><label>Medical</label><br>
+                  <input type="radio" name='theme_id' value="3"><label>Tea</label><br></label>
           </div>
           <div class='create-button'>
               <input type='submit' name='action' value='&nbsp;&nbsp;Create New Product&nbsp;&nbsp;' class='btn btn-primary' />
