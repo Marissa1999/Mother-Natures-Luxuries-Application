@@ -72,9 +72,9 @@
             <label>Product Quantity <input type='number' name='product_quantity' min="0" class='form-control' required/></label>
         </div>
         <div class='form-group'>
-            <label>Product Category <input type='text' name='product_category' class='form-control' required/></label>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <label>Product Details <input type="text" name='product_details' class='form-control' required/></label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label>Product Category <input type='text' name='product_category' class='form-control' required/></label>
         </div>
         <div class='create-button'>
             <input type='submit' name='action' value='&nbsp;&nbsp;Create New Product&nbsp;&nbsp;'

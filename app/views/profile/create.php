@@ -99,7 +99,7 @@
             <label>Email <input type='text' name='email' class='form-control' placeholder="example@gmail.com" required/></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <label>Phone Number <input type='text' name='phone_number' class='form-control'
-                                       placeholder="ex :999-999-9999" required/></label>
+                                       placeholder="Ex: 999-999-9999" required/></label>
         </div>
         <div class='form-group'>
             Theme:

@@ -79,20 +79,20 @@
         <div class='form-group'>
             <label style="font-weight: bold">First Name <input type='text' name='first_name'
                                                                value='<?= $data->first_name ?>'
-                                                               class='form-control'/></label>
+                                                               class='form-control' required/></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <label style="font-weight: bold">Last Name <input type='text' name='last_name'
                                                               value='<?= $data->last_name ?>'
-                                                              class='form-control'/></label>
+                                                              class='form-control' required/></label>
         </div>
         <div class='form-group'>
-            <label style="font-weight: bold">Email <input type='text' name='email' value='<?= $data->email ?>'
-                                                          class='form-control'/></label>
+            <label style="font-weight: bold">Email <input type='email' name='email' value='<?= $data->email ?>'
+                                                          class='form-control' placeholder="example@gmail.com" required /></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
             <label style="font-weight: bold">Phone Number <input type='text' name='phone_number'
                                                                  value='<?= $data->phone_number ?>'
-                                                                 class='form-control'/></label>
+                                                                 class='form-control' placeholder="Ex: 999-999-9999" required/></label>
         </div>
         <div class="radio-group">
             <label style="font-weight: bold">Theme</label><br/>&nbsp;&nbsp;
@@ -120,7 +120,7 @@
 
         <div class="form-group">
             <label>Location <input type='text' name='location' value='<?= $data->location ?>' class='form-control'
-                                   size="50"/></label>
+                                   size="50" required/></label>
         </div>
 
         <div class="save-button">
