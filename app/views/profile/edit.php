@@ -79,12 +79,12 @@
             <label style="font-weight: bold">Phone Number <input type='text' name='phone_number' value='<?=$data->phone_number ?>' class='form-control' /></label>
         </div>
         <div class="radio-group">
-            <label style="font-weight: bold">Theme</label><br/>
-            <input type="radio" name="theme_id"  value="1" <?php echo $data->theme_id == '1' ? 'checked' : ''?>>&nbsp;Beauty
+            <label style="font-weight: bold">Theme</label><br/>&nbsp;&nbsp;
+            <input type="radio" name="theme_id"  value="1" <?php echo $data->theme_id == '1' ? 'checked' : ''?>><label>&nbsp;Beauty</label>
             <input type="radio" name="theme_id"  value="2"
-                <?php echo $data->theme_id == '2' ? 'checked' : ''?>>&nbsp;Medical
+                <?php echo $data->theme_id == '2' ? 'checked' : ''?>><label>&nbsp;Medical</label>
             <input type="radio" name="theme_id"  value="3"
-                <?php echo $data->theme_id == '3' ? 'checked' : ''?>>&nbsp;Tea
+                <?php echo $data->theme_id == '3' ? 'checked' : ''?>><label>&nbsp;Tea</label>
         </div>
         <div class="radio-group">
             <label style="font-weight: bold">Gender</label><br/>
@@ -104,18 +104,7 @@
         <div class="form-group">
             <label>Location <input type='text' name='location' value='<?=$data->location ?>' class='form-control' size="50"/></label>
         </div>
-<!--
-         <div class='form-group'>
-            <label>Theme ID <input type='text' name='theme_id' value='<?=$data->theme_id ?>' class='form-control' /></label>
-             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-             <label>Gender <input type='text' name='gender' value='<?=$data->gender ?>' class='form-control' /></label>
-         </div>
-         <div class='form-group'>
-             <label>Location <input type='text' name='location' value='<?=$data->location ?>' class='form-control' /></label>
-             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-             <label>User Type <input type='text' name='user_type' value='<?=$data->user_type ?>' class='form-control' /></label>
-         </div>
--->
+
            <div class="save-button">
                <input type='submit' name='action' value='&nbsp;&nbsp;Save Changes&nbsp;&nbsp;' class='btn btn-success' />
            </div>

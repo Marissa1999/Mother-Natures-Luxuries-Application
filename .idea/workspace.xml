@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="adjusted the profile/edit layout for the input text to be aligned in the center">
+    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="adjusted the profile/create layout for the input text to be aligned in the center">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/profile/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/profile/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/edit.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589499181597</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="adjusted the profile/create layout for the input text to be aligned in the center">
+      <created>1589499219946</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1589499219946</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +231,8 @@
     <MESSAGE value="Location API Change Style" />
     <MESSAGE value="Adjust the Workspace file." />
     <MESSAGE value="adjusted the profile/edit layout for the input text to be aligned in the center" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjusted the profile/edit layout for the input text to be aligned in the center" />
+    <MESSAGE value="adjusted the profile/create layout for the input text to be aligned in the center" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjusted the profile/create layout for the input text to be aligned in the center" />
   </component>
   <component name="WindowStateProjectService">
     <state x="547" y="147" key="#PHP" timestamp="1589414200838">
@@ -239,11 +247,11 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="610" y="334" width="614" height="252" key="MultipleFileMergeDialog/0.0.1440.920@0.0.1440.920" timestamp="1589394674974" />
-    <state x="432" y="245" key="Vcs.Push.Dialog.v2" timestamp="1589497364334">
+    <state x="432" y="245" key="Vcs.Push.Dialog.v2" timestamp="1589499230722">
       <screen x="0" y="0" width="1986" height="1152" />
     </state>
     <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589489736047" />
-    <state x="432" y="245" key="Vcs.Push.Dialog.v2/0.0.1986.1152@0.0.1986.1152" timestamp="1589497364334" />
+    <state x="432" y="245" key="Vcs.Push.Dialog.v2/0.0.1986.1152@0.0.1986.1152" timestamp="1589499230722" />
     <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589389645816">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
@@ -252,10 +260,10 @@
       <screen x="0" y="0" width="1986" height="1152" />
     </state>
     <state x="1124" y="292" key="git4idea.branch.GitSmartOperationDialog/0.0.1986.1152@0.0.1986.1152" timestamp="1589481935988" />
-    <state x="586" y="331" key="git4idea.merge.GitPullDialog" timestamp="1589497311312">
+    <state x="586" y="331" key="git4idea.merge.GitPullDialog" timestamp="1589499224402">
       <screen x="0" y="0" width="1986" height="1152" />
     </state>
     <state x="425" y="264" key="git4idea.merge.GitPullDialog/0.0.1440.920@0.0.1440.920" timestamp="1589394670097" />
-    <state x="586" y="331" key="git4idea.merge.GitPullDialog/0.0.1986.1152@0.0.1986.1152" timestamp="1589497311312" />
+    <state x="586" y="331" key="git4idea.merge.GitPullDialog/0.0.1986.1152@0.0.1986.1152" timestamp="1589499224402" />
   </component>
 </project>
