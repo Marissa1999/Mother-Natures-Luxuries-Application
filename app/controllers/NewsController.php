@@ -13,7 +13,8 @@ class NewsController extends Controller
         $_SESSION['profile_id'] = $theProfile->profile_id;
         $news = $this->model('News')->get();
         $profiles = $this->model('News')->getSellersAndNews();
-        $this->view('news/index', ['news' => $news, 'profiles' => $profiles]);
+        $theProfile = $this->model('Profile')->findProfile($_SESSION['profile_id']);
+        $this->view('news/index', ['news' => $news, 'profiles' => $profiles, 'theProfile'=> $theProfile]);
     }
 
     public function create()

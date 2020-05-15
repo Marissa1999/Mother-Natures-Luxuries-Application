@@ -31,7 +31,12 @@
     <h1>List of Company News</h1>
     <a href='/login/logout' class="btn btn-danger" style="float: right;">Logout</a><br/>
     <a href='/home/index' class='btn btn-secondary'>Back to Home Page</a><br/><br/>
-    <a href='/news/create' class='btn btn-success'>Add a News Posting</a>
+    <?php
+       if($data['theProfile']->user_type == "Seller")
+       {
+           echo "<a href='/news/create' class='btn btn-success'>Add a News Posting</a>";
+       }
+    ?>
     <table class='table table-striped'>
         <tr>
             <td>First Name</td>

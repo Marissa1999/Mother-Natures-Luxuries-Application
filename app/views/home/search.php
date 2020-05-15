@@ -18,22 +18,10 @@
             justify-content: center;
             position: relative;
         }
+
         body {
             background-color: lavender;
             font-family: Helvetica, sans-serif;
-        }
-        .card {
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            transition: 0.3s;
-            width: 40%;
-            border-radius: 5px;
-            display: inline-block;
-        }
-        .card:hover {
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        }
-        img {
-            border-radius: 5px 5px 0 0;
         }
     </style>
     <title>Search Products</title>
@@ -69,11 +57,12 @@
             <td>Actions</td>
         </tr>
         <br/>
-        <div class='card'>
-            <?php
-            foreach ($data['products'] as $product) {
-                foreach ($data['profiles'] as $profile) {
-                    if ($product->seller_id == $profile->profile_id) {
+        <?php
+        foreach ($data['products'] as $product) {
+            foreach ($data['profiles'] as $profile) {
+                if ($product->seller_id == $profile->profile_id)
+                {
+                    if ($data['theProfile']->user_type == "Buyer") {
                         echo "<tr><td>$profile->first_name</td><td>$profile->last_name</td></td>";
                         echo "<td>$product->product_name</td><td><img src='/product_images/$product->product_picture' style='max-width:100px;' /></td>
                           <td>$product->product_details</td><td>$product->product_category</td><td>$product->product_price</td>
@@ -84,11 +73,22 @@
                     </td></tr>";
                         break;
                     }
+
+                    else
+                    {
+                        echo "<tr><td>$profile->first_name</td><td>$profile->last_name</td></td>";
+                        echo "<td>$product->product_name</td><td><img src='/product_images/$product->product_picture' style='max-width:100px;' /></td>
+                          <td>$product->product_details</td><td>$product->product_category</td><td>$product->product_price</td>
+                          <td>$product->product_quantity</td>
+                    <td>
+                        <a href='/review/index/$product->product_id' class='btn btn-outline-info btn-sm'>View Reviews</a>
+                    </td></tr>";
+                        break;
+                    }
                 }
             }
-            ?>
-        </div>
-
+        }
+        ?>
     </table>
 </div>
 <!-- Optional JavaScript -->
