@@ -7,13 +7,28 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <style>
+        h1 {
+            color: darkslateblue;
+            margin-top: 50px;
+            margin-bottom:30px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        body {
+            background-color: lavender;
+            font-family: Helvetica, sans-serif;
+        }
+    </style>
     <title>Shopping Cart</title>
 </head>
 <body>
 <div class='container'>
     <h1>Shopping Cart</h1>
-    <a href='/login/logout'>Logout</a><br />
+    <a href='/login/logout' class="btn btn-danger" style="float: right;">Logout</a><br />
+    <a href='/home/index' class='btn btn-secondary'>Back to Home Page</a><br />
     <table class='table table-striped'>
         <tr><td>Product Name</td><td>Picture</td><td>Details</td><td>Category</td><td>Unit Price</td><td>Order Price</td><td>Order Quantity</td><td>Actions</td></tr><br />
         <?php
@@ -26,8 +41,8 @@
                     echo "<tr><td>$product->product_name</td><td><img src='/product_images/$product->product_picture' style='max-width:100px;' /></td>
                           <td>$product->product_details</td><td>$product->product_category</td><td>$order->order_price</td>
                           <td>". $order->order_price * $order->order_quantity ,"</td><td>$order->order_quantity</td>
-                          <td><a href='/order/removeFromCart/$order->order_item_id' class='btn btn-danger'>Delete Item</a>
-                          <a href='/order/editQuantity/$order->order_item_id' class='btn btn-info'>Edit Quantity</a>
+                          <td><a href='/order/removeFromCart/$order->order_item_id' class='btn btn-outline-danger btn-sm'>Delete Item</a>
+                          <a href='/order/editQuantity/$order->order_item_id' class='btn btn-outline-info btn-sm'>Edit Quantity</a>
                           </td></tr>";
                     break;
                 }
@@ -43,7 +58,7 @@
         echo "<a href='/order/checkout' class='btn btn-info'>Head to Checkout</a>";
         ?>
     </table>
-    <a href='/home/index' class='btn btn-secondary'>Back to Home Page</a><br />
+
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

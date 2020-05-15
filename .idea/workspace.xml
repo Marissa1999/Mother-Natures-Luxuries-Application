@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="adjusted the profile/create layout for the input text to be aligned in the center">
+    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="adjusted the profile/edit layout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/profile/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/order/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/order/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589499219946</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="adjusted the profile/edit layout">
+      <created>1589501772360</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1589501772360</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +239,8 @@
     <MESSAGE value="Adjust the Workspace file." />
     <MESSAGE value="adjusted the profile/edit layout for the input text to be aligned in the center" />
     <MESSAGE value="adjusted the profile/create layout for the input text to be aligned in the center" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjusted the profile/create layout for the input text to be aligned in the center" />
+    <MESSAGE value="adjusted the profile/edit layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjusted the profile/edit layout" />
   </component>
   <component name="WindowStateProjectService">
     <state x="547" y="147" key="#PHP" timestamp="1589414200838">
