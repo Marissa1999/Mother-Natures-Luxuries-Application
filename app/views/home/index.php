@@ -87,7 +87,11 @@
         <li><a href='/home/modifyPassword'>Modify Password</a></li>
         <li><a href='/profile/edit'>Modify Profile</a></li>
         <li><a href='/profile/detail'>View Profile Information</a></li>
-        <li><a href='/profile/index'>View Seller Contacts</a></li>
+    <?php
+        if ($data['profile']->user_type == "Seller") {
+            echo "<li><a href='/profile/index'>View Seller Contacts</a></li>";
+        }
+        ?>
         <li><a href='/news/index'>View Company News Postings</a></li>
         <li><a href='/payment/index'>View Payment Information</a></li>
     </ul>

@@ -72,7 +72,7 @@ class HomeController extends Controller
         $theProfile = $this->model('Profile')->findProfile($user_id);
         $_SESSION['profile_id'] = $theProfile->profile_id;
         $profiles = $this->model('Profile')->getSellersAndProducts();
-        $theProfile = $this->model('Profile')->findProfile($_SESSION['profile_id']);
+        $theProfile = $this->model('Profile')->findProfile($user_id);
 
         if (isset($_POST['search'])) {
             $products = $this->model('Product')->searchProducts($_POST['search_input']);
