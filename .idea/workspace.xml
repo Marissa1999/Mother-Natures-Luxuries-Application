@@ -19,48 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Adjusted the Home Page according to the user stories.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/BookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/MessageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/MessageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/NewsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/PaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/PaymentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/ProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/PromotionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/PromotionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/ReviewController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/ReviewController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/WishListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/WishListController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/App.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/Filter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/Filter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Book.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Message.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/News.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/OrderDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/OrderDetails.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Payment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Payment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Promotion.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Promotion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Review.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Review.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/WishList.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/WishList.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/book/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/book/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/book/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/detail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/book/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/book/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/edit.php" afterDir="false" />
+    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Reformatted all existing files.">
       <change beforePath="$PROJECT_DIR$/app/views/home/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/modifyPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/modifyPassword.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_images/5ebeeb8f9b04d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_images/5ebee85710050.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589570933178</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Reformatted all existing files.">
+      <created>1589572098045</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1589572098045</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +270,8 @@
     <MESSAGE value="adjusted the /views/order/index layout" />
     <MESSAGE value="adjusted the /views/order/editQuantity layout" />
     <MESSAGE value="Adjusted the Home Page according to the user stories." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adjusted the Home Page according to the user stories." />
+    <MESSAGE value="Reformatted all existing files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Reformatted all existing files." />
   </component>
   <component name="WindowStateProjectService">
     <state x="547" y="147" key="#PHP" timestamp="1589414200838">

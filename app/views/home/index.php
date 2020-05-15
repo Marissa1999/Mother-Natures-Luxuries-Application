@@ -112,9 +112,9 @@
                 echo "<tr><td>Name</td><td>Picture</td><td>Details</td><td>Price</td><td>Quantity</td><td>Category</td><td>Profit</td></tr>";
                 $total = $product->product_price * $product->product_quantity;
                 echo "<tr><td>$product->product_name</td><td><img src='/product_images/$product->product_picture' style='max-width:100px;' /></td>
-                 <td>$product->product_details</td><td>$product->product_price</td>
+                 <td>$product->product_details</td><td>$$product->product_price</td>
                  <td>$product->product_quantity</td><td>$product->product_category</td>
-                 <td>$total</td><td style=\"text-align:right\">
+                 <td>$$total</td><td style=\"text-align:right\">
                  <a href='/promotion/index/$product->product_id' class='btn btn-outline-info btn-sm'>Promotions</a> 
                  <a href='/home/edit/$product->product_id' class='btn btn-outline-success btn-sm''>Edit Product</a> 
                  <a href='/home/delete/$product->product_id' class='btn btn-outline-danger btn-sm'>Delete Product</a>
@@ -135,7 +135,7 @@
             foreach ($data['books'] as $book) {
                 echo "<tr><td>Name</td><td>Picture</td><td>Description</td><td>Price</td><td>Quantity</td></tr>";
                 echo "<tr><td>$book->book_name</td><td><img src='/book_images/$book->book_picture' style='max-width:100px;' /></td>
-                 <td>$book->book_description</td><td>$book->book_price</td>
+                 <td>$book->book_description</td><td>$$book->book_price</td>
                  <td>$book->book_quantity</td><td style=\"text-align:right\">
                  <a href='/book/detail/$book->book_id' class='btn btn-outline-primary btn-sm'>Book Details</a>
                  <a href='/book/edit/$book->book_id' class='btn btn-outline-success btn-sm'>Edit Book</a> 
