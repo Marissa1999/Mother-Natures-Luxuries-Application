@@ -30,18 +30,24 @@ class ProfileController extends Controller
             $newProfile->email = $_POST['email'];
             $newProfile->phone_number = $_POST['phone_number'];
             $newProfile->location = $_POST['location'];
-            $newProfile->gender = $_POST['gender'];
-            $newProfile->user_type = $_POST['user_type'];
-            $newProfile->user_id= $_SESSION['user_id'];
-            if(($_POST['user_type']) == '1') {
-                header('location:/buyer/index');
-
+            if(!empty($_POST['gender'])) {
+                $newProfile->gender = $_POST['gender'];
             }else{
-                header('location:/home/index');
+                $newProfile->gender = "Other";
             }
+            if(!empty($_POST['gender'])) {
+                $newProfile->gender = $_POST['gender'];
+            }else{
+                $newProfile->gender = "Other";
+            }
+            if(!empty($_POST['user_type'])) {
+                $newProfile->gender = $_POST['user_type'];
+            }else{
+                $newProfile->gender = "Buyer";
+            }
+            $newProfile->user_id= $_SESSION['user_id'];
             $newProfile->create();
         }
-
         else
         {
             $this->view('profile/create');

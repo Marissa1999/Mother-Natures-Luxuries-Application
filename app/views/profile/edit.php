@@ -80,7 +80,8 @@
         </div>
         <div class="radio-group">
             <label style="font-weight: bold">Theme</label><br/>&nbsp;&nbsp;
-            <input type="radio" name="theme_id"  value="1" <?php echo $data->theme_id == '1' ? 'checked' : ''?>><label>&nbsp;Beauty</label>
+            <input type="radio" name="theme_id"  value="1"
+                <?php echo $data->theme_id == '1' ? 'checked' : ''?>><label>&nbsp;Beauty</label>
             <input type="radio" name="theme_id"  value="2"
                 <?php echo $data->theme_id == '2' ? 'checked' : ''?>><label>&nbsp;Medical</label>
             <input type="radio" name="theme_id"  value="3"

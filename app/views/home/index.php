@@ -101,8 +101,9 @@
         <?php
         foreach($data['products'] as $product)
         {
-            $total = $product->product_price * $product->product_quantity;
-            echo "<tr><td>$product->product_name</td><td><img src='/product_images/$product->product_picture' style='max-width:100px;' /></td>
+            if( $data['profile']->user_type == 'Seller') {
+                $total = $product->product_price * $product->product_quantity;
+                echo "<tr><td>$product->product_name</td><td><img src='/product_images/$product->product_picture' style='max-width:100px;' /></td>
                  <td>$product->product_details</td><td>$product->product_price</td>
                  <td>$product->product_quantity</td><td>$product->product_category</td>
                  <td>$total</td><td style=\"text-align:right\">
@@ -110,6 +111,14 @@
                  <a href='/home/edit/$product->product_id' class='btn btn-outline-success btn-sm''>Edit Product</a> 
                  <a href='/home/delete/$product->product_id' class='btn btn-outline-danger btn-sm'>Delete Product</a>
                  </td></tr>";
+            }else{
+                $total = $product->product_price * $product->product_quantity;
+                echo "<tr><td>$product->product_name</td><td><img src='/product_images/$product->product_picture' style='max-width:100px;' /></td>
+                 <td>$product->product_details</td><td>$product->product_price</td>
+                 <td>$product->product_quantity</td><td>$product->product_category</td>
+                 <td>$total</td><td style=\"text-align:right\">
+                 </td></tr>";
+            }
         }
         ?>
     </table>
@@ -130,6 +139,7 @@
         <?php
         foreach($data['books'] as $book)
         {
+        if($data['profile']->user_type =='Seller') {
             echo "<tr><td>$book->book_name</td><td><img src='/book_images/$book->book_picture' style='max-width:100px;' /></td>
                  <td>$book->book_description</td><td>$book->book_price</td>
                  <td>$book->book_quantity</td><td style=\"text-align:right\">
@@ -137,6 +147,12 @@
                  <a href='/book/edit/$book->book_id' class='btn btn-outline-success btn-sm'>Edit Book</a> 
                  <a href='/book/delete/$book->book_id' class='btn btn-outline-danger btn-sm'>Delete Book</a>
                  </td></tr>";
+        }else{
+            echo "<tr><td>$book->book_name</td><td><img src='/book_images/$book->book_picture' style='max-width:100px;' /></td>
+                 <td>$book->book_description</td><td>$book->book_price</td>
+                 <td>$book->book_quantity</td><td style=\"text-align:right\">
+                 </td></tr>";
+        }
         }
         ?>
     </table>
