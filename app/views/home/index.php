@@ -92,12 +92,6 @@
     </ul>
 
     <br />
-    <pre>
-        <?php
-            var_dump($data);
-
-        ?>
-    </pre>
 
     <h2>My Products</h2>
     <a href='/home/create' class='btn btn-success' style="float: right;">Add a Product</a>

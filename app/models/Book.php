@@ -21,7 +21,7 @@ class Book extends Model
     {
         $SQL = 'SELECT * FROM Book WHERE teacher_id = :teacher_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['teacher_id'=>$teacher_id]);
+        $stmt->execute(['teacher_id' => $teacher_id]);
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'Book');
         return $stmt->fetchAll();
     }
@@ -88,9 +88,9 @@ class Book extends Model
         $SQL = 'INSERT INTO Book(teacher_id, book_name, book_description, book_picture, book_price, book_quantity) 
                      VALUES(:teacher_id, :book_name, :book_description, :book_picture, :book_price, :book_quantity)';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['teacher_id'=>$this->teacher_id, 'book_name'=>$this->book_name,
-                        'book_description'=>$this->book_description, 'book_picture'=>$this->book_picture,
-                        'book_price'=>$this->book_price, 'book_quantity'=>$this->book_quantity]);
+        $stmt->execute(['teacher_id' => $this->teacher_id, 'book_name' => $this->book_name,
+            'book_description' => $this->book_description, 'book_picture' => $this->book_picture,
+            'book_price' => $this->book_price, 'book_quantity' => $this->book_quantity]);
         return $stmt->rowCount();
     }
 
@@ -98,7 +98,7 @@ class Book extends Model
     {
         $SQL = 'SELECT * FROM Book WHERE book_id = :book_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['book_id'=>$book_id]);
+        $stmt->execute(['book_id' => $book_id]);
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'Book');
         return $stmt->fetch();
     }
@@ -110,10 +110,10 @@ class Book extends Model
                        book_price = :book_price, book_quantity = :book_quantity
                  WHERE book_id = :book_id AND teacher_id = :teacher_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['book_id'=>$this->book_id, 'teacher_id'=>$this->teacher_id,
-                        'book_name'=>$this->book_name, 'book_description'=>$this->book_description,
-                        'book_picture'=>$this->book_picture, 'book_price'=>$this->book_price,
-                        'book_quantity'=>$this->book_quantity]);
+        $stmt->execute(['book_id' => $this->book_id, 'teacher_id' => $this->teacher_id,
+            'book_name' => $this->book_name, 'book_description' => $this->book_description,
+            'book_picture' => $this->book_picture, 'book_price' => $this->book_price,
+            'book_quantity' => $this->book_quantity]);
         return $stmt->rowCount();
     }
 
@@ -121,7 +121,7 @@ class Book extends Model
     {
         $SQL = 'DELETE FROM Book WHERE book_id = :book_id AND teacher_id = :teacher_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['book_id'=>$this->book_id, 'teacher_id'=>$this->teacher_id ]);
+        $stmt->execute(['book_id' => $this->book_id, 'teacher_id' => $this->teacher_id]);
         return $stmt->rowCount();
     }
 }

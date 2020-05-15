@@ -32,9 +32,9 @@ class News extends Model
         $SQL = 'INSERT INTO News(seller_id, news_article, news_topic, news_picture, news_timestamp) 
                     VALUES(:seller_id, :news_article, :news_topic, :news_picture, :news_timestamp)';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['seller_id'=>$this->seller_id, 'news_article'=>$this->news_article,
-                        'news_topic'=>$this->news_topic, 'news_picture'=>$this->news_picture,
-                        'news_timestamp'=>$this->news_timestamp]);
+        $stmt->execute(['seller_id' => $this->seller_id, 'news_article' => $this->news_article,
+            'news_topic' => $this->news_topic, 'news_picture' => $this->news_picture,
+            'news_timestamp' => $this->news_timestamp]);
         return $stmt->rowCount();
     }
 

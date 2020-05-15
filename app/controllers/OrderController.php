@@ -8,28 +8,26 @@ class OrderController extends Controller
 {
     public function index()
     {
-        $user_id = (string) $_SESSION['user_id'];
+        $user_id = (string)$_SESSION['user_id'];
         $theProfile = $this->model('Profile')->findProfile($user_id);
         $_SESSION['profile_id'] = $theProfile->profile_id;
 
         $cart = $this->model('Order')->findProfileCart($_SESSION['profile_id']);
 
-        if($cart == null)
-        {
+        if ($cart == null) {
             $cart = $this->makeCart();
         }
 
         $orders = $this->model('OrderDetails')->getOrderForUser($_SESSION['profile_id']);
         $products = $this->model('Product')->get();
-        $this->view('order/index', ['products'=>$products, 'orders'=>$orders]);
+        $this->view('order/index', ['products' => $products, 'orders' => $orders]);
     }
 
     public function addToCart($product_id)
     {
         $cart = $this->model('Order')->findProfileCart($_SESSION['profile_id']);
 
-        if($cart == null)
-        {
+        if ($cart == null) {
             $cart = $this->makeCart();
         }
 
@@ -53,15 +51,11 @@ class OrderController extends Controller
     {
         $theItem = $this->model('OrderDetails')->find($order_item_id);
 
-        if(isset($_POST['action']))
-        {
+        if (isset($_POST['action'])) {
             $theItem->order_quantity = $_POST['order_quantity'];
             $theItem->update();
             header('location:/order/index');
-        }
-
-        else
-        {
+        } else {
             $this->view('order/editQuantity', $theItem);
         }
     }
@@ -77,12 +71,12 @@ class OrderController extends Controller
 
     public function history()
     {
-        $user_id = (string) $_SESSION['user_id'];
+        $user_id = (string)$_SESSION['user_id'];
         $theProfile = $this->model('Profile')->findProfile($user_id);
         $_SESSION['profile_id'] = $theProfile->profile_id;
         $orders = $this->model('OrderDetails')->getHistoryForUser($_SESSION['profile_id']);
         $products = $this->model('Product')->get();
-        $this->view('order/history', ['products'=>$products, 'orders'=>$orders]);
+        $this->view('order/history', ['products' => $products, 'orders' => $orders]);
     }
 
     public function checkout()
