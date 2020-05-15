@@ -21,8 +21,8 @@
       <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/LoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/ProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Theme.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Profile_Theme.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/book/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/create.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/home/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/create.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/home/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/order/editQuantity.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/order/editQuantity.php" afterDir="false" />
@@ -86,6 +86,7 @@
       <workItem from="1589490488022" duration="61000" />
       <workItem from="1589491041136" duration="9355000" />
       <workItem from="1589509528570" duration="4796000" />
+      <workItem from="1589554248850" duration="2059000" />
     </task>
     <task id="LOCAL-00001" summary="More changes.">
       <created>1589317184327</created>

@@ -13,7 +13,7 @@ class HomeController extends Controller
         $_SESSION['profile_id'] = $theProfile->profile_id;
 		$products = $this->model('Product')->getProductsForSeller($_SESSION['profile_id']);
         $books = $this->model('Book')->getBooksForTeacher($_SESSION['profile_id']);
-		$this->view('home/index', ['products'=>$products, 'books'=>$books]);
+		$this->view('home/index', ['products'=>$products, 'books'=>$books , 'profile' =>$theProfile]);
 	}
 
 	public function create()
@@ -46,6 +46,10 @@ class HomeController extends Controller
                 $newProduct->product_category= $_POST['product_category'];
                 $newProduct->seller_id= $_SESSION['profile_id'];
                 $newProduct->create();
+
+                //search for people to notify
+                //create notifications
+
 
                 $profile = $this->model('Profile')->find($_SESSION['profile_id']);
                 $this->view('home/index', ['profile' => $profile]);
