@@ -40,7 +40,7 @@ class ProfileController extends Controller
             if (!empty($_POST['user_type'])) {
                 $newProfile->user_type = $_POST['user_type'];
             } else {
-                $newProfile->user_type = "Buyer";
+                $newProfile->user_type = "Other";
             }
 
             $newProfile->user_id = $_SESSION['user_id'];

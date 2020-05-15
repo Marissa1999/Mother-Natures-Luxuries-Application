@@ -19,12 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Reformatted all existing files.">
-      <change afterPath="$PROJECT_DIR$/product_images/5ebef2db7cb5c.jpg" afterDir="false" />
+    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="More commits to enhance code.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/profile/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/profile/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/ProfileController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589572215856</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="More commits to enhance code.">
+      <created>1589572949384</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1589572949384</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,7 +288,8 @@
     <MESSAGE value="adjusted the /views/order/editQuantity layout" />
     <MESSAGE value="Adjusted the Home Page according to the user stories." />
     <MESSAGE value="Reformatted all existing files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Reformatted all existing files." />
+    <MESSAGE value="More commits to enhance code." />
+    <option name="LAST_COMMIT_MESSAGE" value="More commits to enhance code." />
   </component>
   <component name="WindowStateProjectService">
     <state x="547" y="147" key="#PHP" timestamp="1589414200838">
@@ -299,15 +304,15 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="610" y="334" width="614" height="252" key="MultipleFileMergeDialog/0.0.1440.920@0.0.1440.920" timestamp="1589394674974" />
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589572225249">
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589572959514">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589572225249" />
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589572959514" />
     <state x="432" y="245" key="Vcs.Push.Dialog.v2/0.0.1986.1152@0.0.1986.1152" timestamp="1589499230722" />
-    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589570939571">
+    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589572933624">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920" timestamp="1589570939571" />
+    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920" timestamp="1589572933624" />
     <state x="1124" y="292" key="git4idea.branch.GitSmartOperationDialog" timestamp="1589481935988">
       <screen x="0" y="0" width="1986" height="1152" />
     </state>
