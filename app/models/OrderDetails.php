@@ -16,7 +16,7 @@ class OrderDetails extends Model
                    ON orderdetails.order_id = `order`.order_id
                    WHERE customer_id = :customer_id AND order_status = :order_status';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['customer_id'=>$customer_id, 'order_status'=>'Cart']);
+        $stmt->execute(['customer_id' => $customer_id, 'order_status' => 'Cart']);
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'OrderDetails');
         return $stmt->fetchAll();
     }
@@ -30,7 +30,7 @@ class OrderDetails extends Model
                    ON orderdetails.order_id = `order`.order_id
                    WHERE customer_id = :customer_id AND order_status = :order_status';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['customer_id'=>$customer_id, 'order_status'=>'Paid']);
+        $stmt->execute(['customer_id' => $customer_id, 'order_status' => 'Paid']);
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'OrderDetails');
         return $stmt->fetchAll();
     }
@@ -45,7 +45,7 @@ class OrderDetails extends Model
                  ON orderdetails.order_id = `order`.order_id
                  WHERE customer_id = :customer_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['customer_id'=>$customer_id]);
+        $stmt->execute(['customer_id' => $customer_id]);
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'OrderDetails');
         return $stmt->fetchColumn();
     }
@@ -55,7 +55,7 @@ class OrderDetails extends Model
         $SQL = 'SELECT * FROM OrderDetails
                  WHERE customer_id = :customer_id AND order_id = :order_id AND order_status = :order_status';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['customer_id'=>$customer_id, 'order_id'=>$this->order_id, 'order_status'=>'Paid']);
+        $stmt->execute(['customer_id' => $customer_id, 'order_id' => $this->order_id, 'order_status' => 'Paid']);
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'OrderDetails');
         return $stmt->fetchAll();
     }
@@ -66,8 +66,8 @@ class OrderDetails extends Model
                     VALUES(:product_id, :order_id, :order_price, :order_quantity)
                     ON DUPLICATE KEY UPDATE order_quantity = order_quantity + :order_quantity';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['product_id'=>$this->product_id, 'order_id'=>$this->order_id,
-                        'order_price'=>$this->order_price, 'order_quantity'=>$this->order_quantity]);
+        $stmt->execute(['product_id' => $this->product_id, 'order_id' => $this->order_id,
+            'order_price' => $this->order_price, 'order_quantity' => $this->order_quantity]);
         return $stmt->rowCount();
     }
 
@@ -75,7 +75,7 @@ class OrderDetails extends Model
     {
         $SQL = 'SELECT * FROM OrderDetails WHERE order_item_id = :order_item_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['order_item_id'=>$order_item_id]);
+        $stmt->execute(['order_item_id' => $order_item_id]);
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'OrderDetails');
         return $stmt->fetch();
     }
@@ -87,8 +87,8 @@ class OrderDetails extends Model
                        order_price = :order_price
                  WHERE order_item_id = :order_item_id AND product_id = :product_id AND order_id = :order_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['order_quantity'=>$this->order_quantity, 'order_item_id'=>$this->order_item_id,
-                        'order_price'=>$this->order_price, 'product_id'=>$this->product_id, 'order_id'=>$this->order_id ]);
+        $stmt->execute(['order_quantity' => $this->order_quantity, 'order_item_id' => $this->order_item_id,
+            'order_price' => $this->order_price, 'product_id' => $this->product_id, 'order_id' => $this->order_id]);
         return $stmt->rowCount();
     }
 
@@ -96,7 +96,7 @@ class OrderDetails extends Model
     {
         $SQL = 'DELETE FROM OrderDetails WHERE order_item_id = :order_item_id AND product_id = :product_id AND order_id = :order_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['order_item_id'=>$this->order_item_id, 'product_id'=>$this->product_id, 'order_id'=>$this->order_id]);
+        $stmt->execute(['order_item_id' => $this->order_item_id, 'product_id' => $this->product_id, 'order_id' => $this->order_id]);
         return $stmt->rowCount();
     }
 }

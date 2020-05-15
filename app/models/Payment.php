@@ -11,7 +11,7 @@ class Payment extends Model
     {
         $SQL = 'SELECT * FROM Payment WHERE customer_id = :customer_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['customer_id'=>$customer_id]);
+        $stmt->execute(['customer_id' => $customer_id]);
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'Payment');
         return $stmt->fetchAll();
     }
@@ -21,9 +21,9 @@ class Payment extends Model
         $SQL = 'INSERT INTO Payment(customer_id, card_number, card_company, expiration_date, card_cvc) 
                     VALUES(:customer_id, :card_number, :card_company, :expiration_date, :card_cvc) ';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['customer_id'=>$this->customer_id, 'card_number'=>$this->card_number,
-                        'card_company'=>$this->card_company, 'expiration_date'=>$this->expiration_date,
-                        'card_cvc'=>$this->card_cvc]);
+        $stmt->execute(['customer_id' => $this->customer_id, 'card_number' => $this->card_number,
+            'card_company' => $this->card_company, 'expiration_date' => $this->expiration_date,
+            'card_cvc' => $this->card_cvc]);
         return $stmt->rowCount();
     }
 
@@ -31,7 +31,7 @@ class Payment extends Model
     {
         $SQL = 'SELECT * FROM Payment WHERE card_id = :card_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['card_id'=>$card_id]);
+        $stmt->execute(['card_id' => $card_id]);
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'Payment');
         return $stmt->fetch();
     }
@@ -43,9 +43,9 @@ class Payment extends Model
                        expiration_date = :expiration_date, card_cvc = :card_cvc
                  WHERE card_id = :card_id AND customer_id = :customer_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['customer_id'=>$this->customer_id, 'card_id'=>$this->card_id,
-                        'card_number'=>$this->card_number, 'card_company'=>$this->card_company,
-                        'expiration_date'=>$this->expiration_date, 'card_cvc'=>$this->card_cvc]);
+        $stmt->execute(['customer_id' => $this->customer_id, 'card_id' => $this->card_id,
+            'card_number' => $this->card_number, 'card_company' => $this->card_company,
+            'expiration_date' => $this->expiration_date, 'card_cvc' => $this->card_cvc]);
         return $stmt->rowCount();
     }
 
@@ -53,7 +53,7 @@ class Payment extends Model
     {
         $SQL = 'DELETE FROM Payment WHERE card_id = :card_id AND customer_id = :customer_id';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['card_id'=>$this->card_id, 'customer_id'=>$this->customer_id]);
+        $stmt->execute(['card_id' => $this->card_id, 'customer_id' => $this->customer_id]);
         return $stmt->rowCount();
     }
 }

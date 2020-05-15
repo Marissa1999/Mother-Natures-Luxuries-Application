@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
         h1 {
             color: darkslateblue;
             margin-top: 50px;
-            margin-bottom:30px;
+            margin-bottom: 30px;
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
         }
+
         h2 {
             margin-top: 25px;
             display: flex;
@@ -24,10 +26,12 @@
             justify-content: center;
             position: relative;
         }
+
         h3 {
             margin-top: 25px;
             display: flex;
         }
+
         ul {
             list-style-type: none;
             margin: 0;
@@ -37,15 +41,19 @@
             justify-content: center;
             background-color: lavenderblush;
         }
-        li{
+
+        li {
             display: inline-block;
         }
+
         li {
             border-right: 1.5px solid #a6a6ed;
         }
+
         li:last-child {
             border-right: none;
         }
+
         li a {
             font-size: 15px;
             display: block;
@@ -54,12 +62,15 @@
             padding: 14px 16px;
             text-decoration: none;
         }
+
         li a:hover {
             background-color: #d1d1f6;
         }
+
         a:link {
             text-decoration: none;
         }
+
         body {
             background-color: lavender;
             font-family: Helvetica, sans-serif;
@@ -70,12 +81,12 @@
 <body>
 <div class='container' style="overflow: auto;">
     <h1>Welcome to Mother Nature's Luxuries</h1>
-    <a href='/login/logout' class="btn btn-danger" style="float: right;">Logout</a><br />
+    <a href='/login/logout' class="btn btn-danger" style="float: right;">Logout</a><br/>
     <h3>&nbsp;&nbsp;My Account</h3>
     <ul>
         <li><a href='/home/modifyPassword'>Modify Password</a></li>
-        <li><a href='/profile/edit' >Modify Profile</a></li>
-        <li><a href='/profile/detail' >View Profile Information</a></li>
+        <li><a href='/profile/edit'>Modify Profile</a></li>
+        <li><a href='/profile/detail'>View Profile Information</a></li>
         <li><a href='/profile/index'>View Seller Contacts</a></li>
         <li><a href='/news/index'>View Company News Postings</a></li>
         <li><a href='/payment/index'>View Payment Information</a></li>
@@ -91,16 +102,13 @@
         <li><a href='/order/history'>View Shopping History</a></li>
     </ul>
 
-    <br />
+    <br/>
 
     <table class='table table-striped' style="width:100%">
         <?php
-        foreach($data['products'] as $product)
-        {
-            if( $data['profile']->user_type == "Seller")
-            {
-                echo " <h2>My Products</h2>
-                       <a href='/home/create' class='btn btn-success' style=\"float: right;\">Add a Product</a>";
+        if ($data['profile']->user_type == "Seller") {
+            echo "<h2>My Products</h2><a href='/home/create' class='btn btn-success' style=\"float: right;\">Add a Product</a>";
+            foreach ($data['products'] as $product) {
                 echo "<tr><td>Name</td><td>Picture</td><td>Details</td><td>Price</td><td>Quantity</td><td>Category</td><td>Profit</td></tr>";
                 $total = $product->product_price * $product->product_quantity;
                 echo "<tr><td>$product->product_name</td><td><img src='/product_images/$product->product_picture' style='max-width:100px;' /></td>
@@ -112,36 +120,30 @@
                  <a href='/home/delete/$product->product_id' class='btn btn-outline-danger btn-sm'>Delete Product</a>
                  </td></tr>";
             }
-            else
-            {
-               echo "";
-            }
+        } else {
+            echo "";
         }
         ?>
     </table>
-    <br />
+    <br/>
 
     <table class='table table-striped' style="width:100%">
         <?php
-        foreach($data['books'] as $book)
-        {
-        if($data['profile']->user_type =="Seller")
-        {
+        if ($data['profile']->user_type == "Seller") {
             echo " <h2>My Books</h2>
                    <a href='/book/create' class='btn btn-success' style=\"float: right;\">Add a Book</a>";
-            echo "<tr><td>Name</td><td>Picture</td><td>Description</td><td>Price</td><td>Quantity</td></tr>";
-            echo "<tr><td>$book->book_name</td><td><img src='/book_images/$book->book_picture' style='max-width:100px;' /></td>
+            foreach ($data['books'] as $book) {
+                echo "<tr><td>Name</td><td>Picture</td><td>Description</td><td>Price</td><td>Quantity</td></tr>";
+                echo "<tr><td>$book->book_name</td><td><img src='/book_images/$book->book_picture' style='max-width:100px;' /></td>
                  <td>$book->book_description</td><td>$book->book_price</td>
                  <td>$book->book_quantity</td><td style=\"text-align:right\">
                  <a href='/book/detail/$book->book_id' class='btn btn-outline-primary btn-sm'>Book Details</a>
                  <a href='/book/edit/$book->book_id' class='btn btn-outline-success btn-sm'>Edit Book</a> 
                  <a href='/book/delete/$book->book_id' class='btn btn-outline-danger btn-sm'>Delete Book</a>
                  </td></tr>";
-        }
-        else
-        {
+            }
+        } else {
             echo "";
-        }
         }
         ?>
     </table>
@@ -149,8 +151,14 @@
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 </html>
