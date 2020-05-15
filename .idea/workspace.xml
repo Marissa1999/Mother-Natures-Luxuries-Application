@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="More commits to enhance code.">
+    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Adjusted the workspace.xml file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/profile/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/search.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589573422690</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Adjusted the workspace.xml file">
+      <created>1589575381064</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1589575381064</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +303,8 @@
     <MESSAGE value="Adjusted the Home Page according to the user stories." />
     <MESSAGE value="Reformatted all existing files." />
     <MESSAGE value="More commits to enhance code." />
-    <option name="LAST_COMMIT_MESSAGE" value="More commits to enhance code." />
+    <MESSAGE value="Adjusted the workspace.xml file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusted the workspace.xml file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="547" y="147" key="#PHP" timestamp="1589414200838">
@@ -324,10 +332,10 @@
       <screen x="0" y="0" width="1986" height="1152" />
     </state>
     <state x="1124" y="292" key="git4idea.branch.GitSmartOperationDialog/0.0.1986.1152@0.0.1986.1152" timestamp="1589481935988" />
-    <state x="425" y="264" key="git4idea.merge.GitPullDialog" timestamp="1589559245086">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state x="586" y="331" key="git4idea.merge.GitPullDialog" timestamp="1589575387814">
+      <screen x="0" y="0" width="1986" height="1152" />
     </state>
     <state x="425" y="264" key="git4idea.merge.GitPullDialog/0.0.1440.920@0.0.1440.920" timestamp="1589559245086" />
-    <state x="586" y="331" key="git4idea.merge.GitPullDialog/0.0.1986.1152@0.0.1986.1152" timestamp="1589499224402" />
+    <state x="586" y="331" key="git4idea.merge.GitPullDialog/0.0.1986.1152@0.0.1986.1152" timestamp="1589575387814" />
   </component>
 </project>
