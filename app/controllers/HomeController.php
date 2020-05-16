@@ -72,7 +72,7 @@ class HomeController extends Controller
         $theProfile = $this->model('Profile')->findProfile($user_id);
         $_SESSION['profile_id'] = $theProfile->profile_id;
         $profiles = $this->model('Profile')->getSellersAndProducts();
-        $theProfile = $this->model('Profile')->findProfile($_SESSION['profile_id']);
+        $theProfile = $this->model('Profile')->findProfile($user_id);
 
         if (isset($_POST['search'])) {
             $products = $this->model('Product')->searchProducts($_POST['search_input']);
@@ -147,6 +147,17 @@ class HomeController extends Controller
             header('location:/home/index');
         } else {
             $this->view('home/delete', $theProduct);
+        }
+    }
+    public function sendNotification(){
+        //everytime seller create a product , he put a theme in it which is product_category
+        $user_id = (string)$_SESSION['user_id'];
+        $theProfile = $this->model('Profile')->findProfile($user_id);
+        $_SESSION['profile_id'] = $theProfile->profile_id;
+        //all the products that the seller input
+        $products = $this->model('Product')->getProductsForSeller($_SESSION['profile_id']);
+        if(isset($_POST["view"])){
+            $theProduct = $this->model('Product')->getDataForNotification();
         }
     }
 }

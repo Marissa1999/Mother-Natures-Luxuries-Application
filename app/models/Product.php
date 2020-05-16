@@ -134,6 +134,14 @@ class Product extends Model
         $stmt->execute(['product_id' => $this->product_id, 'seller_id' => $this->seller_id]);
         return $stmt->rowCount();
     }
+    public function getDataForNotification(){
+        $SQL = "SELECT * FROM Product ORDER BY product_id DESC LIMIT 5";
+        $stmt = self::$_connection->prepare($SQL);
+        $stmt->execute();
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Product');
+        return $stmt->fetchAll();
+
+    }
 }
 
 ?>

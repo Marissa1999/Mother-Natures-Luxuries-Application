@@ -78,6 +78,9 @@ class ProfileController extends Controller
             $this->view('profile/edit', $theProfile);
         }
     }
+    public function sendMail(){
+        $datasend = $theProfile = $this->model('Profile')->update();
+    }
 
 }
 

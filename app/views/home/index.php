@@ -4,7 +4,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -79,6 +81,17 @@
     <title>Home Page</title>
 </head>
 <body>
+<div class="container">
+    <nav>
+        <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="label label-pill label-danger count"></span> <span class="glyphicon glyphicon-envelope" style="font-size:18px;"></span></a>
+                    <ul class="dropdown-menu"></ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
 <div class='container' style="overflow: auto;">
     <h1>Welcome to Mother Nature's Luxuries</h1>
     <a href='/login/logout' class="btn btn-danger" style="float: right;">Logout</a><br/>
@@ -87,7 +100,11 @@
         <li><a href='/home/modifyPassword'>Modify Password</a></li>
         <li><a href='/profile/edit'>Modify Profile</a></li>
         <li><a href='/profile/detail'>View Profile Information</a></li>
-        <li><a href='/profile/index'>View Seller Contacts</a></li>
+    <?php
+        if ($data['profile']->user_type == "Seller") {
+            echo "<li><a href='/profile/index'>View Seller Contacts</a></li>";
+        }
+        ?>
         <li><a href='/news/index'>View Company News Postings</a></li>
         <li><a href='/payment/index'>View Payment Information</a></li>
     </ul>
@@ -97,9 +114,13 @@
         <li><a href='/home/search'>Browse All Products</a></li>
         <li><a href='/book/search'>Browse All Books</a></li>
         <li><a href='/message/index'>Message Users</a></li>
-        <li><a href='/wishlist/index'>View Wish List</a></li>
-        <li><a href='/order/index'>View Shopping Cart</a></li>
-        <li><a href='/order/history'>View Shopping History</a></li>
+        <?php
+        if ($data['profile']->user_type == "Buyer") {
+            echo "<li><a href='/wishlist/index'>View Wish List</a></li>
+                  <li><a href='/order/index'>View Shopping Cart</a></li>
+                  <li><a href='/order/history'>View Shopping History</a></li>";
+        }
+        ?>
     </ul>
 
     <br/>
@@ -162,3 +183,60 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
+
+<script>
+    $(document).ready(function(){
+
+        function load_unseen_notification(view = '')
+        {
+            $.ajax({
+                url:"fetch.php",
+                method:"POST",
+                data:{view:view},
+                dataType:"json",
+                success:function(data)
+                {
+                    $('.dropdown-menu').html(data.notification);
+                    if(data.unseen_notification > 0)
+                    {
+                        $('.count').html(data.unseen_notification);
+                    }
+                }
+            });
+        }
+
+        load_unseen_notification();
+
+        $('#comment_form').on('submit', function(event){
+            event.preventDefault();
+            if($('#subject').val() != '' && $('#comment').val() != '')
+            {
+                var form_data = $(this).serialize();
+                $.ajax({
+                    url:"insert.php",
+                    method:"POST",
+                    data:form_data,
+                    success:function(data)
+                    {
+                        $('#comment_form')[0].reset();
+                        load_unseen_notification();
+                    }
+                });
+            }
+            else
+            {
+                alert("Both Fields are Required");
+            }
+        });
+
+        $(document).on('click', '.dropdown-toggle', function(){
+            $('.count').html('');
+            load_unseen_notification('yes');
+        });
+
+        setInterval(function(){
+            load_unseen_notification();
+        }, 5000);
+
+    });
+</script>

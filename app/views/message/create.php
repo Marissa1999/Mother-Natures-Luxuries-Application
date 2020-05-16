@@ -61,7 +61,7 @@
     <form action='' method='post'>
         <div class='form-group'>
             <label>Type a Message <input type='text' name='message_text' class='form-control'
-                                         style="width:800px"/></label>
+                                         style="width:800px" required/></label>
         </div>
         <div class='create-button'>
             <input type='submit' name='action' value='&nbsp;&nbsp;Send Message&nbsp;&nbsp;' class='btn btn-primary'/>
