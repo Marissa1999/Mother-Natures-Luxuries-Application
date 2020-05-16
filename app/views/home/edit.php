@@ -27,6 +27,22 @@
             justify-content: center;
         }
 
+        input[type=text] {
+            text-align: center;
+        }
+
+        input[type=number] {
+            text-align: center;
+        }
+
+        .radio-group {
+            margin-bottom: 40px;
+            height: 100%;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
         .save-button {
             margin-bottom: 50px;
             height: 100%;
@@ -42,10 +58,9 @@
             justify-content: center;
         }
 
-        label,
-        input {
+        label {
             height: 100%;
-            display: block;
+            display: inline;
             text-align: center;
         }
 
@@ -61,26 +76,68 @@
     <h1>Edit the Product</h1>
     <form action='' method='post' enctype='multipart/form-data'>
         <div class='form-group'>
-            <label>Product Name <input type='text' name='product_name' value='<?= $data->product_name ?>'
+            <label style="font-weight: bold">Product Name <input type='text' name='product_name' value='<?= $data->product_name ?>'
                                        class='form-control' required/></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <label>Product Picture <input type='file' name='product_picture' style="width:208px"/></label>
+            <label style="font-weight: bold">Product Picture <br/><input type='file' name='product_picture' style="width:208px"/></label>
         </div>
         <div class='form-group'>
-            <label>Product Price <input type='text' name='product_price' value='<?= $data->product_price ?>'
+            <label style="font-weight: bold">Product Price <input type='text' name='product_price' value='<?= $data->product_price ?>'
                                         class='form-control' placeholder="Ex: 99.87" required/></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <label>Product Quantity <input type='number' min="0" name='product_quantity'
+            <label style="font-weight: bold">Product Quantity <input type='number' min="0" name='product_quantity'
                                            value='<?= $data->product_quantity ?>' class='form-control'
                                            required/></label>
         </div>
         <div class='form-group'>
-            <label>Product Details <input type='text' name='product_details' value='<?= $data->product_details ?>'
+            <label style="font-weight: bold">Product Details <input type='text' name='product_details' value='<?= $data->product_details ?>'
                                           class='form-control' required/></label>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <label>Product Category <input type='text' name='product_category' value='<?= $data->product_category ?>'
-                                           class='form-control' required/></label>
         </div>
+        <div class='radio-group'>
+            <label style="font-weight: bold">Product Category</label><br/>
+            <input type="radio" name="product_category" value="1"
+                <?php echo $data->product_category == '1' ? 'checked' : '' ?>><label>&nbsp;Beauty</label>
+            <input type="radio" name="product_category" value="2"
+                <?php echo $data->product_category == '2' ? 'checked' : '' ?>><label>&nbsp;Medical</label>
+            <input type="radio" name="product_category" value="3"
+                <?php echo $data->product_category == '3' ? 'checked' : '' ?>><label>&nbsp;Tea</label>
+
+
+            <!--<input type='text' name='product_category' value='<?= $data->product_category ?>'
+                                             class='form-control' required/>-->
+        </div>
+        <!--
+<div class="radio-group">
+            <label style="font-weight: bold">Theme</label><br/>&nbsp;&nbsp;
+            <input type="radio" name="theme_id" value="1"
+                <?php echo $data->theme_id == '1' ? 'checked' : '' ?>><label>&nbsp;Beauty</label>
+            <input type="radio" name="theme_id" value="2"
+                <?php echo $data->theme_id == '2' ? 'checked' : '' ?>><label>&nbsp;Medical</label>
+            <input type="radio" name="theme_id" value="3"
+                <?php echo $data->theme_id == '3' ? 'checked' : '' ?>><label>&nbsp;Tea</label>
+        </div>
+        <div class="radio-group">
+            <label style="font-weight: bold">Gender</label><br/>
+            <input type="radio" name="gender" value="Male"
+                <?php echo $data->gender == 'Male' ? 'checked' : '' ?>><label>&nbsp;Male</label>
+            <input type="radio" name="gender" value="Female"
+                <?php echo $data->gender == 'Female' ? 'checked' : '' ?>><label>&nbsp;Female</label>
+        </div>
+        <div class="radio-group">
+            <label style="font-weight: bold">User Type</label><br/>
+            <input type="radio" name="user_type" value="Buyer"
+                <?php echo $data->user_type == 'Buyer' ? 'checked' : '' ?>><label>&nbsp;Buyer</label>
+            <input type="radio" name="user_type" value="Seller"
+                <?php echo $data->user_type == 'Seller' ? 'checked' : '' ?>><label>&nbsp;Seller</label>
+        </div>
+
+
+
+        -->
+
+
+
+
         <div class='save-button'>
             <input type='submit' name='action' value='&nbsp;&nbsp;Save Changes&nbsp;&nbsp;' class='btn btn-success'/>
         </div>
