@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Completed authentication for all Edit and Create views.">
-      <change afterPath="$PROJECT_DIR$/product_images/5ec0667eea112.png" afterDir="false" />
+    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Fixed the Product Category Issue.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/create.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,12 +282,12 @@
       <option name="project" value="LOCAL" />
       <updated>1589578335370</updated>
     </task>
-    <task id="LOCAL-00030" summary="Adjusted the button sizes of the home/index page">
-      <created>1589667222952</created>
+    <task id="LOCAL-00030" summary="Fixed the Product Category Issue.">
+      <created>1589667328133</created>
       <option name="number" value="00030" />
       <option name="presentableId" value="LOCAL-00030" />
       <option name="project" value="LOCAL" />
-      <updated>1589667222952</updated>
+      <updated>1589667328133</updated>
     </task>
     <option name="localTasksCounter" value="31" />
     <servers />
@@ -338,8 +337,8 @@
     <MESSAGE value="More commits to enhance code." />
     <MESSAGE value="Fixed the creation of profile." />
     <MESSAGE value="Adjusted which buttons are viewed depending on the user." />
-    <MESSAGE value="Adjusted the button sizes of the home/index page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adjusted the button sizes of the home/index page" />
+    <MESSAGE value="Fixed the Product Category Issue." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the Product Category Issue." />
   </component>
   <component name="WindowStateProjectService">
     <state x="547" y="147" key="#PHP" timestamp="1589414200838">
@@ -362,10 +361,10 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="707" y="428" key="NewPhpFileDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1589604415851" />
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589578343893">
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589667335553">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589578343893" />
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589667335553" />
     <state x="432" y="245" key="Vcs.Push.Dialog.v2/0.0.1986.1152@0.0.1986.1152" timestamp="1589499230722" />
     <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589584418081">
       <screen x="0" y="0" width="1440" height="920" />
