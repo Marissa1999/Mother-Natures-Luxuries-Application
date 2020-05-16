@@ -61,7 +61,7 @@
     <h1>Edit Item Quantity</h1>
     <form action='' method='post'>
         <div class='form-group'>
-            <label>Item Quantity: <input type='text' name='order_quantity' value='<?= $data->order_quantity ?>'
+            <label>Item Quantity: <input type='number' min="0" name='order_quantity' value='<?= $data->order_quantity ?>'
                                          class='form-control'/></label>
         </div>
         <div class='save-button'>

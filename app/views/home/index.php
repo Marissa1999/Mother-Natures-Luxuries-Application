@@ -93,7 +93,11 @@
         }
         ?>
         <li><a href='/news/index'>View Company News Postings</a></li>
-        <li><a href='/payment/index'>View Payment Information</a></li>
+        <?php
+        if ($data['profile']->user_type == "Buyer") {
+            echo "<li><a href='/payment/index'>View Payment Information</a></li>";
+        }
+        ?>
     </ul>
     <br/>
     <h3>&nbsp;&nbsp;Shop</h3>
