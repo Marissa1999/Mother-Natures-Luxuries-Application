@@ -18,10 +18,22 @@
             justify-content: center;
             position: relative;
         }
-
         body {
             background-color: lavender;
             font-family: Helvetica, sans-serif;
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width:40%;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        img {
+            border-radius: 5px 5px 0 0;
         }
     </style>
     <title>Search Products</title>
@@ -52,19 +64,22 @@
             <td>Price</td>
             <td>Quantity</td>
         </tr>
-        <?php
-        foreach ($data['books'] as $book) {
-            foreach ($data['profiles'] as $profile) {
-                if ($book->teacher_id == $profile->profile_id) {
-                    echo "<tr><td>$profile->first_name</td><td>$profile->last_name</td></td>";
-                    echo "<td>$book->book_name</td><td>$book->book_description</td>
+        <div class='card'>
+            <?php
+            foreach ($data['books'] as $book) {
+                foreach ($data['profiles'] as $profile) {
+                    if ($book->teacher_id == $profile->profile_id) {
+                        echo "<tr><td>$profile->first_name</td><td>$profile->last_name</td></td>";
+                        echo "<td>$book->book_name</td><td>$book->book_description</td>
                     <td><img src='/book_images/$book->book_picture' style='max-width:100px;' /></td>
                     <td>$book->book_price</td><td>$book->book_quantity</td></tr>";
-                    break;
+                        break;
+                    }
                 }
             }
-        }
-        ?>
+            ?>
+        </div>
+
     </table>
 </div>
 <!-- Optional JavaScript -->

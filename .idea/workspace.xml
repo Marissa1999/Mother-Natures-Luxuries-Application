@@ -21,8 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Adjusted which buttons are viewed depending on the user.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/NewsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/news/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/news/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/book/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/search.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -328,11 +328,11 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="610" y="334" width="614" height="252" key="MultipleFileMergeDialog/0.0.1440.920@0.0.1440.920" timestamp="1589394674974" />
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589577104320">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state x="432" y="245" key="Vcs.Push.Dialog.v2" timestamp="1589577562064">
+      <screen x="0" y="0" width="1986" height="1152" />
     </state>
     <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589577104320" />
-    <state x="432" y="245" key="Vcs.Push.Dialog.v2/0.0.1986.1152@0.0.1986.1152" timestamp="1589499230722" />
+    <state x="432" y="245" key="Vcs.Push.Dialog.v2/0.0.1986.1152@0.0.1986.1152" timestamp="1589577562064" />
     <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589577057620">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
@@ -341,10 +341,10 @@
       <screen x="0" y="0" width="1986" height="1152" />
     </state>
     <state x="1124" y="292" key="git4idea.branch.GitSmartOperationDialog/0.0.1986.1152@0.0.1986.1152" timestamp="1589481935988" />
-    <state x="425" y="264" key="git4idea.merge.GitPullDialog" timestamp="1589559245086">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state x="586" y="331" key="git4idea.merge.GitPullDialog" timestamp="1589577637251">
+      <screen x="0" y="0" width="1986" height="1152" />
     </state>
     <state x="425" y="264" key="git4idea.merge.GitPullDialog/0.0.1440.920@0.0.1440.920" timestamp="1589559245086" />
-    <state x="586" y="331" key="git4idea.merge.GitPullDialog/0.0.1986.1152@0.0.1986.1152" timestamp="1589499224402" />
+    <state x="586" y="331" key="git4idea.merge.GitPullDialog/0.0.1986.1152@0.0.1986.1152" timestamp="1589577637251" />
   </component>
 </project>
