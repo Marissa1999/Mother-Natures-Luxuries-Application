@@ -136,9 +136,9 @@
                  <td>$product->product_details</td><td>$$product->product_price</td>
                  <td>$product->product_quantity</td><td>$product->product_category</td>
                  <td>$$total</td><td style=\"text-align:right\">
-                 <a href='/promotion/index/$product->product_id' class='btn btn-outline-info btn-sm'>Promotions</a> 
-                 <a href='/home/edit/$product->product_id' class='btn btn-outline-success btn-sm''>Edit Product</a> 
-                 <a href='/home/delete/$product->product_id' class='btn btn-outline-danger btn-sm'>Delete Product</a>
+                 <a href='/promotion/index/$product->product_id' class='btn btn-outline-info btn-lg'>Promotions</a> 
+                 <a href='/home/edit/$product->product_id' class='btn btn-outline-success btn-lg''>Edit Product</a> 
+                 <a href='/home/delete/$product->product_id' class='btn btn-outline-danger btn-lg'>Delete Product</a>
                  </td></tr>";
             }
         } else {
@@ -158,9 +158,9 @@
                 echo "<tr><td>$book->book_name</td><td><img src='/book_images/$book->book_picture' style='max-width:100px;' /></td>
                  <td>$book->book_description</td><td>$$book->book_price</td>
                  <td>$book->book_quantity</td><td style=\"text-align:right\">
-                 <a href='/book/detail/$book->book_id' class='btn btn-outline-primary btn-sm'>Book Details</a>
-                 <a href='/book/edit/$book->book_id' class='btn btn-outline-success btn-sm'>Edit Book</a> 
-                 <a href='/book/delete/$book->book_id' class='btn btn-outline-danger btn-sm'>Delete Book</a>
+                 <a href='/book/detail/$book->book_id' class='btn btn-outline-primary btn-lg'>Book Details</a>
+                 <a href='/book/edit/$book->book_id' class='btn btn-outline-success btn-lg'>Edit Book</a> 
+                 <a href='/book/delete/$book->book_id' class='btn btn-outline-danger btn-lg'>Delete Book</a>
                  </td></tr>";
             }
         } else {

@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Completed authentication for all Edit and Create views.">
+      <change afterPath="$PROJECT_DIR$/product_images/5ec0667eea112.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/profile/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589578335370</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Adjusted the button sizes of the home/index page">
+      <created>1589667222952</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1589667222952</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +338,8 @@
     <MESSAGE value="More commits to enhance code." />
     <MESSAGE value="Fixed the creation of profile." />
     <MESSAGE value="Adjusted which buttons are viewed depending on the user." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adjusted which buttons are viewed depending on the user." />
+    <MESSAGE value="Adjusted the button sizes of the home/index page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusted the button sizes of the home/index page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="547" y="147" key="#PHP" timestamp="1589414200838">
