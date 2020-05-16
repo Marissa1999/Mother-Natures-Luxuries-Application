@@ -95,26 +95,35 @@
                     <dd><?= $data->phone_number ?></dd>
                 </td>
             </tr>
+            <tr>
+                <td> <dt>Theme</dt>
+                    <dd><?php
+                        $theme = $data->theme_id;
+                        if ($theme == 1) {
+                            echo 'Beauty';
+                        } elseif ($theme == 2) {
+                            echo 'Medical';
+                        } else {
+                            echo 'Tea';
+                        } ?></dd>
+                </td>
+                <td>
+                    <dt>Gender</dt>
+                    <dd><?= $data->gender ?></dd>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <dt>User Type</dt>
+                    <dd><?= $data->user_type ?></dd>
+                </td>
+                <td>
+                    <dt>Location</dt>
+                    <dd><?= $data->location ?></dd>
+                </td>
+
+            </tr>
         </table>
-            <dt>Theme</dt>
-            <dd><?php
-                $theme = $data->theme_id;
-                if ($theme == 1) {
-                    echo 'Beauty';
-                } elseif ($theme == 2) {
-                    echo 'Medical';
-                } else {
-                    echo 'Tea';
-                } ?></dd>
-
-            <dt>Gender</dt>
-            <dd><?= $data->gender ?></dd>
-
-            <dt>User Type</dt>
-            <dd><?= $data->user_type ?></dd>
-
-            <dt>Location</dt>
-            <dd><?= $data->location ?></dd>
     </dl>
 </div>
 <!-- Optional JavaScript -->

@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Adjusted the layout of views/profile/detail">
+    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Completed authentication for all Edit and Create views.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/profile/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/profile/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/detail.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,14 +282,7 @@
       <option name="project" value="LOCAL" />
       <updated>1589578335370</updated>
     </task>
-    <task id="LOCAL-00030" summary="Adjusted the layout of views/profile/detail">
-      <created>1589658827888</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1589658827888</updated>
-    </task>
-    <option name="localTasksCounter" value="31" />
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,9 +330,7 @@
     <MESSAGE value="More commits to enhance code." />
     <MESSAGE value="Fixed the creation of profile." />
     <MESSAGE value="Adjusted which buttons are viewed depending on the user." />
-    <MESSAGE value="Adjusted which images layout" />
-    <MESSAGE value="Adjusted the layout of views/profile/detail" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adjusted the layout of views/profile/detail" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusted which buttons are viewed depending on the user." />
   </component>
   <component name="WindowStateProjectService">
     <state x="547" y="147" key="#PHP" timestamp="1589414200838">
@@ -375,10 +366,10 @@
       <screen x="0" y="0" width="1986" height="1152" />
     </state>
     <state x="1124" y="292" key="git4idea.branch.GitSmartOperationDialog/0.0.1986.1152@0.0.1986.1152" timestamp="1589481935988" />
-    <state x="586" y="331" key="git4idea.merge.GitPullDialog" timestamp="1589658832338">
-      <screen x="0" y="0" width="1986" height="1152" />
+    <state x="425" y="264" key="git4idea.merge.GitPullDialog" timestamp="1589559245086">
+      <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="425" y="264" key="git4idea.merge.GitPullDialog/0.0.1440.920@0.0.1440.920" timestamp="1589559245086" />
-    <state x="586" y="331" key="git4idea.merge.GitPullDialog/0.0.1986.1152@0.0.1986.1152" timestamp="1589658832338" />
+    <state x="586" y="331" key="git4idea.merge.GitPullDialog/0.0.1986.1152@0.0.1986.1152" timestamp="1589499224402" />
   </component>
 </project>
