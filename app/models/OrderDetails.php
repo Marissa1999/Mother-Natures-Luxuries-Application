@@ -50,6 +50,21 @@ class OrderDetails extends Model
         return $stmt->fetchColumn();
     }
 
+    public function getTotalPerOrder($customer_id)
+    {
+        $SQL = 'SELECT SUM(product.product_price * orderdetails.order_quantity)
+                 FROM OrderDetails orderdetails 
+                 INNER JOIN Product product
+                 ON orderdetails.product_id = product.product_id
+                 INNER JOIN `Order` `order`
+                 ON orderdetails.order_id = `order`.order_id
+                 WHERE customer_id = :customer_id AND order_id = :order_id AND order_status = :order_status';
+        $stmt = self::$_connection->prepare($SQL);
+        $stmt->execute(['customer_id' => $customer_id, 'order_id' => $this->order_id, 'order_status' => 'Paid']);
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'OrderDetails');
+        return $stmt->fetchColumn();
+    }
+
     public function findOrder($customer_id)
     {
         $SQL = 'SELECT * FROM OrderDetails
