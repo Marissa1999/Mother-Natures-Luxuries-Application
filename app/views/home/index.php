@@ -92,10 +92,15 @@
             echo "<li><a href='/profile/index'>View Seller Contacts</a></li>";
         }
         ?>
-        <li><a href='/news/index'>View Company News Postings</a></li>
+        <li><a href='/news/index'>View Company News</a></li>
         <?php
         if ($data['profile']->user_type == "Buyer") {
             echo "<li><a href='/payment/index'>View Payment Information</a></li>";
+        }
+        ?>
+        <?php
+        if ($data['profile']->user_type == "Buyer") {
+            echo "<li><a href='/theme/index'>View Theme Notifications</a></li>";
         }
         ?>
     </ul>
@@ -110,6 +115,11 @@
             echo "<li><a href='/wishlist/index'>View Wish List</a></li>
                   <li><a href='/order/index'>View Shopping Cart</a></li>
                   <li><a href='/order/history'>View Shopping History</a></li>";
+        }
+        ?>
+        <?php
+        if ($data['profile']->user_type == "Seller") {
+            echo "<li><a href='/theme/index'>Send Theme Notifications</a></li>";
         }
         ?>
     </ul>
