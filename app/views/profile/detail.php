@@ -19,6 +19,18 @@
             position: relative;
         }
 
+        html, body {
+            width: 100%;
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        td {
+            padding: 0 25px;
+        }
+
         dl {
             text-align: center;
         }
@@ -59,32 +71,50 @@
 <body>
 <div class='container'>
     <h1>Profile Details</h1>
-    <a href='/home/index' class='btn btn-secondary'>Back to List</a>
+    <a href='/home/index' class='btn btn-secondary'>Back to Home Page</a>
     <dl>
-        <dt>First Name</dt>
-        <dd><?= $data->first_name ?></dd>
-        <dt>Last Name</dt>
-        <dd><?= $data->last_name ?></dd>
-        <dt>Email</dt>
-        <dd><?= $data->email ?></dd>
-        <dt>Phone Number</dt>
-        <dd><?= $data->phone_number ?></dd>
-        <dt>Theme</dt>
-        <dd><?php
-            $theme = $data->theme_id;
-            if ($theme == 1) {
-                echo 'Beauty';
-            } elseif ($theme == 2) {
-                echo 'Medical';
-            } else {
-                echo 'Tea';
-            } ?></dd>
-        <dt>Gender</dt>
-        <dd><?= $data->gender ?></dd>
-        <dt>Location</dt>
-        <dd><?= $data->location ?></dd>
-        <dt>User Type</dt>
-        <dd><?= $data->user_type ?></dd>
+        <br/>
+        <table>
+            <tr>
+                <td>
+                    <dt>First Name</dt>
+                    <dd><?= $data->first_name ?></dd>
+                </td>
+                <td>
+                    <dt>Last Name</dt>
+                    <dd><?= $data->last_name ?></dd>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <dt>Email</dt>
+                    <dd><?= $data->email ?></dd>
+                </td>
+                <td>
+                    <dt>Phone Number</dt>
+                    <dd><?= $data->phone_number ?></dd>
+                </td>
+            </tr>
+        </table>
+            <dt>Theme</dt>
+            <dd><?php
+                $theme = $data->theme_id;
+                if ($theme == 1) {
+                    echo 'Beauty';
+                } elseif ($theme == 2) {
+                    echo 'Medical';
+                } else {
+                    echo 'Tea';
+                } ?></dd>
+
+            <dt>Gender</dt>
+            <dd><?= $data->gender ?></dd>
+
+            <dt>User Type</dt>
+            <dd><?= $data->user_type ?></dd>
+
+            <dt>Location</dt>
+            <dd><?= $data->location ?></dd>
     </dl>
 </div>
 <!-- Optional JavaScript -->
