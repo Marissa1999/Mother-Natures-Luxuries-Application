@@ -68,7 +68,7 @@
         </div>
         <div class='form-group'>
             <label>Product Price <input type='text' name='product_price' value='<?= $data->product_price ?>'
-                                        class='form-control' required/></label>
+                                        class='form-control' placeholder="Ex: 99.87" required/></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <label>Product Quantity <input type='number' min="0" name='product_quantity'
                                            value='<?= $data->product_quantity ?>' class='form-control'

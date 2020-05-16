@@ -61,18 +61,18 @@
     <h1>Edit this Payment Card</h1>
     <form action='' method='post'>
         <div class='form-group'>
-            <label>Card Number: <input type='text' name='card_number' value='<?= $data->card_number ?>'
-                                       class='form-control'/></label>
+            <label>Card Number: <input type='text' name='card_number' minlength="8" maxlength="19" value='<?= $data->card_number ?>'
+                                       class='form-control' required/></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <label>Card Company: <input type='text' name='card_company' value='<?= $data->card_company ?>'
-                                        class='form-control'/></label>
+                                        class='form-control' required/></label>
         </div>
         <div class='form-group'>
-            <label>Expiration Date: <input type='text' name='expiration_date' value='<?= $data->expiration_date ?>'
-                                           class='form-control'/></label>
+            <label>Expiration Date: <input type='text' name='expiration_date'  minlength="4" maxlength="4" value='<?= $data->expiration_date ?>'
+                                           class='form-control' required/></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <label>Card CVC: <input type='text' name='card_cvc' value='<?= $data->card_cvc ?>'
-                                    class='form-control'/></label>
+            <label>Card CVC: <input type='text' name='card_cvc' minlength="3" maxlength="3" value='<?= $data->card_cvc ?>'
+                                    class='form-control' required/></label>
         </div>
         <div class="save-button">
             <input type='submit' name='action' value='&nbsp;&nbsp;Save Changes&nbsp;&nbsp;' class='btn btn-success'/>

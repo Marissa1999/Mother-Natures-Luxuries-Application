@@ -21,7 +21,22 @@
   <component name="ChangeListManager">
     <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Adjusted which buttons are viewed depending on the user.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/book/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/book/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/modifyPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/modifyPassword.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/message/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/message/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/message/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/message/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/news/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/news/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/order/editQuantity.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/order/editQuantity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/payment/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/payment/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/payment/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/payment/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/profile/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/profile/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/promotion/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/promotion/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/review/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/review/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/review/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/review/edit.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,7 +300,28 @@
       <option name="project" value="LOCAL" />
       <updated>1589584429736</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Adjusted which buttons are viewed depending on the user.">
+      <created>1589586378455</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1589586378455</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Adjusted which buttons are viewed depending on the user.">
+      <created>1589587748258</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1589587748258</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Adjusted which buttons are viewed depending on the user.">
+      <created>1589589399411</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1589589399411</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,15 +384,15 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="610" y="334" width="614" height="252" key="MultipleFileMergeDialog/0.0.1440.920@0.0.1440.920" timestamp="1589394674974" />
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589584436692">
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589589410077">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589584436692" />
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589589410077" />
     <state x="432" y="245" key="Vcs.Push.Dialog.v2/0.0.1986.1152@0.0.1986.1152" timestamp="1589499230722" />
-    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589584418081">
+    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589590277118">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920" timestamp="1589584418081" />
+    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920" timestamp="1589590277118" />
     <state x="1124" y="292" key="git4idea.branch.GitSmartOperationDialog" timestamp="1589481935988">
       <screen x="0" y="0" width="1986" height="1152" />
     </state>

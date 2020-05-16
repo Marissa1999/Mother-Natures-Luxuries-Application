@@ -96,7 +96,7 @@
         </div>
 
         <div class='form-group'>
-            <label>Email <input type='text' name='email' class='form-control' placeholder="example@gmail.com" required/></label>
+            <label>Email <input type='text' name='email' class='form-control' placeholder="Ex: example@gmail.com" required/></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <label>Phone Number <input type='text' name='phone_number' class='form-control'
                                        placeholder="Ex: 999-999-9999" required/></label>

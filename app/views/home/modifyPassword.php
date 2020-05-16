@@ -66,10 +66,10 @@
     ?>
     <form action='' method='post'>
         <div class='form-group'>
-            <label>New Password <input type='password' name='new_password' class='form-control'/></label>
+            <label>New Password <input type='password' name='new_password' class='form-control' required/></label>
         </div>
         <div class='form-group'>
-            <label>New Password Confirmation <input type='password' name='password_confirmation' class='form-control'/></label>
+            <label>New Password Confirmation <input type='password' name='password_confirmation' class='form-control' required/></label>
         </div>
         <div class='save-button'>
             <input type='submit' name='action' value='&nbsp;&nbsp;Save Password&nbsp;&nbsp;' class='btn btn-success'/>

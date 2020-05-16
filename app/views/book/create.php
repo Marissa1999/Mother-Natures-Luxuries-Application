@@ -75,7 +75,7 @@
             <label>Book Picture <input type='file' name='book_picture' style="width:208px"/></label>
         </div>
         <div class='form-group'>
-            <label>Book Price <input type='text' name='book_price' class='form-control' required/></label>
+            <label>Book Price <input type='text' name='book_price' class='form-control' placeholder="Ex: 99.87" required/></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <label>Book Quantity <input type='number' name='book_quantity' class='form-control' min="0"
                                         required/></label>

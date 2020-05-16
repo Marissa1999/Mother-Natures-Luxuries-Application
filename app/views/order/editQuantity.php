@@ -62,7 +62,7 @@
     <form action='' method='post'>
         <div class='form-group'>
             <label>Item Quantity: <input type='number' min="0" name='order_quantity' value='<?= $data->order_quantity ?>'
-                                         class='form-control'/></label>
+                                         class='form-control' required/></label>
         </div>
         <div class='save-button'>
             <input type='submit' name='action' value='&nbsp;&nbsp;Save Changes&nbsp;&nbsp;' class='btn btn-success'/>

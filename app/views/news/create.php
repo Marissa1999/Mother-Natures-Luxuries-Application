@@ -69,9 +69,9 @@
     ?>
     <form action='' method='post' enctype='multipart/form-data'>
         <div class='form-group'>
-            <label>News Topic <input type='text' name='news_topic' class='form-control'/></label>
+            <label>News Topic <input type='text' name='news_topic' class='form-control' required/></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <label>News Article <input type='text' name='news_article' class='form-control'/></label>
+            <label>News Article <input type='text' name='news_article' class='form-control' required/></label>
         </div>
         <div class="form-group">
             <label>News Picture <br/><input type='file' name='news_picture' style="width:208px"/></label>
