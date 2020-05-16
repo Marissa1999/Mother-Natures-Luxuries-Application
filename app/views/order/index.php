@@ -58,7 +58,7 @@
             }
         }
 
-        $subtotal = $this->model('OrderDetails')->getTotalForUser($_SESSION['profile_id']);
+        $subtotal = (int)$this->model('OrderDetails')->getTotalForUser($_SESSION['profile_id']);
         $taxes = (int)$subtotal * 0.15;
         $total = (int)$subtotal + $taxes;
         echo "<tr><th colspan='4'>Subtotal: </th><th>$$subtotal</th></tr>";
