@@ -61,12 +61,12 @@
     <h1>Edit the Review</h1>
     <form action='' method='post'>
         <div class='form-group'>
-            <label>Product Rating <input type='text' name='product_rating' value='<?= $data->product_rating ?>'
-                                         class='form-control'/></label>
+            <label>Product Rating <input type='text' name='product_rating' placeholder="Ex: 8/10" value='<?= $data->product_rating ?>'
+                                         class='form-control' required/></label>
         </div>
         <div class='form-group'>
             <label>Review Comment <input type='text' name='review_comment' value='<?= $data->review_comment ?>'
-                                         class='form-control' style="width: 800px"/></label>
+                                         class='form-control' style="width: 800px" required/></label>
         </div>
 
         <div class="save-button">

@@ -78,16 +78,16 @@
     <form action='' method='post'>
         <div class='form-group'>
             <label style="font-weight: bold">First Name <input type='text' name='first_name'
-                                                               value='<?= $data->first_name ?>'
+                                                               value='<?= $data->first_name ?>' minlength="2"
                                                                class='form-control' required/></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <label style="font-weight: bold">Last Name <input type='text' name='last_name'
-                                                              value='<?= $data->last_name ?>'
+                                                              value='<?= $data->last_name ?>' minlength="2"
                                                               class='form-control' required/></label>
         </div>
         <div class='form-group'>
             <label style="font-weight: bold">Email <input type='email' name='email' value='<?= $data->email ?>'
-                                                          class='form-control' placeholder="example@gmail.com" required /></label>
+                                                          class='form-control' placeholder="Ex: example@gmail.com" required /></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
             <label style="font-weight: bold">Phone Number <input type='text' name='phone_number'

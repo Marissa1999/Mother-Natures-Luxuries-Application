@@ -103,11 +103,11 @@
         <li><a href='/message/index'>Message Users</a></li>
         <?php
         if ($data['profile']->user_type == "Buyer") {
-            echo "<li><a href='/wishlist/index'>View Wish List</a></li>";
+            echo "<li><a href='/wishlist/index'>View Wish List</a></li>
+                  <li><a href='/order/index'>View Shopping Cart</a></li>
+                  <li><a href='/order/history'>View Shopping History</a></li>";
         }
         ?>
-        <li><a href='/order/index'>View Shopping Cart</a></li>
-        <li><a href='/order/history'>View Shopping History</a></li>
     </ul>
 
     <br/>

@@ -62,7 +62,7 @@
     <form action='' method='post'>
         <div class='form-group'>
             <label>Edit your Message <input type='text' name='message_text' value='<?= $data->message_text ?>'
-                                            class='form-control' style="width:800px"/></label>
+                                            class='form-control' style="width:800px" required/></label>
         </div>
         <div class="save-button">
             <input type='submit' name='action' value='&nbsp;&nbsp;Save Changes&nbsp;&nbsp;' class='btn btn-success'/>

@@ -61,20 +61,20 @@
     <h1>Edit the Book</h1>
     <form action='' method='post' enctype='multipart/form-data'>
         <div class='form-group'>
-            <label>Book Name <input type='text' name='book_name' value='<?= $data->book_name ?>' class='form-control'/></label>
+            <label>Book Name <input type='text' name='book_name' value='<?= $data->book_name ?>' class='form-control' required /></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <label>Book Picture <input type='file' name='book_picture' style="width:208px"/></label>
         </div>
         <div class='form-group'>
-            <label>Book Quantity <input type='text' name='book_quantity' value='<?= $data->book_quantity ?>'
-                                        class='form-control'/></label>
+            <label>Book Quantity <input type='number' min="0" name='book_quantity' value='<?= $data->book_quantity ?>'
+                                        class='form-control' required/></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <label>Book Price <input type='text' name='book_price' value='<?= $data->book_price ?>'
-                                     class='form-control'/></label>
+                                     placeholder="Ex: 99.87" class='form-control' required/></label>
         </div>
         <div class='form-group'>
             <label>Book Description <input type='text' name='book_description' value='<?= $data->book_description ?>'
-                                           class='form-control'/></label>
+                                           class='form-control' required/></label>
         </div>
         <div class="save-button">
             <input type='submit' name='action' value='&nbsp;&nbsp;Save Changes&nbsp;&nbsp;' class='btn btn-success'/>

@@ -61,11 +61,11 @@
     <h1>Add a Review</h1>
     <form action='' method='post'>
         <div class='form-group'>
-            <label>Product Rating <input type='text' name='product_rating' class='form-control'/></label>
+            <label>Product Rating <input type='text' name='product_rating' placeholder="Ex: 8/10" class='form-control' required/></label>
         </div>
         <div class='form-group'>
             <label>Review Comment <input type='text' name='review_comment' class='form-control'
-                                         style="width:800px;"/></label>
+                                         style="width:800px;" required/></label>
         </div>
 
         <div class='create-button'>
