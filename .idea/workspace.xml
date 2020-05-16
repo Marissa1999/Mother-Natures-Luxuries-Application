@@ -21,10 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Fixed the Product Category Issue.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/OrderDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/OrderDetails.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Profile_Theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Theme.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/order/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/order/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_images/5ec065c77bfbd.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/product_images/5ec068833bc5e.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/edit.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -292,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589667328133</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Adjusted the radio buttons of the home/edit page">
+      <created>1589668426649</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1589668426649</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,7 +345,8 @@
     <MESSAGE value="Fixed the creation of profile." />
     <MESSAGE value="Adjusted which buttons are viewed depending on the user." />
     <MESSAGE value="Fixed the Product Category Issue." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed the Product Category Issue." />
+    <MESSAGE value="Adjusted the radio buttons of the home/edit page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusted the radio buttons of the home/edit page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="547" y="147" key="#PHP" timestamp="1589414200838">
