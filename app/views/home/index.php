@@ -94,7 +94,7 @@
     </nav>
 <div class='container' style="overflow: auto;">
     <h1>Welcome to Mother Nature's Luxuries</h1>
-    <a href='/login/logout' class="btn btn-danger" style="float: right;">Logout</a><br/>
+    <a href='/login/logout' class="btn btn-danger btn-lg" style="float: right;">Logout</a><br/>
     <h3>&nbsp;&nbsp;My Account</h3>
     <ul>
         <li><a href='/home/modifyPassword'>Modify Password</a></li>
@@ -128,7 +128,7 @@
     <table class='table table-striped' style="width:100%">
         <?php
         if ($data['profile']->user_type == "Seller") {
-            echo "<h2>My Products</h2><a href='/home/create' class='btn btn-success' style=\"float: right;\">Add a Product</a>";
+            echo "<h2>My Products</h2><a href='/home/create' class='btn btn-success btn-lg' style=\"float: right;\">Add a Product</a>";
             foreach ($data['products'] as $product) {
                 echo "<tr><td>Name</td><td>Picture</td><td>Details</td><td>Price</td><td>Quantity</td><td>Category</td><td>Profit</td></tr>";
                 $total = $product->product_price * $product->product_quantity;
@@ -152,7 +152,7 @@
         <?php
         if ($data['profile']->user_type == "Seller") {
             echo " <h2>My Books</h2>
-                   <a href='/book/create' class='btn btn-success' style=\"float: right;\">Add a Book</a>";
+                   <a href='/book/create' class='btn btn-success btn-lg' style=\"float: right;\">Add a Book</a>";
             foreach ($data['books'] as $book) {
                 echo "<tr><td>Name</td><td>Picture</td><td>Description</td><td>Price</td><td>Quantity</td></tr>";
                 echo "<tr><td>$book->book_name</td><td><img src='/book_images/$book->book_picture' style='max-width:100px;' /></td>

@@ -20,8 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Completed authentication for all Edit and Create views.">
+      <change afterPath="$PROJECT_DIR$/product_images/5ec063faaac77.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ec0641fc0fe7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ec06470ced24.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/profile/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -353,11 +356,11 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="707" y="428" key="NewPhpFileDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1589604415851" />
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589578343893">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state x="432" y="245" key="Vcs.Push.Dialog.v2" timestamp="1589666724918">
+      <screen x="0" y="0" width="1986" height="1152" />
     </state>
     <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589578343893" />
-    <state x="432" y="245" key="Vcs.Push.Dialog.v2/0.0.1986.1152@0.0.1986.1152" timestamp="1589499230722" />
+    <state x="432" y="245" key="Vcs.Push.Dialog.v2/0.0.1986.1152@0.0.1986.1152" timestamp="1589666724918" />
     <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589584418081">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
