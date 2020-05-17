@@ -92,6 +92,7 @@
             </ul>
         </div>
     </nav>
+</div>
 <div class='container' style="overflow: auto;">
     <h1>Welcome to Mother Nature's Luxuries</h1>
     <a href='/login/logout' class="btn btn-danger btn-lg" style="float: right;">Logout</a><br/>
