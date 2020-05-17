@@ -96,7 +96,7 @@
         foreach ($data['messages'] as $message) {
             foreach ($data['profiles'] as $profile) {
                 if ($message->message_sender == $profile->profile_id) {
-                    echo "<td>$profile->first_name</td><td>$message->message_text</td><td>$message->message_timestamp</td><td>$message->message_read</td>
+                    echo "<td>$profile->first_name $profile->last_name</td><td>$message->message_text</td><td>$message->message_timestamp</td><td>$message->message_read</td>
                         <td><a href='/message/edit/$message->message_id' class='btn btn-outline-success btn-sm'>Edit Message</a>
                         <a href='/message/detail/$message->message_id' class='btn btn-outline-primary btn-sm'>Mark as Read</a>
                         <a href='/message/delete/$message->message_id' class='btn btn-outline-danger btn-sm'>Delete Message</a> 

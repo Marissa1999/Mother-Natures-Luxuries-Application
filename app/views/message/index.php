@@ -40,7 +40,8 @@
             <td>Actions</td>
         </tr>
         <?php
-        foreach ($data['profiles'] as $profile) {
+        foreach ($data['profiles'] as $profile)
+        {
             echo "<tr><td>$profile->first_name</td><td>$profile->last_name</td>
                         <td>$profile->location</td><td>$profile->gender</td>
                         <td><a href='/message/viewMessages/$profile->profile_id' class='btn btn-success btn-sm'>Send Message</a> 
