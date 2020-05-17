@@ -82,7 +82,7 @@
 </head>
 <body>
 <?php
-$profileData = $data['notification'];
+$profileData = $data['notifications'];
 if (isset($profileData)){
 foreach ($profileData as $profile) {
     $time =$profile->timestamp;
@@ -153,7 +153,8 @@ foreach ($profileData as $profile) {
                 $total = $product->product_price * $product->product_quantity;
                 echo "<tr><td>$product->product_name</td><td><img src='/product_images/$product->product_picture' style='max-width:100px;' /></td>
                  <td>$product->product_details</td><td>$$product->product_price</td>
-                 <td>$product->product_quantity</td><td>$product->product_category</td>
+                 <td>$product->product_quantity</td>
+                 <td>$product->product_category</td>
                  <td>$$total</td><td style=\"text-align:right\">
                  <a href='/promotion/index/$product->product_id' class='btn btn-outline-info btn-lg'>Promotions</a> 
                  <a href='/home/edit/$product->product_id' class='btn btn-outline-success btn-lg''>Edit Product</a> 

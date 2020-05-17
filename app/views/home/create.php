@@ -91,9 +91,9 @@
         </div>
         <div class='radio-group'>
             <label style="font-weight: bold">Product Category</label><br/>
-                <input type="radio" name='product_category' value="Beauty"><label>&nbsp;Beauty</label>
-                <input type="radio" name='product_category' value="Medical"><label>&nbsp;Medical</label>
-                <input type="radio" name='product_category' value="Tea"><label>&nbsp;Tea</label>
+                <input type="radio" name='product_category' value="1"><label>&nbsp;Beauty</label>
+                <input type="radio" name='product_category' value="2"><label>&nbsp;Medical</label>
+                <input type="radio" name='product_category' value="3"><label>&nbsp;Tea</label>
         </div>
         <div class='create-button'>
             <input type='submit' name='action' value='&nbsp;&nbsp;Create New Product&nbsp;&nbsp;'

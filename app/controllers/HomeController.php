@@ -14,8 +14,8 @@ class HomeController extends Controller
         $products = $this->model('Product')->getProductsForSeller($_SESSION['profile_id']);
         $books = $this->model('Book')->getBooksForTeacher($_SESSION['profile_id']);
         $profile = $this->model('Profile')->findProfile($user_id);
-        $notification = $this->model('Notification')->getNotifications($user_id);
-        $this->view('home/index', ['products' => $products, 'books' => $books, 'profile' => $profile, 'notification' => $notification]);
+        $notifications = $this->model('Notification')->getNotifications($_SESSION['profile_id']);
+        $this->view('home/index', ['products' => $products, 'books' => $books, 'profile' => $profile, 'notifications' => $notifications]);
     }
 
     public function create()
@@ -42,7 +42,7 @@ class HomeController extends Controller
                 $newProduct->product_category = $_POST['product_category'];
                 $newProduct->seller_id = $_SESSION['profile_id'];
                 $newProduct->create();
-                $this->sendNotification($newProduct->product_category,$newProduct->product_name);
+                $this->sendNotification($newProduct->product_category, $newProduct->product_name);
                 header('location:/home/index');
             }
         } else {
@@ -151,8 +151,9 @@ class HomeController extends Controller
             $this->view('home/delete', $theProduct);
         }
     }
-    public function sendNotification($category, $text){
-        //everytime seller create a product , he put a theme in it which is product_category
+    public function sendNotification($category, $text)
+    {
+        //every time seller create a product , he put a theme in it which is product_category
         $allProfiles = $this->model('Profile')->getUsersByTheme($category);
         $this->model('Notification')->createNotifications($allProfiles , $text);
 

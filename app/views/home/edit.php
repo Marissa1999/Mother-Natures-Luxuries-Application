@@ -95,12 +95,12 @@
         </div>
         <div class='radio-group'>
             <label style="font-weight: bold">Product Category</label><br/>
-            <input type="radio" name="product_category" value="Beauty"
-                <?php echo $data->product_category == "Beauty" ? 'checked' : '' ?>><label>&nbsp;Beauty</label>
-            <input type="radio" name="product_category" value="Medical"
-                <?php echo $data->product_category == 'Medical' ? 'checked' : '' ?>><label>&nbsp;Medical</label>
-            <input type="radio" name="product_category" value="Tea"
-                <?php echo $data->product_category == 'Tea' ? 'checked' : '' ?>><label>&nbsp;Tea</label>
+            <input type="radio" name="product_category" value="1"
+                <?php echo $data->product_category == "1" ? 'checked' : '' ?>><label>&nbsp;Beauty</label>
+            <input type="radio" name="product_category" value="2"
+                <?php echo $data->product_category == '2' ? 'checked' : '' ?>><label>&nbsp;Medical</label>
+            <input type="radio" name="product_category" value="3"
+                <?php echo $data->product_category == '3' ? 'checked' : '' ?>><label>&nbsp;Tea</label>
         </div>
 
         <div class='save-button'>
