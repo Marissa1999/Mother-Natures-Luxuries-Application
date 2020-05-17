@@ -2,7 +2,6 @@
 
 class Theme extends Model
 {
-
     var $customer_id;
     var $theme_id;
 
@@ -26,9 +25,5 @@ notification varchar(1024) url in there /home/products/24
 
 a href=""
 */
-
-
-
-
 }
 ?>
