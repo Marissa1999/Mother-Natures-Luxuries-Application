@@ -1,8 +1,12 @@
-should be done as follows
+<?php
 
-var profile_id;
-var theme_id;
+class Theme extends Model
+{
 
+    var $customer_id;
+    var $theme_id;
+
+/*
 //normal people
 SQL = SELECT PROFILE.* FROM Profile JOIN Profile_Theme ON Profile.profile_id = Profile_theme.profile_id WHERE Profile_Theme.theme_id = :theme_id
 
@@ -21,4 +25,10 @@ notification_text description
 notification varchar(1024) url in there /home/products/24
 
 a href=""
+*/
 
+
+
+
+}
+?>
