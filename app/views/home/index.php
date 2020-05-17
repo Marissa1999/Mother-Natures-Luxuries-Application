@@ -4,8 +4,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -14,13 +12,12 @@
         h1 {
             color: darkslateblue;
             margin-top: 50px;
-            margin-bottom: 30px;
+            margin-bottom:50px;
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-
         h2 {
             margin-top: 25px;
             display: flex;
@@ -28,12 +25,10 @@
             justify-content: center;
             position: relative;
         }
-
         h3 {
             margin-top: 25px;
             display: flex;
         }
-
         ul {
             list-style-type: none;
             margin: 0;
@@ -43,19 +38,15 @@
             justify-content: center;
             background-color: lavenderblush;
         }
-
-        li {
+        li{
             display: inline-block;
         }
-
         li {
             border-right: 1.5px solid #a6a6ed;
         }
-
         li:last-child {
             border-right: none;
         }
-
         li a {
             font-size: 15px;
             display: block;
@@ -64,15 +55,12 @@
             padding: 14px 16px;
             text-decoration: none;
         }
-
         li a:hover {
             background-color: #d1d1f6;
         }
-
         a:link {
             text-decoration: none;
         }
-
         body {
             background-color: lavender;
             font-family: Helvetica, sans-serif;
@@ -103,9 +91,9 @@ foreach ($profileData as $profile) {
 </div>';}
         }?>
 
-<div class='container'>
+<div class='container' style="overflow: auto;">
     <h1>Welcome to Mother Nature's Luxuries</h1>
-    <a href='/login/logout' class="btn btn-danger btn-lg" style="float: right;">Logout</a><br/>
+    <a href='/login/logout' class="btn btn-danger" style="float: right;">Logout</a><br/>
     <h3>&nbsp;&nbsp;My Account</h3>
     <ul>
         <li><a href='/home/modifyPassword'>Modify Password</a></li>
@@ -147,7 +135,7 @@ foreach ($profileData as $profile) {
     <table class='table table-striped' style="width:100%">
         <?php
         if ($data['profile']->user_type == "Seller") {
-            echo "<h2>My Products</h2><a href='/home/create' class='btn btn-success btn-lg' style=\"float: right;\">Add a Product</a>";
+            echo "<h2>My Products</h2><a href='/home/create' class='btn btn-success' style=\"float: right;\">Add a Product</a>";
             foreach ($data['products'] as $product) {
                 echo "<tr><td>Name</td><td>Picture</td><td>Details</td><td>Price</td><td>Quantity</td><td>Category</td><td>Profit</td></tr>";
                 $total = $product->product_price * $product->product_quantity;
@@ -164,9 +152,10 @@ foreach ($profileData as $profile) {
                      echo 'Tea';
                  }
                  echo "</td> <td>$$total</td><td style=\"text-align:right\">
-                 <a href='/promotion/index/$product->product_id' class='btn btn-outline-info btn-lg'>Promotions</a> 
-                 <a href='/home/edit/$product->product_id' class='btn btn-outline-success btn-lg''>Edit Product</a> 
-                 <a href='/home/delete/$product->product_id' class='btn btn-outline-danger btn-lg'>Delete Product</a>
+                 <td>
+                 <a href='/promotion/index/$product->product_id' class='btn btn-outline-info'>Promotions</a> 
+                 <a href='/home/edit/$product->product_id' class='btn btn-outline-success'>Edit Product</a> 
+                 <a href='/home/delete/$product->product_id' class='btn btn-outline-danger'>Delete Product</a>
                  </td></tr>";
             }
         } else {
@@ -180,15 +169,15 @@ foreach ($profileData as $profile) {
         <?php
         if ($data['profile']->user_type == "Seller") {
             echo " <h2>My Books</h2>
-                   <a href='/book/create' class='btn btn-success btn-lg' style=\"float: right;\">Add a Book</a>";
+                   <a href='/book/create' class='btn btn-success' style=\"float: right;\">Add a Book</a>";
             foreach ($data['books'] as $book) {
                 echo "<tr><td>Name</td><td>Picture</td><td>Description</td><td>Price</td><td>Quantity</td></tr>";
                 echo "<tr><td>$book->book_name</td><td><img src='/book_images/$book->book_picture' style='max-width:100px;' /></td>
                  <td>$book->book_description</td><td>$$book->book_price</td>
                  <td>$book->book_quantity</td><td style=\"text-align:right\">
-                 <a href='/book/detail/$book->book_id' class='btn btn-outline-primary btn-lg'>Book Details</a>
-                 <a href='/book/edit/$book->book_id' class='btn btn-outline-success btn-lg'>Edit Book</a> 
-                 <a href='/book/delete/$book->book_id' class='btn btn-outline-danger btn-lg'>Delete Book</a>
+                 <a href='/book/detail/$book->book_id' class='btn btn-outline-primary'>Book Details</a>
+                 <a href='/book/edit/$book->book_id' class='btn btn-outline-success'>Edit Book</a> 
+                 <a href='/book/delete/$book->book_id' class='btn btn-outline-danger'>Delete Book</a>
                  </td></tr>";
             }
         } else {
