@@ -52,7 +52,7 @@
                           <td>" . $order->order_price * $order->order_quantity, "</td><td>$order->order_quantity</td><td>$order->order_date</td>
                           </tr>";
 
-                    $subtotal = $this->model('OrderDetails')->getTotalForUser($_SESSION['profile_id']);
+                    $subtotal = (int)$this->model('OrderDetails')->getTotalPerOrder($_SESSION['profile_id']);
                     $taxes = (int)$subtotal * 0.15;
                     $total = (int)$subtotal + $taxes;
                     echo "<tr><th colspan='4'>Subtotal: </th><th>$$subtotal</th></tr>";
