@@ -19,9 +19,224 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="More commits.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Fixed the Product Category Issue.">
+      <change afterPath="$PROJECT_DIR$/app/controllers/ThemeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/Notification.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news_images/5ebf280f92eb1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/.idea/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/.idea/Mother_Nature_Luxuries_PHP_Application.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/.idea/htdocs.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/.idea/workspace.xml~0324e91f33616e49d5ae7efb0f3714e03ac31000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebcb07215aae.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebda575ae4bc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebdbbcea858d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebdbbfb6c824.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebdbc8dbdef0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebdc095d8bd7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebdc0a742537.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebdc0e348658.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebdc282f05a8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebdc2b43bc2e.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebdc36eb7292.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebdc42035ff2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebdc4632e562.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebdc661da9fc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebdc6fce4c66.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebdc72342287.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebdcc0294f86.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebdccccd2ec3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebdcdf3634b5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebdced0e1ca8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebdd2e949851.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebdd3aa5914c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebdd3ddad4b3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebdd657595e1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebdd6608f05c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebdd7104c95f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebdd71558c67.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebed2098c705.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebee6a22fcb3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebee76931f48.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ebef2db7cb5c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ec03c90c5d38.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ec03f5524603.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ec063faaac77.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ec0641fc0fe7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ec06470ced24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ec06a1616220.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ec09a79e7a29.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ec0e766b8ab3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ec0e89f9befb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/5ec0f36407d0e.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/controllers/BookController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/controllers/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/controllers/LoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/controllers/MessageController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/controllers/NewsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/controllers/OrderController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/controllers/PaymentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/controllers/ProfileController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/controllers/PromotionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/controllers/ReviewController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/controllers/ThemeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/controllers/WishListController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/core/App.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/core/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/core/Filter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/core/Model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/init.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/models/Book.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/models/Message.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/models/News.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/models/Order.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/models/OrderDetails.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/models/Payment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/models/Product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/models/Profile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/models/Promotion.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/models/Review.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/models/Theme.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/models/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/models/WishList.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/book/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/book/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/book/detail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/book/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/book/search.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/home/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/home/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/home/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/home/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/home/modifyPassword.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/home/search.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/login/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/login/register.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/message/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/message/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/message/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/message/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/message/viewMessages.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/news/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/news/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/order/checkout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/order/editQuantity.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/order/history.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/order/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/payment/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/payment/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/payment/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/payment/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/profile/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/profile/detail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/profile/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/profile/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/promotion/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/promotion/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/promotion/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/review/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/review/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/review/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/review/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/wishlist/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/wishlist/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/app/views/wishlist/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/book_images/5ebb2f6730680.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/book_images/5ebb4d4892f48.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/news_images/5ebb306f2904a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/product_images/5ebb3d32853cc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/product_images/5ebb68455d925.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/product_images/5ebcb07215aae.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/product_images/5ebda575ae4bc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/product_images/5ebdbc8dbdef0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/product_images/5ebed2098c705.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/product_images/5ebee6a22fcb3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/product_images/5ebee76931f48.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/product_images/5ebef2db7cb5c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/product_images/5ec063faaac77.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/product_images/5ec0641fc0fe7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/product_images/5ec06470ced24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/product_images/5ec06a1616220.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_images/product_images/5ec09a79e7a29.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Mother_Nature_Luxuries_PHP_Application.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Mother_Nature_Luxuries_PHP_Application.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/BookController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/MessageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/MessageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/NewsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/OrderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/PaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/PaymentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/ProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/PromotionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/PromotionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/ReviewController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/ReviewController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/WishListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/WishListController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/App.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/Filter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/Filter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Message.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/News.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/OrderDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/OrderDetails.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Payment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Payment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Promotion.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Promotion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Review.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Review.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/Theme.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Theme.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/WishList.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/WishList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/book/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/book/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/book/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/book/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/book/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/modifyPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/modifyPassword.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/login/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/login/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/login/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/login/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/message/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/message/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/message/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/message/delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/message/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/message/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/message/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/message/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/message/viewMessages.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/message/viewMessages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/news/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/news/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/news/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/news/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/order/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/order/checkout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/order/editQuantity.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/order/editQuantity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/order/history.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/order/history.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/order/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/order/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/payment/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/payment/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/payment/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/payment/delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/payment/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/payment/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/payment/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/payment/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/profile/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/profile/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/profile/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/profile/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/promotion/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/promotion/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/promotion/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/promotion/delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/promotion/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/promotion/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/review/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/review/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/review/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/review/delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/review/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/review/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/review/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/review/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/wishlist/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlist/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/wishlist/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlist/delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/wishlist/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlist/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +268,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../xampp/htdocs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -79,6 +294,9 @@
       <workItem from="1589606407841" duration="1369000" />
       <workItem from="1589608181821" duration="7158000" />
       <workItem from="1589678930815" duration="12338000" />
+      <workItem from="1589694058029" duration="4000" />
+      <workItem from="1589694078927" duration="8000" />
+      <workItem from="1589694088893" duration="8893000" />
     </task>
     <task id="LOCAL-00001" summary="More changes.">
       <created>1589317184327</created>
@@ -407,10 +625,10 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="178" y="100" width="1390" height="817" key="DiffContextDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1589417969333" />
-    <state x="653" y="259" key="FileChooserDialogImpl" timestamp="1589607523722">
+    <state x="653" y="259" key="FileChooserDialogImpl" timestamp="1589694084839">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="653" y="259" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1589607523722" />
+    <state x="653" y="259" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1589694084839" />
     <state x="610" y="334" width="614" height="252" key="MultipleFileMergeDialog" timestamp="1589394674974">
       <screen x="0" y="0" width="1440" height="920" />
     </state>

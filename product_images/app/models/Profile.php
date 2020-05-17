@@ -20,14 +20,6 @@ class Profile extends Model
         return $stmt->fetchAll();
     }
 
-    public function getUsersByTheme($theme_id)
-    {
-        $SQL = 'SELECT * FROM Profile WHERE theme_id = :theme_id';
-        $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['theme_id' => $theme_id]);
-        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Profile');
-        return $stmt->fetchAll();
-    }
     public function getSellers($user_type)
     {
         $SQL = 'SELECT * FROM Profile WHERE user_type LIKE "Seller"';

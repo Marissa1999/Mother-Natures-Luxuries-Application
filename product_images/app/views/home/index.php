@@ -81,28 +81,6 @@
     <title>Home Page</title>
 </head>
 <body>
-<?php
-$profileData = $data['notification'];
-if (isset($profileData)){
-foreach ($profileData as $profile) {
-    $time =$profile->timestamp;
-    $message = $profile->text;
-
-    echo '<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="toast-header">
-        <img src="..." class="rounded mr-2" alt="...">
-        <strong class="mr-auto">New Item from your subscription</strong>
-        <small></small>
-        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </div>
-    <div class="toast-body">
-        $message 
-    </div>
-</div>';}
-        }?>
-
 <div class='container'>
     <h1>Welcome to Mother Nature's Luxuries</h1>
     <a href='/login/logout' class="btn btn-danger btn-lg" style="float: right;">Logout</a><br/>

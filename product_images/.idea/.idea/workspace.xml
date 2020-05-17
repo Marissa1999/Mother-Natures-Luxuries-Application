@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="redirect seller and buyer">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="design-profile" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7" />
+  <component name="ProjectId" id="1bp7DklP4Fs7W8TANGtQOijHvFm" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="" />
+      <created>1589317064976</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589317064976</updated>
+      <workItem from="1589317070658" duration="6063000" />
+      <workItem from="1589412821035" duration="4910000" />
+      <workItem from="1589467742781" duration="7315000" />
+    </task>
+    <task id="LOCAL-00001" summary="More changes.">
+      <created>1589317184327</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589317184327</updated>
+    </task>
+    <task id="LOCAL-00002" summary="More changes.">
+      <created>1589317396542</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589317396542</updated>
+    </task>
+    <task id="LOCAL-00003" summary="More changes.">
+      <created>1589317687890</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1589317687890</updated>
+    </task>
+    <task id="LOCAL-00004" summary="More changes.">
+      <created>1589317983159</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589317983159</updated>
+    </task>
+    <task id="LOCAL-00005" summary="More changes.">
+      <created>1589318200557</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589318200557</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fixed the Shopping History.">
+      <created>1589321483870</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1589321483870</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fixed the Shopping History.">
+      <created>1589323397398</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1589323397398</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fixed the Shopping History.">
+      <created>1589323731085</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1589323731085</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added more images.">
+      <created>1589389564501</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1589389564502</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Adjust the Workspace file.">
+      <created>1589393425253</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1589393425253</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Adjust the Workspace file.">
+      <created>1589394652669</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1589394652669</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Location API">
+      <created>1589417699428</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1589417699428</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Location API Change Style">
+      <created>1589417825829</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1589417825829</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Location API Change Style">
+      <created>1589417844296</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1589417844296</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Adjust the Workspace file.">
+      <created>1589424403695</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1589424403695</updated>
+    </task>
+    <task id="LOCAL-00016" summary="redirect seller and buyer">
+      <created>1589490817808</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1589490817808</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="More changes." />
+    <MESSAGE value="Fixed the Shopping History." />
+    <MESSAGE value="Added more images." />
+    <MESSAGE value="Location API" />
+    <MESSAGE value="Location API Change Style" />
+    <MESSAGE value="Adjust the Workspace file." />
+    <MESSAGE value="redirect seller and buyer" />
+    <option name="LAST_COMMIT_MESSAGE" value="redirect seller and buyer" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="547" y="147" key="#PHP" timestamp="1589414200838">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="547" y="147" key="#PHP/0.0.1680.1010@0.0.1680.1010" timestamp="1589414200838" />
+    <state x="178" y="100" width="1390" height="817" key="DiffContextDialog" timestamp="1589490912261">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="178" y="100" width="1390" height="817" key="DiffContextDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1589490912261" />
+    <state x="610" y="334" width="614" height="252" key="MultipleFileMergeDialog" timestamp="1589394674974">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="610" y="334" width="614" height="252" key="MultipleFileMergeDialog/0.0.1440.920@0.0.1440.920" timestamp="1589394674974" />
+    <state x="365" y="215" key="Vcs.Push.Dialog.v2" timestamp="1589490819269">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589489736047" />
+    <state x="365" y="215" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1589490819269" />
+    <state x="621" y="414" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589490760941">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920" timestamp="1589389645816" />
+    <state x="621" y="414" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1010@0.0.1680.1010" timestamp="1589490760941" />
+    <state x="1124" y="292" key="git4idea.branch.GitSmartOperationDialog" timestamp="1589481935988">
+      <screen x="0" y="0" width="1986" height="1152" />
+    </state>
+    <state x="1124" y="292" key="git4idea.branch.GitSmartOperationDialog/0.0.1986.1152@0.0.1986.1152" timestamp="1589481935988" />
+    <state x="586" y="331" key="git4idea.merge.GitPullDialog" timestamp="1589481960860">
+      <screen x="0" y="0" width="1986" height="1152" />
+    </state>
+    <state x="425" y="264" key="git4idea.merge.GitPullDialog/0.0.1440.920@0.0.1440.920" timestamp="1589394670097" />
+    <state x="586" y="331" key="git4idea.merge.GitPullDialog/0.0.1986.1152@0.0.1986.1152" timestamp="1589481960860" />
+  </component>
+</project>
