@@ -38,8 +38,6 @@
             <td>Details</td>
             <td>Category</td>
             <td>Unit Price</td>
-            <td>Order Price</td>
-            <td>Order Quantity</td>
             <td>Order Date</td>
         </tr>
         <br/>
@@ -48,16 +46,16 @@
             foreach ($data['orders'] as $order) {
                 if ($product->product_id == $order->product_id) {
                     echo "<tr><td>$product->product_name</td><td><img src='/product_images/$product->product_picture' style='max-width:100px;' /></td>
-                          <td>$product->product_details</td><td>$product->product_category</td><td>$order->order_price</td>
-                          <td>" . $order->order_price * $order->order_quantity, "</td><td>$order->order_quantity</td><td>$order->order_date</td>
+                          <td>$product->product_details</td><td>$product->product_category</td><td>$order->order_price</td><td>$order->order_date</td>
                           </tr>";
-
-                    $subtotal = (int)$this->model('OrderDetails')->getTotalPerOrder($_SESSION['profile_id']);
+                   /*
+                    $subtotal = (int)$this->model('OrderDetails')->getTotalPerOrder($order->order_id);
                     $taxes = (int)$subtotal * 0.15;
                     $total = (int)$subtotal + $taxes;
                     echo "<tr><th colspan='4'>Subtotal: </th><th>$$subtotal</th></tr>";
                     echo "<tr><th colspan='4'>Taxes: </th><th>$$taxes</th></tr>";
                     echo "<tr><th colspan='4'>Total: </th><th>$$total</th></tr>";
+                   */
                     break;
                 }
             }
