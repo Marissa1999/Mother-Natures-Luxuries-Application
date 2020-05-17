@@ -45,7 +45,6 @@ a href=""
                 $stmt = self::$_connection->prepare($SQL);
                 $stmt->execute(['notification_text' =>$product_name,
                                 'customer_id' => $profile->profile_id]);
-                return $stmt->rowCount();
             }
 
         }
