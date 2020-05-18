@@ -42,8 +42,8 @@
         </tr>
         <br/>
         <?php
-        foreach ($data['products'] as $product) {
-            foreach ($data['orders'] as $order) {
+        foreach ($data['orders'] as $order) {
+            foreach ($data['products'] as $product) {
                 if ($product->product_id == $order->product_id) {
                     echo "<tr><td>$product->product_name</td><td><img src='/product_images/$product->product_picture' style='max-width:100px;' /></td>
                           <td>$product->product_details</td><td>";
@@ -57,14 +57,6 @@
                  }
                  echo"</td><td>$order->order_price</td><td>$order->order_date</td>
                           </tr>";
-                   /*
-                    $subtotal = (int)$this->model('OrderDetails')->getTotalPerOrder($order->order_id);
-                    $taxes = (int)$subtotal * 0.15;
-                    $total = (int)$subtotal + $taxes;
-                    echo "<tr><th colspan='4'>Subtotal: </th><th>$$subtotal</th></tr>";
-                    echo "<tr><th colspan='4'>Taxes: </th><th>$$taxes</th></tr>";
-                    echo "<tr><th colspan='4'>Total: </th><th>$$total</th></tr>";
-                   */
                     break;
                 }
             }

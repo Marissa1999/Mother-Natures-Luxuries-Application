@@ -43,14 +43,15 @@
             <td>Product Rating</td>
             <td>Review Comment</td>
             <td>Review Timestamp</td>
+            <td>Actions</td>
         </tr>
         <?php
         foreach ($data['reviews'] as $review) {
             foreach ($data['profiles'] as $profile) {
                 echo "<tr><td>$profile->first_name</td><td>$profile->last_name</td></td>";
                 echo "<td>$review->product_rating</td><td>$review->review_comment</td><td>$review->review_timestamp</td>
-                             <td><a href='/review/edit/$review->review_id' class='btn btn-outline-primary btn-sm'>Edit</a>
-                             <a href='/review/delete/$review->review_id' class='btn btn-outline-danger btn-sm'>Delete</a>
+                             <td><a href='/review/edit/$review->review_id' class='btn btn-outline-primary btn-sm'>Edit Review</a>
+                             <a href='/review/delete/$review->review_id' class='btn btn-outline-danger btn-sm'>Delete Review</a>
                              </td></tr>";
                 break;
             }
