@@ -59,6 +59,7 @@
         <br/>
         <div class='card'>
             <?php
+            $displayWishListOption = false;
             foreach ($data['products'] as $product) {
                 foreach ($data['profiles'] as $profile) {
                     if ($product->seller_id == $profile->profile_id)
@@ -77,11 +78,31 @@
                      echo 'Tea';
                  }
                  echo "</td><td>$product->product_price</td>
-                          <td>$product->product_quantity</td>
-                    <td><a href='/wishlist/create?product_id=$product->product_id' class='btn btn-outline-primary btn-sm'>Add to Wish List</a>
-                        <a href='/review/index/$product->product_id' class='btn btn-outline-info btn-sm'>View Reviews</a>
-                        <a href='/order/AddToCart/$product->product_id' class='btn btn-outline-success btn-sm'>Add to Cart</a>
-                    </td></tr>";
+                          <td>$product->product_quantity</td>";
+
+                       foreach ($data['wishList'] as $wish)
+                       {
+                          if ($wish->customer_id == $_SESSION['profile_id'] && $wish->product_id == $product->product_id)
+                          {
+                              $displayWishListOption = true;
+                              break;
+                          }
+
+                      }
+
+
+                    echo "<td><a href='/review/index/$product->product_id' class='btn btn-outline-info btn-sm'>View Reviews</a> ";
+
+                            if (!$displayWishListOption)
+                            {
+                                echo "<a href='/wishlist/create?product_id=$product->product_id' class='btn btn-outline-primary btn-sm'>Add to Wish List</a>";
+                                $displayWishListOption = false;
+                            }
+
+                            $displayWishListOption = false;
+
+                          echo " <a href='/order/AddToCart/$product->product_id' class='btn btn-outline-success btn-sm'>Add to Cart</a>
+                          </td></tr>";
                             break;
                         }
 

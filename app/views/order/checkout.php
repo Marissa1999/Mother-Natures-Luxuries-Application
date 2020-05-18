@@ -76,8 +76,8 @@
                     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                     data-key="pk_test_XczTpCFstLKZxVO67cXM3oUQ00YwdLStoP"
                     data-amount="\'.$total.\'"
-                    data-name="\'.$product_name.\'"
-                    data-description="Widget"
+                    data-name="Payment"
+                    data-description="Fast, Quick and Reliable Payment"
                     data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
                     data-locale="auto">
             </script>

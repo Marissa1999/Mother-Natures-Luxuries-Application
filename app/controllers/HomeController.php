@@ -75,31 +75,32 @@ class HomeController extends Controller
         $_SESSION['profile_id'] = $theProfile->profile_id;
         $profiles = $this->model('Profile')->getSellersAndProducts();
         $theProfile = $this->model('Profile')->findProfile($user_id);
+        $userWishList = $this->model('WishList')->getWishesForCustomer($theProfile->profile_id);
 
         if (isset($_POST['search'])) {
             $products = $this->model('Product')->searchProducts($_POST['search_input']);
-            $this->view('home/search', ['products' => $products, 'profiles' => $profiles, 'theProfile'=>$theProfile]);
+            $this->view('home/search', ['products' => $products, 'profiles' => $profiles, 'theProfile'=>$theProfile, 'wishList' => $userWishList]);
         } else if (isset($_POST['nameSortAsc'])) {
             $products = $this->model('Product')->sortNameAscending();
-            $this->view('home/search', ['products' => $products, 'profiles' => $profiles, 'theProfile'=>$theProfile]);
+            $this->view('home/search', ['products' => $products, 'profiles' => $profiles, 'theProfile'=>$theProfile, 'wishList' => $userWishList]);
         } else if (isset($_POST['nameSortDesc'])) {
             $products = $this->model('Product')->sortNameDescending();
-            $this->view('home/search', ['products' => $products, 'profiles' => $profiles, 'theProfile'=>$theProfile]);
+            $this->view('home/search', ['products' => $products, 'profiles' => $profiles, 'theProfile'=>$theProfile, 'wishList' => $userWishList]);
         } else if (isset($_POST['priceSortAsc'])) {
             $products = $this->model('Product')->sortPriceAscending();
-            $this->view('home/search', ['products' => $products, 'profiles' => $profiles, 'theProfile'=>$theProfile]);
+            $this->view('home/search', ['products' => $products, 'profiles' => $profiles, 'theProfile'=>$theProfile, 'wishList' => $userWishList]);
         } else if (isset($_POST['priceSortDesc'])) {
             $products = $this->model('Product')->sortPriceDescending();
-            $this->view('home/search', ['products' => $products, 'profiles' => $profiles, 'theProfile'=>$theProfile]);
+            $this->view('home/search', ['products' => $products, 'profiles' => $profiles, 'theProfile'=>$theProfile, 'wishList' => $userWishList]);
         } else if (isset($_POST['categorySortAsc'])) {
             $products = $this->model('Product')->sortCategoryAscending();
-            $this->view('home/search', ['products' => $products, 'profiles' => $profiles, 'theProfile'=>$theProfile]);
+            $this->view('home/search', ['products' => $products, 'profiles' => $profiles, 'theProfile'=>$theProfile, 'wishList' => $userWishList]);
         } else if (isset($_POST['categorySortDesc'])) {
             $products = $this->model('Product')->sortCategoryDescending();
-            $this->view('home/search', ['products' => $products, 'profiles' => $profiles, 'theProfile'=>$theProfile]);
+            $this->view('home/search', ['products' => $products, 'profiles' => $profiles, 'theProfile'=>$theProfile, 'wishList' => $userWishList]);
         } else {
             $products = $this->model('Product')->get();
-            $this->view('home/search', ['products' => $products, 'profiles' => $profiles, 'theProfile'=>$theProfile]);
+            $this->view('home/search', ['products' => $products, 'profiles' => $profiles, 'theProfile'=>$theProfile, 'wishList' => $userWishList]);
         }
     }
 
