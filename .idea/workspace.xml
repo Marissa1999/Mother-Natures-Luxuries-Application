@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Made sure that the Product Category is visible instead of it's ID number.">
+    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="More commits.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/review/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/review/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/wishlist/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlist/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ec2ddcab2016.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,14 +79,7 @@
       <workItem from="1589606407841" duration="1369000" />
       <workItem from="1589608181821" duration="7158000" />
       <workItem from="1589678930815" duration="12338000" />
-      <workItem from="1589800948794" duration="20818000" />
-    </task>
-    <task id="LOCAL-00003" summary="More changes.">
-      <created>1589317687890</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1589317687890</updated>
+      <workItem from="1589800948794" duration="23697000" />
     </task>
     <task id="LOCAL-00004" summary="More changes.">
       <created>1589317983159</created>
@@ -425,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589829746585</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="More commits.">
+      <created>1589831846245</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1589831846246</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,14 +503,14 @@
     <MESSAGE value="Fixed the creation of profile." />
     <MESSAGE value="Adjusted which buttons are viewed depending on the user." />
     <MESSAGE value="Fixed the Product Category Issue." />
-    <MESSAGE value="More commits." />
     <MESSAGE value="Fixed the appearance of Home/Index." />
     <MESSAGE value="Created the Checkout layout." />
     <MESSAGE value="Fixed the ShoppingCart entirely." />
     <MESSAGE value="Managed to complete the Unsubscribe user story." />
     <MESSAGE value="Managed to enhance the code for Messages." />
     <MESSAGE value="Made sure that the Product Category is visible instead of it's ID number." />
-    <option name="LAST_COMMIT_MESSAGE" value="Made sure that the Product Category is visible instead of it's ID number." />
+    <MESSAGE value="More commits." />
+    <option name="LAST_COMMIT_MESSAGE" value="More commits." />
   </component>
   <component name="WindowStateProjectService">
     <state x="547" y="147" key="#PHP" timestamp="1589414200838">
@@ -534,15 +533,15 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="707" y="428" key="NewPhpFileDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1589604415851" />
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589829755711">
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589831852743">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589829755711" />
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589831852743" />
     <state x="432" y="245" key="Vcs.Push.Dialog.v2/0.0.1986.1152@0.0.1986.1152" timestamp="1589499230722" />
-    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589830878443">
+    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589835026206">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920" timestamp="1589830878443" />
+    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920" timestamp="1589835026206" />
     <state x="1124" y="292" key="git4idea.branch.GitSmartOperationDialog" timestamp="1589481935988">
       <screen x="0" y="0" width="1986" height="1152" />
     </state>
