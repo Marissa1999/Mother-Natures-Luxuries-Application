@@ -13,6 +13,7 @@ class MessageController extends Controller
         $theProfile = $this->model('Profile')->findProfile($user_id);
         $_SESSION['profile_id'] = $theProfile->profile_id;
         $profiles = $this->model('Profile')->get();
+        unset($profiles[array_search($theProfile, $profiles)]);
         $this->view('message/index', ['profiles' => $profiles]);
     }
 

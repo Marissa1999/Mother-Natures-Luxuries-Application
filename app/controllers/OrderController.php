@@ -84,21 +84,17 @@ class OrderController extends Controller
         $user_id = (string)$_SESSION['user_id'];
         $theProfile = $this->model('Profile')->findProfile($user_id);
         $_SESSION['profile_id'] = $theProfile->profile_id;
-        $cart = $this->model('Order')->findProfileCart($_SESSION['profile_id']);
         $orders = $this->model('OrderDetails')->getOrderForUser($_SESSION['profile_id']);
         $products = $this->model('Product')->get();
+        $this->view('order/checkout', ['products' => $products, 'orders' => $orders]);
+    }
 
-        if (isset($_POST['action']))
-        {
-            $cart = $this->model('Order')->findProfileCart($_SESSION['profile_id']);
-            $cart->order_status = 'Paid';
-            $cart->update();
-            header('location:/order/index');
-        }
-        else
-        {
-            $this->view('order/checkout', ['cart' => $cart, 'products' => $products, 'orders' => $orders]);
-        }
+    public function pay()
+    {
+        $cart = $this->model('Order')->findProfileCart($_SESSION['profile_id']);
+        $cart->order_status = 'Paid';
+        $cart->update();
+        header('location:/order/index');
     }
 
 }

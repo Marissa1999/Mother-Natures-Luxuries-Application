@@ -19,11 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Fixed the appearance of Home/Index.">
+    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Created the Checkout layout.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/MessageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/MessageController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/message/viewMessages.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/message/viewMessages.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/order/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/order/checkout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/order/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/order/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -376,7 +377,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589724399856</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Created the Checkout layout.">
+      <created>1589765307165</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1589765307165</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,7 +435,8 @@
     <MESSAGE value="Fixed the Product Category Issue." />
     <MESSAGE value="More commits." />
     <MESSAGE value="Fixed the appearance of Home/Index." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed the appearance of Home/Index." />
+    <MESSAGE value="Created the Checkout layout." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the Checkout layout." />
   </component>
   <component name="WindowStateProjectService">
     <state x="547" y="147" key="#PHP" timestamp="1589414200838">
@@ -450,15 +459,15 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="707" y="428" key="NewPhpFileDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1589604415851" />
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589724406349">
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589765314440">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589724406349" />
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589765314440" />
     <state x="432" y="245" key="Vcs.Push.Dialog.v2/0.0.1986.1152@0.0.1986.1152" timestamp="1589499230722" />
-    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589724280601">
+    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589765284751">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920" timestamp="1589724280601" />
+    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920" timestamp="1589765284751" />
     <state x="1124" y="292" key="git4idea.branch.GitSmartOperationDialog" timestamp="1589481935988">
       <screen x="0" y="0" width="1986" height="1152" />
     </state>
