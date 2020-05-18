@@ -95,13 +95,27 @@
         <?php
         foreach ($data['messages'] as $message) {
             foreach ($data['profiles'] as $profile) {
-                if ($message->message_sender == $profile->profile_id) {
-                    echo "<td>$profile->first_name $profile->last_name</td><td>$message->message_text</td><td>$message->message_timestamp</td><td>$message->message_read</td>
-                        <td>
-                        <a href='/message/edit/$message->message_id' class='btn btn-outline-success btn-sm'>Edit Message</a>
-                        <a href='/message/delete/$message->message_id' class='btn btn-outline-danger btn-sm'>Delete Message</a>
-                        <a href='/message/detail/$message->message_id' class='btn btn-outline-primary btn-sm'>Mark as Read</a>
-                        </td></tr>";
+
+                if ($message->message_sender == $profile->message_sender && $message->message_receiver == $profile->message_receiver &&
+                    $message->message_sender == $_SESSION['message_sender'] && $message->message_receiver == $_SESSION['message_receiver'] ||
+                    $message->message_sender == $profile->message_sender && $message->message_receiver == $profile->message_receiver &&
+                    $message->message_sender == $_SESSION['message_receiver'] && $message->message_receiver == $_SESSION['message_sender'])
+                {
+
+                    if ($message->message_sender == $profile->message_sender && $message->message_receiver == $profile->message_receiver &&
+                        $message->message_sender == $_SESSION['message_sender'] && $message->message_receiver == $_SESSION['message_receiver'])
+                    {
+                        $message->updateRead();
+                    }
+
+                    echo "<td>$profile->first_name $profile->last_name</td><td>$message->message_text</td><td>$message->message_timestamp</td><td>$message->message_read</td>";
+
+                    if ($message->message_sender == $profile->message_sender && $message->message_receiver == $profile->message_receiver &&
+                        $message->message_sender == $_SESSION['message_sender'] && $message->message_receiver == $_SESSION['message_receiver']) {
+                        echo "<td><a href='/message/edit/$message->message_id' class='btn btn-outline-success btn-sm'>Edit Message</a>
+                                  <a href='/message/delete/$message->message_id' class='btn btn-outline-danger btn-sm'>Delete Message</a> </td>";
+                    }
+                    echo "</tr>";
                     break;
                 }
             }

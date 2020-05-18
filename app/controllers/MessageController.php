@@ -24,7 +24,7 @@ class MessageController extends Controller
         $_SESSION['message_sender'] = $theProfile->profile_id;
         $_SESSION['message_receiver'] = $profile_id;
         $profiles = $this->model('Message')->getSendersAndMessages();
-        $messages = $this->model('Message')->getMessages($_SESSION['message_receiver']);
+        $messages = $this->model('Message')->getMessages($_SESSION['message_receiver'], $_SESSION['message_sender']);
         $this->view('message/viewMessages', ['messages' => $messages, 'profiles' => $profiles]);
     }
 

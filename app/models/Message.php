@@ -15,11 +15,14 @@ class Message extends Model
         return $stmt->fetchAll();
     }
 
-    public function getMessages($message_receiver)
+    public function getMessages($message_receiver, $message_sender)
     {
-        $SQL = 'SELECT * FROM Message WHERE message_receiver = :message_receiver';
+        $SQL = 'SELECT * FROM Message 
+                WHERE message_receiver = :message_receiver AND message_sender = :message_sender
+                   OR message_receiver = :message_sender AND message_sender = :message_receiver
+                ORDER BY message_timestamp';
         $stmt = self::$_connection->prepare($SQL);
-        $stmt->execute(['message_receiver' => $message_receiver]);
+        $stmt->execute(['message_receiver' => $message_receiver, 'message_sender' => $message_sender]);
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'Message');
         return $stmt->fetchAll();
     }
