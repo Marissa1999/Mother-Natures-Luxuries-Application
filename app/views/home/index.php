@@ -75,24 +75,22 @@
 $profileData = $data['notifications'];
 if (isset($profileData)){
 foreach ($profileData as $profile) {
-    $time =$profile->notification_timestamp;
-    $message = $profile->notification_text;
+    $time =$profile->timestamp;
+    $message = $profile->text;
 
-    echo '<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="toast-header">
-        <img src="..." class="rounded mr-2" alt="...">
-        <strong class="mr-auto">New Item from your subscription</strong>
-        <small></small>
-        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+    echo "<div class=\"toast show\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\">
+    <div class=\"toast-header\">
+        <strong class=\"mr-auto\">New Item from your subscription</strong>
+        <small>$time</small>
+        <button type=\"button\" class=\"ml-2 mb-1 close\" data-dismiss=\"toast\" aria-label=\"Close\">
+            <span aria-hidden\"true\">&times;</span>
         </button>
     </div>
-    <div class="toast-body">
-        $message 
+    <div class=\"toast-body\">
+        $message
     </div>
-</div>';}
+</div>";}
         }?>
-
 <div class='container' style="overflow: auto;">
     <h1>Welcome to Mother Nature's Luxuries</h1>
     <a href='/login/logout' class="btn btn-danger" style="float: right;">Logout</a><br/>
@@ -105,7 +103,6 @@ foreach ($profileData as $profile) {
         <?php
         if ($data['profile']->user_type == "Buyer") {
             echo "<li><a href='/payment/index'>View Payment Information</a></li>";
-            echo "<li><a href='/theme/index'>Subscribe to Themes</a></li>";
         }
         ?>
     </ul>
@@ -119,15 +116,7 @@ foreach ($profileData as $profile) {
         if ($data['profile']->user_type == "Buyer") {
             echo "<li><a href='/wishlist/index'>View Wish List</a></li>
                   <li><a href='/order/index'>View Shopping Cart</a></li>
-                  <li><a href='/order/history'>View Shopping History</a></li>
-                  <li><a href='/theme/index'>View Notifications</a></li>";
-
-        }
-        ?>
-        <?php
-        if ($data['profile']->user_type == "Seller") {
-            echo "<li><a href='/theme/index'>Send Theme Notifications</a></li>";
-            echo "<li><a href='/profile/index'>View Seller Contacts</a></li>";
+                  <li><a href='/order/history'>View Shopping History</a></li>";
         }
         ?>
     </ul>

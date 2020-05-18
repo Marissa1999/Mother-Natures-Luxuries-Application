@@ -34,6 +34,7 @@ class HomeController extends Controller
                 move_uploaded_file($_FILES['product_picture']['tmp_name'], $path . $filename);
 
                 $newProduct = $this->model('Product');
+                $profile = $this->model('Profile');
                 $newProduct->product_name = $_POST['product_name'];
                 $newProduct->product_picture = $filename;
                 $newProduct->product_details = $_POST['product_details'];
@@ -42,7 +43,7 @@ class HomeController extends Controller
                 $newProduct->product_category = $_POST['product_category'];
                 $newProduct->seller_id = $_SESSION['profile_id'];
                 $newProduct->create();
-                $this->sendNotification($newProduct->product_category, $newProduct->product_name);
+                $this->sendNotification($_POST['product_category'], $_POST['product_name']);
                 header('location:/home/index');
             }
         } else {
@@ -153,7 +154,6 @@ class HomeController extends Controller
     }
     public function sendNotification($category, $text)
     {
-        //every time seller create a product , he put a theme in it which is product_category
         $allProfiles = $this->model('Profile')->getUsersByTheme($category);
         $this->model('Notification')->createNotifications($allProfiles , $text);
 

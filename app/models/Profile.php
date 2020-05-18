@@ -22,7 +22,7 @@ class Profile extends Model
 
     public function getUsersByTheme($theme_id)
     {
-        $SQL = 'SELECT * FROM Profile WHERE theme_id = :theme_id';
+        $SQL = 'SELECT * FROM Profile WHERE theme_id = :theme_id AND user_type = "Buyer"';
         $stmt = self::$_connection->prepare($SQL);
         $stmt->execute(['theme_id' => $theme_id]);
         $stmt->setFetchMode(PDO::FETCH_CLASS, 'Profile');

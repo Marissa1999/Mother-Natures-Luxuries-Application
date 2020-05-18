@@ -81,10 +81,15 @@ class OrderController extends Controller
 
     public function checkout()
     {
-        $cart = $this->model('Order')->findProfileCart($_SESSION['profile_id']);
-        $cart->order_status = 'Paid';
-        $cart->update();
-        header('location:/order/index');
+        $theItem = $this->model('OrderDetails')->find($order_item_id);
+
+        if (isset($_POST['action'])) {
+            $theItem->order_quantity = $_POST['order_quantity'];
+            $theItem->update();
+            header('location:/order/index');
+        } else {
+            $this->view('order/editQuantity', $theItem);
+        }
     }
 
 }
