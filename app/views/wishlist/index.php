@@ -53,7 +53,16 @@
                     $seller = $this->model('Profile')->find($product->seller_id);
                     echo "<tr><td>$seller->first_name</td><td>$seller->last_name</td></td>";
                     echo "<td>$product->product_name</td><td><img src='/product_images/$product->product_picture' style='max-width:100px;' />
-                               </td><td>$product->product_details</td><td>$product->product_category</td><td>$product->product_price</td>
+                               </td><td>$product->product_details</td><td>";
+                    $category = $product->product_category;
+                    if ($category == 1) {
+                        echo 'Beauty';
+                    } elseif ($category == 2) {
+                        echo 'Medical';
+                    } else {
+                        echo 'Tea';
+                    }
+                    echo"</td><td>$product->product_price</td>
                                <td><a href='/wishlist/delete/$wish->wish_id' class='btn btn-outline-danger btn-sm'>Delete Wish List Item</a> 
                                </td></tr>";
                     break;
