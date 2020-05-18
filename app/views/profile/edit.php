@@ -101,7 +101,12 @@
             <input type="radio" name="theme_id" value="2"
                 <?php echo $data->theme_id == '2' ? 'checked' : '' ?>><label>&nbsp;Medical</label>
             <input type="radio" name="theme_id" value="3"
-                <?php echo $data->theme_id == '3' ? 'checked' : '' ?>><label>&nbsp;Tea</label>
+                <?php echo $data->theme_id == '3' ? 'checked' : '' ?>><label>&nbsp;Tea</label> <br/>
+            <?php
+            if ($data->user_type == "Buyer") {
+                echo "<a href='/profile/unsubscribe' class='btn btn-outline-danger btn-sm'>Unsubscribe to Theme</a>";
+            }
+            ?>
         </div>
         <div class="radio-group">
             <label style="font-weight: bold">Gender</label><br/>

@@ -89,6 +89,16 @@ class Profile extends Model
         return $stmt->fetch();
     }
 
+    public function unsubscribe()
+    {
+        $SQL = 'UPDATE Profile 
+                   SET theme_id = :theme_id
+                 WHERE user_id = :user_id';
+        $stmt = self::$_connection->prepare($SQL);
+        $stmt->execute(['theme_id' => $this->theme_id, 'user_id' => $this->user_id]);
+        return $stmt->rowCount();
+    }
+
     public function update()
     {
         $SQL = 'UPDATE Profile 

@@ -58,6 +58,16 @@ class ProfileController extends Controller
         $this->view('profile/detail', $theProfile);
     }
 
+    public function unsubscribe()
+    {
+        $user_id = (string)$_SESSION['user_id'];
+        $theProfile = $this->model('Profile')->findProfile($user_id);
+        $theProfile->theme_id = 0;
+        $theProfile->unsubscribe();
+        header('location:/profile/edit');
+        $this->view('profile/edit', $theProfile);
+    }
+
     public function edit()
     {
         $user_id = (string)$_SESSION['user_id'];
