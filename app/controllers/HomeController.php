@@ -34,7 +34,6 @@ class HomeController extends Controller
                 move_uploaded_file($_FILES['product_picture']['tmp_name'], $path . $filename);
 
                 $newProduct = $this->model('Product');
-                $profile = $this->model('Profile');
                 $newProduct->product_name = $_POST['product_name'];
                 $newProduct->product_picture = $filename;
                 $newProduct->product_details = $_POST['product_details'];

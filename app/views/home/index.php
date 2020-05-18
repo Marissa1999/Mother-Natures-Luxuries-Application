@@ -75,12 +75,12 @@
 $profileData = $data['notifications'];
 if (isset($profileData)){
 foreach ($profileData as $profile) {
-    $time =$profile->timestamp;
-    $message = $profile->text;
+    $time =$profile->notification_timestamp;
+    $message = $profile->notification_text;
 
     echo "<div class=\"toast show\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\">
     <div class=\"toast-header\">
-        <strong class=\"mr-auto\">New Item from your subscription</strong>
+        <strong class=\"mr-auto\">New Item from your Subscription</strong>
         <small>$time</small>
         <button type=\"button\" class=\"ml-2 mb-1 close\" data-dismiss=\"toast\" aria-label=\"Close\">
             <span aria-hidden\"true\">&times;</span>
