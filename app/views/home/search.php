@@ -63,10 +63,20 @@
                 foreach ($data['profiles'] as $profile) {
                     if ($product->seller_id == $profile->profile_id)
                     {
-                        if ($data['theProfile']->user_type == "Buyer") {
+                        if ($data['theProfile']->user_type == "Buyer")
+                        {
                             echo "<tr><td>$profile->first_name</td><td>$profile->last_name</td></td>";
                             echo "<td>$product->product_name</td><td><img src='/product_images/$product->product_picture' style='max-width:100px;' /></td>
-                          <td>$product->product_details</td><td>$product->product_category</td><td>$product->product_price</td>
+                          <td>$product->product_details</td><td>";
+                 $category = $product->product_category;
+                 if ($category == 1) {
+                     echo 'Beauty';
+                 } elseif ($category == 2) {
+                     echo 'Medical';
+                 } else {
+                     echo 'Tea';
+                 }
+                 echo "</td><td>$product->product_price</td>
                           <td>$product->product_quantity</td>
                     <td><a href='/wishlist/create?product_id=$product->product_id' class='btn btn-outline-primary btn-sm'>Add to Wish List</a>
                         <a href='/review/index/$product->product_id' class='btn btn-outline-info btn-sm'>View Reviews</a>

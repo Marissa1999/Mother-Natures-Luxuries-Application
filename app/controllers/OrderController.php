@@ -27,7 +27,8 @@ class OrderController extends Controller
     {
         $cart = $this->model('Order')->findProfileCart($_SESSION['profile_id']);
 
-        if ($cart == null) {
+        if ($cart == null)
+        {
             $cart = $this->makeCart();
         }
 
@@ -37,6 +38,7 @@ class OrderController extends Controller
         $newItem->order_price = $this->model('Product')->find($product_id)->product_price;
         $newItem->order_quantity = 1;
         $newItem->create();
+
         header('location:/order/index');
     }
 
