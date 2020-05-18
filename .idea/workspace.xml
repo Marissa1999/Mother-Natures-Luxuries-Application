@@ -19,15 +19,165 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Managed to enhance the code for Messages.">
-      <change afterPath="$PROJECT_DIR$/product_images/5ec2cc2a7c124.jpg" afterDir="false" />
+    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Made sure that the Product Category is visible instead of it's ID number.">
+      <change afterPath="$PROJECT_DIR$/product_images/5ec2d1c9edc76.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/book/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/order/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/order/checkout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/order/history.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/order/history.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/order/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/order/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/.idea/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/.idea/Mother_Nature_Luxuries_PHP_Application.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/.idea/htdocs.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/.idea/workspace.xml~0324e91f33616e49d5ae7efb0f3714e03ac31000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebb3d32853cc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebb68455d925.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebcb07215aae.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebda575ae4bc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebdbbcea858d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebdbbfb6c824.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebdbc8dbdef0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebdc095d8bd7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebdc0a742537.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebdc0e348658.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebdc282f05a8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebdc2b43bc2e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebdc36eb7292.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebdc42035ff2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebdc4632e562.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebdc661da9fc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebdc6fce4c66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebdc72342287.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebdcc0294f86.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebdccccd2ec3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebdcdf3634b5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebdced0e1ca8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebdd2e949851.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebdd3aa5914c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebdd3ddad4b3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebdd657595e1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebdd6608f05c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebdd7104c95f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebdd71558c67.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebed2098c705.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebee6a22fcb3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebee76931f48.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ebef2db7cb5c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ec03c90c5d38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ec03f5524603.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ec063faaac77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ec0641fc0fe7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ec06470ced24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ec06a1616220.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ec09a79e7a29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ec12753d0409.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ec12ee81ccbc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ec13281ee865.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ec13cbd67788.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ec13fa969702.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ec1408030b5d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ec145ce7d7bf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ec1bc9e659a7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ec1bcef04aad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ec1beb487401.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ec1bfb065f3a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ec1bff70140f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ec1c067b2b4b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ec1c14702002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ec1c29409875.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/5ec2cc2a7c124.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/controllers/BookController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/controllers/HomeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/controllers/LoginController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/controllers/MessageController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/controllers/NewsController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/controllers/OrderController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/controllers/PaymentController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/controllers/ProfileController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/controllers/PromotionController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/controllers/ReviewController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/controllers/ThemeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/controllers/WishListController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/core/App.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/core/Controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/core/Filter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/core/Model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/init.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/models/Book.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/models/Message.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/models/News.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/models/Order.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/models/OrderDetails.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/models/Payment.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/models/Product.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/models/Profile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/models/Promotion.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/models/Review.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/models/Theme.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/models/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/models/WishList.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/book/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/book/delete.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/book/detail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/book/edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/book/search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/home/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/home/delete.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/home/edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/home/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/home/modifyPassword.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/home/search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/login/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/login/register.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/message/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/message/delete.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/message/edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/message/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/message/viewMessages.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/news/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/news/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/order/checkout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/order/editQuantity.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/order/history.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/order/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/payment/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/payment/delete.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/payment/edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/payment/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/profile/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/profile/detail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/profile/edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/profile/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/promotion/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/promotion/delete.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/promotion/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/review/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/review/delete.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/review/edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/review/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/wishlist/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/wishlist/delete.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/app/views/wishlist/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/book_images/5ebb2f6730680.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/book_images/5ebb4d4892f48.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/news_images/5ebb306f2904a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/product_images/5ebb3d32853cc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/product_images/5ebb68455d925.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/product_images/5ebcb07215aae.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/product_images/5ebda575ae4bc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/product_images/5ebdbc8dbdef0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/product_images/5ebed2098c705.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/product_images/5ebee6a22fcb3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/product_images/5ebee76931f48.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/product_images/5ebef2db7cb5c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/product_images/5ec063faaac77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/product_images/5ec0641fc0fe7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/product_images/5ec06470ced24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/product_images/5ec06a1616220.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_images/product_images/5ec09a79e7a29.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +235,7 @@
       <workItem from="1589606407841" duration="1369000" />
       <workItem from="1589608181821" duration="7158000" />
       <workItem from="1589678930815" duration="12338000" />
-      <workItem from="1589800948794" duration="14785000" />
+      <workItem from="1589800948794" duration="15324000" />
     </task>
     <task id="LOCAL-00001" summary="More changes.">
       <created>1589317184327</created>
@@ -416,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589819477322</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Made sure that the Product Category is visible instead of it's ID number.">
+      <created>1589825651851</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1589825651851</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,7 +658,8 @@
     <MESSAGE value="Fixed the ShoppingCart entirely." />
     <MESSAGE value="Managed to complete the Unsubscribe user story." />
     <MESSAGE value="Managed to enhance the code for Messages." />
-    <option name="LAST_COMMIT_MESSAGE" value="Managed to enhance the code for Messages." />
+    <MESSAGE value="Made sure that the Product Category is visible instead of it's ID number." />
+    <option name="LAST_COMMIT_MESSAGE" value="Made sure that the Product Category is visible instead of it's ID number." />
   </component>
   <component name="WindowStateProjectService">
     <state x="547" y="147" key="#PHP" timestamp="1589414200838">
@@ -529,10 +687,10 @@
     </state>
     <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589819496264" />
     <state x="432" y="245" key="Vcs.Push.Dialog.v2/0.0.1986.1152@0.0.1986.1152" timestamp="1589499230722" />
-    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589820066113">
+    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589825614917">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920" timestamp="1589820066113" />
+    <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920" timestamp="1589825614917" />
     <state x="1124" y="292" key="git4idea.branch.GitSmartOperationDialog" timestamp="1589481935988">
       <screen x="0" y="0" width="1986" height="1152" />
     </state>
