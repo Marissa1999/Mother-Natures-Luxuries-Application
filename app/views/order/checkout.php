@@ -69,21 +69,21 @@
         echo "<tr><th colspan='4'>Subtotal: </th><th>$$subtotal</th></tr>";
         echo "<tr><th colspan='4'>Taxes: </th><th>$$taxes</th></tr>";
         echo "<tr><th colspan='4'>Total: </th><th>$$total</th></tr>";
-        ?>
-    </table>
 
-    <a href='/order/pay'>
-        <form action="stripeIPN.php?id='.$productID.'" method="POST">
+       echo '<a href=\'/order/pay\'>
+        <form action="stripeIPN.php?id=\'.$product.\'" method="POST">
             <script
                     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                     data-key="pk_test_XczTpCFstLKZxVO67cXM3oUQ00YwdLStoP"
-                    data-amount="'.$attributes['price'].'"
-                    data-name="'.$attributes['title'].'"
+                    data-amount="\'.$total.\'"
+                    data-name="\'.$product_name.\'"
                     data-description="Widget"
                     data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
                     data-locale="auto">
             </script>
-        </form></a>
+        </form></a>';
+        ?>
+    </table>
 
 </div>
 <!-- Optional JavaScript -->
