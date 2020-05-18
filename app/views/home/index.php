@@ -143,7 +143,6 @@ foreach ($profileData as $profile) {
                      echo 'Tea';
                  }
                  echo "</td> <td>$$total</td><td style=\"text-align:right\">
-                 <td>
                  <a href='/promotion/index/$product->product_id' class='btn btn-outline-info'>Promotions</a> 
                  <a href='/home/edit/$product->product_id' class='btn btn-outline-success'>Edit Product</a> 
                  <a href='/home/delete/$product->product_id' class='btn btn-outline-danger'>Delete Product</a>
