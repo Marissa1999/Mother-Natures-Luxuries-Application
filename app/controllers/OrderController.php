@@ -49,19 +49,6 @@ class OrderController extends Controller
         header('location:/order/index');
     }
 
-    public function editQuantity($order_item_id)
-    {
-        $theItem = $this->model('OrderDetails')->find($order_item_id);
-
-        if (isset($_POST['action'])) {
-            $theItem->order_quantity = $_POST['order_quantity'];
-            $theItem->update();
-            header('location:/order/index');
-        } else {
-            $this->view('order/editQuantity', $theItem);
-        }
-    }
-
     public function makeCart()
     {
         $cart = $this->model('Order');
@@ -93,10 +80,17 @@ class OrderController extends Controller
 
     public function pay()
     {
-        $cart = $this->model('Order')->findProfileCart($_SESSION['profile_id']);
+      /*  $cart = $this->model('Order')->findProfileCart($_SESSION['profile_id']);
         $cart->order_status = 'Paid';
         $cart->update();
         header('location:/order/index');
+      */
+        $user_id = (string)$_SESSION['user_id'];
+        $theProfile = $this->model('Profile')->findProfile($user_id);
+        $_SESSION['profile_id'] = $theProfile->profile_id;
+        $orders = $this->model('OrderDetails')->getOrderForUser($_SESSION['profile_id']);
+        $products = $this->model('Product')->get();
+        $this->view('order/pay', ['products' => $products, 'orders' => $orders]);
     }
 
 }

@@ -73,7 +73,7 @@
         echo "<tr><th colspan='4'>Subtotal: </th><th>$$subtotal</th></tr>";
         echo "<tr><th colspan='4'>Taxes: </th><th>$$taxes</th></tr>";
         echo "<tr><th colspan='4'>Total: </th><th>$$total</th></tr>";
-        echo "<a href='/order/checkout' class='btn btn-info' style='float: right;'>Head to Checkout</a>";
+        echo "<a href='/order/checkout' class='btn btn-info'>Head to Checkout</a>";
         ?>
     </table>
 

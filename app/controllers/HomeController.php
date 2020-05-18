@@ -155,7 +155,6 @@ class HomeController extends Controller
     {
         $allProfiles = $this->model('Profile')->getUsersByTheme($category);
         $this->model('Notification')->createNotifications($allProfiles , $text);
-
     }
 }
 

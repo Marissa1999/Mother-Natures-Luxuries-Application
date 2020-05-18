@@ -72,7 +72,18 @@
         ?>
     </table>
 
-    <a href='/order/pay' class='btn btn-info'>Pay</a>
+    <a href='/order/pay'>
+        <form action="stripeIPN.php?id='.$productID.'" method="POST">
+            <script
+                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="pk_test_XczTpCFstLKZxVO67cXM3oUQ00YwdLStoP"
+                    data-amount="'.$attributes['price'].'"
+                    data-name="'.$attributes['title'].'"
+                    data-description="Widget"
+                    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                    data-locale="auto">
+            </script>
+        </form></a>
 
 </div>
 <!-- Optional JavaScript -->
