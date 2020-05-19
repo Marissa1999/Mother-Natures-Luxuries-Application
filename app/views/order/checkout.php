@@ -43,7 +43,6 @@
         </tr>
         <br/>
         <?php
-
         foreach ($data['products'] as $product) {
             foreach ($data['orders'] as $order) {
                 if ($product->product_id == $order->product_id) {
@@ -62,7 +61,7 @@
                     break;
                 }
             }
-}
+        }
 
         $subtotal = (int)$this->model('OrderDetails')->getTotalForUser($_SESSION['profile_id']);
         $taxes = (int)$subtotal * 0.15;
@@ -70,25 +69,9 @@
         echo "<tr><th colspan='4'>Subtotal: </th><th>$$subtotal</th></tr>";
         echo "<tr><th colspan='4'>Taxes: </th><th>$$taxes</th></tr>";
         echo "<tr><th colspan='4'>Total: </th><th>$$total</th></tr>";
-
-        $todisplay = $total * 100;
-       echo '
-        <a href=\'/order/checkout\'
-        <form action="afterPayment" method="POST">
-            <script
-                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                    data-key="pk_test_XczTpCFstLKZxVO67cXM3oUQ00YwdLStoP"
-                    data-amount="'.$todisplay.'"
-                    data-name="Buying Luxuries"
-                    data-description="Widget"
-                    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-                    data-locale="auto">
-            </script>
-        </form></a>
-        ';
+        echo "<a href='/order/pay' class='btn btn-info'>Pay</a>";
         ?>
     </table>
-
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

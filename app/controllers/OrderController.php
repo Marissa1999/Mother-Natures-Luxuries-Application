@@ -80,12 +80,10 @@ class OrderController extends Controller
 
     public function pay()
     {
-        if (isset($_POST['afterPayment'])){
         $cart = $this->model('Order')->findProfileCart($_SESSION['profile_id']);
         $cart->order_status = 'Paid';
         $cart->update();
         header('location:/order/index');
-        }
     }
 
 }
