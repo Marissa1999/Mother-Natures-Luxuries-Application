@@ -90,8 +90,8 @@
 $profileData = $data['notifications'];
 if (isset($profileData)) {
     foreach ($profileData as $profile) {
-        $time = $profile->timestamp;
-        $message = $profile->text;
+        $time = $profile->notification_timestamp;
+        $message = $profile->notification_text;
 
         echo "<div class=\"toast show\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\">
     <div class=\"toast-header\">
