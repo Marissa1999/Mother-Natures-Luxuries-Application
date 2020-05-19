@@ -77,23 +77,29 @@
     <h1>Add a Product</h1>
     <form action='' method='post' enctype='multipart/form-data'>
         <div class='form-group'>
-            <label style="font-weight: bold">Product Name <input type='text' name='product_name' class='form-control' required/></label>
+            <label style="font-weight: bold">Product Name <input type='text' name='product_name' class='form-control'
+                                                                 required/></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <label style="font-weight: bold">Product Picture <br/><input type='file' name='product_picture' style="width:208px"/></label>
+            <label style="font-weight: bold">Product Picture <br/><input type='file' name='product_picture'
+                                                                         style="width:208px"/></label>
         </div>
         <div class='form-group'>
-            <label style="font-weight: bold">Product Price <input type='text' name='product_price' placeholder="Ex: 99.87" class='form-control' required/></label>
+            <label style="font-weight: bold">Product Price <input type='text' name='product_price'
+                                                                  placeholder="Ex: 99.87" class='form-control'
+                                                                  required/></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <label style="font-weight: bold">Product Quantity <input type='number' name='product_quantity' min="0" class='form-control' required/></label>
+            <label style="font-weight: bold">Product Quantity <input type='number' name='product_quantity' min="0"
+                                                                     class='form-control' required/></label>
         </div>
         <div class='form-group'>
-            <label style="font-weight: bold">Product Details <input type="text" name='product_details' class='form-control' required/></label>
+            <label style="font-weight: bold">Product Details <input type="text" name='product_details'
+                                                                    class='form-control' required/></label>
         </div>
         <div class='radio-group'>
             <label style="font-weight: bold">Product Category</label><br/>
-                <input type="radio" name='product_category' value="1"><label>&nbsp;Beauty</label>
-                <input type="radio" name='product_category' value="2"><label>&nbsp;Medical</label>
-                <input type="radio" name='product_category' value="3"><label>&nbsp;Tea</label>
+            <input type="radio" name='product_category' value="1"><label>&nbsp;Beauty</label>
+            <input type="radio" name='product_category' value="2"><label>&nbsp;Medical</label>
+            <input type="radio" name='product_category' value="3"><label>&nbsp;Tea</label>
         </div>
         <div class='create-button'>
             <input type='submit' name='action' value='&nbsp;&nbsp;Create New Product&nbsp;&nbsp;'

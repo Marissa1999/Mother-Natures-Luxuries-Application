@@ -32,10 +32,9 @@
     <a href='/login/logout' class="btn btn-danger" style="float: right;">Logout</a><br/>
     <a href='/home/index' class='btn btn-secondary'>Back to Home Page</a><br/><br/>
     <?php
-       if($data['theProfile']->user_type == "Seller")
-       {
-           echo "<a href='/news/create' class='btn btn-success'>Add a News Posting</a>";
-       }
+    if ($data['theProfile']->user_type == "Seller") {
+        echo "<a href='/news/create' class='btn btn-success'>Add a News Posting</a>";
+    }
     ?>
     <table class='table table-striped'>
         <tr>

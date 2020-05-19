@@ -87,12 +87,14 @@
         </div>
         <div class='form-group'>
             <label style="font-weight: bold">Email <input type='email' name='email' value='<?= $data->email ?>'
-                                                          class='form-control' placeholder="Ex: example@gmail.com" required /></label>
+                                                          class='form-control' placeholder="Ex: example@gmail.com"
+                                                          required/></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
             <label style="font-weight: bold">Phone Number <input type='text' name='phone_number'
                                                                  value='<?= $data->phone_number ?>'
-                                                                 class='form-control' placeholder="Ex: 999-999-9999" required/></label>
+                                                                 class='form-control' placeholder="Ex: 999-999-9999"
+                                                                 required/></label>
         </div>
         <div class="radio-group">
             <label style="font-weight: bold">Theme</label><br/>&nbsp;&nbsp;

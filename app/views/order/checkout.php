@@ -48,15 +48,15 @@
                 if ($product->product_id == $order->product_id) {
                     echo "<tr><td>$product->product_name</td><td><img src='/product_images/$product->product_picture' style='max-width:100px;' /></td>
                           <td>$product->product_details</td><td>";
-                          $category = $product->product_category;
-                 if ($category == 1) {
-                     echo 'Beauty';
-                 } elseif ($category == 2) {
-                     echo 'Medical';
-                 } else {
-                     echo 'Tea';
-                 }
-                 echo "</td><td>$order->order_price</td>
+                    $category = $product->product_category;
+                    if ($category == 1) {
+                        echo 'Beauty';
+                    } elseif ($category == 2) {
+                        echo 'Medical';
+                    } else {
+                        echo 'Tea';
+                    }
+                    echo "</td><td>$order->order_price</td>
                           <td>" . $order->order_price * $order->order_quantity, "</td><td>$order->order_quantity</td></tr>";
                     break;
                 }
@@ -70,6 +70,21 @@
         echo "<tr><th colspan='4'>Taxes: </th><th>$$taxes</th></tr>";
         echo "<tr><th colspan='4'>Total: </th><th>$$total</th></tr>";
         echo "<a href='/order/pay' class='btn btn-info'>Pay</a>";
+
+        /*
+         echo '
+              <form action=\'/order/pay\' method="POST">
+              <script
+                      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                      data-key="pk_test_XczTpCFstLKZxVO67cXM3oUQ00YwdLStoP"
+                      data-amount="\'.$total.\'"
+                      data-name="Luxury Payment"
+                      data-description="Fast, Quick and Reliable Secure Payment"
+                      data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                      data-locale="auto">
+              </script>
+          </form>';*/
+
         ?>
     </table>
 </div>

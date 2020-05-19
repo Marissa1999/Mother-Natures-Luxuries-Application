@@ -61,7 +61,8 @@
     <h1>Edit the Review</h1>
     <form action='' method='post'>
         <div class='form-group'>
-            <label>Product Rating <input type='text' name='product_rating' placeholder="Ex: 8/10" value='<?= $data->product_rating ?>'
+            <label>Product Rating <input type='text' name='product_rating' placeholder="Ex: 8/10"
+                                         value='<?= $data->product_rating ?>'
                                          class='form-control' required/></label>
         </div>
         <div class='form-group'>

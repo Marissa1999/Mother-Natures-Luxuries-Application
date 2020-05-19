@@ -60,14 +60,17 @@
     <h1>Add a Payment Card</h1>
     <form action='' method='post'>
         <div class='form-group'>
-            <label>Card Number: <input type='text' name='card_number' minlength="8" maxlength="19" class='form-control' required/></label>
+            <label>Card Number: <input type='text' name='card_number' minlength="8" maxlength="19" class='form-control'
+                                       required/></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <label>Card Company: <input type='text' name='card_company' class='form-control' required/></label>
         </div>
         <div class='form-group'>
-            <label>Expiration Date: <input type='text' minlength="4" maxlength="4" name='expiration_date' class='form-control' required/></label>
+            <label>Expiration Date: <input type='text' minlength="4" maxlength="4" name='expiration_date'
+                                           class='form-control' required/></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <label>Card CVC: <input type='text' name='card_cvc' minlength="3" maxlength="3" class='form-control' required/></label>
+            <label>Card CVC: <input type='text' name='card_cvc' minlength="3" maxlength="3" class='form-control'
+                                    required/></label>
         </div>
         <div class='create-button'>
             <input type='submit' name='action' value='&nbsp;&nbsp;Add New Payment Method&nbsp;&nbsp;'

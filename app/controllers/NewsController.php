@@ -14,7 +14,7 @@ class NewsController extends Controller
         $news = $this->model('News')->get();
         $profiles = $this->model('News')->getSellersAndNews();
         $theProfile = $this->model('Profile')->findProfile($user_id);
-        $this->view('news/index', ['news' => $news, 'profiles' => $profiles, 'theProfile'=> $theProfile]);
+        $this->view('news/index', ['news' => $news, 'profiles' => $profiles, 'theProfile' => $theProfile]);
     }
 
     public function create()

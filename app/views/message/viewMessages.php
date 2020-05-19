@@ -99,12 +99,10 @@
                 if ($message->message_sender == $profile->message_sender && $message->message_receiver == $profile->message_receiver &&
                     $message->message_sender == $_SESSION['message_sender'] && $message->message_receiver == $_SESSION['message_receiver'] ||
                     $message->message_sender == $profile->message_sender && $message->message_receiver == $profile->message_receiver &&
-                    $message->message_sender == $_SESSION['message_receiver'] && $message->message_receiver == $_SESSION['message_sender'])
-                {
+                    $message->message_sender == $_SESSION['message_receiver'] && $message->message_receiver == $_SESSION['message_sender']) {
 
                     if ($message->message_sender == $profile->message_sender && $message->message_receiver == $profile->message_receiver &&
-                        $message->message_sender == $_SESSION['message_sender'] && $message->message_receiver == $_SESSION['message_receiver'])
-                    {
+                        $message->message_sender == $_SESSION['message_sender'] && $message->message_receiver == $_SESSION['message_receiver']) {
                         $message->updateRead();
                     }
 

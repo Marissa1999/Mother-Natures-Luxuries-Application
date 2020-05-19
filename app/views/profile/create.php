@@ -102,16 +102,19 @@
     <h1>Create My Profile</h1>
     <form action='' method='post'>
         <div class='form-group'>
-            <label style="font-weight: bold">First Name <input type='text' name='first_name' class='form-control' minlength="2" required/></label>
+            <label style="font-weight: bold">First Name <input type='text' name='first_name' class='form-control'
+                                                               minlength="2" required/></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <label style="font-weight: bold">Last Name <input type='text' name='last_name' class='form-control' minlength="2" required/></label>
+            <label style="font-weight: bold">Last Name <input type='text' name='last_name' class='form-control'
+                                                              minlength="2" required/></label>
         </div>
 
         <div class='form-group'>
-            <label style="font-weight: bold">Email <input type='email' name='email' class='form-control' placeholder="Ex: example@gmail.com" required/></label>
+            <label style="font-weight: bold">Email <input type='email' name='email' class='form-control'
+                                                          placeholder="Ex: example@gmail.com" required/></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <label style="font-weight: bold">Phone Number <input type='text' name='phone_number' class='form-control'
-                                       placeholder="Ex: 999-999-9999" required/></label>
+                                                                 placeholder="Ex: 999-999-9999" required/></label>
         </div>
         <div class='radio-group'>
             <label style="font-weight: bold">Theme</label><br/>
@@ -130,8 +133,9 @@
             <input type="radio" name='user_type' value="Seller"><label>&nbsp;Seller</label>
         </div>
         <div class='form-group'>
-            <label style="font-weight: bold">Location <input type='text' id="search_input" name='location' class='form-control' size="50"
-                                   required/></label>
+            <label style="font-weight: bold">Location <input type='text' id="search_input" name='location'
+                                                             class='form-control' size="50"
+                                                             required/></label>
             <input type="hidden" id="latitude_input"/>
             <input type="hidden" id="longitude_input"/>
         </div>

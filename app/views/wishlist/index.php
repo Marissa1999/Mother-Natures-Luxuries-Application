@@ -62,7 +62,7 @@
                     } else {
                         echo 'Tea';
                     }
-                    echo"</td><td>$product->product_price</td>
+                    echo "</td><td>$product->product_price</td>
                                <td><a href='/wishlist/delete/$wish->wish_id' class='btn btn-outline-danger btn-sm'>Delete Wish List Item</a> 
                                </td></tr>";
                     break;

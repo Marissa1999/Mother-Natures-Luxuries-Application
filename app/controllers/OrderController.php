@@ -27,8 +27,7 @@ class OrderController extends Controller
     {
         $cart = $this->model('Order')->findProfileCart($_SESSION['profile_id']);
 
-        if ($cart == null)
-        {
+        if ($cart == null) {
             $cart = $this->makeCart();
         }
 

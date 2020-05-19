@@ -47,15 +47,15 @@
                 if ($product->product_id == $order->product_id) {
                     echo "<tr><td>$product->product_name</td><td><img src='/product_images/$product->product_picture' style='max-width:100px;' /></td>
                           <td>$product->product_details</td><td>";
-                          $category = $product->product_category;
-                 if ($category == 1) {
-                     echo 'Beauty';
-                 } elseif ($category == 2) {
-                     echo 'Medical';
-                 } else {
-                     echo 'Tea';
-                 }
-                 echo"</td><td>$order->order_price</td><td>$order->order_date</td>
+                    $category = $product->product_category;
+                    if ($category == 1) {
+                        echo 'Beauty';
+                    } elseif ($category == 2) {
+                        echo 'Medical';
+                    } else {
+                        echo 'Tea';
+                    }
+                    echo "</td><td>$order->order_price</td><td>$order->order_date</td>
                           </tr>";
                     break;
                 }

@@ -96,7 +96,8 @@
                 </td>
             </tr>
             <tr>
-                <td> <dt>Theme</dt>
+                <td>
+                    <dt>Theme</dt>
                     <dd><?php
                         $theme = $data->theme_id;
                         if ($theme == 1) {

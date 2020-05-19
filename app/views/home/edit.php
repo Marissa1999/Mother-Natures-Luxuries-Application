@@ -76,22 +76,28 @@
     <h1>Edit the Product</h1>
     <form action='' method='post' enctype='multipart/form-data'>
         <div class='form-group'>
-            <label style="font-weight: bold">Product Name <input type='text' name='product_name' value='<?= $data->product_name ?>'
-                                       class='form-control' required/></label>
+            <label style="font-weight: bold">Product Name <input type='text' name='product_name'
+                                                                 value='<?= $data->product_name ?>'
+                                                                 class='form-control' required/></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <label style="font-weight: bold">Product Picture <br/><input type='file' name='product_picture' style="width:208px"/></label>
+            <label style="font-weight: bold">Product Picture <br/><input type='file' name='product_picture'
+                                                                         style="width:208px"/></label>
         </div>
         <div class='form-group'>
-            <label style="font-weight: bold">Product Price <input type='text' name='product_price' value='<?= $data->product_price ?>'
-                                        class='form-control' placeholder="Ex: 99.87" required/></label>
+            <label style="font-weight: bold">Product Price <input type='text' name='product_price'
+                                                                  value='<?= $data->product_price ?>'
+                                                                  class='form-control' placeholder="Ex: 99.87"
+                                                                  required/></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <label style="font-weight: bold">Product Quantity <input type='number' min="0" name='product_quantity'
-                                           value='<?= $data->product_quantity ?>' class='form-control'
-                                           required/></label>
+                                                                     value='<?= $data->product_quantity ?>'
+                                                                     class='form-control'
+                                                                     required/></label>
         </div>
         <div class='form-group'>
-            <label style="font-weight: bold">Product Details <input type='text' name='product_details' value='<?= $data->product_details ?>'
-                                          class='form-control' required/></label>
+            <label style="font-weight: bold">Product Details <input type='text' name='product_details'
+                                                                    value='<?= $data->product_details ?>'
+                                                                    class='form-control' required/></label>
         </div>
         <div class='radio-group'>
             <label style="font-weight: bold">Product Category</label><br/>

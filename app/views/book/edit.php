@@ -61,7 +61,8 @@
     <h1>Edit the Book</h1>
     <form action='' method='post' enctype='multipart/form-data'>
         <div class='form-group'>
-            <label>Book Name <input type='text' name='book_name' value='<?= $data->book_name ?>' class='form-control' required /></label>
+            <label>Book Name <input type='text' name='book_name' value='<?= $data->book_name ?>' class='form-control'
+                                    required/></label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <label>Book Picture <input type='file' name='book_picture' style="width:208px"/></label>
         </div>

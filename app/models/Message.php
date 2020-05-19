@@ -81,7 +81,7 @@ class Message extends Model
                  WHERE message_id = :message_id AND message_receiver = :message_receiver';
         $stmt = self::$_connection->prepare($SQL);
         $stmt->execute(['message_id' => $this->message_id, 'message_receiver' => $this->message_receiver,
-                        'message_read' => $this->message_read]);
+            'message_read' => $this->message_read]);
         return $stmt->rowCount();
     }
 

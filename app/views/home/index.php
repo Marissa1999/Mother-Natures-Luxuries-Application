@@ -14,12 +14,13 @@
         h1 {
             color: darkslateblue;
             margin-top: 50px;
-            margin-bottom:50px;
+            margin-bottom: 50px;
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
         }
+
         h2 {
             margin-top: 25px;
             display: flex;
@@ -27,10 +28,12 @@
             justify-content: center;
             position: relative;
         }
+
         h3 {
             margin-top: 25px;
             display: flex;
         }
+
         ul {
             list-style-type: none;
             margin: 0;
@@ -40,15 +43,19 @@
             justify-content: center;
             background-color: lavenderblush;
         }
-        li{
+
+        li {
             display: inline-block;
         }
+
         li {
             border-right: 1.5px solid #a6a6ed;
         }
+
         li:last-child {
             border-right: none;
         }
+
         li a {
             font-size: 15px;
             display: block;
@@ -57,12 +64,15 @@
             padding: 14px 16px;
             text-decoration: none;
         }
+
         li a:hover {
             background-color: #d1d1f6;
         }
+
         a:link {
             text-decoration: none;
         }
+
         body {
             background-color: lavender;
             font-family: Helvetica, sans-serif;
@@ -72,18 +82,18 @@
 </head>
 <body>
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
         $(".toast").toast();
     });
 </script>
 <?php
 $profileData = $data['notifications'];
-if (isset($profileData)){
-foreach ($profileData as $profile) {
-    $time =$profile->timestamp;
-    $message = $profile->text;
+if (isset($profileData)) {
+    foreach ($profileData as $profile) {
+        $time = $profile->timestamp;
+        $message = $profile->text;
 
-    echo "<div class=\"toast show\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\">
+        echo "<div class=\"toast show\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\">
     <div class=\"toast-header\">
         <strong class=\"mr-auto\">New Item from your subscription</strong>
         <small>$time</small>
@@ -94,8 +104,9 @@ foreach ($profileData as $profile) {
     <div class=\"toast-body\">
         $message
     </div>
-</div>";}
-        }?>
+</div>";
+    }
+} ?>
 <div class='container' style="overflow: auto;">
     <h1>Welcome to Mother Nature's Luxuries</h1>
     <a href='/login/logout' class="btn btn-danger" style="float: right;">Logout</a><br/>
@@ -139,15 +150,15 @@ foreach ($profileData as $profile) {
                  <td>$product->product_details</td><td>$$product->product_price</td>
                  <td>$product->product_quantity</td>";
                 echo "<td>";
-                 $category = $product->product_category;
-                 if ($category == 1) {
-                     echo 'Beauty';
-                 } elseif ($category == 2) {
-                     echo 'Medical';
-                 } else {
-                     echo 'Tea';
-                 }
-                 echo "</td> <td>$$total</td><td style=\"text-align:right\">
+                $category = $product->product_category;
+                if ($category == 1) {
+                    echo 'Beauty';
+                } elseif ($category == 2) {
+                    echo 'Medical';
+                } else {
+                    echo 'Tea';
+                }
+                echo "</td> <td>$$total</td><td style=\"text-align:right\">
                  <a href='/promotion/index/$product->product_id' class='btn btn-outline-info'>Promotions</a> 
                  <a href='/home/edit/$product->product_id' class='btn btn-outline-success'>Edit Product</a> 
                  <a href='/home/delete/$product->product_id' class='btn btn-outline-danger'>Delete Product</a>

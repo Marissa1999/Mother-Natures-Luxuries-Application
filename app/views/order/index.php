@@ -57,7 +57,7 @@
                     } else {
                         echo 'Tea';
                     }
-                    echo"</td><td>$order->order_price</td>
+                    echo "</td><td>$order->order_price</td>
                           <td>" . $order->order_price * $order->order_quantity, "</td><td>$order->order_quantity</td>
                           <td><a href='/order/removeFromCart/$order->order_item_id' class='btn btn-outline-danger btn-sm'>Delete Item</a>
                           <a href='/order/editQuantity/$order->order_item_id' class='btn btn-outline-info btn-sm'>Edit Quantity</a>

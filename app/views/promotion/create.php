@@ -61,7 +61,8 @@
     <h1>Create a Promotion</h1>
     <form action='' method='post'>
         <div class='form-group'>
-            <label>Promotion Price <input type='text' name='promotion_price' placeholder="Ex: 3.23" class='form-control' required/></label>
+            <label>Promotion Price <input type='text' name='promotion_price' placeholder="Ex: 3.23" class='form-control'
+                                          required/></label>
         </div>
         <div class='create-button'>
             <input type='submit' name='action' value='&nbsp;&nbsp;Create Promotion&nbsp;&nbsp;'
