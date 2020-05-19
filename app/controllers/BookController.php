@@ -8,7 +8,6 @@ class BookController extends Controller
 {
     public function create()
     {
-
         if (isset($_FILES['book_picture']) && $_FILES['book_picture']['error'] == UPLOAD_ERR_OK) {
             $info = getimagesize($_FILES['book_picture']['tmp_name']);
             $allowedTypes = [IMAGETYPE_JPEG => '.jpg', IMAGETYPE_PNG => '.png', IMAGETYPE_GIF => '.gif'];
