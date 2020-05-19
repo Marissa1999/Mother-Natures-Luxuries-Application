@@ -19,39 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="More commits.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/NewsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Message.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Notification.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Notification.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/book/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/book/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/book/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/book/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/modifyPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/modifyPassword.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/message/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/message/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/message/viewMessages.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/message/viewMessages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/news/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/news/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/order/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/order/checkout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/order/editQuantity.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/order/editQuantity.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/order/history.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/order/history.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/order/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/order/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/payment/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/payment/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/payment/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/payment/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/profile/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/profile/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/detail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/profile/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profile/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/promotion/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/promotion/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/review/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/review/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/review/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/review/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/wishlist/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/wishlist/index.php" afterDir="false" />
-    </list>
+    <list default="true" id="e7a0545c-7672-4879-9d93-eacf6e4c2951" name="Default Changelist" comment="Reformatted all code files." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,13 +77,6 @@
       <workItem from="1589608181821" duration="7158000" />
       <workItem from="1589678930815" duration="12338000" />
       <workItem from="1589800948794" duration="23697000" />
-    </task>
-    <task id="LOCAL-00006" summary="Fixed the Shopping History.">
-      <created>1589321483870</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1589321483870</updated>
     </task>
     <task id="LOCAL-00007" summary="Fixed the Shopping History.">
       <created>1589323397398</created>
@@ -453,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589849237301</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Reformatted all code files.">
+      <created>1589849854622</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1589849854622</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,7 +507,8 @@
     <MESSAGE value="Managed to enhance the code for Messages." />
     <MESSAGE value="Made sure that the Product Category is visible instead of it's ID number." />
     <MESSAGE value="More commits." />
-    <option name="LAST_COMMIT_MESSAGE" value="More commits." />
+    <MESSAGE value="Reformatted all code files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Reformatted all code files." />
   </component>
   <component name="WindowStateProjectService">
     <state x="547" y="147" key="#PHP" timestamp="1589414200838">
@@ -562,10 +531,10 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="707" y="428" key="NewPhpFileDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1589604415851" />
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589849245385">
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2" timestamp="1589849875454">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589849245385" />
+    <state x="313" y="196" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1589849875454" />
     <state x="432" y="245" key="Vcs.Push.Dialog.v2/0.0.1986.1152@0.0.1986.1152" timestamp="1589499230722" />
     <state x="532" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589849831557">
       <screen x="0" y="0" width="1440" height="920" />
